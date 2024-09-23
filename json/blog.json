@@ -1,12 +1,12 @@
 [
   {
-    "title": "Tunelling My Homelab",
+    "title": "Tunnelling My Homelab",
     "entry": 2,
     "subheading": "Hosting public services without port forwarding",
     "date": "23 September 2024",
     "categories": ["Technology", "Self-hosting", "Networking", "NixOS"],
     "content": [
-      "<p>Tunelling my homelab to a VPS was really a lot easier than I expected. For a good while I was reluctant to buy a VPS since I didn't know if I was actually going to get it to work, but after seeing <a href='https://blog.ahwx.org/frp' target='_blank'>this article about frp</a> I decided to give it a go.</p>",
+      "<p>Tunnelling my homelab to a VPS was really a lot easier than I expected. For a good while I was reluctant to buy a VPS since I didn't know if I was actually going to get it to work, but after seeing <a href='https://blog.ahwx.org/frp' target='_blank'>this article about frp</a> I decided to give it a go.</p>",
       "<br />",
       "<p>The VPS I've gone with is a 2 GB Linode running Debian and my home servers are running NixOS.</p>",
       "<p>To enable frp on my home server, I've added a module like this:</p>",
@@ -18,7 +18,7 @@
       "<p>&emsp;&emsp;enable = true;</p>",
       "<p>&emsp;&emsp;role = \"client\";</p>",
       "<p>&emsp;&emsp;settings = {</p>",
-      "<p>&emsp;&emsp;&emsp;serverAddr = \"VPS.public.IP.address\";</p>",
+      "<p>&emsp;&emsp;&emsp;serverAddr = \"vps.public.ip.address\";</p>",
       "<p>&emsp;&emsp;&emsp;serverPort = 7000;</p>",
       "<p>&emsp;&emsp;&emsp;auth.method = \"token\";</p>",
       "<p>&emsp;&emsp;&emsp;auth.token = \"my token\";</p>",
@@ -27,7 +27,7 @@
       "<p>&emsp;&emsp;&emsp;&emsp;{</p>",
       "<p>&emsp;&emsp;&emsp;&emsp;&emsp;name = \"my service\";</p>",
       "<p>&emsp;&emsp;&emsp;&emsp;&emsp;type = \"tcp\";</p>",
-      "<p>&emsp;&emsp;&emsp;&emsp;&emsp;localIP = \"local.IP.of.service\";</p>",
+      "<p>&emsp;&emsp;&emsp;&emsp;&emsp;localIP = \"local.ip.of.service\";</p>",
       "<p>&emsp;&emsp;&emsp;&emsp;&emsp;localPort = service port number;</p>",
       "<p>&emsp;&emsp;&emsp;&emsp;&emsp;remotePort = service port number;</p>",
       "<p>&emsp;&emsp;&emsp;&emsp;}</p>",
