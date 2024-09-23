@@ -1,1 +1,1 @@
-My (WIP) personal website
+[My personal website](https://yazo.ink)
