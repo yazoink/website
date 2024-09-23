@@ -28,6 +28,13 @@ $randomSongs = array(
 require "dynamic/functions.php";
 require "static/header.html";
 
+function printRandomImage() {
+  $imageDir = "images/random-images";
+  $images = scandir($imageDir);
+  $images = array_slice($images, 2);
+  echo "<p><img src='" . $imageDir . "/" . $images[array_rand($images)] . "' /></p>";
+}
+
 function printRandomSong($songList) {
   $song = array_rand($songList);
   $url = $songList[$song];
@@ -57,6 +64,7 @@ function printRandomSong($songList) {
       } else {
 	require "static/home.html";
       }
+      printRandomImage();
       ?>
     </div>
 

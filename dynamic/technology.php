@@ -65,4 +65,3 @@ printUrlList($services, true);
 <p><b>Browser:</b> Firefox with Arkenfox user.js</p>
 <p><b>Shell:</b> ZSH</p>
 <br />
-<p><img src='../images/thinkpad.webp' /></p>
