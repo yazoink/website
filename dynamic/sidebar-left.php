@@ -1,5 +1,5 @@
 <div class='sidebar-left'>
-  <img class='sidebar-img' src='images/face2.png' />
+  <img class='sidebar-img' src='images/face2.webp' />
   <h2>Navigation</h2>
   <?php printUrlList($navbarLinks, false); ?>
   <br />
