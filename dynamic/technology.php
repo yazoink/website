@@ -46,7 +46,7 @@ printUrlList($services, true);
 <p><b>Drives:</b> 1 TB SATA SSD and a 250(?) GB NVME SSD in the ExpressCard slot</p>
 <br />
 <h3>Desktop</h3>
-<p><b>OS:</b> Arch Linux (NixOS when I get around to it)</p>
+<p><b>OS:</b> NixOS</p>
 <p><b>CPU:</b> AMD Ryzen 5 5600</p>
 <p><b>CPU:</b> AMD Radeon RX 6600</p>
 <p><b>RAM:</b> 16 GB DDR4</p>
