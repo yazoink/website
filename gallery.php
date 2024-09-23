@@ -20,6 +20,8 @@ for ($i = 2; $i < $imageNum; $i++) {
   echo "<a href='images/art/" . $fullImages[$i] . "' target='_blank'><img class='gallery-img' src='images/art-thumbnails/" . $thumbnails[$i] . "' /></a>   ";
 }
 ?>
+<br />
+<br />
 </div>
 
 <?php
