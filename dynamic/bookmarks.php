@@ -60,3 +60,5 @@ for ($i = 0; $i < $categoryNum; $i++) {
   echo "<br />";
 }
 ?>
+
+<p><img src='../images/sketches2.webp' /></p>

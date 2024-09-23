@@ -81,3 +81,5 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   }
 }
 ?>
+
+<p><img src='../images/shapes.webp' /></p>
