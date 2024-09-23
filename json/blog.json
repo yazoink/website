@@ -38,7 +38,7 @@
       "</code>",
       "</div>",
       "<br />",
-      "<p>To enable it on the VPS I installed frp with <code>doas apk add frp</code> and wriote the following to <code>/etc/frp/frps.toml:</code></p>",
+      "<p>To enable it on the VPS I installed frp with <code>doas apk add frp</code> and wrote the following to <code>/etc/frp/frps.toml:</code></p>",
       "<br />",
       "<div class='code-block'>",
       "<code>",
