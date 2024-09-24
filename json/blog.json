@@ -3,7 +3,7 @@
     "title": "Idiot installs Etterna on NixOS",
     "entry": 3,
     "subheading": "If it works, it works",
-    "date": "24 September 2024",
+    "date": "25 September 2024",
     "categories": ["Technology", "NixOS", "Etterna", "Games", "Rhythm Games", "Linux"],
     "content": [
       "<p>I&#39;m going to preface this by saying that I&#39;ve only been using NixOS for about a month so I don&#39;t know what I&#39;m doing and there&#39;s probably a much better way to do this.</p>",
@@ -66,7 +66,7 @@
       "<br />",
       "<p>To my knowledge, all of Etterna&#39;s data directories are hard-coded to be in the same directory as the executable binary. On other distros this wouldn&#39;t be as much of a problem, put it wherever you want and symlink the executable to <code>/usr/bin</code>.</p>",
       "<br />",
-      "<p>On NixOS, since directories in <code>/nix/store</code> are immutable and read-only, you can&#39;t have the data directories in there because they need to be written to post-installation. This is a problem because if the Etterna binary isn&#39;t in the same directory as the data directories, it doesn&#39;t work.</p>",
+      "<p>On NixOS, since directories in <code>/nix/store</code> are immutable and read-only, you can&#39;t have the data directories in there because they need to be written to, post-installation. This is a problem because if the Etterna binary isn&#39;t in the same directory as the data directories, it doesn&#39;t work.</p>",
       "<br />",
       "<p>My solution to this was to create a systemd service that will run a script every rebuild. This script will copy all of Etterna&#39;s files in the nix store to <code>~/.local/share</code>, symlink all of the directories that need to be persistent to <code>~/.etterna</code> and create a <code>.desktop</code> file in <code>~/.local/share/applications</code>.</p>",
       "<br />",
