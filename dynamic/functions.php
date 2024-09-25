@@ -1,4 +1,18 @@
 <?php
+function printRecentBlogPosts($num, $json) {
+  echo "<h3>Recent blog posts</h3>";
+  echo "<ul>";
+  $i = 0;
+  foreach ($json as $blogEntry) {
+    if ($i == $num) {
+      break;
+    }
+    echo "<li><a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "'>" . $blogEntry['title'] . "</a></li>";
+    $i++;
+  }
+  echo "</ul>";
+}
+
 function printRandomImage() {
   $imageDir = "images/random-images";
   $images = scandir($imageDir);
