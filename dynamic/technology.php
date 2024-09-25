@@ -1,28 +1,8 @@
-<?php
-$services = array(
-  "Invidious (Youtube frontend)" => "$invidiousUrl",
-  "4get (search engine)" => "https://4get.$domain",
-  "SafeTwitch (Twitch frontend)" => "https://safetwitch.$domain",
-  "Redlib (Reddit frontend)" => "https://redlib.$domain",
-  "AnonymousOverflow (Stack Overflow frontend)" => "https://overflow.$domain",
-  "Quetre (Quora frontend)" => "https://quetre.$domain",
-  "Rimgo (Imgur frontend)" => "https://rimgo.$domain",
-);
-?>
-
 <h1>Technology...</h1>
 <p>What I use/own/host/etc.</p>
 <br />
 <h2>This Server</h2>
 <p>This website is currently being hosted on my home server which consists of two machines running NixOS tunneled to a Linode 2 GB VPS.</p>
-<br />
-<p>I also host a few instances of open source frontends for various popular websites. You can use addons like <a href='https://libredirect.github.io/' target='_blank'>Libredirect</a> to automatically redirect links from the original sites to the alternatives.</p>
-<br />
-<p>I'm currently hosting:</p>
-<?php
-printUrlListWithStatus($services, true);
-?>
-<p><i>("&#10003;" means the site is up and "&#10007;" means the site is down.)</i></p>
 <br />
 <h3>Server #1</h3>
 <p>This is the machine I host my Nextcloud server, Jellyfin server, Pi-hole and most of my docker containers on.</p>

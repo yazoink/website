@@ -6,7 +6,7 @@ $navbarLinks = array(
   "About Me" => "index.php?nav=About+Me",
   "Bookmarks" => "index.php?nav=Bookmarks",
   "Technology" => "index.php?nav=Technology",
-  "Services" => "index.php?nav=Technology",
+  "Services" => "index.php?nav=Services",
   "Blog" => "index.php?nav=Blog",
   "Art Gallery" => "gallery.php"
 );
@@ -52,6 +52,8 @@ function printRandomSong($songList) {
 	  require "dynamic/technology.php";
 	} elseif ($_GET['nav'] == 'Blog') {
 	  require "dynamic/blog.php";
+	} elseif ($_GET['nav'] == 'Services') {
+	  require "dynamic/services.php";
 	} else {
 	  echo "<h2>Page not found.</h2>";
 	}
