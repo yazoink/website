@@ -101,7 +101,7 @@
       "<div class='code-block'>",
       "<code><p>homeDir=&quot;/home/$3&quot;</p>",
       "<p>installDir=&quot;$homeDir/.local/share/Etterna&quot;</p>",
-      "<p>applicationsDir=&quot;$homeDir/.local/share/applications&quot</p>;",
+      "<p>applicationsDir=&quot;$homeDir/.local/share/applications&quot;</p>",
       "<br />",
       "<p>if [[ -d &quot;$installDir&quot; ]]; then</p>",
       "<p>&emsp;rm -rf &quot;$installDir&quot;</p>",
