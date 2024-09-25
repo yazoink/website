@@ -4,7 +4,7 @@ require "dynamic/functions.php";
 ?>
 <html lang="en">
   <head>
-    <meta charset="utf8" />
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="style/404.css" />
     <title>&#128924; yazoink &#128924;</title>
   </head>
