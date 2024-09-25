@@ -14,5 +14,6 @@ require "dynamic/functions.php";
 
 <?php
 printRandomImage();
+echo "<br />";
 require "dynamic/footer.php";
 ?>
