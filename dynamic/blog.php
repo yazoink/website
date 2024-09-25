@@ -3,22 +3,6 @@
 <br />
 
 <?php
-$jsonStr = file_get_contents('json/blog.json');
-$json = json_decode($jsonStr, true);
-
-function getCategories($json) {
-  $categories = array();
-  foreach ($json as $blogEntry) {
-    foreach ($blogEntry['categories'] as $category) {
-      if (!in_array($category, $categories)) {
-	$categories[$category] = "index.php?nav=Blog&cat=$category";
-      }
-    }
-  }
-  ksort($categories);
-  return $categories;
-}
-
 if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p><a href='index.php?nav=Blog'>&#11184; <b>Back</b></a></p>";
   echo "<br />";

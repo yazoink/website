@@ -1,39 +1,7 @@
 <?php
 require "dynamic/variables.php";
-
-$navbarLinks = array(
-  "Home" => "index.php",
-  "About Me" => "index.php?nav=About+Me",
-  "Bookmarks" => "index.php?nav=Bookmarks",
-  "Technology" => "index.php?nav=Technology",
-  "Services" => "index.php?nav=Services",
-  "Blog" => "index.php?nav=Blog",
-  "Art Gallery" => "gallery.php"
-);
-
-$socialLinks = array(
-  "Twitter" => "https://twitter.com/yazoink",
-  "Github" => "https://github.com/yazoink",
-  "Scratch" => "https://scratch.mit.edu/users/yazoink",
-  "Odysee" => "https://odysee.com/@yazoink:c"
-);
-
-$randomSongs = array(
-  "The Main Thing - Roxy Music" => "$invidiousUrl/watch?v=Ir1v6alVA7c",
-  "betelgeus - gjallarhornit" => "$invidiousUrl/watch?v=ffTm2Q6LFsE",
-  "Same Old Scene - Roxy Music" => "$invidiousUrl/watch?v=vXOgQN1a7bE",
-  "Clap Hands - Tom Waits" => "$invidiousUrl/watch?v=krjxyEme5vM",
-  "Hate Street Dialogue - Rodriguez" => "$invidiousUrl/watch?v=vyCnOhW_-2c"
-);
-
 require "dynamic/functions.php";
 require "static/header.html";
-
-function printRandomSong($songList) {
-  $song = array_rand($songList);
-  $url = $songList[$song];
-  echo "<p>&#129170; <a href='$url' target='_blank'>$song</a></p>";
-}
 ?>
 
 <body>

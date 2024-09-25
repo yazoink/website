@@ -1,4 +1,10 @@
 <?php
+function printRandomSong($songList) {
+  $song = array_rand($songList);
+  $url = $songList[$song];
+  echo "<p>&#129170; <a href='$url' target='_blank'>$song</a></p>";
+}
+
 function printRecentBlogPosts($num, $json) {
   echo "<h3>Recent blog posts</h3>";
   echo "<ul>";
@@ -11,6 +17,19 @@ function printRecentBlogPosts($num, $json) {
     $i++;
   }
   echo "</ul>";
+}
+
+function getCategories($json) {
+  $categories = array();
+  foreach ($json as $blogEntry) {
+    foreach ($blogEntry['categories'] as $category) {
+      if (!in_array($category, $categories)) {
+	$categories[$category] = "index.php?nav=Blog&cat=$category";
+      }
+    }
+  }
+  ksort($categories);
+  return $categories;
 }
 
 function printRandomImage() {
