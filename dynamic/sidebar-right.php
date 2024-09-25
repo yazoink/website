@@ -4,5 +4,5 @@
   <h4>Listen to a Random Song I Like</h4>
   <?php printRandomSong($randomSongs); ?>
   <br />
-  <img class="sidebar-img-gradient" src="images/gradient.webp" />
+  <!-- <img class="sidebar-img-gradient" src="images/gradient.webp" /> -->
 </div>
