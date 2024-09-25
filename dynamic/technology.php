@@ -20,8 +20,9 @@ $services = array(
 <br />
 <p>I'm currently hosting:</p>
 <?php
-printUrlList($services, true);
+printUrlListWithStatus($services, true);
 ?>
+<p><i>("&#10003;" means the site is up and "&#10007;" means the site is down.)</i></p>
 <br />
 <h3>Server #1</h3>
 <p>This is the machine I host my Nextcloud server, Jellyfin server, Pi-hole and most of my docker containers on.</p>

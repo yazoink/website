@@ -6,6 +6,7 @@ $navbarLinks = array(
   "About Me" => "index.php?nav=About+Me",
   "Bookmarks" => "index.php?nav=Bookmarks",
   "Technology" => "index.php?nav=Technology",
+  "Services" => "index.php?nav=Technology",
   "Blog" => "index.php?nav=Blog",
   "Art Gallery" => "gallery.php"
 );
@@ -27,13 +28,6 @@ $randomSongs = array(
 
 require "dynamic/functions.php";
 require "static/header.html";
-
-function printRandomImage() {
-  $imageDir = "images/random-images";
-  $images = scandir($imageDir);
-  $images = array_slice($images, 2);
-  echo "<p><img src='" . $imageDir . "/" . $images[array_rand($images)] . "' /></p>";
-}
 
 function printRandomSong($songList) {
   $song = array_rand($songList);

@@ -4,7 +4,7 @@
 .container {
     display: grid;
     grid-template-columns: 140px 510px 240px;
-    grid-template-rows: 90px 445px 50px;
+    grid-template-rows: 90px 460px 50px;
     column-gap: 25px;
     justify-content: center;
     height: 100%;
