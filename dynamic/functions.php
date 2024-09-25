@@ -37,8 +37,8 @@ function printUrlListWithStatus($urlList, $openInNewTab) {
 
 function siteIsUp($url) {
   $ch = curl_init($url);
-  curl_setopt($ch, CURLOPT_NOBODY, true);
-  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 5);
   curl_exec($ch);
   $ret = curl_getinfo($ch, CURLINFO_HTTP_CODE);
   curl_close($ch);
