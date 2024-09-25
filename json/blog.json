@@ -8,7 +8,7 @@
     "content": [
       "<p>I&#39;m going to preface this by saying that I&#39;ve only been using NixOS for about a month so I don&#39;t know what I&#39;m doing and there&#39;s probably a much better way to do this.</p>",
       "<br />",
-      "<p>I was really surprised to find that Etterna isn&#39;t in nixpkgs, despite it being the largest linux software repository. Before switching to nix I was using Arch and Etterna is in the AUR so it was as easy as one command to install it.</p>",
+      "<p>I was really surprised to find that Etterna isn&#39;t in nixpkgs, despite it being the largest linux software repository. Before switching to Nix I was using Arch, and Etterna is in the AUR so it was as easy as one command to install it.</p>",
       "<br />",
       "<p>It seems that not many people have attempted to install Etterna on NixOS, probably for a good reason. This process was very long and annoying and I&#39;m mainly writing this to save anyone else who might try this a few hours and a headache.</p>",
       "<br />",
