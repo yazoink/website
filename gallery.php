@@ -1,6 +1,6 @@
 <?php
 require "dynamic/variables.php";
-require "static/header.html";
+require "dynamic/header.php";
 ?>
 <div class='gallery-container' />
 <a href="index.php"><img align="right" src="images/logo.webp" /></a>
