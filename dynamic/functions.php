@@ -97,4 +97,26 @@ function siteIsUp($url) {
     return false;
   }
 }
+
+function printServices($services) {
+  echo "<table>";
+  echo "<thead>";
+  echo "<th>Service</th>";
+  echo "<th>Status</th>";
+  echo "</thead>";
+  echo "<tbody>";
+  foreach ($services as $description => $url) {
+    echo "<tr>";
+    echo "<td><a href='$url' target='_blank'>$description</a></td>";
+    if (siteIsUp($url)) {
+      $statusIndicator = "&#10003;";
+    } else {
+      $statusIndicator = "&#10007;";
+    }
+    echo "<td>$statusIndicator</td>";
+    echo "</tr>";
+  }
+  echo "</tbody>";
+  echo "</table>";
+}
 ?>
