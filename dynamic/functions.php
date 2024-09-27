@@ -1,10 +1,4 @@
 <?php
-function printRandomSong($songList) {
-  $song = array_rand($songList);
-  $url = $songList[$song];
-  echo "<p>&#129170; <a href='$url' target='_blank'>$song</a></p>";
-}
-
 function randomFromArrayButton($array, $buttonText) {
   $randIndex = array_rand($array);
   $randUrl =  $array[$randIndex];
@@ -54,23 +48,6 @@ function printUrlList($urlList, $openInNewTab) {
       echo "<li><a href='$url' target='_blank'>$title</a></li>";
     } else {
       echo "<li><a href='$url'>$title</a></li>";
-    }
-  }
-  echo "</ul>";
-}
-
-function printUrlListWithStatus($urlList, $openInNewTab) {
-  echo "<ul>";
-  foreach ($urlList as $title => $url) {
-    if (siteIsUp($url)) {
-      $statusIndicator = "<span class='green'>&#10003;</span>";
-    } else {
-      $statusIndicator = "<span class='red'>&#10007;</span>";
-    }
-    if ($openInNewTab == true) {
-      echo "<li><a href='$url' target='_blank'>$title $statusIndicator</a></li>";
-    } else {
-      echo "<li><a href='$url'>$title $statusIndicator</a></li>";
     }
   }
   echo "</ul>";
