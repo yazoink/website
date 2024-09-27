@@ -1,4 +1,5 @@
 <script>
+console.log("js worky?");
 function openInNewTab(url) {
   window.open(url, "_blank");
 }
