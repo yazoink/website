@@ -1,9 +1,3 @@
-<script>
-function openInNewTab(url) {
-  window.open(url, "_blank");
-}
-</script>
-
 <?php
 function printRandomSong($songList) {
   $song = array_rand($songList);
