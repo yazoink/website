@@ -1,8 +1,24 @@
+<script>
+function openInNewTab(url) {
+  window.open(url, "_blank");
+}
+</script>
+
 <?php
 function printRandomSong($songList) {
   $song = array_rand($songList);
   $url = $songList[$song];
   echo "<p>&#129170; <a href='$url' target='_blank'>$song</a></p>";
+}
+
+function imFeelingLucky($bookmarks) {
+  $randomCategoryIndex = array_rand($bookmarks);
+  $randomCategory = $bookmarks[$randomCategoryIndex];
+  $randomBookmarkIndex = array_rand($randomCategory);
+  $randomBookmark = $randomCategory[$randomBookmarkIndex];
+  echo "<p><button onclick=\"openInNewTab('$randomBookmark')\">";
+  echo "I'm feeling lucky!";
+  echo "</button></p>";
 }
 
 function printRecentBlogPosts($num, $json) {
@@ -24,7 +40,7 @@ function getCategories($json) {
   foreach ($json as $blogEntry) {
     foreach ($blogEntry['categories'] as $category) {
       if (!in_array($category, $categories)) {
-	$categories[$category] = "index.php?nav=Blog&cat=$category";
+	      $categories[$category] = "index.php?nav=Blog&cat=$category";
       }
     }
   }

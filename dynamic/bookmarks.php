@@ -3,10 +3,11 @@
 <br />
 
 <?php
-$categoryNum = count($bookmarkCategories);
-for ($i = 0; $i < $categoryNum; $i++) {
-  echo "<h2>$bookmarkCategories[$i]</h2>";
-  printUrlList($bookmarks[$i], true);
+imFeelingLucky($bookmarks);
+echo "<br />";
+foreach ($bookmarks as $category => $bookmarksCategory) {
+  echo "<h2>" . $category . "</h2>";
+  printUrlList($bookmarksCategory, true);
   echo "<br />";
 }
 ?>

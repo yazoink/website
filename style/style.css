@@ -108,3 +108,11 @@ h1, h2, h3, h4, ul, p {
 code {
   font-family: terminus;
 }
+
+button {
+  border: 1px solid var(--fg);
+  color: var(--fg);
+  background-color: var(--bg);
+  font-family: redaction;
+  padding: 5px;
+}
