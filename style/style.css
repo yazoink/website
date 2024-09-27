@@ -75,6 +75,14 @@
   border: 1px dotted var(--fg);
 }
 
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
 html {
   background-color: var(--bg);
 }
@@ -93,6 +101,10 @@ body {
 a {
   color: var(--fg);
 }
+
+/* a:hover {
+  color: var(--fg-hover);
+} */
 
 ul {
   list-style-type: square;
@@ -116,4 +128,9 @@ button {
   font-family: redaction;
   padding: 5px;
   font-size: 1em;
+}
+
+button:hover {
+  color: var(--fg-hover);
+  border-color: var(--fg-hover);
 }

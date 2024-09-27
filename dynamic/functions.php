@@ -16,7 +16,7 @@ function imFeelingLucky($bookmarks) {
   $randomCategory = $bookmarks[$randomCategoryIndex];
   $randomBookmarkIndex = array_rand($randomCategory);
   $randomBookmark = $randomCategory[$randomBookmarkIndex];
-  echo "<p><button onclick=\"openInNewTab('$randomBookmark')\">";
+  echo "<p><button id='html-button' onclick=\"openInNewTab('$randomBookmark')\">";
   echo "I'm feeling lucky!";
   echo "</button></p>";
 }
@@ -71,9 +71,9 @@ function printUrlListWithStatus($urlList, $openInNewTab) {
   echo "<ul>";
   foreach ($urlList as $title => $url) {
     if (siteIsUp($url)) {
-      $statusIndicator = "&#10003;";
+      $statusIndicator = "<span class='green'>&#10003;</span>";
     } else {
-      $statusIndicator = "&#10007;";
+      $statusIndicator = "<span class='red'>&#10007;</span>";
     }
     if ($openInNewTab == true) {
       echo "<li><a href='$url' target='_blank'>$title $statusIndicator</a></li>";

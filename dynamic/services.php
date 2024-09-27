@@ -3,9 +3,10 @@
 <br />
 <div class='code-block'>
 <code><p>Key:</p>
-<p>&emsp;&#10003;: service is up</p>
-<p>&emsp;&#10007;: service is down</p>
-<p><i>(it's not always accurate but it's close)</i></p></code>
+<p>&emsp;<span class='green'>&#10003;</span>: service is up</p>
+<p>&emsp;<span class='red'>&#10007;</span>: service is down</p>
+<br />
+<p>(it's not always accurate but it's close)</p></code>
 </div>
 <br />
 <p>I'm currently hosting:</p>
