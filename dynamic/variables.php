@@ -72,7 +72,7 @@ $socialLinks = array(
   "Odysee" => "https://odysee.com/@yazoink:c"
 );
 
-$randomSongs = array(
+$songs = array(
   "The Main Thing - Roxy Music" => "$invidiousUrl/watch?v=Ir1v6alVA7c",
   "betelgeus - gjallarhornit" => "$invidiousUrl/watch?v=ffTm2Q6LFsE",
   "Same Old Scene - Roxy Music" => "$invidiousUrl/watch?v=vXOgQN1a7bE",

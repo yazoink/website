@@ -5,13 +5,11 @@ function printRandomSong($songList) {
   echo "<p>&#129170; <a href='$url' target='_blank'>$song</a></p>";
 }
 
-function imFeelingLucky($bookmarks) {
-  $randomCategoryIndex = array_rand($bookmarks);
-  $randomCategory = $bookmarks[$randomCategoryIndex];
-  $randomBookmarkIndex = array_rand($randomCategory);
-  $randomBookmark = $randomCategory[$randomBookmarkIndex];
-  echo "<p><button id='html-button' onclick=\"openInNewTab('$randomBookmark')\">";
-  echo "I'm feeling lucky!";
+function randomFromArrayButton($array, $buttonText) {
+  $randIndex = array_rand($array);
+  $randUrl =  $array[$randIndex];
+  echo "<p><button id='html-button' onclick=\"openInNewTab('$randUrl')\">";
+  echo "$buttonText";
   echo "</button></p>";
 }
 
