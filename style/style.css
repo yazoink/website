@@ -118,7 +118,7 @@ code {
 }
 
 button {
-  border: 1px solid var(--fg);
+  border: 1px dashed var(--fg);
   color: var(--fg);
   background-color: var(--bg);
   font-family: redaction;
