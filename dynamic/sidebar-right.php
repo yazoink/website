@@ -5,7 +5,11 @@
   <?php #printRandomSong($randomSongs); ?>
   <br />
   <?php 
-    printRecentBlogPosts(3, $json);
+    printRecentBlogPosts(2, $json);
+    echo "<br />";
+    echo "<div class='center'>";
+    randomFromArrayButton($songs, "Song recommendation button");
+    echo "</div>";
   ?>
   <!-- <img class="sidebar-img-gradient" src="images/gradient.webp" /> -->
 </div>
