@@ -163,5 +163,6 @@ $songs = array(
   "little hornets - gjallarhornit" => "$invidiousUrl/watch?v=kSHxsRUMw7I",
   "mirror mirror - gjallarhornit" => "$invidiousUrl/watch?v=hSsDAk1X5fc",
   "babushka - gjallarhornit" => "$invidiousUrl/watch?v=XBsgTMk4ItU",
+  "love - gjallarhornit" => "$invidiousUrl/watch?v=cHqzU9VQyZ8",
 );
 ?>
