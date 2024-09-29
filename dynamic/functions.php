@@ -2,7 +2,7 @@
 function randomFromArrayButton($array, $buttonText, $buttonId) {
   $valuesArray = array_values($array);
   $jsonArray = json_encode($valuesArray);
-  echo "<p><button id='$buttonId' data-urls='$jsonArray'>$buttonText</button></p>";
+  echo "<p><button id='$buttonId' class='html-button' data-urls='$jsonArray'><span>$buttonText</span></button></p>";
 }
 
 function printRecentBlogPosts($num, $json) {
