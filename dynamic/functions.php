@@ -4,14 +4,14 @@ function randomFromArrayButton($array, $buttonText, $buttonId) {
   $jsonArray = json_encode($valuesArray);
   echo "<p><button id='$buttonId'>$buttonText</button></p>";
     echo "<script nonce='jquery'>
-        document.addEventListener('DOMContentLoaded', function() {
-            var urls_$buttonId = $jsonArray;
-            var button = document.getElementById('$buttonId');
-            button.addEventListener('click', function() {
-                var randomUrl = urls_" . $buttonId . "[Math.floor(Math.random() * urls_$buttonId.length)];
-                window.open(randomUrl, '_blank');
-            });
+      document.addEventListener('DOMContentLoaded', function() {
+        var urls_$buttonId = $jsonArray;
+        var button = document.getElementById('$buttonId');
+        button.addEventListener('click', function() {
+          var randomUrl = urls_" . $buttonId . "[Math.floor(Math.random() * urls_$buttonId.length)];
+          window.open(randomUrl, '_blank');
         });
+      });
     </script>";
 }
 
