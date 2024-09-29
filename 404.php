@@ -8,8 +8,10 @@ require "dynamic/functions.php";
     <meta charset="utf-8" />
     <title>&#128924; yazoink &#128924;</title>
     <style>
-      @import url("style/colors.css");
-      @import url("style/fonts.css");
+      <?php
+      require "style/colors.css";
+      require "style/fonts.css";
+      ?>
 
       html {
           background-color: var(--bg);
