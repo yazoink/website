@@ -1,15 +1,16 @@
 <?php
-function randomFromArrayButton($array, $buttonText) {
+function randomFromArrayButton($array, $buttonText, $buttonId) {
   $valuesArray = array_values($array);
   $jsonArray = json_encode($valuesArray);
-  echo "<p><button id='html-button' onclick='openInNewTab()'>$buttonText</button></p>";
+  echo "<p><button id='$buttonId' onclick='openInNewTab_$buttonId()'>$buttonText</button></p>";
   echo "<script>
-    var urls = $jsonArray;
-    function openInNewTab() {
-      var randomUrl = urls[Math.floor(Math.random() * urls.length)];
-      console.log('Random URL selected:', randomUrl);
-      window.open(randomUrl, '_blank');
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+      var urls_$buttonId = $jsonArray;
+      window['openInNewTab_$buttonId'] = function() {
+        var randomUrl = urls_" . $buttonId . "[Math.floor(Math.random() * urls_$buttonId.length)];
+        window.open(randomUrl, '_blank');
+      }
+    });
   </script>";
 }
 

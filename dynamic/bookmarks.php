@@ -5,7 +5,7 @@
 <?php
 $randBookmarkCategoryIndex = array_rand($bookmarks);
 $randBookmarkCategory = $bookmarks[$randBookmarkCategoryIndex];
-randomFromArrayButton($randBookmarkCategory, "I'm feeling lucky");
+randomFromArrayButton($randBookmarkCategory, "I'm feeling lucky", "bookmarkButton");
 echo "<br />";
 foreach ($bookmarks as $category => $bookmarksCategory) {
   echo "<h2>" . $category . "</h2>";

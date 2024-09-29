@@ -8,7 +8,7 @@
     printRecentBlogPosts(2, $json);
     echo "<br />";
     echo "<div class='center'>";
-    randomFromArrayButton($songs, "Song recommendation button");
+    randomFromArrayButton($songs, "Song recommendation button", "songButton");
     echo "</div>";
   ?>
   <!-- <img class="sidebar-img-gradient" src="images/gradient.webp" /> -->
