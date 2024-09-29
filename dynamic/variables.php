@@ -39,10 +39,6 @@ $bookmarks = array(
     # graphics
     "Geocities GIF archive" => "https://gifcities.org/",
   ],
-  "Audio" => [
-    # audio
-    "AI song remixer that's actually good" => "https://rave.dj/",
-  ],
   "Games" => [
     # games
     "Klondike Solitaire" => "https://freesolitaire.win/",
