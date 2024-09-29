@@ -20,7 +20,7 @@
 </br>
 <h2>My Daily Drivers</h2>
 <h3>Laptop</h3>
-<p>My current laptop is a ThinkPad T430 I rescued from a scrap pile. I have the <a href='https://github.com/merge/skulls'>Skulls</a> Coreboot image installed on it and I've done a variety of other upgrades.</p>
+<p>My current laptop is a ThinkPad T430 I rescued from a scrap pile. I have the <a href='https://github.com/merge/skulls' target='_blank'>Skulls</a> Coreboot image installed on it and I've done a variety of other upgrades.</p>
 <p><b>OS:</b> NixOS</p>
 <p><b>CPU:</b> Intel Core i7-3632QM</p>
 <p><b>RAM:</b> 16 GB DDR3</p>
