@@ -1,10 +1,16 @@
 <?php
 function randomFromArrayButton($array, $buttonText) {
-  $randIndex = array_rand($array);
-  $randUrl =  $array[$randIndex];
-  echo "<p><button id='html-button' onclick=\"openInNewTab('$randUrl')\">";
-  echo "$buttonText";
-  echo "</button></p>";
+  $valuesArray = array_values($array);
+  $jsonArray = json_encode($valuesArray);
+  echo "<p><button id='html-button' onclick='openInNewTab()'>$buttonText</button></p>";
+  echo "<script>
+    var urls = $jsonArray;
+    function openInNewTab() {
+      var randomUrl = urls[Math.floor(Math.random() * urls.length)];
+      console.log('Random URL selected:', randomUrl);
+      window.open(randomUrl, '_blank');
+    }
+  </script>";
 }
 
 function printRecentBlogPosts($num, $json) {
