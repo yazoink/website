@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +8,7 @@
   <title>&#128924; yazoink &#128924;</title>
   <?php
   if (array_key_exists('nav', $_GET) && $_GET['nav'] == 'Services') {
-    echo "<script src='https://code.jquery.com/jquery-3.5.1.js'></script>";
+    echo "<script src='js/jquery-3.7.1.min.js'></script>";
   } 
   ?>
 </head>
