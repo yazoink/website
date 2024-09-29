@@ -5,8 +5,11 @@ function randomFromArrayButton($array, $buttonText, $buttonId) {
   echo "<p><button id='$buttonId'> $buttonText </button></p>";
   echo "<script>
     document.addEventListener('DOMContentLoaded', function() {
-      var urls = $jsonArray; // Use the JSON encoded array
-      setupRandomButton('$buttonId', urls);
+      var urls = $jsonArray;
+      document.getElementById('$buttonId').addEventListener('click', function() {
+        var randomUrl = urls[Math.floor(Math.random() * urls.length)];
+        window.open(randomUrl, '_blank');
+      });
     });
   </script>";
 }

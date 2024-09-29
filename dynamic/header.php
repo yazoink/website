@@ -9,7 +9,7 @@
   <script src="js/random-button.js" defer></script>
   <?php
   if (array_key_exists('nav', $_GET) && $_GET['nav'] == 'Services') {
-    echo "<script src='js/jquery-3.7.1.min.js'></script>";
+    echo "<script src='js/jquery-3.7.1.min.js' defer></script>";
   } 
   ?>
 </head>
