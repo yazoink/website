@@ -8,10 +8,8 @@ require "dynamic/functions.php";
     <meta charset="utf-8" />
     <title>&#128924; yazoink &#128924;</title>
     <style>
-      <?php
-      require "style/colors.css";
-      require "style/fonts.css";
-      ?>
+      @import url("style/colors.css");
+      @import url("style/fonts.css");
 
       html {
           background-color: var(--bg);
@@ -46,8 +44,15 @@ require "dynamic/functions.php";
     <h1>403 lolnicetry</h1>
     <h2>Go back <a href='index.php'>home</a>.</h2>
 
-<?php
-printRandomImage();
-echo "<br />";
-require "dynamic/footer.php";
-?>
+  <?php
+  printRandomImage();
+  echo "<br />";
+  ?>
+
+  <div class="footer">
+    <p>yazoink 2022-2024 &#128924; <a href='mailto:yoinky@cock.li'>yoinky@cock.li</a></p>
+  </div>
+</body>
+</html>
+
+

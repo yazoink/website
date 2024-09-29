@@ -40,12 +40,19 @@ require "dynamic/functions.php";
       }
     </style>
   </head>
+  <body>
+    <h1>500 Internal server error...</h1>
+    <h2>Go back <a href='index.php'>home</a>.</h2>
 
-<h1>500 Internal server error!</h1>
-<h2>Go back <a href='index.php'>home</a>.</h2>
+  <?php
+  printRandomImage();
+  echo "<br />";
+  ?>
 
-<?php
-printRandomImage();
-echo "<br />";
-require "dynamic/footer.php";
-?>
+  <div class="footer">
+    <p>yazoink 2022-2024 &#128924; <a href='mailto:yoinky@cock.li'>yoinky@cock.li</a></p>
+  </div>
+</body>
+</html>
+
+
