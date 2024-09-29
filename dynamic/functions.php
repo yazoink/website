@@ -2,17 +2,16 @@
 function randomFromArrayButton($array, $buttonText, $buttonId) {
   $valuesArray = array_values($array);
   $jsonArray = json_encode($valuesArray);
-  echo "<p><button id='$buttonId'>$buttonText</button></p>";
-  echo "<script nonce='jquery'>
-      document.addEventListener('DOMContentLoaded', function() {
-        var urls = $jsonArray;
-        var button = document.getElementById('$buttonId');
-        button.addEventListener('click', function() {
-          var randomUrl = urls[Math.floor(Math.random() * urls.length)];
-          window.open(randomUrl, '_blank');
-        });
-      });
-    </script>";
+  echo "<p><button id='$buttonId' onclick='openInNewTab_$buttonId()'>$buttonText</button></p>";
+  echo "<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var urls_$buttonId = $jsonArray;
+      window['openInNewTab_$buttonId'] = function() {
+        var randomUrl = urls_" . $buttonId . "[Math.floor(Math.random() * urls_$buttonId.length)];
+        window.open(randomUrl, '_blank');
+      }
+    });
+  </script>";
 }
 
 function printRecentBlogPosts($num, $json) {
