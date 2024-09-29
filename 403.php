@@ -42,9 +42,9 @@ require "dynamic/functions.php";
       }
     </style>
   </head>
-
-<h1>403 lolnicetry</h1>
-<h2>Go back <a href='index.php'>home</a>.</h2>
+  <body>
+    <h1>403 lolnicetry</h1>
+    <h2>Go back <a href='index.php'>home</a>.</h2>
 
 <?php
 printRandomImage();
