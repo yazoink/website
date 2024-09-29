@@ -3,12 +3,12 @@ function randomFromArrayButton($array, $buttonText, $buttonId) {
   $valuesArray = array_values($array);
   $jsonArray = json_encode($valuesArray);
   echo "<p><button id='$buttonId'>$buttonText</button></p>";
-    echo "<script nonce='jquery'>
+  echo "<script nonce='jquery'>
       document.addEventListener('DOMContentLoaded', function() {
-        var urls_$buttonId = $jsonArray;
+        var urls = $jsonArray;
         var button = document.getElementById('$buttonId');
         button.addEventListener('click', function() {
-          var randomUrl = urls_" . $buttonId . "[Math.floor(Math.random() * urls_$buttonId.length)];
+          var randomUrl = urls[Math.floor(Math.random() * urls.length)];
           window.open(randomUrl, '_blank');
         });
       });
