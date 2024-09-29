@@ -2,7 +2,7 @@
 function randomFromArrayButton($array, $buttonText, $buttonId) {
   $valuesArray = array_values($array);
   $jsonArray = json_encode($valuesArray);
-  echo "<p><button id='$buttonId' onclick='openInNewTab_$buttonId()'>$buttonText</button></p>";
+  echo "<p><button id='$buttonId' nonce='jquery' onclick='openInNewTab_$buttonId()'>$buttonText</button></p>";
   echo "<script nonce='jquery'>
     document.addEventListener('DOMContentLoaded', function() {
       var urls_$buttonId = $jsonArray;
