@@ -2,6 +2,7 @@
 require "dynamic/variables.php";
 require "dynamic/functions.php";
 ?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
