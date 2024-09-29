@@ -2,17 +2,11 @@
 function randomFromArrayButton($array, $buttonText, $buttonId) {
   $valuesArray = array_values($array);
   $jsonArray = json_encode($valuesArray);
-  echo "<p><button id='$buttonId' onclick='openInNewTab_$buttonId()'>$buttonText</button></p>";
+  echo "<p><button id='$buttonId'> $buttonText </button></p>";
   echo "<script>
-    function openInNewTab(url) {
-      window.open(url, '_blank');
-    }
     document.addEventListener('DOMContentLoaded', function() {
-      var urls_$buttonId = $jsonArray;
-      window['openInNewTab_$buttonId'] = function() {
-        var randomUrl = urls_" . $buttonId . "[Math.floor(Math.random() * urls_$buttonId.length)];
-        window.open(randomUrl, '_blank');
-      }
+      var urls = $jsonArray; // Use the JSON encoded array
+      setupRandomButton('$buttonId', urls);
     });
   </script>";
 }
