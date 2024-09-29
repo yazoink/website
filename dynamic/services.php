@@ -1,4 +1,4 @@
-<script nonce="randomValue">
+<script>
 $(document).ready(function(){
   setInterval(function(){
     $("#refresh").load(window.location.href + " #refresh" );
