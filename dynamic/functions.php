@@ -4,6 +4,9 @@ function randomFromArrayButton($array, $buttonText, $buttonId) {
   $jsonArray = json_encode($valuesArray);
   echo "<p><button id='$buttonId' onclick='openInNewTab_$buttonId()'>$buttonText</button></p>";
   echo "<script>
+    function openInNewTab(url) {
+      window.open(url, '_blank');
+    }
     document.addEventListener('DOMContentLoaded', function() {
       var urls_$buttonId = $jsonArray;
       window['openInNewTab_$buttonId'] = function() {

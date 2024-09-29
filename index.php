@@ -4,7 +4,6 @@ require "dynamic/functions.php";
 require "dynamic/header.php";
 ?>
 <body>
-  <?php require "js/functions.js"; ?>
   <div class='container'>
     <?php require "static/title.html"; ?>
     <div class="content">
