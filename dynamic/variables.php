@@ -38,6 +38,7 @@ $bookmarks = array(
     "Useful terminal commands" => "https://www.commandlinefu.com/commands/browse",
     "W3Schools (programming tutorials with a focus on webdev)" => "https://www.w3schools.com/",
     "JavaScript tutorial that I need to read" => "https://javascript.info/",
+    "Bitmap font maker" => "https://www.pentacom.jp/pentacom/bitfontmaker2/",
   ],
   "Graphics" => [
     # graphics
