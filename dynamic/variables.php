@@ -172,5 +172,13 @@ $songs = array(
   "mirror mirror - gjallarhornit" => "$invidiousUrl/watch?v=hSsDAk1X5fc",
   "babushka - gjallarhornit" => "$invidiousUrl/watch?v=XBsgTMk4ItU",
   "love - gjallarhornit" => "$invidiousUrl/watch?v=cHqzU9VQyZ8",
+  "Fingertips - The Brian Jonestown Massacre" => "$invidiousUrl/watch?v=LimAvLeIaEo",
+  "Psychedelic Sunday - The Brian Jonestown Massacre" => "$invidiousUrl/watch?v=BSfc6tDg2W0",
+  "Чернозём - МаМаМа" => "$invidiousUrl/watch?v=bszEVwWIaFs",
+  "Чернозём - Паводок" => "$invidiousUrl/watch?v=KUnDIrvc7GA",
+  "Чернозём - Нет дома" => "$invidiousUrl/watch?v=0R3GKEMAkCE",
+  "Соломенные еноты - Человек - забавная скотина" => "$invidiousUrl/watch?v=Bcjy_P79v94",
+  "Leonard Cohen - Jazz Police" => "$invidiousUrl/watch?v=j7YebrCuqsU",
+  "Leonard Cohen - So Long, Marianne" => "$invidiousUrl/watch?v=3XzAjfwQtvM",
 );
 ?>
