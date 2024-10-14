@@ -9,7 +9,7 @@
 <p><b>CPU:</b> Intel Core i5-8400</p>
 <p><b>RAM:</b> 8 GB DDR4</p>
 <p><b>GPU:</b> Nvidia GTX 750</p>
-<p><b>Drives:</b> There's like 4 of them I'll make a list later</p>
+<p><b>Drives:</b> There are like 4 of them I'll make a list later</p>
 </br>
 <h3>Server #2</h3>
 <p>This is the server hosting this website! I also use it to fuck around with Ollama although it's pretty slow since the GPU is fairly old.</p>
@@ -29,7 +29,7 @@
 <h3>Desktop</h3>
 <p><b>OS:</b> NixOS</p>
 <p><b>CPU:</b> AMD Ryzen 5 5600</p>
-<p><b>CPU:</b> AMD Radeon RX 6600</p>
+<p><b>GPU:</b> AMD Radeon RX 6600</p>
 <p><b>RAM:</b> 16 GB DDR4</p>
 <p><b>Drives:</b> like a lot</p>
 <br />
@@ -41,7 +41,7 @@
 <h2>My Favourite Software</h2>
 <p><b>OS:</b> NixOS</p>
 <p><b>WM/DE:</b> Hyprland</p>
-<p><b>Terminal:</b> Alacritty</p>
+<p><b>Terminal:</b> Foot</p>
 <p><b>IDE:</b> I go between Neovim and Vscodium</p>
 <p><b>Browser:</b> Firefox with Arkenfox user.js</p>
 <p><b>Shell:</b> ZSH</p>
