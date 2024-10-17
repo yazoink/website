@@ -1,3 +1,5 @@
+document.getElementById("copy-url").addEventListener("click", copyURL);
+
 const delay = ms => new Promise(res => setTimeout(res, ms));
 const copyURL = async (url) => {
   navigator.clipboard.writeText(url);
