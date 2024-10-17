@@ -1,4 +1,3 @@
-<script src='js/copy-url.js'></script>
 <?php
 if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p>
@@ -67,3 +66,4 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   }
 }
 ?>
+<script src='js/copy-url.js'></script>
