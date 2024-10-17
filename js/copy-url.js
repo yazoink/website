@@ -4,7 +4,7 @@ const copyURL = async () => {
   console.log(url);
   navigator.clipboard.writeText(url);
   document.getElementById("copy-url").innerHTML = "<b>&#x2398; Copied!</b>"; 
-  await delay(2000);
+  await delay(1000);
   document.getElementById("copy-url").innerHTML = "<b>&#x2398; Copy URL</b>"; 
 }
 
