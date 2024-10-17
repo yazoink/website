@@ -1,7 +1,18 @@
-
+<script>
+  const delay = ms => new Promise(res => setTimeout(res, ms));
+  const copyURL = async () => {
+    url = `${window.location.hostname}/index.html?nav=blog&entry=${get['entry']}`;
+    navigator.clipboard.writeText(url);
+    document.getElementById("copy-url").innerHTML = "&#x2398; Copied!"; 
+    await delay(2000);
+    document.getElementById("copy-url").innerHTML = "&#x2398; Copy URL"; 
+  }
+</script>
 <?php
 if (array_key_exists('entry', $_GET)) { # if blog post specified
-  echo "<p><a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a></p>";
+  echo "<p>
+    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "' onclick='copyURL()' id='copy-url'>&#x2398; Copy URL</a> | <a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a>
+  </p>";
   echo "<br />";
   $found = false;
   foreach ($json as $blogEntry) {
