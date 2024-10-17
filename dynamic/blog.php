@@ -11,7 +11,7 @@
 <?php
 if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p>
-    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "' onclick='copyURL()' id='copy-url'>&#x2398; Copy URL</a> | <a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a>
+    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='index.php?nav=Blog&entry=" . $_GET['entry'] . "' onclick='copyURL()' id='copy-url'>&#x2398; Copy URL</a> | <a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a>
   </p>";
   echo "<br />";
   $found = false;
