@@ -27,6 +27,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   if ($found == false) {
     echo "<p><b>Entry not found :(</b></p>";
   }
+  echo "<script src='js/copy-url.js'></script>";
 } else {
   echo "<h1>Blog...</h1>";
   echo "<p><a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a></p>";
@@ -66,4 +67,3 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   }
 }
 ?>
-<script src='js/copy-url.js'></script>
