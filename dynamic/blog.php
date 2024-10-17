@@ -11,8 +11,8 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
     if ($blogEntry['entry'] == $_GET['entry']) {
       $found = true;
       echo "<h2><a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "'>" . $blogEntry['title'] . "</a></h2>";
+      echo "<h3>" . $blogEntry['subheading'] . "</h3>";
       echo "<p><i>" . $blogEntry['date'] . "</i></p>";
-      echo "<p><b>" . $blogEntry['subheading'] . "</b></p>";
       echo "<br />";
       foreach ($blogEntry['content'] as $paragraph) {
 	echo "$paragraph";
