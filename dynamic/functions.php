@@ -58,7 +58,7 @@ function siteIsUp($url) {
   curl_exec($ch);
   $ret = curl_getinfo($ch, CURLINFO_HTTP_CODE);
   curl_close($ch);
-  if ($ret == 200) {
+  if ($ret == 200 || $ret == 302) {
     return true;
   } else {
     return false;

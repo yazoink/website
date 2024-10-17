@@ -1,7 +1,7 @@
 <?php
 require "dynamic/variables.php";
 require "dynamic/functions.php";
-require "dynamic/header.php";
+require "static/header.html";
 ?>
 <body>
   <div class='container'>
