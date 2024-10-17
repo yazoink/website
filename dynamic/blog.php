@@ -1,7 +1,7 @@
 <script>
   const delay = ms => new Promise(res => setTimeout(res, ms));
   const copyURL = async () => {
-    url = `${window.location.hostname}/index.html?nav=blog&entry=${get['entry']}`;
+    url = "<?php echo "index.php?nav=Blog&entry=" . $_GET['entry']; ?>";
     navigator.clipboard.writeText(url);
     document.getElementById("copy-url").innerHTML = "&#x2398; Copied!"; 
     await delay(2000);
