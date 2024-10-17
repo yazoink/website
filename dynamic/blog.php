@@ -1,13 +1,4 @@
-<script>
-  const delay = ms => new Promise(res => setTimeout(res, ms));
-  const copyURL = async () => {
-    url = "<?php echo "index.php?nav=Blog&entry=" . $_GET['entry']; ?>";
-    navigator.clipboard.writeText(url);
-    document.getElementById("copy-url").innerHTML = "&#x2398; Copied!"; 
-    await delay(2000);
-    document.getElementById("copy-url").innerHTML = "&#x2398; Copy URL"; 
-  }
-</script>
+<script src='js/copy-url.js'></script>
 <?php
 if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p>
