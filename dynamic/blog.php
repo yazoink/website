@@ -28,7 +28,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   }
 } else {
   echo "<h1>Blog...</h1>";
-  echo "<p>Add my <a href='rss.php'>RSS feed</a>!</p>";
+  echo "<p><b><img src='images/rss.webp' width='16px'></img> RSS</b></p>";
   echo "<br />";
   $categories = getCategories($json);
   echo "<p><b>Categories</b>: ";
