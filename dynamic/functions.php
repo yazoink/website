@@ -6,7 +6,7 @@ function randomFromArrayButton($array, $buttonText, $buttonId) {
 }
 
 function printRecentBlogPosts($num, $json) {
-  /*echo "<table>";
+  echo "<table>";
   echo "<thead>";
   echo "<tr><td><b>Recent blog posts</b></td></tr>";
   echo "</thead>";
@@ -21,8 +21,8 @@ function printRecentBlogPosts($num, $json) {
     $i++;
   }
   echo "</tbody>";
-  echo "</table>"; */
-  echo "<h2>Recent blog posts</h2>";
+  echo "</table>";
+  /* echo "<h2>Recent blog posts</h2>";
   echo "<ul>";
   $i = 0;
   foreach ($json as $blogEntry) {
@@ -33,7 +33,7 @@ function printRecentBlogPosts($num, $json) {
     echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . " - " . $blogEntry['date'] . "</a></li>";
     $i++;
   }
-  echo "</ul>";
+  echo "</ul>"; */
 }
 
 function printFeaturedBlogPosts($json, $featuredBlogPosts, $num) {

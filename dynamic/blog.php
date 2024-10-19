@@ -34,7 +34,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<br />";
   $categories = getCategories($json);
   echo "<p><b>Categories</b>: ";
-  echo "<a href='index.php?nav=Blog'>All Entries</a> ";
+  echo "<a href='index.php?nav=Blog'>All Posts</a> ";
   foreach ($categories as $category => $url) {
     echo "<a href='$url'>$category</a> ";
   }
@@ -58,7 +58,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
       echo "<p><b>Category not found :(</b></p>";
     }
   } else {
-    echo "<h2>All Entries</h2>";
+    echo "<h2>All Posts</h2>";
     echo "<ul>";
     foreach ($json as $blogEntry) {
       $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
