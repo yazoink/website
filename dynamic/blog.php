@@ -6,19 +6,18 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<br />";
   $found = false;
   foreach ($json as $blogEntry) {
-    if ($blogEntry['entry'] == $_GET['entry']) {
-      $found = true;
+    $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+    if ($entry == $_GET['entry']){
       echo "<h2>" . $blogEntry['title'] . "</h2>";
       echo "<h3>" . $blogEntry['subheading'] . "</h3>";
       echo "<p><i>" . $blogEntry['date'] . "</i></p>";
       echo "<br />";
-      foreach ($blogEntry['content'] as $paragraph) {
-	echo "$paragraph";
-      }
+      $content = file_get_contents("blog/entries/{$entry}.html");
+      echo $content;
       echo "<br />";
       echo "<p><b>Categories</b>: ";
       foreach ($blogEntry['categories'] as $category) {
-	echo "<a href='index.php?nav=Blog&cat=$category'>$category</a> ";
+        echo "<a href='index.php?nav=Blog&cat=$category'>$category</a> ";
       }
       echo "</p>";
       echo "<br />";
@@ -47,8 +46,9 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
     $found = false;
     foreach ($json as $blogEntry) {
       if (in_array($_GET['cat'], $blogEntry['categories'])) {
-	$found = true;
-	echo "<li><a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
+        $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+	      $found = true;
+	      echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
       }
     }
     echo "</ul>";
@@ -60,7 +60,8 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
     echo "<h2>All Entries</h2>";
     echo "<ul>";
     foreach ($json as $blogEntry) {
-      echo "<li><a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
+      $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+      echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
     } 
     echo "</ul>";
     echo "<br />";

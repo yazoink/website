@@ -13,7 +13,8 @@ function printRecentBlogPosts($num, $json) {
     if ($i == $num) {
       break;
     }
-    echo "<li><a href='index.php?nav=Blog&entry=" . $blogEntry['entry'] . "'>" . $blogEntry['title'] . "</a></li>";
+    $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+    echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></li>";
     $i++;
   }
   echo "</ul>";

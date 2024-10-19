@@ -3,7 +3,7 @@ $email = "yoinky@cock.li";
 $domain = "yazo.ink";
 $invidiousUrl = "https://inv.$domain";
 
-$jsonStr = file_get_contents('json/blog.json');
+$jsonStr = file_get_contents('blog/blog.json');
 $json = json_decode($jsonStr, true);
 
 $services = array(
