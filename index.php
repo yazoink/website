@@ -23,7 +23,7 @@ require "static/header.html";
           echo "<h2>Page not found.</h2>";
         }
       } else {
-        require "static/home.html";
+        require "dynamic/home.php";
       }
       printRandomImage();
       ?>

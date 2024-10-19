@@ -6,7 +6,23 @@ function randomFromArrayButton($array, $buttonText, $buttonId) {
 }
 
 function printRecentBlogPosts($num, $json) {
-  echo "<h3>Recent blog posts</h3>";
+  /*echo "<table>";
+  echo "<thead>";
+  echo "<tr><td><b>Recent blog posts</b></td></tr>";
+  echo "</thead>";
+  echo "<tbody>";
+  $i = 0;
+  foreach ($json as $blogEntry) {
+    if ($i == $num) {
+      break;
+    }
+    $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+    echo "<tr><td><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td>" . $blogEntry['date'] . "</td></tr>";
+    $i++;
+  }
+  echo "</tbody>";
+  echo "</table>"; */
+  echo "<h2>Recent blog posts</h2>";
   echo "<ul>";
   $i = 0;
   foreach ($json as $blogEntry) {
@@ -14,8 +30,25 @@ function printRecentBlogPosts($num, $json) {
       break;
     }
     $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-    echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></li>";
+    echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . " - " . $blogEntry['date'] . "</a></li>";
     $i++;
+  }
+  echo "</ul>";
+}
+
+function printFeaturedBlogPosts($json, $featuredBlogPosts, $num) {
+  echo "<h3>Featured blog posts</h3>";
+  echo "<ul>";
+  $i = 0;
+  foreach ($json as $blogEntry) {
+    if ($i == $num) {
+      break;
+    }
+    if (in_array($blogEntry['title'], $featuredBlogPosts)){
+      $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+      echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></li>";
+      $i++;
+    }
   }
   echo "</ul>";
 }

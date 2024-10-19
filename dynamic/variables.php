@@ -16,6 +16,11 @@ $services = array(
   "Rimgo (Imgur frontend)" => "https://rimgo.$domain",
 );
 
+$featuredBlogPosts = array(
+  "Idiot Installs Etterna on NixOS",
+  "Tunneling My Homelab"
+);
+
 $bookmarks = array(
   "Link Directories" => [
     # link directories

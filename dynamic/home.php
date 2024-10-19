@@ -4,3 +4,7 @@
 <p>I also host some libre alternatives to popular websites, 
 you can read more about that <a href='index.php?nav=Services'>here</a>.</p>
 <br />
+<?php
+printRecentBlogPosts(4, $json);
+?>
+<br />
