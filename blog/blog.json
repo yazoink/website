@@ -1,5 +1,11 @@
 [
   {
+    "title": "A Slightly Better Blog",
+    "subheading": "Another uninteresting post about how this thing works",
+    "date": "19 October 2024",
+    "categories": ["Technology", "PHP", "JSON", "HTML", "Programming"]
+  },
+  {
     "title": "Idiot installs Etterna on NixOS",
     "subheading": "If it works, it works",
     "date": "25 September 2024",

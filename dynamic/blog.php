@@ -8,6 +8,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   foreach ($json as $blogEntry) {
     $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
     if ($entry == $_GET['entry']){
+      $found = true;
       echo "<h2>" . $blogEntry['title'] . "</h2>";
       echo "<h3>" . $blogEntry['subheading'] . "</h3>";
       echo "<p><i>" . $blogEntry['date'] . "</i></p>";

@@ -54,8 +54,6 @@
   margin-left: auto;
   margin-right: auto;
   overflow-y: scroll;
-  scrollbar-color: var(--fg) var(--bg);
-  scrollbar-width: thin;
 }
 
 .gallery-img {
@@ -73,8 +71,20 @@
   text-align: center;
 }
 
+pre {
+  font-family: terminus;
+  border: 1px dotted var(--fg);
+  padding: 10px;
+  margin: 10px;
+  overflow: scroll;
+  scrollbar-color: var(--fg) var(--bg);
+  scrollbar-width: thin;
+}
+
 html {
   background-color: var(--bg);
+  scrollbar-color: var(--fg) var(--bg);
+  scrollbar-width: thin;
 }
 
 body {
