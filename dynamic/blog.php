@@ -1,7 +1,7 @@
 <?php
 if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p>
-    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a>
+    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/rss2.webp' width='12px'></img> RSS</b></a>
   </p>";
   echo "<br />";
   $found = false;
@@ -30,7 +30,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<script src='js/copy-url.js'></script>";
 } else {
   echo "<h1>Blog...</h1>";
-  echo "<p><a href='rss.php'><b><img src='images/rss.webp' width='12px'></img> RSS</b></a></p>";
+  echo "<p><a href='rss.php'><b><img src='images/rss2.webp' width='12px'></img> RSS</b></a></p>";
   echo "<br />";
   $categories = getCategories($json);
   echo "<p><b>Categories</b>: ";
