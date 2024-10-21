@@ -65,8 +65,9 @@
 }
 
 pre {
-  border: 5px solid transparent;
-  border-image: url('../images/border8.webp') 3 / 3px round;
+  /* border: 5px solid transparent;
+  border-image: url('../images/border8.webp') 3 / 3px round; */
+  border: 1px dashed var(--fg);
   font-family: terminus;
   /* border: 1px dotted var(--fg); */
   padding: 10px;
@@ -157,10 +158,11 @@ code {
 
 table {
   /* border: 1px dotted var(--fg); */
+  border: 1px dashed var(--fg);
   padding: 10px;
   width: 100%;
-  border: 5px solid transparent;
-  border-image: url('../images/border8.webp') 3 / 3px round;
+  /* border: 5px solid transparent;
+  border-image: url('../images/border8.webp') 3 / 3px round; */
 }
 
 th, td {
