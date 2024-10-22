@@ -1,4 +1,4 @@
-<div class='sidebar-right'>
+<aside class='sidebar-right'>
   <img class='sidebar-img' src='images/sketches.webp' />
   <br />
   <?php 
@@ -8,4 +8,4 @@
     randomFromArrayButton($songs, "Song recommendation button", "songButton");
     echo "</div>";
   ?>
-</div>
+</aside>
