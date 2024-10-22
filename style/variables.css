@@ -1,0 +1,47 @@
+:root {
+  --fg: #d4be98;
+  --bg: #1d2021;
+
+  --sidebar-left-width: 140px;
+  --sidebar-right-width: 240px;
+  --content-width: 510px;
+  --site-width: calc(
+    var(--sidebar-left-width)
+    + var(--sidebar-right-width)
+    + var(--content-width)
+    + calc(var(--column-gap) * 2)
+  );
+
+  --title-height: 90px;
+  --content-height: 460px;
+  --footer-height: 50px;
+  --column-gap: 25px;
+  --site-height: calc(
+    var(--title-height)
+    + var(--content-height)
+    + var(--footer-height)
+  );
+
+  --gallery-column1-width: 160px;
+  --gallery-column2-width: var(--site-width);
+  --gallery-content-height: calc(var(--content-height) + 100px);
+  --gallery-img-height: 250px;
+  --gallery-height: calc(
+    var(--title-height)
+    + var(--gallery-content-height)
+    + var(--footer-height)
+  );
+  --gallery-width: calc(
+    var(--gallery-column1-width)
+    + var(--gallery-column2-width)
+  );
+
+  --padding-top: 10px;
+  --padding-side: 15px;
+  --padding-pre: var(--padding-side);
+  --padding-ul: 30px;
+  --button-padding-top: 2.5px;
+  --button-padding-side: calc(var(--button-padding-top) * 2);
+
+  --margin-pre: var(--padding-pre);
+}
