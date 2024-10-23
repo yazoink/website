@@ -22,9 +22,9 @@
     + var(--footer-height)
   );
 
-  --gallery-column1-width: 160px;
+  --gallery-column1-width: 115px;
   --gallery-column2-width: var(--site-width);
-  --gallery-content-height: calc(var(--content-height) + 100px);
+  --gallery-content-height: calc(var(--content-height) + 75px);
   --gallery-img-height: 250px;
   --gallery-height: calc(
     var(--title-height)

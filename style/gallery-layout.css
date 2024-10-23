@@ -34,6 +34,8 @@
 
 .gallery-img {
   height: var(--gallery-img-height);
+  margin: 5px;
+  border: 1px solid var(--fg);
 }
 
 .footer {
