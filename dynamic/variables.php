@@ -1,5 +1,5 @@
 <?php
-$email = "yoinky@cock.li";
+$email = "yazoink@firemail.cc";
 $domain = "yazo.ink";
 $invidiousUrl = "https://inv.$domain";
 
