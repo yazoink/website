@@ -40,7 +40,7 @@
   --padding-side: 15px;
   --padding-pre: var(--padding-side);
   --padding-ul: 30px;
-  --button-padding-top: 2.5px;
+  --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);
 
   --margin-pre: var(--padding-pre);
