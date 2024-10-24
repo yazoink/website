@@ -68,6 +68,33 @@ $bookmarks = array(
   ],
 );
 
+$galleryImages = array(
+  "art24.webp",
+  "art23.webp",
+  "art22.webp",
+  "art21.webp",
+  "art20.webp",
+  "art19.webp",
+  "art18.webp",
+  "art17.webp",
+  "art16.webp",
+  "art15.webp",
+  "art14.webp",
+  "art13.webp",
+  "art12.webp",
+  "art11.webp",
+  "art10.webp",
+  "art09.webp",
+  "art08.webp",
+  "art07.webp",
+  "art06.webp",
+  "art05.webp",
+  "art04.webp",
+  "art03.webp",
+  "art02.webp",
+  "art01.webp",
+);
+
 $navbarLinks = array(
   "Home" => "index.php",
   "About Me" => "index.php?nav=About+Me",
