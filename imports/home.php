@@ -4,7 +4,7 @@
 <p>I also host some libre alternatives to popular websites, 
 you can read more about that <a href='index.php?nav=Services'>here</a>.</p>
 <br>
-<p><a href="javascript:;" onclick="randomSongLink()">Click here for a random song recommendation.</a></p>
+<p><a href="javascript:;" class="song-link">Click here for a random song recommendation.</a></p>
 <br>
 <?php
 printRecentBlogPosts(4, $json);

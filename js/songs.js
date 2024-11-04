@@ -101,8 +101,11 @@ const songs = {
   "Leonard Cohen - So Long, Marianne": `${invidiousUrl}/watch?v=3XzAjfwQtvM`
 }
 
-function randomSongLink() {
-  const keys = Object.keys(songs);
-  const randomKey = keys[Math.floor(Math.random() * keys.length)];
-  window.open(songs[randomKey], "_blank");
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var link = document.querySelector(".song-link");
+  link.addEventListener('click', function() {
+    const keys = Object.keys(songs);
+    const randomKey = keys[Math.floor(Math.random() * keys.length)];
+    window.open(songs[randomKey], "_blank");
+  });
+});
