@@ -32,7 +32,7 @@
   --gallery-img-width: var(--gallery-img-height);
 
   --padding-top: 10px;
-  --padding-side: 6px;
+  --padding-side: 10px;
   --padding-pre: var(--column-gap);
   --padding-ul: 30px;
   --button-padding-top: 3px;
