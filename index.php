@@ -7,7 +7,9 @@
   ?>
   <body>
     <div class="container">
-      <?php require "imports/title.html"; ?>
+      <header class='title'>
+        <a href='index.php'><img src='images/logo.webp' /></a>
+      </header>
       <main class="content">
         <?php
         if (array_key_exists('nav', $_GET)) {
@@ -21,21 +23,31 @@
             require "imports/blog.php";
           } elseif ($_GET['nav'] == 'Services') {
             require "imports/services.php";
+          } elseif ($_GET['nav'] == 'Gallery') {
+            require "imports/gallery.php";
           } else {
             echo "<h2>Page not found.</h2>";
           }
         } else {
-          require "imports/home.php";
+          require "imports/home.html";
         }
         printRandomImage();
         ?>
       </main>
-      <?php
-      require "imports/sidebar-left.php";
-        //require "dynamic/sidebar-right.php";
-      echo "<img class=\"sidebar-img\" src=\"images/sketches2.webp\">";
-      require "imports/footer.php"; 
-      ?>
+      <nav class="sidebar-left">
+        <img class="sidebar-img" src="images/face.webp">
+        <h2>Navigation</h2>
+        <?php printUrlList($navbarLinks, false); ?>
+        <br>
+        <h2>Find Me</h2>
+        <?php printUrlList($socialLinks, true); ?>
+      </nav>
+      <aside class="sidebar-right">
+        <img class="sidebar-img" src="images/sketches2.webp">
+      </aside>
+      <footer class="footer">
+        <p>yazoink 2022-2024 &#128924; <a href='mailto:<?php echo "$email"; ?>'><?php echo "$email"; ?></a></p>
+      </footer>
     </div>
   </body>
 </html>

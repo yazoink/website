@@ -102,7 +102,7 @@ $navbarLinks = array(
   "Technology" => "index.php?nav=Technology",
   "Services" => "index.php?nav=Services",
   "Blog" => "index.php?nav=Blog",
-  "Art Gallery" => "gallery.php"
+  "Art Gallery" => "index.php?nav=Gallery"
 );
 
 $socialLinks = array(

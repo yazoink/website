@@ -9,7 +9,7 @@
 
   --sidebar-left-width: 140px;
   --sidebar-right-width: 240px;
-  --content-width: 510px;
+  --content-width: 530px;
   --site-width: calc(
     var(--sidebar-left-width)
     + var(--sidebar-right-width)
@@ -27,19 +27,8 @@
     + var(--footer-height)
   );
 
-  --gallery-column1-width: 115px;
-  --gallery-column2-width: var(--site-width);
-  --gallery-content-height: calc(var(--content-height) + 75px);
-  --gallery-img-height: 250px;
-  --gallery-height: calc(
-    var(--title-height)
-    + var(--gallery-content-height)
-    + var(--footer-height)
-  );
-  --gallery-width: calc(
-    var(--gallery-column1-width)
-    + var(--gallery-column2-width)
-  );
+  --gallery-img-height: 155px;
+  --gallery-img-width: var(--gallery-img-height);
 
   --padding-top: 10px;
   --padding-side: var(--column-gap);

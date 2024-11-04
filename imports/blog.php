@@ -3,6 +3,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p>
     <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/rss2.webp' width='12px'> RSS</b></a>
   </p>";
+  echo "<hr>";
   echo "<br>";
   $found = false;
   foreach ($json as $blogEntry) {
@@ -25,12 +26,13 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
     }
   }
   if ($found == false) {
-    echo "<p><b>Entry not found :(</b></p>";
+    echo "<p><b>Entry not found :(</b></p><br>";
   }
   echo "<script src='js/copy-url.js'></script>";
 } else {
   echo "<h1>Blog...</h1>";
   echo "<p><a href='rss.php'><b><img src='images/rss2.webp' width='12px'> RSS</b></a></p>";
+  echo "<hr>";
   echo "<br>";
   $categories = getCategories($json);
   echo "<p><b>Categories</b>: ";

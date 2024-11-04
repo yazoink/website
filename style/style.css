@@ -65,7 +65,7 @@ code {
   font-family: terminus;
 }
 
-.html-button {
+/*.html-button {
   border: 3px solid transparent;
   border-image: url('../images/border7.webp') 3 / 3px round;
   /* border: 1px solid transparent;
@@ -76,7 +76,7 @@ code {
     transparent 3px,
     transparent 6px
   ) 1;
-  border-image-slice: 1; */
+  border-image-slice: 1;
   color: var(--fg);
   background-color: var(--bg);
   font-family: redaction;
@@ -85,7 +85,7 @@ code {
   padding-left: var(--button-padding-side);
   padding-right: var(--button-padding-side);
   font-size: 1em;
-}
+} */
 
 /* .html-button:hover {
   animation: dash-offset 0.7s linear infinite;
@@ -124,3 +124,21 @@ hr {
   border-right: transparent;
 }
 
+
+.gallery-div {
+  text-align: center;
+}
+
+.gallery-img {
+  height: var(--gallery-img-height);
+  width: var(--gallery-img-width);
+  object-fit: cover;
+  margin: 5px;
+  border: 1px solid var(--fg);
+  text-align: justify;
+  transition: transform .2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.025);
+}
