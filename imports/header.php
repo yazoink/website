@@ -12,7 +12,6 @@
       echo "<link rel='stylesheet' href='style/error.css'>";
     } else if ($page == "fetch.php") {
       echo "<link rel='stylesheet' href='style/fetch.css'>";
-    } else {
     }
   ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">
