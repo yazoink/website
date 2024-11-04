@@ -112,10 +112,10 @@ table {
   width: calc(
     var(--content-width) 
     - calc(var(--padding-pre) * 2) 
-    - var(--padding-side)
+    - calc(var(--padding-side) * 2) 
   );
-  margin-left: var(--padding-pre);
-  margin-right: var(--padding-pre);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th, td {
