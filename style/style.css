@@ -109,7 +109,12 @@ table {
   padding: var(--padding-pre);
   /* border: 5px solid transparent;
   border-image: url('../images/border8.webp') 3 / 3px round; */
-  width: calc(var(--content-width) - calc(var(--padding-pre) * 2));
+  width: calc(
+    var(--content-width) 
+    - calc(var(--padding-pre) * 2) 
+    - var(--padding-side)
+    - var(--sidebar-padding)
+  );
   margin-left: var(--padding-pre);
   margin-right: var(--padding-pre);
 }
