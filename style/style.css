@@ -150,5 +150,6 @@ hr {
 }
 
 hr {
-  margin-right: var(--padding-side);
+  margin-right: auto;
+  margin-left: auto;
 }

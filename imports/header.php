@@ -2,19 +2,17 @@
   <meta charset='UTF-8'>
   <?php
     $page = basename($_SERVER['PHP_SELF']);
+    if (!isset($_GET['nav'])) {
+      echo "<script defer src='js/songs.js'></script>";
+    }
     if ($page == "index.php") {
       echo "<link rel='stylesheet' href='style/layout.css'>";
-      echo "<script defer src='js/songs.js'></script>";
-    } else if ($page == "gallery.php") {
-      echo "<link rel='stylesheet' href='style/gallery-layout.css'>";
-    }
-
-    if ($page == "403.php" || $page == "404.php" || $page == "500.php") {
+      echo "<link rel='stylesheet' href='style/style.css'>";
+    } else if ($page == "403.php" || $page == "404.php" || $page == "500.php") {
       echo "<link rel='stylesheet' href='style/error.css'>";
     } else if ($page == "fetch.php") {
       echo "<link rel='stylesheet' href='style/fetch.css'>";
     } else {
-      echo "<link rel='stylesheet' href='style/style.css'>";
     }
   ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">

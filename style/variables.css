@@ -9,7 +9,7 @@
 
   --sidebar-left-width: 140px;
   --sidebar-right-width: 240px;
-  --content-width: 530px;
+  --content-width: 560px;
   --sidebar-padding: 5px;
   --site-width: calc(
     var(--sidebar-left-width)
@@ -21,7 +21,7 @@
   --title-height: 90px;
   --content-height: 460px;
   --footer-height: 50px;
-  --column-gap: 15px;
+  --column-gap: 10px;
   --site-height: calc(
     var(--title-height)
     + var(--content-height)
@@ -32,8 +32,8 @@
   --gallery-img-width: var(--gallery-img-height);
 
   --padding-top: 10px;
-  --padding-side: 10px;
-  --padding-pre: var(--column-gap);
+  --padding-side: 20px;
+  --padding-pre: 15px;
   --padding-ul: 30px;
   --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);

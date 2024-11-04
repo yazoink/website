@@ -8,7 +8,6 @@
     var(--title-height)
     var(--content-height)
     var(--footer-height);
-  column-gap: var(--column-gap);
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -27,9 +26,17 @@
   scrollbar-color: var(--fg) var(--bg);
   scrollbar-width: thin;
   width: 100%;
-  height: 100%;
+}
+
+.content-inside {
   padding-right: var(--padding-side);
-  margin-right: var(--sidebar-padding);
+  padding-left: var(--padding-side);
+  max-width: calc(
+    var(--content-width)
+    - calc(var(--padding-side) * 2)
+  );
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sidebar-left {

@@ -11,28 +11,30 @@
         <a href='index.php'><img src='images/logo.webp' /></a>
       </header>
       <main class="content">
-        <?php
-        if (array_key_exists('nav', $_GET)) {
-          if ($_GET['nav'] == 'About Me') {
-            require "imports/about-me.html";
-          } elseif ($_GET['nav'] == 'Bookmarks') {
-            require "imports/bookmarks.php";
-          } elseif ($_GET['nav'] == 'Technology') {
-            require "imports/technology.html";
-          } elseif ($_GET['nav'] == 'Blog') {
-            require "imports/blog.php";
-          } elseif ($_GET['nav'] == 'Services') {
-            require "imports/services.php";
-          } elseif ($_GET['nav'] == 'Gallery') {
-            require "imports/gallery.php";
-          } else {
-            echo "<h2>Page not found.</h2>";
-          }
-        } else {
-          require "imports/home.html";
-        }
-        printRandomImage();
-        ?>
+        <div class="content-inside">
+          <?php
+            if (array_key_exists('nav', $_GET)) {
+              if ($_GET['nav'] == 'About Me') {
+                require "imports/about-me.html";
+              } elseif ($_GET['nav'] == 'Bookmarks') {
+                require "imports/bookmarks.php";
+              } elseif ($_GET['nav'] == 'Technology') {
+                require "imports/technology.html";
+              } elseif ($_GET['nav'] == 'Blog') {
+                require "imports/blog.php";
+              } elseif ($_GET['nav'] == 'Services') {
+                require "imports/services.php";
+              } elseif ($_GET['nav'] == 'Gallery') {
+                require "imports/gallery.php";
+              } else {
+                echo "<h2>Page not found.</h2>";
+              }
+            } else {
+              require "imports/home.html";
+            }
+            printRandomImage();
+          ?>
+        </div>
       </main>
       <nav class="sidebar-left">
         <img class="sidebar-img" src="images/face.webp">
