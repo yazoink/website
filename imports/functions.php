@@ -16,7 +16,7 @@ function printRecentBlogPosts($num, $json) {
       break;
     }
     $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-    echo "<tr><td><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td>" . $blogEntry['date'] . "</td></tr>";
+    echo "<tr><td><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td class='right'>" . $blogEntry['date'] . "</td></tr>";
     $i++;
   }
   echo "</tbody>";
@@ -69,7 +69,7 @@ function printRandomImage() {
   $imageDir = "images/random-images";
   $images = scandir($imageDir);
   $images = array_slice($images, 2);
-  echo "<p><img src='" . $imageDir . "/" . $images[array_rand($images)] . "' /></p>";
+  echo "<p><img src='" . $imageDir . "/" . $images[array_rand($images)] . "'></p>";
 }
 
 function printUrlList($urlList, $openInNewTab) {
@@ -102,7 +102,7 @@ function printServices($services) {
   echo "<table>";
   echo "<thead>";
   echo "<th>Service</th>";
-  echo "<th>Status</th>";
+  echo "<th class='right'>Status</th>";
   echo "</thead>";
   echo "<tbody>";
   foreach ($services as $description => $url) {
@@ -113,7 +113,7 @@ function printServices($services) {
     } else {
       $statusIndicator = "&#10007;";
     }
-    echo "<td>$statusIndicator</td>";
+    echo "<td class='right'>$statusIndicator</td>";
     echo "</tr>";
   }
   echo "</tbody>";

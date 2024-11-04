@@ -1,6 +1,14 @@
 @import url("variables.css");
 @import url("fonts.css");
 
+.left {
+  text-align: start;
+}
+
+.right {
+  text-align: end;
+}
+
 .center {
   text-align: center;
 }

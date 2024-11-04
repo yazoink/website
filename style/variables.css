@@ -20,7 +20,7 @@
   --title-height: 90px;
   --content-height: 460px;
   --footer-height: 50px;
-  --column-gap: 25px;
+  --column-gap: 15px;
   --site-height: calc(
     var(--title-height)
     + var(--content-height)
@@ -42,7 +42,7 @@
   );
 
   --padding-top: 10px;
-  --padding-side: 10px;
+  --padding-side: var(--column-gap);
   --padding-pre: var(--padding-side);
   --padding-ul: 30px;
   --button-padding-top: 3px;
