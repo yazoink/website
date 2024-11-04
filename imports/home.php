@@ -11,7 +11,7 @@ printRecentBlogPosts(4, $json);
 ?>
 <br>
 <h2>FAQ</h2>
-<p><b>Did you know that this website looks old/unoptimized mobile?</b></p>
+<p><b>Did you know that this website looks old/unoptimized for mobile?</b></p>
 <p>Yes, it's intentional. I like old web design and hate phones.</p>
 <br>
 <p><b>How does it load so fast?</b></p>
