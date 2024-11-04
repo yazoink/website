@@ -149,3 +149,7 @@ hr {
 .gallery-img:hover {
   transform: scale(1.025);
 }
+
+hr {
+  margin-right: var(--padding-side);
+}
