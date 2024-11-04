@@ -69,7 +69,7 @@ function printRandomImage() {
   $imageDir = "images/random-images";
   $images = scandir($imageDir);
   $images = array_slice($images, 2);
-  echo "<p><img class='center' src='" . $imageDir . "/" . $images[array_rand($images)] . "'></p>";
+  echo "<p><img loading='lazy' class='center' src='" . $imageDir . "/" . $images[array_rand($images)] . "'></p>";
 }
 
 function printUrlList($urlList, $openInNewTab) {
