@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <?php
-  require "dynamic/variables.php";
-  require "dynamic/functions.php";
-  require "dynamic/header.php";
+  require "imports/variables.php";
+  require "imports/functions.php";
+  require "imports/header.php";
   ?>
   <body>
-    <div class='container'>
-      <?php require "static/title.html"; ?>
+    <div class="container">
+      <?php require "imports/title.html"; ?>
       <main class="content">
         <?php
         if (array_key_exists('nav', $_GET)) {
           if ($_GET['nav'] == 'About Me') {
-            require "static/about-me.html";
+            require "imports/about-me.html";
           } elseif ($_GET['nav'] == 'Bookmarks') {
-            require "dynamic/bookmarks.php";
+            require "imports/bookmarks.php";
           } elseif ($_GET['nav'] == 'Technology') {
-            require "dynamic/technology.php";
+            require "imports/technology.html";
           } elseif ($_GET['nav'] == 'Blog') {
-            require "dynamic/blog.php";
+            require "imports/blog.php";
           } elseif ($_GET['nav'] == 'Services') {
-            require "dynamic/services.php";
+            require "imports/services.php";
           } else {
             echo "<h2>Page not found.</h2>";
           }
         } else {
-          require "dynamic/home.php";
+          require "imports/home.php";
         }
         printRandomImage();
         ?>
       </main>
       <?php
-      require "dynamic/sidebar-left.php";
-      require "dynamic/sidebar-right.php";
-      require "dynamic/footer.php"; 
+      require "imports/sidebar-left.php";
+        //require "dynamic/sidebar-right.php";
+      echo "<img class=\"sidebar-img\" src=\"images/sketches2.webp\">";
+      require "imports/footer.php"; 
       ?>
     </div>
   </body>

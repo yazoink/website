@@ -1,0 +1,33 @@
+@import url("variables.css");
+@import url("fonts.css");
+
+body {
+  font-family: redaction;
+  font-size: 1em;
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.cyan {
+  color: var(--cyan);
+}
+
+.red {
+  color: var(--red);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.green {
+  color: var(--green);
+}
+
+code {
+  font-family: terminus;
+}

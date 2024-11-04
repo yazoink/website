@@ -1,6 +1,11 @@
 :root {
   --fg: #d4be98;
   --bg: #1d2021;
+  --blue: #7DAEA3;
+  --cyan: #89B482;
+  --red: #EA6962;
+  --yellow: #D8A657;
+  --green: #A9B665;
 
   --sidebar-left-width: 140px;
   --sidebar-right-width: 240px;
@@ -37,7 +42,7 @@
   );
 
   --padding-top: 10px;
-  --padding-side: 15px;
+  --padding-side: 10px;
   --padding-pre: var(--padding-side);
   --padding-ul: 30px;
   --button-padding-top: 3px;

@@ -1,8 +1,6 @@
 @import url("variables.css");
 @import url("fonts.css");
 
-
-
 .center {
   text-align: center;
 }
@@ -110,3 +108,11 @@ th, td {
     text-align: left;
     font-family: terminus;
 }
+
+hr {
+  border-top: 1px dashed var(--fg);
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
