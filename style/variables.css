@@ -10,6 +10,7 @@
   --sidebar-left-width: 140px;
   --sidebar-right-width: 240px;
   --content-width: 530px;
+  --sidebar-padding: 5px;
   --site-width: calc(
     var(--sidebar-left-width)
     + var(--sidebar-right-width)
@@ -31,8 +32,8 @@
   --gallery-img-width: var(--gallery-img-height);
 
   --padding-top: 10px;
-  --padding-side: var(--column-gap);
-  --padding-pre: var(--padding-side);
+  --padding-side: calc(var(--column-gap) - 5px);
+  --padding-pre: var(--column-gap);
   --padding-ul: 30px;
   --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);
