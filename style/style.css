@@ -20,7 +20,7 @@ pre {
   font-family: terminus;
   /* border: 1px dotted var(--fg); */
   padding: var(--padding-pre);
-  margin: var(--margin-pre);
+  margin: var(--padding-pre);
   overflow: scroll;
   scrollbar-color: var(--fg) var(--bg);
   scrollbar-width: thin;
@@ -113,7 +113,6 @@ table {
     var(--content-width) 
     - calc(var(--padding-pre) * 2) 
     - var(--padding-side)
-    - var(--sidebar-padding)
   );
   margin-left: var(--padding-pre);
   margin-right: var(--padding-pre);
