@@ -16,7 +16,7 @@ $maxPages = ceil($imageNum / $maxImagesPerPage);
 
 if (array_key_exists('page', $_GET)) {
   $currentPage = (int) $_GET['page'];
-  if (($currentPage < 1) || (!is_numeric($currentPage))) {
+  if (($currentPage < 1) || (!is_numeric($currentPage)) || ($currentPage > $maxPages)) {
     $currentPage = 1;
   }
 } else {
