@@ -107,9 +107,11 @@ table {
   /* border: 1px dotted var(--fg); */
   border: 1px dashed var(--fg);
   padding: var(--padding-pre);
-  width: 100%;
   /* border: 5px solid transparent;
   border-image: url('../images/border8.webp') 3 / 3px round; */
+  width: calc(var(--content-width) - calc(var(--padding-pre) * 2));
+  margin-left: var(--padding-pre);
+  margin-right: var(--padding-pre);
 }
 
 th, td {
