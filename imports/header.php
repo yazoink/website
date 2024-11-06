@@ -16,8 +16,15 @@
       echo "<link rel='stylesheet' href='style/fetch.css'>";
     }
   ?>
-  <link rel='preload' href='style/variables.css' as='style'>
-  <link rel='preload' href='style/fonts.css' as='style'>
+  <link rel="preload" href="style/variables.css" as="style">
+  <link rel="preload" href="style/fonts.css" as="style">
+  <link rel="preload" href="fonts/redaction/webfonts/Redaction_35-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="fonts/redaction/webfonts/Redaction_35-Bold.woff2" type="font/woff2">
+  <link rel="preload" href="fonts/redaction/webfonts/Redaction_35-Italic.woff2" type="font/woff2">
+  <link rel="preload" href="fonts/terminus/ttf/TerminusTTF-4.49.3.ttf" type="font/woff2">
+  <link rel="preload" href="fonts/terminus/ttf/TerminusTTF-Bold-4.49.3.ttf" type="font/woff2">
+  <link rel="preload" href="fonts/terminus/ttf/TerminusTTF-Italic-4.49.3.ttf" type="font/woff2">
+  <link rel="preload" href="fonts/terminus/ttf/TerminusTTF-Bold-Italic-4.49.3.ttf" type="font/woff2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="8-DfXBAoPKJYiUCQ3bt_r-fW2nfWHW89GkQTomLycuY">
   <meta name="keywords" content="blog, art, technology, linux, programming, hobbies, personal">
