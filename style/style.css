@@ -34,7 +34,6 @@ html {
 
 body {
   font-family: redaction;
-  font-size: 1em;
   color: var(--fg);
   word-wrap: break-word;
   margin-left: auto;
