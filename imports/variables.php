@@ -44,12 +44,19 @@ $bookmarks = array(
     "W3Schools (programming tutorials with a focus on webdev)" => "https://www.w3schools.com/",
     "JavaScript tutorial that I need to read" => "https://javascript.info/",
     "Bitmap font maker" => "https://www.pentacom.jp/pentacom/bitfontmaker2/",
+    "Markdown cheatsheet" => "https://github.com/im-luka/markdown-cheatsheet",
+    "Programming fonts" => "https://www.programmingfonts.org/",
+    "Learn X in Y minutes" => "https://learnxinyminutes.com/",
+    "Terminal colourscheme generator/editor" => "https://terminal.sexy/",
+    "Useful sed commands" => "https://www.pement.org/sed/sed1line.txt",
   ],
   "Graphics" => [
     # graphics
     "Geocities GIF archive" => "https://gifcities.org/",
     "Browser clone of the original MSPaint" => "https://jspaint.app",
     "Wallpapers" => "https://wallhaven.cc/",
+    "GUI design gallery from the 2000s" => "https://guidebookgallery.org/",
+    "Another old GUI gallery" => "http://toastytech.com/guis/index.html",
   ],
   "Games" => [
     # games
@@ -62,9 +69,7 @@ $bookmarks = array(
     # misc tech related
     "Bliss OS" => "https://blissos.org/",
     "Web Design Museum" => "https://www.webdesignmuseum.org/",
-    "Useful sed commands" => "https://www.pement.org/sed/sed1line.txt",
     "Base16 colour palette gallery" => "https://tinted-theming.github.io/base16-gallery/",
-    "Terminal colourscheme generator/editor" => "https://terminal.sexy/",
   ],
 );
 
