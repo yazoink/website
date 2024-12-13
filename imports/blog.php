@@ -1,7 +1,7 @@
 <?php
 if (array_key_exists('entry', $_GET)) { # if blog post specified
   echo "<p>
-    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/gruvbox/rss2.webp' width='12px'> RSS</b></a>
+    <a href='index.php?nav=Blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a>
   </p>";
   echo "<hr>";
   echo "<br>";
