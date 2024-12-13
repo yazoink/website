@@ -1,3 +1,4 @@
+@import url("themes/gruvbox.css");
 @import url("variables.css");
 @import url("fonts.css");
 
@@ -13,19 +14,6 @@
   text-align: center;
 }
 
-pre {
-  /* border: 5px solid transparent;
-  border-image: url('../images/border8.webp') 3 / 3px round; */
-  border: 1px dashed var(--fg);
-  font-family: terminus;
-  /* border: 1px dotted var(--fg); */
-  padding: var(--padding-pre);
-  margin: var(--padding-pre);
-  overflow: scroll;
-  scrollbar-color: var(--fg) var(--bg);
-  scrollbar-width: thin;
-}
-
 html {
   background-color: var(--bg);
   scrollbar-color: var(--fg) var(--bg);
@@ -34,19 +22,65 @@ html {
 
 body {
   font-family: redaction;
+  transform: scale(1, 1);
   color: var(--fg);
   word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
+  font-size: 16px;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, pre, code, tr, td, th {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+  font-smooth: never;
+  text-rendering: optimizeSpeed;
+  -webkit-text-stroke: 0;
+  font-feature-settings: "kern" 0;
+  font-kerning: none;
+  transform: scale(1, 1);
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+th {
+  font-weight: normal;
+}
+
+h1, h2, h3, h3, h4, h5, h6 {
+  font-family: redaction;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+pre, code, td, tr, th {
+  font-family: compis;
+  line-height: 16px;
+  font-size: 16px;
+}
+
+pre {
+  border: 1px dashed var(--fg);
+  padding: var(--padding-pre);
+  margin: var(--padding-pre);
+  overflow: scroll;
+  scrollbar-color: var(--fg) var(--bg);
+  scrollbar-width: thin;
 }
 
 a {
   color: var(--fg);
 }
-
-/* a:hover {
-  color: var(--fg-hover);
-} */
 
 ul {
   list-style-type: square;
@@ -60,54 +94,9 @@ h1, h2, h3, h4, ul, p {
   padding-bottom: 0;
 }
 
-code {
-  font-family: terminus;
-}
-
-/*.html-button {
-  border: 3px solid transparent;
-  border-image: url('../images/border7.webp') 3 / 3px round;
-  /* border: 1px solid transparent;
-  border-image: repeating-linear-gradient(
-    45deg,
-    var(--fg),
-    var(--fg) 3px,
-    transparent 3px,
-    transparent 6px
-  ) 1;
-  border-image-slice: 1;
-  color: var(--fg);
-  background-color: var(--bg);
-  font-family: redaction;
-  padding-top: var(--button-padding-top);
-  padding-bottom: var(--button-padding-top);
-  padding-left: var(--button-padding-side);
-  padding-right: var(--button-padding-side);
-  font-size: 1em;
-} */
-
-/* .html-button:hover {
-  animation: dash-offset 0.7s linear infinite;
-}
-
-@keyframes dash-offset {
-  to {
-    border-image-source: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 3px,
-      var(--fg) 3px,
-      var(--fg) 6px
-    );
-  }
-} */
-
 table {
-  /* border: 1px dotted var(--fg); */
   border: 1px dashed var(--fg);
   padding: var(--padding-pre);
-  /* border: 5px solid transparent;
-  border-image: url('../images/border8.webp') 3 / 3px round; */
   width: calc(
     var(--content-width) 
     - calc(var(--padding-pre) * 2) 
@@ -119,7 +108,6 @@ table {
 
 th, td {
     text-align: left;
-    font-family: terminus;
 }
 
 hr {
@@ -127,6 +115,8 @@ hr {
   border-bottom: transparent;
   border-left: transparent;
   border-right: transparent;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 
@@ -146,9 +136,4 @@ hr {
 
 .gallery-img:hover {
   transform: scale(1.025);
-}
-
-hr {
-  margin-right: auto;
-  margin-left: auto;
 }

@@ -30,7 +30,7 @@ if (array_key_exists('entry', $_GET)) { # if blog post specified
   }
 } else {
   echo "<h1>Blog...</h1>";
-  echo "<p><a href='rss.php'><b><img src='images/rss2.webp' width='12px'> RSS</b></a></p>";
+  echo "<p><a href='rss.php'><b><img src='images/graphics/caroline/rss2.webp' width='12px'> RSS</b></a></p>";
   echo "<hr>";
   echo "<br>";
   $categories = getCategories($json);

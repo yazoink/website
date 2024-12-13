@@ -49,6 +49,7 @@ $bookmarks = array(
     "Learn X in Y minutes" => "https://learnxinyminutes.com/",
     "Terminal colourscheme generator/editor" => "https://terminal.sexy/",
     "Useful sed commands" => "https://www.pement.org/sed/sed1line.txt",
+    "Free old PC fonts" => "https://int10h.org/oldschool-pc-fonts/",
   ],
   "Graphics" => [
     # graphics

@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <header class='title'>
-        <a href='index.php'><img src='images/logo.webp' /></a>
+        <a href='index.php'><img src='images/graphics/gruvbox/logo.webp' /></a>
       </header>
       <main class="content">
         <div class="content-inside">
@@ -37,7 +37,7 @@
         </div>
       </main>
       <nav class="sidebar-left">
-        <img class="sidebar-img" src="images/face.webp">
+        <img class="sidebar-img" src="images/graphics/gruvbox/face.webp">
         <h2>Navigation</h2>
         <?php printUrlList($navbarLinks, false); ?>
         <br>
@@ -45,7 +45,7 @@
         <?php printUrlList($socialLinks, true); ?>
       </nav>
       <aside class="sidebar-right">
-        <img class="sidebar-img" src="images/sketches2.webp">
+        <img class="sidebar-img" src="images/graphics/gruvbox/sketches2.webp">
       </aside>
       <footer class="footer">
         <p>yazoink 2022-2024 &#128924; <a href='mailto:<?php echo "$email"; ?>'><?php echo "$email"; ?></a></p>

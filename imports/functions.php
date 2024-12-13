@@ -7,7 +7,7 @@ function randomFromArrayLink($array, $text) {
 function printRecentBlogPosts($num, $json) {
   echo "<table>";
   echo "<thead>";
-  echo "<tr><td><b>Recent blog posts</b></td></tr>";
+  echo "<tr><th>Recent blog posts</th></tr>";
   echo "</thead>";
   echo "<tbody>";
   $i = 0;
@@ -21,35 +21,6 @@ function printRecentBlogPosts($num, $json) {
   }
   echo "</tbody>";
   echo "</table>";
-  /* echo "<h2>Recent blog posts</h2>";
-  echo "<ul>";
-  $i = 0;
-  foreach ($json as $blogEntry) {
-    if ($i == $num) {
-      break;
-    }
-    $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-    echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . " - " . $blogEntry['date'] . "</a></li>";
-    $i++;
-  }
-  echo "</ul>"; */
-}
-
-function printFeaturedBlogPosts($json, $featuredBlogPosts, $num) {
-  echo "<h3>Featured blog posts</h3>";
-  echo "<ul>";
-  $i = 0;
-  foreach ($json as $blogEntry) {
-    if ($i == $num) {
-      break;
-    }
-    if (in_array($blogEntry['title'], $featuredBlogPosts)){
-      $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-      echo "<li><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></li>";
-      $i++;
-    }
-  }
-  echo "</ul>";
 }
 
 function getCategories($json) {
@@ -66,7 +37,7 @@ function getCategories($json) {
 }
 
 function printRandomImage() {
-  $imageDir = "images/random-images";
+  $imageDir = "images/random-images/gruvbox";
   $images = scandir($imageDir);
   $images = array_slice($images, 2);
   echo "<p><img loading='lazy' class='center' src='" . $imageDir . "/" . $images[array_rand($images)] . "'></p>";
