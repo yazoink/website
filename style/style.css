@@ -30,7 +30,19 @@ body {
   font-size: 16px;
 }
 
-p, a, h1, h2, h3, h4, h5, h6, pre, code, tr, td, th {
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+tr,
+td,
+th {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
   font-smooth: never;
@@ -47,7 +59,13 @@ th {
   font-weight: normal;
 }
 
-h1, h2, h3, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h3,
+h4,
+h5,
+h6 {
   font-family: redaction;
 }
 
@@ -63,7 +81,11 @@ h3 {
   font-size: 18px;
 }
 
-pre, code, td, tr, th {
+pre,
+code,
+td,
+tr,
+th {
   font-family: compis;
   line-height: 16px;
   font-size: 16px;
@@ -87,7 +109,12 @@ ul {
   padding-left: var(--padding-ul);
 }
 
-h1, h2, h3, h4, ul, p {
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 0;
@@ -98,16 +125,16 @@ table {
   border: 1px dashed var(--fg);
   padding: var(--padding-pre);
   width: calc(
-    var(--content-width) 
-    - calc(var(--padding-pre) * 2) 
-    - calc(var(--padding-side) * 2) 
+    var(--content-width) - calc(var(--padding-pre) * 2) -
+      calc(var(--padding-side) * 2)
   );
   margin-left: auto;
   margin-right: auto;
 }
 
-th, td {
-    text-align: left;
+th,
+td {
+  text-align: left;
 }
 
 hr {
@@ -118,7 +145,6 @@ hr {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 .gallery-div {
   text-align: center;
@@ -131,9 +157,13 @@ hr {
   margin: 5px;
   border: 1px solid var(--fg);
   text-align: justify;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .gallery-img:hover {
   transform: scale(1.025);
+}
+
+.blog-img {
+  border: 1px solid var(--fg);
 }
