@@ -166,4 +166,5 @@ hr {
 
 .blog-img {
   border: 1px solid var(--fg);
+  max-width: calc(var(--content-width) - calc(var(--padding-side) * 2));
 }
