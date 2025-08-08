@@ -1,5 +1,24 @@
-const invidiousUrl = "https://inv.yazo.ink";
+const invidiousUrl = "https://youtube.com";
 const songs = {
+  "It's All Over Now, Baby Blue - Them": `${invidiousUrl}/watch?v=LviBwdfLn2Q`,
+  "Medley: Jack & Neal / California, Here I Come - Tom Waits": `${invidiousUrl}/watch?v=lcBo29G4VWY`,
+  "Yeh Yeh - Georgie Fame and the Blue Flames": `${invidiousUrl}/watch?v=jf-cCL3TOCo`,
+  "Monsieur Dupont - Sandie Shaw": `${invidiousUrl}/watch?v=uPGQ_3veBQE`,
+  "I Only Want to be With You - Dusty Springfield": `${invidiousUrl}/watch?v=CL7t22rypew`,
+  "It's All Over Now, Baby Blue - Marianne Faithfull": `${invidiousUrl}/watch?v=Lp19hLAuOVE`,
+  "Dunkin' Bagel - Slim Gaillard Quartette": `${invidiousUrl}/watch?v=ntUNRiC5-z0`,
+  "Ever Lovin' Man - The Loved Ones": `${invidiousUrl}/watch?v=Ajdqk8ZN1jM`,
+  "Sunny - Georgie Fame": `${invidiousUrl}/watch?v=jbKzah2ndPI`,
+  "Rosalyn - The Pretty Things": `${invidiousUrl}/watch?v=yUmtwq5F_tU`,
+  "High Flying Bird - The Jefferson Airplane": `${invidiousUrl}/watch?v=Xu9GP3YyXVY`,
+  "Ol' 55 - Tom Waits": `${invidiousUrl}/watch?v=BeeK37wrBDQ`,
+  "Ice Cream Man - Tom Waits": `${invidiousUrl}/watch?v=YCoRoqGz5so`,
+  "Martha - Tom Waits": `${invidiousUrl}/watch?v=y9Mse62NFl4`,
+  "Going Up The Country - Canned Heat": `${invidiousUrl}/watch?v=4eQMA_noRYQ`,
+  "On The Road Again - Canned Heat": `${invidiousUrl}/watch?v=Jcb-h8z1uQo`,
+  "Somethin' Else - Eddie Cochran": `${invidiousUrl}/watch?v=Hi36ukbbTbw`,
+  "I Put a Spell on You - Screaming Jay Hawkins": `${invidiousUrl}/watch?v=82cdnAUvsw8`,
+  "Ride Your Pony - Georgie Fame": `${invidiousUrl}/watch?v=jbKzah2ndPI`,
   "The Main Thing - Roxy Music": `${invidiousUrl}/watch?v=Ir1v6alVA7c`,
   "betelgeus - gjallarhornit": `${invidiousUrl}/watch?v=ffTm2Q6LFsE`,
   "Same Old Scene - Roxy Music": `${invidiousUrl}/watch?v=vXOgQN1a7bE`,
@@ -52,7 +71,7 @@ const songs = {
   "Soul Suckin' Jerk - Beck": `${invidiousUrl}/watch?v=sdILQwlP_pk`,
   "Steal My Body Home - Beck": `${invidiousUrl}/watch?v=SvcqqTzr5mc`,
   "Cold Brains - Beck": `${invidiousUrl}/watch?v=R1f6vk4PZ7o`,
-  "Tropialia - Beck": `${invidiousUrl}/watch?v=ykHnwhorGYg`,
+  "Tropicalia - Beck": `${invidiousUrl}/watch?v=ykHnwhorGYg`,
   "Boot Hill - Australian Crawl": `${invidiousUrl}/watch?v=rMQGb-KqwIQ`,
   "The Boys Light Up - Australian Crawl": `${invidiousUrl}/watch?v=xImwExvyG0o`,
   "Delivery Man - The Cruel Sea": `${invidiousUrl}/watch?v=frsBft4xxqc`,
@@ -98,12 +117,12 @@ const songs = {
   "Чернозём - Нет дома": `${invidiousUrl}/watch?v=0R3GKEMAkCE`,
   "Соломенные еноты - Человек - забавная скотина": `${invidiousUrl}/watch?v=Bcjy_P79v94`,
   "Leonard Cohen - Jazz Police": `${invidiousUrl}/watch?v=j7YebrCuqsU`,
-  "Leonard Cohen - So Long, Marianne": `${invidiousUrl}/watch?v=3XzAjfwQtvM`
-}
+  "Leonard Cohen - So Long, Marianne": `${invidiousUrl}/watch?v=3XzAjfwQtvM`,
+};
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   var link = document.querySelector(".song-link");
-  link.addEventListener('click', function() {
+  link.addEventListener("click", function () {
     const keys = Object.keys(songs);
     const randomKey = keys[Math.floor(Math.random() * keys.length)];
     window.open(songs[randomKey], "_blank");
