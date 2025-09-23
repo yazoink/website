@@ -4,6 +4,7 @@
   <a href="images/me.webp" target="_blank">this</a> and my main interests at the
   moment are:
 </p>
+<br />
 <ul>
   <li>Pretty much anything related to Linux (I use NixOS btw)</li>
   <li>Homelabbing / home server administration</li>
@@ -18,12 +19,13 @@
 <h2>My Favourite Movies</h2>
 <p>I don't watch movies often and I'm very picky, but I try lol</p>
 <p>(click the posters for IMDB pages)</p>
+<br />
 <div class="gallery-div">
   <?php
     $albumCoverDir = 'images/movies';
     echo "<p>";
     foreach ($movies as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
     }
     echo "</p>";
   ?>
@@ -31,12 +33,13 @@
 <br />
 <h2>My Favourite Shows</h2>
 <p>(click the posters for IMDB pages)</p>
+<br />
 <div class="gallery-div">
   <?php
     $albumCoverDir = 'images/shows';
     echo "<p>";
     foreach ($shows as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
     }
     echo "</p>";
   ?>
@@ -48,18 +51,21 @@
   and my favourite author is William S. Burroughs.
 </p>
 <p>(click covers for Goodreads pages)</p>
+<br />
 <div class="gallery-div">
   <?php
     $albumCoverDir = 'images/books';
     echo "<p>";
     foreach ($books as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
     }
     echo "</p>";
   ?>
 </div>
 <br />
 <h2>My Favourite Visual Artists</h2>
+<p>Definitely forgetting a few...</p>
+<br />
 <ul>
   <li>Basil Wolverton</li>
   <li>Robert Crumb</li>
@@ -71,22 +77,25 @@
 <h2>My Favourite Albums</h2>
 <p>
   Oh man I could go on for days about music and I'm definitely forgetting a few
-  here but definitely consider checking out some of the albums on this list if you
+  here, but definitely consider checking out some of the albums on this list if you
   haven't heard of them.
 </p>
 <p>(click covers for YouTube links)</p>
+<br />
 <div class="gallery-div">
   <?php
     $albumCoverDir = 'images/albums';
     echo "<p>";
     foreach ($albums as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='gallery-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+      echo "<a href='$url' target='_blank'><img class='gallery-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
     }
     echo "</p>";
   ?>
 </div>
 <br />
 <h2>My Favourite Bands/Musicians</h2>
+<p>Again, definitely forgetting a few...</p>
+<br />
 <ul>
   <li>Georgie Fame</li>
   <li>The Animals</li>
