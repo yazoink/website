@@ -15,7 +15,7 @@
           <?php
             if (array_key_exists('nav', $_GET)) {
               if ($_GET['nav'] == 'About Me') {
-                require "imports/about-me.html";
+                require "imports/about-me.php";
               } elseif ($_GET['nav'] == 'Bookmarks') {
                 require "imports/bookmarks.php";
               } elseif ($_GET['nav'] == 'Technology') {

@@ -11,70 +11,53 @@
   <li>Listening to a lot of music and playing guitar</li>
   <li>Beat literature</li>
   <li>Programming</li>
-  <li>Vertical scrolling rhythm games</li>
   <li>Modding old ThinkPads</li>
   <li>Bookbinding</li>
 </ul>
 <br />
-<h2>My Favourite Games</h2>
-<p>I don't really play games that often.</p>
-<ul>
-  <li>Minecraft</li>
-  <li>Quaver</li>
-  <li>Etterna</li>
-  <li>Osu!mania</li>
-  <li>Redmatch 2</li>
-  <li>Yume Nikki</li>
-  <li>LSD Dream Emulator</li>
-  <li>Duke Nukem 3D</li>
-  <li>War Thunder</li>
-</ul>
-<br />
 <h2>My Favourite Movies</h2>
-<p>Trying to get into movies more.</p>
-<ul>
-  <li>Yellow Submarine (1968)</li>
-  <li>Naked Lunch (1991)</li>
-  <li>The Deer Hunter (1978)</li>
-  <li>Perfect Blue (1997)</li>
-  <li>Blue Velvet (1986)</li>
-  <li>Waking Life (2001)</li>
-  <li>Twin Peaks: Fire Walk With Me (1992)</li>
-  <li>Head (1968)</li>
-</ul>
+<p>I don't watch movies often and I'm very picky, but I try lol</p>
+<p>(click the posters for IMDB pages)</p>
+<div class="gallery-div">
+  <?php
+    $albumCoverDir = 'images/movies';
+    echo "<p>";
+    foreach ($movies as $title => $url) {
+      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+    }
+    echo "</p>";
+  ?>
+</div>
 <br />
 <h2>My Favourite Shows</h2>
-<ul>
-  <li>Twin Peaks</li>
-  <li>Monty Python's Flying Circus</li>
-  <li>The Young Ones</li>
-  <li>Black Books</li>
-  <li>Severance</li>
-  <li>The Mighty Boosh</li>
-  <li>Serial Experiments Lain</li>
-  <li>Neon Genesis Evangelion</li>
-  <li>The Sopranos</li>
-  <li>The Young Ones</li>
-  <li>Silicon Valley</li>
-  <li>The IT Crowd</li>
-  <li>Mr. Robot</li>
-</ul>
+<p>(click the posters for IMDB pages)</p>
+<div class="gallery-div">
+  <?php
+    $albumCoverDir = 'images/shows';
+    echo "<p>";
+    foreach ($shows as $title => $url) {
+      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+    }
+    echo "</p>";
+  ?>
+</div>
 <br />
 <h2>My Favourite Books</h2>
 <p>
-  I've been really trying to read more recently. I'm big into beat literature
+  Been really trying to read more recently. I'm big into beat literature
   and my favourite author is William S. Burroughs.
 </p>
-<ul>
-  <li>Junky - William S. Burroughs</li>
-  <li>Naked Lunch - William S. Burroughs</li>
-  <li>On the Road - Jack Kerouac</li>
-  <li>The Doors of Perception - Aldous Huxley</li>
-  <li>The Catcher in the Rye - J.D. Salinger</li>
-  <li>High Fidelity - Nick Hornby</li>
-  <li>The Hitch Hiker's Guide to the Galaxy - Douglas Adams</li>
-  <li>The R. Crumb Handbook</li>
-</ul>
+<p>(click covers for Goodreads pages)</p>
+<div class="gallery-div">
+  <?php
+    $albumCoverDir = 'images/books';
+    echo "<p>";
+    foreach ($books as $title => $url) {
+      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+    }
+    echo "</p>";
+  ?>
+</div>
 <br />
 <h2>My Favourite Visual Artists</h2>
 <ul>
@@ -85,12 +68,25 @@
   <li>Toulouse-Lautrec</li>
 </ul>
 <br />
-<h2>My Favourite Bands/Musicians</h2>
+<h2>My Favourite Albums</h2>
 <p>
   Oh man I could go on for days about music and I'm definitely forgetting a few
-  here but definitely consider checking out some artists on this list if you
+  here but definitely consider checking out some of the albums on this list if you
   haven't heard of them.
 </p>
+<p>(click covers for YouTube links)</p>
+<div class="gallery-div">
+  <?php
+    $albumCoverDir = 'images/albums';
+    echo "<p>";
+    foreach ($albums as $title => $url) {
+      echo "<a href='$url' target='_blank'><img class='gallery-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title='$title' loading='lazy'></a>";
+    }
+    echo "</p>";
+  ?>
+</div>
+<br />
+<h2>My Favourite Bands/Musicians</h2>
 <ul>
   <li>Georgie Fame</li>
   <li>The Animals</li>

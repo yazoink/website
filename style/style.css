@@ -150,7 +150,8 @@ hr {
   text-align: center;
 }
 
-.gallery-img {
+.gallery-img,
+.book-img {
   height: var(--gallery-img-height);
   width: var(--gallery-img-width);
   object-fit: cover;
@@ -160,7 +161,12 @@ hr {
   transition: transform 0.2s;
 }
 
-.gallery-img:hover {
+.book-img {
+  height: var(--book-img-height);
+}
+
+.gallery-img:hover,
+.book-img:hover {
   transform: scale(1.025);
 }
 

@@ -4,10 +4,8 @@
   --content-width: 560px;
   --sidebar-padding: 5px;
   --site-width: calc(
-    var(--sidebar-left-width)
-    + var(--sidebar-right-width)
-    + var(--content-width)
-    + calc(var(--column-gap) * 2)
+    var(--sidebar-left-width) + var(--sidebar-right-width) +
+      var(--content-width) + calc(var(--column-gap) * 2)
   );
 
   --title-height: 90px;
@@ -15,13 +13,13 @@
   --footer-height: 50px;
   --column-gap: 10px;
   --site-height: calc(
-    var(--title-height)
-    + var(--content-height)
-    + var(--footer-height)
+    var(--title-height) + var(--content-height) + var(--footer-height)
   );
 
   --gallery-img-height: 155px;
   --gallery-img-width: var(--gallery-img-height);
+
+  --book-img-height: 230px;
 
   --padding-top: 10px;
   --padding-side: 20px;

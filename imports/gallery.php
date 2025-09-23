@@ -15,12 +15,12 @@ $maxImagesPerPage = 9;
 $maxPages = ceil($imageNum / $maxImagesPerPage);
 
 if (array_key_exists('page', $_GET)) {
-  $currentPage = (int) $_GET['page'];
-  if (($currentPage < 1) || (!is_numeric($currentPage)) || ($currentPage > $maxPages)) {
-    $currentPage = 1;
-  }
+    $currentPage = (int) $_GET['page'];
+    if (($currentPage < 1) || (!is_numeric($currentPage)) || ($currentPage > $maxPages)) {
+        $currentPage = 1;
+    }
 } else {
-  $currentPage = 1;
+    $currentPage = 1;
 }
 
 $nextPage = $currentPage + 1;
@@ -28,48 +28,48 @@ $previousPage = $currentPage - 1;
 
 $startIndex = $maxImagesPerPage * ($currentPage - 1);
 if ($startIndex >= $imageNum) {
-  if ($imageNum % $maxImagesPerPage == 0) {
-    $startIndex = $maxImagesPerPage * ($imageNum / $maxImagesPerPage) - ($maxImagesPerPage * 2);
-  } else {
-    $startIndex = $maxImagesPerPage * ($imageNum / $maxImagesPerPage) - ($imageNum % $maxImagesPerPage);
-  }
+    if ($imageNum % $maxImagesPerPage == 0) {
+        $startIndex = $maxImagesPerPage * ($imageNum / $maxImagesPerPage) - ($maxImagesPerPage * 2);
+    } else {
+        $startIndex = $maxImagesPerPage * ($imageNum / $maxImagesPerPage) - ($imageNum % $maxImagesPerPage);
+    }
 }
 
 
 if ($imageNum - $startIndex < $maxImagesPerPage) {
-  $endIndex = $startIndex + ($imageNum - $startIndex);
+    $endIndex = $startIndex + ($imageNum - $startIndex);
 } else {
-  $endIndex = $startIndex + $maxImagesPerPage;
+    $endIndex = $startIndex + $maxImagesPerPage;
 }
 
-#echo "<p>current page: {$currentPage}</p>";
-#echo "<p>start index: {$startIndex}</p>";
-#echo "<p>end index: {$endIndex}</p>";
-#echo "<p>image num: {$imageNum}</p>";
-#echo "<p>max pages: {$maxPages}</p>";
+// echo "<p>current page: {$currentPage}</p>";
+// echo "<p>start index: {$startIndex}</p>";
+// echo "<p>end index: {$endIndex}</p>";
+// echo "<p>image num: {$imageNum}</p>";
+// echo "<p>max pages: {$maxPages}</p>";
 
 echo "<div class='gallery-div'>";
 for ($i = $startIndex; $i < $endIndex; $i++) {
-  echo "<a href='" . $fullImageDir . "/" . $galleryImages[$i] . "' target='_blank'><img class='gallery-img' src='" . $thumbnailDir . "/" . $galleryImages[$i] . "' loading='lazy'></a>   ";
+    echo "<a href='" . $fullImageDir . "/" . $galleryImages[$i] . "' target='_blank'><img class='gallery-img' src='" . $thumbnailDir . "/" . $galleryImages[$i] . "' loading='lazy'></a>   ";
 }
 
 echo "<br>";
 echo "<hr>";
 echo "<p>";
 if ($currentPage > 1) {
-  echo "<a href='?nav=Gallery&page={$previousPage}'>&#8810; Previous</a> ";
+    echo "<a href='?nav=Gallery&page={$previousPage}'>&#8810; Previous</a> ";
 }
 
 for ($i = 1; $i <= $maxPages; $i++) {
-  if ($i == $currentPage){
-    echo "{$i} ";
-  } else {
-    echo "<a href='?nav=Gallery&page={$i}'>{$i}</a> ";
-  }
+    if ($i == $currentPage) {
+        echo "{$i} ";
+    } else {
+        echo "<a href='?nav=Gallery&page={$i}'>{$i}</a> ";
+    }
 }
 
 if ($currentPage < $maxPages) {
-  echo "<a href='?nav=Gallery&page={$nextPage}'>Next &#8811;</a> ";
+    echo "<a href='?nav=Gallery&page={$nextPage}'>Next &#8811;</a> ";
 }
 echo "</p>";
 echo "</div>";
