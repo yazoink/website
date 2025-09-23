@@ -7,7 +7,7 @@ require "imports/functions.php";
   <?php require "imports/header.php"; ?>
   <body>
     <h1>404 Page not found...</h1>
-    <h2>Go back <a href='<?php echo $_SERVER["SERVER_NAME"]; ?>'>home</a>.</h2>
+    <h2>Go back <a href='<?php echo $baseUrl; ?>'>home</a>.</h2>
 
     <?php
       printRandomImage();

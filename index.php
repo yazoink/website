@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <header class='title'>
-      <a href='<?php echo $_SERVER["SERVER_NAME"]; ?>'><img src='images/graphics/gruvbox/logo.webp' /></a>
+      <a href='<?php echo $baseUrl; ?>'><img src='images/graphics/gruvbox/logo.webp' /></a>
       </header>
       <main class="content">
         <div class="content-inside">

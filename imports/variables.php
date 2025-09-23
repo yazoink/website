@@ -101,8 +101,11 @@ $galleryImages = array(
   "art01.webp",
 );
 
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
+$baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
+
 $navbarLinks = array(
-  "Home" => $_SERVER["SERVER_NAME"],
+  "Home" => $baseUrl,
   "About Me" => "?nav=About+Me",
   "Bookmarks" => "?nav=Bookmarks",
   "Technology" => "?nav=Technology",
