@@ -57,19 +57,19 @@ echo "<br>";
 echo "<hr>";
 echo "<p>";
 if ($currentPage > 1) {
-  echo "<a href='index.php?nav=Gallery&page={$previousPage}'>&#8810; Previous</a> ";
+  echo "<a href='?nav=Gallery&page={$previousPage}'>&#8810; Previous</a> ";
 }
 
 for ($i = 1; $i <= $maxPages; $i++) {
   if ($i == $currentPage){
     echo "{$i} ";
   } else {
-    echo "<a href='index.php?nav=Gallery&page={$i}'>{$i}</a> ";
+    echo "<a href='?nav=Gallery&page={$i}'>{$i}</a> ";
   }
 }
 
 if ($currentPage < $maxPages) {
-  echo "<a href='index.php?nav=Gallery&page={$nextPage}'>Next &#8811;</a> ";
+  echo "<a href='?nav=Gallery&page={$nextPage}'>Next &#8811;</a> ";
 }
 echo "</p>";
 echo "</div>";

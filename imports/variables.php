@@ -102,13 +102,13 @@ $galleryImages = array(
 );
 
 $navbarLinks = array(
-  "Home" => "index.php",
-  "About Me" => "index.php?nav=About+Me",
-  "Bookmarks" => "index.php?nav=Bookmarks",
-  "Technology" => "index.php?nav=Technology",
-  "Services" => "index.php?nav=Services",
-  "Blog" => "index.php?nav=Blog",
-  "Art Gallery" => "index.php?nav=Gallery"
+  "Home" => $_SERVER["SERVER_NAME"],
+  "About Me" => "?nav=About+Me",
+  "Bookmarks" => "?nav=Bookmarks",
+  "Technology" => "?nav=Technology",
+  "Services" => "?nav=Services",
+  "Blog" => "?nav=Blog",
+  "Art Gallery" => "?nav=Gallery"
 );
 
 $socialLinks = array(

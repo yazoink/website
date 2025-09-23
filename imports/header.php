@@ -2,18 +2,14 @@
   <meta charset='UTF-8'>
   <?php
     $page = basename($_SERVER['PHP_SELF']);
-    
-    if ($page == "index.php") {
+    if ($page == "403.php" || $page == "404.php" || $page == "500.php") {
+      echo "<link rel='preload' href='style/error.css' as='style'>";
+      echo "<link rel='stylesheet' href='style/error.css'>";
+    } else {
       echo "<link rel='preload' href='style/layout.css' as='style'>";
       echo "<link rel='stylesheet' href='style/layout.css'>";
       echo "<link rel='preload' href='style/style.css' as='style'>";
       echo "<link rel='stylesheet' href='style/style.css'>";
-    } else if ($page == "403.php" || $page == "404.php" || $page == "500.php") {
-      echo "<link rel='preload' href='style/error.css' as='image'>";
-      echo "<link rel='stylesheet' href='style/error.css'>";
-    } else if ($page == "fetch.php") {
-      echo "<link rel='preload' href='style/fetch.css' as='image'>";
-      echo "<link rel='stylesheet' href='style/fetch.css'>";
     }
   ?>
   <meta name="viewport" content="width=device-width, initial-scale=1">

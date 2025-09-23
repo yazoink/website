@@ -7,7 +7,7 @@ require "imports/functions.php";
   <?php require "imports/header.php"; ?>
   <body>
     <h1>500 Internal server error...</h1>
-    <h2>Go back <a href='index.php'>home</a>.</h2>
+    <h2>Go back <a href='<?php echo $_SERVER["SERVER_NAME"]; ?>'>home</a>.</h2>
 
     <?php
       printRandomImage();
@@ -15,7 +15,7 @@ require "imports/functions.php";
     ?>
 
     <div class="footer">
-      <p>yazoink 2022-2024 &#128924; <a href='mailto:yoinky@cock.li'>yoinky@cock.li</a></p>
+    <p>yazoink 2022-2024 &#128924; <a href='mailto:<?php echo $email; ?>'><?php echo $email; ?></a></p>
     </div>
   </body>
 </html>

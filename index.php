@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <header class='title'>
-        <a href='index.php'><img src='images/graphics/gruvbox/logo.webp' /></a>
+      <a href='<?php echo $_SERVER["SERVER_NAME"]; ?>'><img src='images/graphics/gruvbox/logo.webp' /></a>
       </header>
       <main class="content">
         <div class="content-inside">
@@ -19,7 +19,7 @@
               } elseif ($_GET['nav'] == 'Bookmarks') {
                 require "imports/bookmarks.php";
               } elseif ($_GET['nav'] == 'Technology') {
-                require "imports/technology.html";
+                require "imports/technology.php";
               } elseif ($_GET['nav'] == 'Blog') {
                 require "imports/blog.php";
               } elseif ($_GET['nav'] == 'Services') {
@@ -30,7 +30,7 @@
                 echo "<h2>Page not found.</h2>";
               }
             } else {
-              require "imports/home.html";
+              require "imports/home.php";
             }
             printRandomImage();
           ?>

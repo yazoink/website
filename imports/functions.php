@@ -16,7 +16,7 @@ function printRecentBlogPosts($num, $json) {
       break;
     }
     $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-    echo "<tr><td><a href='index.php?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td class='right'>" . $blogEntry['date'] . "</td></tr>";
+    echo "<tr><td><a href='?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td class='right'>" . $blogEntry['date'] . "</td></tr>";
     $i++;
   }
   echo "</tbody>";
@@ -28,7 +28,7 @@ function getCategories($json) {
   foreach ($json as $blogEntry) {
     foreach ($blogEntry['categories'] as $category) {
       if (!in_array($category, $categories)) {
-	      $categories[$category] = "index.php?nav=Blog&cat=$category";
+	      $categories[$category] = "?nav=Blog&cat=$category";
       }
     }
   }

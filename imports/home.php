@@ -1,8 +1,8 @@
 <h1>Welcome...</h1>
-<p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. click <a href='index.php?nav=About+Me'>here</a> to read more about me.</p>
+<p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. click <a href='?nav=About+Me'>here</a> to read more about me.</p>
 <br>
 <p>I also host some libre alternatives to popular websites, 
-you can read more about that <a href='index.php?nav=Services'>here</a>.</p>
+  you can read more about that <a href='?nav=Services'>here</a>.</p>
 <br>
 <p><a href="javascript:;" class="song-link">Click here for a random song recommendation.</a></p>
 <br>
@@ -24,6 +24,6 @@ printRecentBlogPosts(4, $json);
 <p>I use <a href="https://www.gimp.org/downloads/" target="_blank">GIMP</a> to dither them. You can watch a tutorial on how to do it <a href="https://odysee.com/@yazoink:c/dither:9" target="_blank">here</a>. All of the images I dither are my artwork/photos.</p>
 <br>
 <p><b>What distro/software do you use?</b></p>
-<p>I use NixOS (btw). You can read a full overview <a href="index.php?nav=Technology">here</a>.</p>
+<p>I use NixOS (btw). You can read a full overview <a href="?nav=Technology">here</a>.</p>
 <br>
 <script defer src='js/songs.js'></script>
