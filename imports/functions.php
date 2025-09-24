@@ -28,11 +28,11 @@ function printRecentBlogPosts($num, $json, $baseUrl)
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<li><a href='$baseUrl?nav=Blog&entry=$entry'>" . $blogEntry['title'] . " - " . $blogEntry["date"] . "</a></li>";
+        echo "<li><a href='$baseUrl?nav=blog&entry=$entry'>" . $blogEntry['title'] . " - " . $blogEntry["date"] . "</a></li>";
         $i++;
     }
     echo "</ul>";
-    echo "<br><p>Click <a href='$baseUrl?nav=Blog'>here</a> for more...</p>";
+    echo "<br><p>Click <a href='$baseUrl?nav=blog'>here</a> for more...</p>";
     echo "</code></pre>";
 }
 
