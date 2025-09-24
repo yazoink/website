@@ -20,30 +20,12 @@
 <p>I don't watch movies often and I'm very picky, but I try lol</p>
 <p>(click the posters for IMDB pages)</p>
 <br />
-<div class="gallery-div">
-  <?php
-    $albumCoverDir = 'images/movies';
-    echo "<p>";
-    foreach ($movies as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
-    }
-    echo "</p>";
-  ?>
-</div>
+<?php printImageGallery("images/movies", $movies, false); ?>
 <br />
 <h2>My Favourite Shows</h2>
 <p>(click the posters for IMDB pages)</p>
 <br />
-<div class="gallery-div">
-  <?php
-    $albumCoverDir = 'images/shows';
-    echo "<p>";
-    foreach ($shows as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
-    }
-    echo "</p>";
-  ?>
-</div>
+<?php printImageGallery("images/shows", $shows, false); ?>
 <br />
 <h2>My Favourite Books</h2>
 <p>
@@ -52,16 +34,7 @@
 </p>
 <p>(click covers for Goodreads pages)</p>
 <br />
-<div class="gallery-div">
-  <?php
-    $albumCoverDir = 'images/books';
-    echo "<p>";
-    foreach ($books as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='book-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
-    }
-    echo "</p>";
-  ?>
-</div>
+<?php printImageGallery("images/books", $books, false); ?>
 <br />
 <h2>My Favourite Visual Artists</h2>
 <p>Definitely forgetting a few...</p>
@@ -82,16 +55,7 @@
 </p>
 <p>(click covers for YouTube links)</p>
 <br />
-<div class="gallery-div">
-  <?php
-    $albumCoverDir = 'images/albums';
-    echo "<p>";
-    foreach ($albums as $title => $url) {
-      echo "<a href='$url' target='_blank'><img class='gallery-img' src=\"$albumCoverDir/$title.webp\" style='cursor:pointer;' title=\"$title\" loading='lazy'></a>";
-    }
-    echo "</p>";
-  ?>
-</div>
+<?php printImageGallery("images/albums", $albums, true); ?>
 <br />
 <h2>My Favourite Bands/Musicians</h2>
 <p>Again, definitely forgetting a few...</p>

@@ -5,33 +5,64 @@ function randomFromArrayLink($array, $text)
     echo "<a href='{$array[$song]}' target='_blank'><span>$text</span></a>";
 }
 
-function printRecentBlogPosts($num, $json)
+function printImageGallery($imageDir, $imageArray, $isSquare) 
 {
-    echo "<table>";
-    echo "<thead>";
-    echo "<tr><th>Recent blog posts</th></tr>";
-    echo "</thead>";
-    echo "<tbody>";
+    $imageClass = "square-img";
+    if ($isSquare == false) {
+        $imageClass = "portrait-img";
+    }
+    echo "<div class='gallery-div'><p>";
+    foreach ($imageArray as $name => $url) {
+        echo "<a href='$url' target='_blank'><img class='$imageClass' src=\"$imageDir/$name.webp\" style='cursor:pointer' title=\"$name\" loading=lazy></a>";
+    }
+    echo "</p></div>";
+}
+
+function printRecentBlogPosts($num, $json, $baseUrl)
+{
+    echo "<pre><code><p>### RECENT BLOG POSTS ###</p><br>";
+    echo "<ul>";
     $i = 0;
     foreach ($json as $blogEntry) {
         if ($i == $num) {
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<tr><td><a href='?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td class='right'>" . $blogEntry['date'] . "</td></tr>";
+        echo "<li><a href='$baseUrl?nav=Blog&entry=$entry'>" . $blogEntry['title'] . " - " . $blogEntry["date"] . "</a></li>";
         $i++;
     }
-    echo "</tbody>";
-    echo "</table>";
+    echo "</ul>";
+    echo "<br><p>Click <a href='$baseUrl?nav=Blog'>here</a> for more...</p>";
+    echo "</code></pre>";
 }
 
-function getCategories($json)
+/* function printRecentBlogPosts($num, $json, $baseUrl) */
+/* { */
+/*     echo "<table>"; */
+/*     echo "<thead>"; */
+/*     echo "<tr><th>Recent blog posts</th></tr>"; */
+/*     echo "</thead>"; */
+/*     echo "<tbody>"; */
+/*     $i = 0; */
+/*     foreach ($json as $blogEntry) { */
+/*         if ($i == $num) { */
+/*             break; */
+/*         } */
+/*         $entry = str_replace(" ", "-", strtolower($blogEntry['title'])); */
+/*         echo "<tr><td><a href='$baseUrl?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td class='right'>" . $blogEntry['date'] . "</td></tr>"; */
+/*         $i++; */
+/*     } */
+/*     echo "</tbody>"; */
+/*     echo "</table>"; */
+/* } */
+
+function getCategories($json, $baseUrl)
 {
     $categories = array();
     foreach ($json as $blogEntry) {
         foreach ($blogEntry['categories'] as $category) {
             if (!in_array($category, $categories)) {
-                $categories[$category] = "?nav=Blog&cat=$category";
+                $categories[$category] = "$baseUrl?nav=Blog&cat=$category";
             }
         }
     }
@@ -77,6 +108,19 @@ function siteIsUp($url)
 
 function printServices($services)
 {
+    echo "<pre><code>";
+    echo "<p>### SERVICES ###</p><br>";
+    echo "<ul>";
+    foreach ($services as $description => $url) {
+        echo "<li><a href='$url' target='_blank'>$description</a></li>";
+    }
+    echo "</ul><br>";
+    echo "<p>(don't rely on them being too stable lol)</p>";
+    echo "</code></pre>";
+}
+
+/* function printServices($services)
+{
     echo "<table>";
     echo "<thead>";
     echo "<th>Service</th>";
@@ -96,5 +140,5 @@ function printServices($services)
     }
     echo "</tbody>";
     echo "</table>";
-}
+} */
 ?>

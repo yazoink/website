@@ -1,13 +1,31 @@
 <?php
 $email = "yazoink@firemail.cc";
 $domain = "yazo.ink";
-$invidiousUrl = "https://inv.$domain";
+
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
+$baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
+
+$navbarLinks = array(
+  "Home" => $baseUrl,
+  "About Me" => "$baseUrl?nav=About+Me",
+  "Bookmarks" => "$baseUrl?nav=Bookmarks",
+  "Technology" => "$baseUrl?nav=Technology",
+  "Services" => "$baseUrl?nav=Services",
+  "Blog" => "$baseUrl?nav=Blog",
+  "Art Gallery" => "$baseUrl?nav=Gallery"
+);
+
+$socialLinks = array(
+  "Twitter" => "https://twitter.com/yazoink",
+  "Github" => "https://github.com/yazoink",
+  "Scratch" => "https://scratch.mit.edu/users/yazoink",
+  "Odysee" => "https://odysee.com/@yazoink:c"
+);
 
 $jsonStr = file_get_contents('blog/blog.json');
 $json = json_decode($jsonStr, true);
 
 $services = array(
-  "Invidious (Youtube frontend)" => "$invidiousUrl",
   "4get (search engine)" => "https://4get.$domain",
   "SafeTwitch (Twitch frontend)" => "https://safetwitch.$domain",
   "Redlib (Reddit frontend)" => "https://redlib.$domain",
@@ -72,53 +90,6 @@ $bookmarks = array(
     "Web Design Museum" => "https://www.webdesignmuseum.org/",
     "Base16 colour palette gallery" => "https://tinted-theming.github.io/base16-gallery/",
   ],
-);
-
-$galleryImages = array(
-  "art24.webp",
-  "art23.webp",
-  "art22.webp",
-  "art21.webp",
-  "art20.webp",
-  "art19.webp",
-  "art18.webp",
-  "art17.webp",
-  "art16.webp",
-  "art15.webp",
-  "art14.webp",
-  "art13.webp",
-  "art12.webp",
-  "art11.webp",
-  "art10.webp",
-  "art09.webp",
-  "art08.webp",
-  "art07.webp",
-  "art06.webp",
-  "art05.webp",
-  "art04.webp",
-  "art03.webp",
-  "art02.webp",
-  "art01.webp",
-);
-
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
-$baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
-
-$navbarLinks = array(
-  "Home" => $baseUrl,
-  "About Me" => "?nav=About+Me",
-  "Bookmarks" => "?nav=Bookmarks",
-  "Technology" => "?nav=Technology",
-  "Services" => "?nav=Services",
-  "Blog" => "?nav=Blog",
-  "Art Gallery" => "?nav=Gallery"
-);
-
-$socialLinks = array(
-  "Twitter" => "https://twitter.com/yazoink",
-  "Github" => "https://github.com/yazoink",
-  "Scratch" => "https://scratch.mit.edu/users/yazoink",
-  "Odysee" => "https://odysee.com/@yazoink:c"
 );
 
 $books = array(

@@ -109,6 +109,10 @@ ul {
   padding-left: var(--padding-ul);
 }
 
+pre code ul {
+  list-style-type: "- ";
+}
+
 h1,
 h2,
 h3,
@@ -150,10 +154,10 @@ hr {
   text-align: center;
 }
 
-.gallery-img,
-.book-img {
-  height: var(--gallery-img-height);
-  width: var(--gallery-img-width);
+.square-img,
+.portrait-img {
+  height: var(--square-img-height);
+  width: var(--square-img-width);
   object-fit: cover;
   margin: 5px;
   border: 1px solid var(--fg);
@@ -161,16 +165,20 @@ hr {
   transition: transform 0.2s;
 }
 
-.book-img {
-  height: var(--book-img-height);
+.portrait-img {
+  height: var(--portrait-img-height);
 }
 
-.gallery-img:hover,
-.book-img:hover {
+.square-img:hover,
+.portrait-img:hover {
   transform: scale(1.025);
 }
 
-.blog-img {
+.blog-img,
+.full-artwork {
   border: 1px solid var(--fg);
-  max-width: calc(var(--content-width) - calc(var(--padding-side) * 2));
+  max-height: calc(var(--content-height) - calc(var(--padding-side) * 2));
+  /* max-width: calc( */
+  /*   calc(calc(var(--content-width) / 4) * 3) - var(--padding-side) * 2 */
+  /* ); */
 }

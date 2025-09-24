@@ -16,10 +16,10 @@
     var(--title-height) + var(--content-height) + var(--footer-height)
   );
 
-  --gallery-img-height: 155px;
-  --gallery-img-width: var(--gallery-img-height);
+  --square-img-height: 155px;
+  --square-img-width: var(--square-img-height);
 
-  --book-img-height: 230px;
+  --portrait-img-height: 230px;
 
   --padding-top: 10px;
   --padding-side: 20px;
