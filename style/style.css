@@ -178,6 +178,7 @@ hr {
 .full-artwork {
   border: 1px solid var(--fg);
   max-height: calc(var(--content-height) - calc(var(--padding-side) * 2));
+  max-width: calc(var(--content-width) - calc(var(--padding-side) * 2));
   /* max-width: calc( */
   /*   calc(calc(var(--content-width) / 4) * 3) - var(--padding-side) * 2 */
   /* ); */

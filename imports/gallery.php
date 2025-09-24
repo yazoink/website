@@ -24,7 +24,7 @@ if (array_key_exists("Artwork", $_GET)) { // if artwork specified
             echo "<br><p><img src='$fullImageDir/" . $galleryData[$_GET["Artwork"]]["file"] . "' class='full-artwork'><br>";
             echo "<a href='$fullImageDir/" . $galleryData[$_GET["Artwork"]]["file"] . "' target='_blank'><b>Open in new tab</b></a> | <a href='download.php?url=$fullImageDir/" . $galleryData[$_GET["Artwork"]]["file"] . "'><b>Download</b></a></p>";
             echo "<br>";
-            $descriptionFile = "gallery/descriptions/" . strtolower(str_replace(" ", "-", $galleryData[$_GET["Artwork"]]["title"])) . ".html";
+            $descriptionFile = "gallery/descriptions/" . str_replace(".webp", ".html", $galleryData[$_GET["Artwork"]]["file"]);
             if (file_exists("$descriptionFile")) {
                 include $descriptionFile;
             } else {
