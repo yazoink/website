@@ -98,6 +98,7 @@ pre {
   overflow: scroll;
   scrollbar-color: var(--fg) var(--bg);
   scrollbar-width: thin;
+  overflow: hidden;
 }
 
 a {
