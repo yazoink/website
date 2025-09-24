@@ -7,12 +7,12 @@ $baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
 
 $navbarLinks = array(
   "Home" => $baseUrl,
-  "About Me" => "$baseUrl?nav=About+Me",
-  "Bookmarks" => "$baseUrl?nav=Bookmarks",
-  "Technology" => "$baseUrl?nav=Technology",
-  "Services" => "$baseUrl?nav=Services",
-  "Blog" => "$baseUrl?nav=Blog",
-  "Art Gallery" => "$baseUrl?nav=Gallery"
+  "About Me" => "$baseUrl?nav=about-me",
+  "Bookmarks" => "$baseUrl?nav=bookmarks",
+  "Technology" => "$baseUrl?nav=technology",
+  "Services" => "$baseUrl?nav=services",
+  "Blog" => "$baseUrl?nav=blog",
+  "Art Gallery" => "$baseUrl?nav=gallery"
 );
 
 $socialLinks = array(

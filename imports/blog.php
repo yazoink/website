@@ -3,7 +3,7 @@
 /* $json = json_decode($jsonStr, true); */
 if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "<p>
-    <a href='$baseUrl?nav=Blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a>
+    <a href='$baseUrl?nav=blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a>
   </p>";
     echo "<hr>";
     echo "<br>";
@@ -21,7 +21,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             echo "<br>";
             echo "<p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
-                echo "<a href='$baseUrl?nav=Blog&cat=$category'>$category</a> ";
+                echo "<a href='$baseUrl?nav=blog&cat=$category'>$category</a> ";
             }
             echo "</p>";
             echo "<br>";
@@ -37,7 +37,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "<br>";
     $categories = getCategories($json, $baseUrl);
     echo "<p><b>Categories</b>: ";
-    echo "<a href='$baseUrl?nav=Blog'>All Posts</a> ";
+    echo "<a href='$baseUrl?nav=blog'>All Posts</a> ";
     foreach ($categories as $category => $url) {
         echo "<a href='$url'>$category</a> ";
     }
@@ -52,7 +52,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             if (in_array($_GET['cat'], $blogEntry['categories'])) {
                 $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
                 $found = true;
-                echo "<li><a href='$baseUrl?nav=Blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
+                echo "<li><a href='$baseUrl?nav=blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
             }
         }
         echo "</ul>";
@@ -65,7 +65,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         echo "<ul>";
         foreach ($json as $blogEntry) {
             $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-            echo "<li><a href='$baseUrl?nav=Blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
+            echo "<li><a href='$baseUrl?nav=blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
         } 
         echo "</ul>";
         echo "<br>";

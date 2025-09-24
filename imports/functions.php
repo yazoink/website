@@ -62,7 +62,7 @@ function getCategories($json, $baseUrl)
     foreach ($json as $blogEntry) {
         foreach ($blogEntry['categories'] as $category) {
             if (!in_array($category, $categories)) {
-                $categories[$category] = "$baseUrl?nav=Blog&cat=$category";
+                $categories[$category] = "$baseUrl?nav=blog&cat=$category";
             }
         }
     }

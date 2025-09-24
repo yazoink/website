@@ -4,7 +4,7 @@
   require "imports/variables.php";
   require "imports/functions.php";
   require "imports/header.php";
-  ?>
+    ?>
   <body>
     <div class="container">
       <header class='title'>
@@ -14,26 +14,27 @@
         <div class="content-inside">
           <?php
             if (array_key_exists('nav', $_GET)) {
-              if ($_GET['nav'] == 'About Me') {
-                require "imports/about-me.php";
-              } elseif ($_GET['nav'] == 'Bookmarks') {
-                require "imports/bookmarks.php";
-              } elseif ($_GET['nav'] == 'Technology') {
-                require "imports/technology.php";
-              } elseif ($_GET['nav'] == 'Blog') {
-                require "imports/blog.php";
-              } elseif ($_GET['nav'] == 'Services') {
-                require "imports/services.php";
-              } elseif ($_GET['nav'] == 'Gallery') {
-                require "imports/gallery.php";
-              } else {
-                echo "<h2>Page not found.</h2>";
-              }
+                $nav = str_replace(" ", "-", strtolower($_GET["nav"]));
+                if ($nav == 'about-me') {
+                    include "imports/about-me.php";
+                } elseif ($nav == 'bookmarks') {
+                    include "imports/bookmarks.php";
+                } elseif ($nav == 'technology') {
+                    include "imports/technology.php";
+                } elseif ($nav == 'blog') {
+                    include "imports/blog.php";
+                } elseif ($nav == 'services') {
+                    include "imports/services.php";
+                } elseif ($nav == 'gallery') {
+                    include "imports/gallery.php";
+                } else {
+                    echo "<h2>Page not found.</h2>";
+                }
             } else {
-              require "imports/home.php";
+                include "imports/home.php";
             }
             printRandomImage();
-          ?>
+            ?>
         </div>
       </main>
       <nav class="sidebar-left">
