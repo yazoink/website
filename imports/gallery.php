@@ -20,7 +20,7 @@ if (array_key_exists("Artwork", $_GET)) { // if artwork specified
             }
             echo "<p><a href='$baseUrl?nav=Gallery&Page=$page'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'>&#x2398; <b>Copy URL</b></a></p><hr><br>";
             echo "<h2>" . $galleryData[$_GET["Artwork"]]["title"] . "</h2>";
-            echo "<h3><i>" . $galleryData[$_GET["Artwork"]]["year"] . ", " . $galleryData[$_GET["Artwork"]]["medium"] . "</i></h3>";
+            echo "<p><i>" . $galleryData[$_GET["Artwork"]]["year"] . ", " . $galleryData[$_GET["Artwork"]]["medium"] . "</i></p>";
             echo "<br><p><img src='$fullImageDir/" . $galleryData[$_GET["Artwork"]]["file"] . "' class='full-artwork'><br>";
             echo "<a href='$fullImageDir/" . $galleryData[$_GET["Artwork"]]["file"] . "' target='_blank'><b>Open in new tab</b></a> | <a href='download.php?url=$fullImageDir/" . $galleryData[$_GET["Artwork"]]["file"] . "'><b>Download</b></a></p>";
             echo "<br>";
