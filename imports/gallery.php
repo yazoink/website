@@ -94,7 +94,7 @@ if (array_key_exists("Artwork", $_GET)) { // if artwork specified
         if ($i == $currentPage) {
             echo "{$i} ";
         } else {
-            echo "<a href='$baseUrl?nav=Gallery&Page={$i}'>{$i}</a> ";
+            echo "<a href='$baseUrl?nav=Gallery&page={$i}'>{$i}</a> ";
         }
     }
 
