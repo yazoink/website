@@ -2,16 +2,12 @@
 /* $jsonStr = file_get_contents('blog/blog.json'); */
 /* $json = json_decode($jsonStr, true); */
 if (array_key_exists('entry', $_GET)) { // if blog post specified
-    echo "<p>
-    <a href='$baseUrl?nav=blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a>
-  </p>";
-    echo "<hr>";
-    echo "<br>";
     $found = false;
     foreach ($json as $blogEntry) {
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
         if ($entry == $_GET['entry']) {
             $found = true;
+            echo "<p><a href='$baseUrl?nav=blog'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'><b>&#x2398; Copy URL</b></a> | <a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a></p><hr><br>";
             echo "<h2>" . $blogEntry['title'] . "</h2>";
             echo "<h3>" . $blogEntry['subheading'] . "</h3>";
             echo "<p><i>" . $blogEntry['date'] . "</i></p>";
@@ -28,6 +24,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         }
     }
     if ($found == false) {
+        echo "<p><a href='$baseUrl?nav=blog'>&#11184; <b>Back</b></a> | <a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a></p><hr><br>";
         echo "<p><b>Entry not found :(</b></p><br>";
     }
 } else {
