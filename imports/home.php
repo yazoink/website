@@ -1,8 +1,10 @@
 <h1>Welcome...</h1>
-<p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. click <a href='<?php echo $baseUrl; ?>?nav=About+Me'>here</a> to read more about me.</p>
+<p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='<?php echo $baseUrl; ?>?nav=About+Me'>here</a> to read more about me.</p>
 <br>
 <p>I also host some libre alternatives to popular websites, 
   you can read more about that <a href='<?php echo $baseUrl; ?>?nav=Services'>here</a>.</p>
+<br>
+<p>This site was written in PHP using Neovim!</p>
 <br>
 <p><a href="javascript:;" class="song-link">Click here for a random song recommendation.</a></p>
 <br>
