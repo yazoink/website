@@ -28,11 +28,11 @@ function printRecentBlogPosts($num, $json, $baseUrl)
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<li><a href='$baseUrl/blog/post/$entry'>" . $blogEntry['title'] . " - " . $blogEntry["date"] . "</a></li>";
+        echo "<li><a href='$baseUrl?nav=Blog&entry=$entry'>" . $blogEntry['title'] . " - " . $blogEntry["date"] . "</a></li>";
         $i++;
     }
     echo "</ul>";
-    echo "<br><p>Click <a href='$baseUrl/blog'>here</a> for more...</p>";
+    echo "<br><p>Click <a href='$baseUrl?nav=Blog'>here</a> for more...</p>";
     echo "</code></pre>";
 }
 
@@ -62,12 +62,20 @@ function getCategories($json, $baseUrl)
     foreach ($json as $blogEntry) {
         foreach ($blogEntry['categories'] as $category) {
             if (!in_array($category, $categories)) {
-                $categories[$category] = "$baseUrl/blog?cat=$category";
+                $categories[$category] = "$baseUrl?nav=blog&cat=$category";
             }
         }
     }
     ksort($categories);
     return $categories;
+}
+
+function printRandomImage()
+{
+    $imageDir = "images/random-images/gruvbox";
+    $images = scandir($imageDir);
+    $images = array_slice($images, 2);
+    echo "<p><img loading='lazy' class='center' src='" . $imageDir . "/" . $images[array_rand($images)] . "'></p>";
 }
 
 function printUrlList($urlList, $openInNewTab)

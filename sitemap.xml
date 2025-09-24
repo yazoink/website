@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yazo.ink</loc>
+    <loc>https://yazo.ink/index.php</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://yazo.ink/about</loc>
+    <loc>https://yazo.ink/index.php?nav=About+Me</loc>
   </url>
   <url>
-    <loc>https://yazo.ink/bookmarks</loc>
+    <loc>https://yazo.ink/index.php?nav=Bookmarks</loc>
   </url>
   <url>
-    <loc>https://yazo.ink/technology</loc>
+    <loc>https://yazo.ink/index.php?nav=Technology</loc>
   </url>
   <url>
-    <loc>https://yazo.ink/services</loc>
+    <loc>https://yazo.ink/index.php?nav=Services</loc>
   </url>
   <url>
-    <loc>https://yazo.ink/blog</loc>
+    <loc>https://yazo.ink/index.php?nav=Blog</loc>
   </url>
   <url>
-    <loc>https://yazo.ink/gallery</loc>
+    <loc>https://yazo.ink/index.php?nav=Art+Gallery</loc>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 <h1>About Me...</h1>
 <p>
   Hi, my name is Gene and I like making things. I look like
-  <a href="/images/me.webp" target="_blank">this</a> and my main interests at the
+  <a href="images/me.webp" target="_blank">this</a> and my main interests at the
   moment are:
 </p>
 <br />
@@ -20,12 +20,12 @@
 <p>I don't watch movies often and I'm very picky, but I try lol</p>
 <p>(click the posters for IMDB pages)</p>
 <br />
-<?php printImageGallery("/images/movies", $movies, false); ?>
+<?php printImageGallery("images/movies", $movies, false); ?>
 <br />
 <h2>My Favourite Shows</h2>
 <p>(click the posters for IMDB pages)</p>
 <br />
-<?php printImageGallery("/images/shows", $shows, false); ?>
+<?php printImageGallery("images/shows", $shows, false); ?>
 <br />
 <h2>My Favourite Books</h2>
 <p>
@@ -34,7 +34,7 @@
 </p>
 <p>(click covers for Goodreads pages)</p>
 <br />
-<?php printImageGallery("/images/books", $books, false); ?>
+<?php printImageGallery("images/books", $books, false); ?>
 <br />
 <h2>My Favourite Visual Artists</h2>
 <p>Definitely forgetting a few...</p>
@@ -55,7 +55,7 @@
 </p>
 <p>(click covers for YouTube links)</p>
 <br />
-<?php printImageGallery("/images/albums", $albums, true); ?>
+<?php printImageGallery("images/albums", $albums, true); ?>
 <br />
 <h2>My Favourite Bands/Musicians</h2>
 <p>Again, definitely forgetting a few...</p>

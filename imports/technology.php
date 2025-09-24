@@ -53,7 +53,7 @@
   My secondary laptop is an Acer TravelMate B113 I built from scrap parts. I
   have a blog article about it
   <a
-href="<?php echo $baseUrl; ?>/blog/post/using-a-2013-netbook-in-2025"
+href="<?php echo $baseUrl; ?>?nav=Blog&entry=using-a-2013-netbook-in-2025"
     target="_blank"
     >here</a
   >.
