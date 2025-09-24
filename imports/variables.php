@@ -4,15 +4,16 @@ $domain = "yazo.ink";
 
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
 $baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
+// $fullUrl = "$protocol://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 $navbarLinks = array(
   "Home" => $baseUrl,
-  "About Me" => "$baseUrl?nav=about-me",
-  "Bookmarks" => "$baseUrl?nav=bookmarks",
-  "Technology" => "$baseUrl?nav=technology",
-  "Services" => "$baseUrl?nav=services",
-  "Blog" => "$baseUrl?nav=blog",
-  "Art Gallery" => "$baseUrl?nav=gallery"
+  "About Me" => "$baseUrl/about",
+  "Bookmarks" => "$baseUrl/bookmarks",
+  "Technology" => "$baseUrl/technology",
+  "Services" => "$baseUrl/services",
+  "Blog" => "$baseUrl/blog",
+  "Art Gallery" => "$baseUrl/gallery"
 );
 
 $socialLinks = array(
@@ -22,7 +23,7 @@ $socialLinks = array(
   "Odysee" => "https://odysee.com/@yazoink:c"
 );
 
-$jsonStr = file_get_contents('blog/blog.json');
+$jsonStr = file_get_contents('blog-entries/blog.json');
 $json = json_decode($jsonStr, true);
 
 $services = array(

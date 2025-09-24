@@ -1,37 +1,37 @@
 <?php
-$fullImageDir = 'gallery/art/full';
-$thumbnailDir = 'gallery/art/thumbnails';
-$jsonStr = file_get_contents('gallery/gallery.json');
+$fullImageDir = "/art-gallery/art/full";
+$thumbnailDir = "/art-gallery/art/thumbnails";
+$jsonStr = file_get_contents("$_SERVER[DOCUMENT_ROOT]/art-gallery/gallery.json");
 $galleryData = json_decode($jsonStr, true);
 $imageNum = count($galleryData);
+$maxImagesPerPage = 9;
 
-if (array_key_exists("artwork", $_GET)) { // if artwork specified
+// echo $_SERVER["REQUEST_URI"];
+$re = "/\/gallery\/artwork\/.*/i";
+if (preg_match($re, $_SERVER["REQUEST_URI"])) { // if artwork specified
     // $fileName = str_replace(" ", "-", $_GET["artwork"]);
-    if (!is_numeric($_GET["artwork"])) {
+    $re = "/\/gallery\/artwork\//i";
+    $artwork = preg_replace($re, "", $_SERVER["REQUEST_URI"]);
+    $re = "/[^0-9].*/";
+    $artwork = preg_replace($re, "", $artwork);
+    $artwork = (int) $artwork;
+    if ($artwork >= $imageNum) {
         echo "<p>Artwork not found :(</p><br>";
-    } else {
-        if ($_GET["artwork"] >= $imageNum) {
-            echo "<p>Artwork not found :(</p><br>";
-        } else { // if artwork exists
-            if (array_key_exists("page", $_GET)) {
-                $page = $_GET["page"];
-            } else {
-                $page = 1;
-            }
-            echo "<p><a href='$baseUrl?nav=gallery&page=$page'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'>&#x2398; <b>Copy URL</b></a></p><hr><br>";
-            echo "<h2>" . $galleryData[$_GET["artwork"]]["title"] . "</h2>";
-            echo "<p><i>" . $galleryData[$_GET["artwork"]]["year"] . ", " . $galleryData[$_GET["artwork"]]["medium"] . "</i></p>";
-            echo "<br><p><img src='$fullImageDir/" . $galleryData[$_GET["artwork"]]["file"] . "' class='full-artwork'><br>";
-            echo "<a href='$fullImageDir/" . $galleryData[$_GET["artwork"]]["file"] . "' target='_blank'><b>Open in new tab</b></a> | <a href='download.php?url=$fullImageDir/" . $galleryData[$_GET["artwork"]]["file"] . "'><b>Download</b></a></p>";
-            echo "<br>";
-            $descriptionFile = "gallery/descriptions/" . str_replace(".webp", ".html", $galleryData[$_GET["artwork"]]["file"]);
-            if (file_exists("$descriptionFile")) {
-                include $descriptionFile;
-            } else {
-                echo "<p><i>No description.</i></p>";
-            }
-            echo "<script src='js/copy-url.js' defer></script>";
+    } else { // if artwork exists
+        $page = ceil(($artwork + 1) / $maxImagesPerPage);
+        echo "<p><a href='$baseUrl/gallery?page=$page'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'>&#x2398; <b>Copy URL</b></a></p><hr><br>";
+        echo "<h2>" . $galleryData[$artwork]["title"] . "</h2>";
+        echo "<p><i>" . $galleryData[$artwork]["year"] . ", " . $galleryData[$artwork]["medium"] . "</i></p>";
+        echo "<br><p><img src='$fullImageDir/" . $galleryData[$artwork]["file"] . "' class='full-artwork'><br>";
+        echo "<a href='$fullImageDir/" . $galleryData[$artwork]["file"] . "' target='_blank'><b>Open in new tab</b></a> | <a href='$baseUrl/download.php?url=$fullImageDir/" . $galleryData[$artwork]["file"] . "'><b>Download</b></a></p>";
+        echo "<br>";
+        $descriptionFile = "$_SERVER[DOCUMENT_ROOT]/art-gallery/descriptions/" . str_replace(".webp", ".html", $galleryData[$artwork]["file"]);
+        if (file_exists("$descriptionFile")) {
+            include $descriptionFile;
+        } else {
+            echo "<p><i>No description.</i></p>";
         }
+        echo "<script src='/js/copy-url.js' defer></script>";
     }
 } else { // if artwork not specified
     echo "<h1>Art Gallery...</h1>";
@@ -41,7 +41,6 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     array_splice($images, 0, 2); # remove . and ..
     rsort($images); */
 
-    $maxImagesPerPage = 9;
     $maxPages = ceil($imageNum / $maxImagesPerPage);
 
     if (array_key_exists('page', $_GET)) {
@@ -80,26 +79,26 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
 
     echo "<div class='gallery-div'>";
     for ($i = $startIndex; $i < $endIndex; $i++) {
-        echo "<a href='$baseUrl?nav=gallery&page=$currentPage&artwork=" . $i . "'><img class='square-img' src='" . $thumbnailDir . "/" . $galleryData[$i]["file"] . "' style='cursor:pointer' title=\"". $galleryData[$i]["title"] . " (" . $galleryData[$i]["medium"] . ", " . $galleryData[$i]["year"] . ")\" loading='lazy'></a>   ";
+        echo "<a href='$baseUrl/gallery/artwork/$i'><img class='square-img' src='" . $thumbnailDir . "/" . $galleryData[$i]["file"] . "' style='cursor:pointer' title=\"". $galleryData[$i]["title"] . " (" . $galleryData[$i]["medium"] . ", " . $galleryData[$i]["year"] . ")\" loading='lazy'></a>   ";
     }
 
     echo "<br>";
     echo "<hr>";
     echo "<p>";
     if ($currentPage > 1) {
-        echo "<a href='$baseUrl?nav=gallery&page={$previousPage}'>&#8810; Previous</a> ";
+        echo "<a href='$baseUrl/gallery?page={$previousPage}'>&#8810; Previous</a> ";
     }
 
     for ($i = 1; $i <= $maxPages; $i++) {
         if ($i == $currentPage) {
             echo "{$i} ";
         } else {
-            echo "<a href='$baseUrl?nav=gallery&page={$i}'>{$i}</a> ";
+            echo "<a href='$baseUrl/gallery?page={$i}'>{$i}</a> ";
         }
     }
 
     if ($currentPage < $maxPages) {
-        echo "<a href='$baseUrl?nav=gallery&page={$nextPage}'>Next &#8811;</a> ";
+        echo "<a href='$baseUrl/gallery?page={$nextPage}'>Next &#8811;</a> ";
     }
     echo "</p>";
     echo "</div>";

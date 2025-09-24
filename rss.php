@@ -12,7 +12,7 @@ foreach ($json as $blogEntry) {
     $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
     echo "<item>";
     echo "<title>" . $blogEntry['title'] . "</title>";
-    echo "<link>$baseUrl?nav=Blog&amp;entry=" . $entry . "</link>";
+    echo "<link>$baseUrl/blog/post/" . $entry . "</link>";
     echo "<description>" . $blogEntry['subheading'] . "</description>";
     echo "<pubDate>" . date(DATE_RSS, strtotime($blogEntry['date'])) . "</pubDate>";
     echo "</item>";
