@@ -83,3 +83,13 @@ href="<?php echo $baseUrl; ?>?nav=Blog&entry=using-a-2013-netbook-in-2025"
 <p><b>Browser:</b> Hardened Firefox</p>
 <p><b>Shell:</b> ZSH</p>
 <br />
+<h2>My Rice</h2>
+<p>My NixOS/Hyprland rice :)</p>
+<p>See my configs <a href='https://github.com/yazoink/nixos' target='_blank'>here!</a></p>
+<br>
+<video controls>
+  <source src='videos/rice.mp4' type='video/mp4'>
+  Your browser does not support the video tag :(
+</video>
+<br>
+<br>

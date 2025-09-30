@@ -175,7 +175,8 @@ hr {
 }
 
 .blog-img,
-.full-artwork {
+.full-artwork,
+video {
   border: 1px solid var(--fg);
   max-height: calc(var(--content-height) - calc(var(--padding-side) * 2));
   max-width: calc(var(--content-width) - calc(var(--padding-side) * 2));
