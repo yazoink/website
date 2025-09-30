@@ -18,17 +18,17 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
     echo "</p></div>";
 }
 
-function printRecentBlogPosts($num, $json, $baseUrl)
+function printRecentBlogPosts($num, $blogData, $baseUrl)
 {
     echo "<pre><code><p>### RECENT BLOG POSTS ###</p><br>";
     echo "<ul>";
     $i = 0;
-    foreach ($json as $blogEntry) {
+    foreach ($blogData as $blogEntry) {
         if ($i == $num) {
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<li><a href='$baseUrl?nav=blog&entry=$entry'>" . $blogEntry['title'] . " - " . $blogEntry["date"] . "</a></li>";
+        echo "<li><a href='$baseUrl?nav=blog&entry=$entry'>" . $blogEntry['title'] . " (" . $blogEntry["date"] . ")</a></li>";
         $i++;
     }
     echo "</ul>";

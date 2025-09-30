@@ -23,7 +23,7 @@ $socialLinks = array(
 );
 
 $jsonStr = file_get_contents('blog/blog.json');
-$json = json_decode($jsonStr, true);
+$blogData = json_decode($jsonStr, true);
 
 $services = array(
   "4get (search engine)" => "https://4get.$domain",

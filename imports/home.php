@@ -9,7 +9,7 @@
 <p><a href="javascript:;" class="song-link">Click here for a random song recommendation.</a></p>
 <br>
 <?php
-printRecentBlogPosts(4, $json, $baseUrl);
+printRecentBlogPosts(4, $blogData, $baseUrl);
 ?>
 <br>
 <h2>FAQ</h2>
