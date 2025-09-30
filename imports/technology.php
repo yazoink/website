@@ -81,7 +81,7 @@ href="<?php echo $baseUrl; ?>?nav=Blog&entry=using-a-2013-netbook-in-2025"
 <p><b>Terminal:</b> Alacritty/Kitty</p>
 <p><b>IDE:</b> Neovim</p>
 <p><b>Browser:</b> Hardened Firefox</p>
-<p><b>Shell:</b> ZSH</p>
+<p><b>Shell:</b> Zsh with Starship</p>
 <br />
 <h2>My Rice</h2>
 <p>My NixOS/Hyprland rice :)</p>
