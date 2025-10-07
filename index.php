@@ -35,6 +35,7 @@
             }
             // printRandomImage();
             ?>
+          <br>
         </div>
       </main>
       <nav class="sidebar-left">
