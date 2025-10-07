@@ -5,6 +5,28 @@ function randomFromArrayLink($array, $text)
     echo "<a href='{$array[$song]}' target='_blank'><span>$text</span></a>";
 }
 
+function printCategories($categories, $showByDefault)
+{
+    echo "<h1>Blog...</h1>";
+    if ($showByDefault == true) {
+        echo "<a href='javascript:;' id='categories-button'>
+        <b>Categories</b> <img src='images/graphics/gruvbox/up.webp'>
+        </a><br>
+        <div id='categories-list' class='categories-list' style='display:block;'>
+        <a href='/?nav=blog'>All Posts</a> ";
+    } else {
+        echo "<a href='javascript:;' id='categories-button'>
+        <b>Categories</b> <img src='images/graphics/gruvbox/down.webp'>
+        </a><br>
+        <div id='categories-list' class='categories-list' style='display:none;'>
+        <a href='/?nav=blog'>All Posts</a> ";
+    }
+    foreach ($categories as $category => $url) {
+        echo "<a href='$url'>$category</a> ";
+    }
+    echo "</div><br>";
+}
+
 function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
 {
     echo "<p>

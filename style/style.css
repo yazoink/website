@@ -85,7 +85,8 @@ pre,
 code,
 td,
 tr,
-th {
+th,
+.categories-list {
   font-family: compis;
   line-height: 16px;
   font-size: 16px;
@@ -95,6 +96,17 @@ pre {
   border: 1px dashed var(--fg);
   padding: var(--padding-pre);
   margin: var(--padding-pre);
+  overflow: scroll;
+  scrollbar-color: var(--fg) var(--bg);
+  scrollbar-width: thin;
+}
+
+.categories-list {
+  border: 1px dashed var(--fg);
+  padding: var(--padding-pre);
+  margin-right: var(--padding-pre);
+  margin-left: var(--padding-pre);
+  margin-top: var(--padding-pre);
   overflow: scroll;
   scrollbar-color: var(--fg) var(--bg);
   scrollbar-width: thin;
