@@ -28,12 +28,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         xNotFound("Post");
     }
 } else { // post not specified
-    echo "<h1>Blog...</h1>
-      <p>
-        <a href='rss.php'>
-          <b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b>
-        </a>
-      </p><hr><br>";
+    echo "<h1>Blog...</h1>";
     $categories = getCategories($blogData);
     echo "<p><b>Categories</b>: 
       <a href='/?nav=blog'>All Posts</a> ";
@@ -43,7 +38,12 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "</p>";
     echo "<br>";
     if (array_key_exists('cat', $_GET)) { // if category specified
-        echo "<h2>" . $_GET['cat'] . "</h2><ul>";
+        echo "<h2>" . $_GET['cat'] . "</h2> 
+            <p>
+                <a href='/rss.php?cat=" . $_GET["cat"] . "'><img src='images/graphics/gruvbox/rss2.webp'>
+                    RSS feed for <i>" . $_GET["cat"] . "</i>
+                </a>
+            </p><ul>";
         $found = false;
         foreach ($blogData as $blogEntry) {
             if (in_array($_GET['cat'], $blogEntry['categories'])) {
@@ -64,8 +64,12 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             echo "<p><b>Category not found :(</b></p>";
         }
     } else { // category not specified (all posts)
-        echo "<h2>All Posts</h2>";
-        echo "<ul>";
+        echo "<h2>All Posts</h2> 
+            <p>
+                <a href='/rss.php'><img src='images/graphics/gruvbox/rss2.webp'>
+                    RSS feed
+                </a>
+            </p><ul>";
         foreach ($blogData as $blogEntry) {
             $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
             $title = $blogEntry["title"];
