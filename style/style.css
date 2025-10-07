@@ -101,6 +101,25 @@ pre {
   scrollbar-width: thin;
 }
 
+.changelog,
+.status-updates {
+  border: 1px dashed var(--fg);
+  padding: var(--padding-pre);
+  margin: var(--padding-pre);
+  overflow: scroll;
+  scrollbar-color: var(--fg) var(--bg);
+  scrollbar-width: thin;
+  overflow: scroll;
+}
+
+.status-updates {
+  max-height: var(--status-height);
+}
+
+.changelog {
+  max-height: var(--changelog-height);
+}
+
 .categories-list {
   border: 1px dashed var(--fg);
   padding: var(--padding-pre);
@@ -125,7 +144,9 @@ ul {
   padding-left: var(--padding-ul);
 }
 
-pre code ul {
+pre code ul,
+.status-updates ul,
+.changelog ul {
   list-style-type: "- ";
 }
 

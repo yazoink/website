@@ -61,7 +61,7 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
 
 function printRecentBlogPosts($num, $blogData)
 {
-    echo "<pre><code><p>### RECENT BLOG POSTS ###</p><br>";
+    echo "<pre><code><p>### RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>] ###</p><br>";
     echo "<ul>";
     $i = 0;
     foreach ($blogData as $blogEntry) {
@@ -69,7 +69,7 @@ function printRecentBlogPosts($num, $blogData)
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<li><a href='/?nav=blog&entry=$entry'>" . $blogEntry['title'] . " (" . $blogEntry["date"] . ")</a></li>";
+        echo "<li><a href='/?nav=blog&entry=$entry'>" . $blogEntry['title'] . " [" . $blogEntry["date"] . "]</a></li>";
         $i++;
     }
     echo "</ul>";
@@ -110,6 +110,28 @@ function printUrlList($urlList, $openInNewTab)
         }
     }
     echo "</ul>";
+}
+
+function printStatusUpdates($statusUpdates)
+{
+    echo "<div class='status-updates'><code><p>### STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>] ###</p>";
+    foreach ($statusUpdates as $update) {
+        echo "<br><p>$update[status]</p><br><p>~ $update[date]</p></li>";
+    }
+    echo "</code></div>";
+}
+
+function printChangelog($changelog)
+{
+    echo "<div class='changelog'><code><p>### SITE CHANGELOG [<a href='/rss.php?changelog=true'>RSS</a>] ###</p>";
+    foreach ($changelog as $date => $changes) {
+        echo "<br><p>$date</p><ul>";
+        foreach ($changes as $change) {
+            echo "<li>$change</li>";
+        }
+        echo "</ul>";
+    }
+    echo "</code></div>";
 }
 
 function printServices($services)

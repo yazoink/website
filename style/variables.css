@@ -20,6 +20,8 @@
   --square-img-width: var(--square-img-height);
 
   --portrait-img-height: 230px;
+  --status-height: 100px;
+  --changelog-height: 150px;
 
   --padding-top: 10px;
   --padding-side: 20px;

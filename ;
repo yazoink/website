@@ -23,23 +23,17 @@ $blogData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
   [
-    "status" => "I will write another blog post eventually. Potential upcoming posts: an in-depth list of my favourite songs, my favourite book passages/quotes, hacking my Kindle, recipes(?)",
-    "date" => "7 October 2025"
-  ],
-  [
-    "status" => "This is basically twitter",
-    "date" => "7 October 2025"
+    "status" => "I will write another blog post eventually. Potential upcoming posts: an in-depth list of my favourite songs, my favourite book passages/quotes, recipes(?).",
+    "date" => "7/10/2025"
   ]
 );
 
 $changelog = array(
   "7/10/2025" => [
     "Misc formatting and optimisations",
-    "Add status updates",
-    "Add favicon",
     "Fix incompatible unicode symbols",
     "Tweak CSS",
-    "Fix RSS and add feeds for individual tags, status updates, and site changelog",
+    "Fix RSS and add feeds for individual tags",
     "Improve gallery function",
     "Improve blog function",
     "Add Performance (1970) to favourite movies",
