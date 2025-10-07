@@ -44,7 +44,7 @@ if (array_key_exists("status", $_GET)) {
                 echo "<li>$change</li>";
             }
             echo "</ul>
-              ]></description>
+              ]]></description>
               </item>";
         }
         echo "</channel></rss>";
