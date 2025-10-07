@@ -1,10 +1,10 @@
 .container {
   display: grid;
-  grid-template-columns: 
-    var(--sidebar-left-width) 
+  grid-template-columns:
+    var(--sidebar-left-width)
     var(--content-width)
     var(--sidebar-right-width);
-  grid-template-rows: 
+  grid-template-rows:
     var(--title-height)
     var(--content-height)
     var(--footer-height);
@@ -35,10 +35,7 @@
 .content-inside {
   padding-right: var(--padding-side);
   padding-left: var(--padding-side);
-  max-width: calc(
-    var(--content-width)
-    - calc(var(--padding-side) * 2)
-  );
+  max-width: calc(var(--content-width) - calc(var(--padding-side) * 2));
   margin-left: auto;
   margin-right: auto;
 }
@@ -53,6 +50,12 @@
   grid-column: 3;
   grid-row: 2;
   overflow: hidden;
+  position: relative;
+}
+
+.sidebar-right .sidebar-img {
+  position: absolute;
+  bottom: 0;
 }
 
 .footer {
