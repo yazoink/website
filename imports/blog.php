@@ -27,7 +27,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         printBackCopyRssButtons("/?nav=blog", false, true);
         xNotFound("Post");
     }
-} else {
+} else { // post not specified
     echo "<h1>Blog...</h1>
       <p>
         <a href='rss.php'>
@@ -42,7 +42,6 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     }
     echo "</p>";
     echo "<br>";
-
     if (array_key_exists('cat', $_GET)) { // if category specified
         echo "<h2>" . $_GET['cat'] . "</h2><ul>";
         $found = false;
@@ -64,7 +63,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         if ($found == false) {
             echo "<p><b>Category not found :(</b></p>";
         }
-    } else {
+    } else { // category not specified (all posts)
         echo "<h2>All Posts</h2>";
         echo "<ul>";
         foreach ($blogData as $blogEntry) {
