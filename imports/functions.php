@@ -5,6 +5,19 @@ function randomFromArrayLink($array, $text)
     echo "<a href='{$array[$song]}' target='_blank'><span>$text</span></a>";
 }
 
+function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
+{
+    echo "<p>
+  <a href='$backUrl'><img src='images/graphics/gruvbox/back.webp'> <b>Back</b></a>";
+    if ($printCopyUrl == true) {
+        echo " | <a href='javascript:;' id='copy-url'><img src='images/graphics/gruvbox/copy.webp'> <b>Copy URL</b></a>";
+    }
+    if ($printRss == true) {
+        echo " | <a href='rss.php'><img src='images/graphics/gruvbox/rss2.webp'> <b>RSS</b></a>";
+    }
+    echo "</p><hr><br>";
+}
+
 function printImageGallery($imageDir, $imageArray, $isSquare) 
 {
     $imageClass = "square-img";
