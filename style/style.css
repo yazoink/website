@@ -112,6 +112,10 @@ pre {
   scrollbar-width: thin;
 }
 
+.hidden {
+  display: none;
+}
+
 a {
   color: var(--fg);
 }

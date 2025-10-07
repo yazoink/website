@@ -18,7 +18,7 @@ function printCategories($categories, $showByDefault)
         echo "<a href='javascript:;' id='categories-button'>
         <b>Categories</b> <img src='images/graphics/gruvbox/down.webp'>
         </a><br>
-        <div id='categories-list' class='categories-list' style='display:none;'>
+        <div id='categories-list' class='hidden'>
         <a href='/?nav=blog'>All Posts</a> ";
     }
     foreach ($categories as $category => $url) {
