@@ -1,18 +1,17 @@
 <?php
 $email = "yazoink@firemail.cc";
-$domain = "yazo.ink";
 
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
 $baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
 
 $navbarLinks = array(
   "Home" => $baseUrl,
-  "About Me" => "$baseUrl?nav=about-me",
-  "Bookmarks" => "$baseUrl?nav=bookmarks",
-  "Technology" => "$baseUrl?nav=technology",
-  "Services" => "$baseUrl?nav=services",
-  "Blog" => "$baseUrl?nav=blog",
-  "Art Gallery" => "$baseUrl?nav=gallery"
+  "About Me" => "/?nav=about-me",
+  "Bookmarks" => "/?nav=bookmarks",
+  "Technology" => "/?nav=technology",
+  "Services" => "/?nav=services",
+  "Blog" => "/?nav=blog",
+  "Art Gallery" => "/?nav=gallery"
 );
 
 $socialLinks = array(
@@ -26,12 +25,12 @@ $jsonStr = file_get_contents('blog/blog.json');
 $blogData = json_decode($jsonStr, true);
 
 $services = array(
-  "4get (search engine)" => "https://4get.$domain",
-  "SafeTwitch (Twitch frontend)" => "https://safetwitch.$domain",
-  "Redlib (Reddit frontend)" => "https://redlib.$domain",
-  "AnonymousOverflow (Stack Overflow frontend)" => "https://overflow.$domain",
-  "Quetre (Quora frontend)" => "https://quetre.$domain",
-  "Rimgo (Imgur frontend)" => "https://rimgo.$domain",
+  "4get (search engine)" => "https://4get.yazo.ink",
+  "SafeTwitch (Twitch frontend)" => "https://safetwitch.yazo.ink",
+  "Redlib (Reddit frontend)" => "https://redlib.yazo.ink",
+  "AnonymousOverflow (Stack Overflow frontend)" => "https://overflow.yazo.ink",
+  "Quetre (Quora frontend)" => "https://quetre.yazo.ink",
+  "Rimgo (Imgur frontend)" => "https://rimgo.yazo.ink",
 );
 
 $featuredBlogPosts = array(
@@ -56,7 +55,7 @@ $bookmarks = array(
     "Unicode Symbols" => "https://symbl.cc/en/",
     "Arch Linux Wiki" => "https://wiki.archlinux.org/",
     "OSX-KVM" => "https://github.com/kholia/OSX-KVM",
-    "Recipe site made by me" => "https://simplerecipepage.great-site.net/",
+    "Recipe site made by me" => "https://recipes.yazo.ink",
     "HEX to RGB converter" => "https://rgbcolorcode.com/color/converter/",
     "Useful terminal commands" => "https://www.commandlinefu.com/commands/browse",
     "W3Schools (programming tutorials with a focus on webdev)" => "https://www.w3schools.com/",
@@ -174,6 +173,7 @@ $movies = array(
   "Head (1968)" => "https://www.imdb.com/title/tt0063049/",
   "Naked Lunch (1991)" => "https://www.imdb.com/title/tt0102511/",
   "Perfect Blue (1997)" => "https://www.imdb.com/title/tt0156887/",
+  "Performance (1970)" => "https://www.imdb.com/title/tt0066214/",
   "The Deer Hunter (1978)" => "https://www.imdb.com/title/tt0077416/",
   "Twin Peaks Fire Walk with Me (1992)" => "https://www.imdb.com/title/tt0105665/",
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",

@@ -18,6 +18,12 @@ function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
     echo "</p><hr><br>";
 }
 
+function xNotFound($x)
+{
+    echo "<img src='images/graphics/gruvbox/face2.webp'>
+    <p>$x not found :(</p>";
+}
+
 function printImageGallery($imageDir, $imageArray, $isSquare) 
 {
     $imageClass = "square-img";
@@ -31,7 +37,7 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
     echo "</p></div>";
 }
 
-function printRecentBlogPosts($num, $blogData, $baseUrl)
+function printRecentBlogPosts($num, $blogData)
 {
     echo "<pre><code><p>### RECENT BLOG POSTS ###</p><br>";
     echo "<ul>";
@@ -41,11 +47,11 @@ function printRecentBlogPosts($num, $blogData, $baseUrl)
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<li><a href='$baseUrl?nav=blog&entry=$entry'>" . $blogEntry['title'] . " (" . $blogEntry["date"] . ")</a></li>";
+        echo "<li><a href='/?nav=blog&entry=$entry'>" . $blogEntry['title'] . " (" . $blogEntry["date"] . ")</a></li>";
         $i++;
     }
     echo "</ul>";
-    echo "<br><p>Click <a href='$baseUrl?nav=blog'>here</a> for more...</p>";
+    echo "<br><p>Click <a href='/?nav=blog'>here</a> for more...</p>";
     echo "</code></pre>";
 }
 
@@ -69,13 +75,37 @@ function printRecentBlogPosts($num, $blogData, $baseUrl)
 /*     echo "</table>"; */
 /* } */
 
-function getCategories($json, $baseUrl)
+/* function cipher($ch, $key)
+{
+    if (!ctype_alpha($ch)) {
+        return $ch;
+    }
+    $offset = ord(ctype_upper($ch) ? 'A' : 'a');
+    return chr(fmod(((ord($ch) + $key) - $offset), 26) + $offset);
+}
+
+function encryptString($plainText, $key)
+{
+    $encryptedString = "";
+    $inputArr = str_split($plainText);
+    foreach ($inputArr as $ch) {
+        $encryptedString .= cipher($ch, $key);
+    }
+    return $encryptedString;
+}
+
+function decryptString($encryptedString, $key)
+{
+    return encryptString($encryptedString, 26 - $key);
+} */
+
+function getCategories($json)
 {
     $categories = array();
     foreach ($json as $blogEntry) {
         foreach ($blogEntry['categories'] as $category) {
             if (!in_array($category, $categories)) {
-                $categories[$category] = "$baseUrl?nav=blog&cat=$category";
+                $categories[$category] = "/?nav=blog&cat=$category";
             }
         }
     }
@@ -104,7 +134,7 @@ function printUrlList($urlList, $openInNewTab)
     echo "</ul>";
 }
 
-function siteIsUp($url)
+/* function siteIsUp($url)
 {
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -117,7 +147,7 @@ function siteIsUp($url)
     } else {
         return false;
     }
-}
+} */
 
 function printServices($services)
 {

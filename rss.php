@@ -16,7 +16,7 @@ foreach ($blogData as $blogEntry) {
     $content = str_replace(">", "&gt;", $content);
     echo "<item>";
     echo "<title>" . $blogEntry['title'] . "</title>";
-    echo "<link>$baseUrl?nav=Blog&amp;entry=" . $entry . "</link>";
+    echo "<link>$/?nav=Blog&amp;entry=" . $entry . "</link>";
     echo "<description>";
     echo $blogEntry['subheading'];
     echo "&lt;br&gt;";

@@ -17,7 +17,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             echo "<br>";
             echo "<p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
-                echo "<a href='$baseUrl?nav=blog&cat=$category'>$category</a> ";
+                echo "<a href='/?nav=blog&cat=$category'>$category</a> ";
             }
             echo "</p>";
             echo "<br>";
@@ -25,16 +25,18 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     }
     if ($found == false) {
         printBackCopyRssButtons("/?nav=blog", false, true);
-        echo "<p><b>Entry not found :(</b></p><br>";
+        xNotFound("Post");
     }
 } else {
-    echo "<h1>Blog...</h1>";
-    echo "<p><a href='rss.php'><b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b></a></p>";
-    echo "<hr>";
-    echo "<br>";
-    $categories = getCategories($blogData, $baseUrl);
-    echo "<p><b>Categories</b>: ";
-    echo "<a href='$baseUrl?nav=blog'>All Posts</a> ";
+    echo "<h1>Blog...</h1>
+      <p>
+        <a href='rss.php'>
+          <b><img src='images/graphics/gruvbox/rss2.webp' width='12px'> RSS</b>
+        </a>
+      </p><hr><br>";
+    $categories = getCategories($blogData);
+    echo "<p><b>Categories</b>: 
+      <a href='/?nav=blog'>All Posts</a> ";
     foreach ($categories as $category => $url) {
         echo "<a href='$url'>$category</a> ";
     }
@@ -42,14 +44,19 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "<br>";
 
     if (array_key_exists('cat', $_GET)) { // if category specified
-        echo "<h2>" . $_GET['cat'] . "</h2>";
-        echo "<ul>";
+        echo "<h2>" . $_GET['cat'] . "</h2><ul>";
         $found = false;
         foreach ($blogData as $blogEntry) {
             if (in_array($_GET['cat'], $blogEntry['categories'])) {
                 $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+                $title = $blogEntry["title"];
+                $date = $blogEntry["date"];
                 $found = true;
-                echo "<li><a href='$baseUrl?nav=blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
+                echo "<li>
+                  <a href='/?nav=blog&entry=$entry'>
+                    <b>$title</b> - $date
+                  </a>
+                </li>";
             }
         }
         echo "</ul>";
@@ -62,11 +69,18 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         echo "<ul>";
         foreach ($blogData as $blogEntry) {
             $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-            echo "<li><a href='$baseUrl?nav=blog&entry=" . $entry . "'><b>" . $blogEntry['title'] . "</b> - " . $blogEntry['date'] . "</a></li>";
+            $title = $blogEntry["title"];
+            $date = $blogEntry["date"];
+            echo "<li>
+              <a href='/?nav=blog&entry=$entry'>
+                <b>$title</b> - $date
+              </a>
+            </li>";
         } 
         echo "</ul>";
         echo "<br>";
     }
+    // echo "<img src='images/graphics/gruvbox/face2.webp'>";
 }
 ?>
 <script src='js/copy-url.js' defer></script>

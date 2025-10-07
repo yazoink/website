@@ -8,7 +8,7 @@
   <body>
     <div class="container">
       <header class='title'>
-      <a href='<?php echo $baseUrl; ?>'><img src='images/graphics/gruvbox/logo.webp' /></a>
+      <a href='/'><img src='images/graphics/gruvbox/logo.webp' /></a>
       </header>
       <main class="content">
         <div class="content-inside">
@@ -28,12 +28,12 @@
                 } elseif ($nav == 'gallery') {
                     include "imports/gallery.php";
                 } else {
-                    echo "<h2>Page not found.</h2>";
+                    xNotFound("Page");
                 }
             } else {
                 include "imports/home.php";
             }
-            printRandomImage();
+            // printRandomImage();
             ?>
         </div>
       </main>
