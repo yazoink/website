@@ -8,7 +8,11 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         if ($entry == $_GET['entry']) {
             $found = true;
             $content = file_get_contents("blog/entries/{$entry}.html");
-            printBackCopyRssButtons("/?nav=blog", true, true);
+            if (array_key_exists("cat", $_GET)) {
+                printBackCopyRssButtons("/?nav=blog&cat=" . $_GET["cat"], true, true);
+            } else {
+                printBackCopyRssButtons("/?nav=blog", true, true);
+            }
             echo "<h2>" . $blogEntry['title'] . "</h2>
               <h3>" . $blogEntry['subheading'] . "</h3>
               <p><i>" . $blogEntry['date'] . "</i></p><br>
@@ -53,10 +57,10 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                     $date = $blogEntry["date"];
                     $found = true;
                     echo "<li>
-                  <a href='/?nav=blog&entry=$entry'>
-                    <b>$title</b> - $date
-                  </a>
-                </li>";
+                          <a href='/?nav=blog&entry=$entry&cat=" . $_GET["cat"] . "'>
+                              <b>$title</b> - $date
+                          </a>
+                      </li>";
                 }
             }
             echo "</ul><br>";
