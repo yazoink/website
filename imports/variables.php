@@ -1,11 +1,8 @@
 <?php
 $email = "yazoink@firemail.cc";
 
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
-$baseUrl = $protocol . '://' . $_SERVER['HTTP_HOST'];
-
 $navbarLinks = array(
-  "Home" => $baseUrl,
+  "Home" => "/",
   "About Me" => "/?nav=about-me",
   "Bookmarks" => "/?nav=bookmarks",
   "Technology" => "/?nav=technology",

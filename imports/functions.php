@@ -55,50 +55,6 @@ function printRecentBlogPosts($num, $blogData)
     echo "</code></pre>";
 }
 
-/* function printRecentBlogPosts($num, $json, $baseUrl) */
-/* { */
-/*     echo "<table>"; */
-/*     echo "<thead>"; */
-/*     echo "<tr><th>Recent blog posts</th></tr>"; */
-/*     echo "</thead>"; */
-/*     echo "<tbody>"; */
-/*     $i = 0; */
-/*     foreach ($json as $blogEntry) { */
-/*         if ($i == $num) { */
-/*             break; */
-/*         } */
-/*         $entry = str_replace(" ", "-", strtolower($blogEntry['title'])); */
-/*         echo "<tr><td><a href='$baseUrl?nav=Blog&entry=" . $entry . "'>" . $blogEntry['title'] . "</a></td><td class='right'>" . $blogEntry['date'] . "</td></tr>"; */
-/*         $i++; */
-/*     } */
-/*     echo "</tbody>"; */
-/*     echo "</table>"; */
-/* } */
-
-/* function cipher($ch, $key)
-{
-    if (!ctype_alpha($ch)) {
-        return $ch;
-    }
-    $offset = ord(ctype_upper($ch) ? 'A' : 'a');
-    return chr(fmod(((ord($ch) + $key) - $offset), 26) + $offset);
-}
-
-function encryptString($plainText, $key)
-{
-    $encryptedString = "";
-    $inputArr = str_split($plainText);
-    foreach ($inputArr as $ch) {
-        $encryptedString .= cipher($ch, $key);
-    }
-    return $encryptedString;
-}
-
-function decryptString($encryptedString, $key)
-{
-    return encryptString($encryptedString, 26 - $key);
-} */
-
 function getCategories($json)
 {
     $categories = array();
@@ -134,21 +90,6 @@ function printUrlList($urlList, $openInNewTab)
     echo "</ul>";
 }
 
-/* function siteIsUp($url)
-{
-    $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-    curl_exec($ch);
-    $ret = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    curl_close($ch);
-    if ($ret == 200 || $ret == 302) {
-        return true;
-    } else {
-        return false;
-    }
-} */
-
 function printServices($services)
 {
     echo "<pre><code>";
@@ -161,27 +102,4 @@ function printServices($services)
     echo "<p>(don't rely on them being too stable lol)</p>";
     echo "</code></pre>";
 }
-
-/* function printServices($services)
-{
-    echo "<table>";
-    echo "<thead>";
-    echo "<th>Service</th>";
-    echo "<th class='right'>Status</th>";
-    echo "</thead>";
-    echo "<tbody>";
-    foreach ($services as $description => $url) {
-        echo "<tr>";
-        echo "<td><a href='$url' target='_blank'>$description</a></td>";
-        if (siteIsUp($url)) {
-            $statusIndicator = "&#10003;";
-        } else {
-            $statusIndicator = "&#10007;";
-        }
-        echo "<td class='right'>$statusIndicator</td>";
-        echo "</tr>";
-    }
-    echo "</tbody>";
-    echo "</table>";
-} */
 ?>
