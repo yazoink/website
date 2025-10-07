@@ -52,7 +52,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 $date = $blogEntry["date"];
                 $found = true;
                 echo "<li>
-                  <a href='$url" . $categories[$category] . "'>
+                  <a href='/?nav=blog&entry=" . $entry . "'>
                     <b>$title</b> - $date
                   </a>
                 </li>";
