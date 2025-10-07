@@ -9,16 +9,16 @@ $maxImagesPerPage = 9;
 if (array_key_exists("artwork", $_GET)) { // if artwork specified
     // $fileName = str_replace(" ", "-", $_GET["artwork"]);
     if (!is_numeric($_GET["artwork"])) {
-        echo "<p><a href='$baseUrl?nav=gallery'>&#11184; <b>Back</b></a></p><hr><br>";
+        echo "<p><a href='$baseUrl?nav=gallery'><img src='images/graphics/gruvbox/back.webp'>; <b>Back</b></a></p><hr><br>";
         echo "<p><b>Artwork not found :(</b></p><br>";
     } else {
         $artwork = (int) $_GET["artwork"];
         if ($artwork >= $imageNum || $artwork < 0) {
-            echo "<p><a href='$baseUrl?nav=gallery'>&#11184; <b>Back</b></a></p><hr><br>";
+            echo "<p><a href='$baseUrl?nav=gallery'><img src='images/graphics/gruvbox/back.webp'>; <b>Back</b></a></p><hr><br>";
             echo "<p><b>Artwork not found :(</b></p><br>";
         } else { // if artwork exists
             $page = ceil(($artwork + 1) / $maxImagesPerPage);
-            echo "<p><a href='$baseUrl?nav=gallery&page=$page'>&#11184; <b>Back</b></a> | <a href='javascript:;' id='copy-url'>&#x2398; <b>Copy URL</b></a></p><hr><br>";
+            echo "<p><a href='$baseUrl?nav=gallery&page=$page'><img src='images/graphics/gruvbox/back.webp'> <b>Back</b></a> | <a href='javascript:;' id='copy-url'><img src='images/graphics/gruvbox/copy.webp'> <b>Copy URL</b></a></p><hr><br>";
             echo "<h2>" . $galleryData[$artwork]["title"] . "</h2>";
             echo "<p><i>" . $galleryData[$artwork]["year"] . ", " . $galleryData[$artwork]["medium"] . "</i></p>";
             echo "<br><p><img src='$fullImageDir/" . $galleryData[$artwork]["file"] . "' class='full-artwork'><br>";

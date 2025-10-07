@@ -8,12 +8,20 @@ echo "<channel>";
 echo "<title>yazoink</title>";
 echo "<link>$baseUrl</link>";
 echo "<description>yazoink's blog</description>";
-foreach ($json as $blogEntry) {
+foreach ($blogData as $blogEntry) {
     $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+    $content = file_get_contents("blog/entries/{$entry}.html");
+    $content = str_replace("&", "&amp;", $content);
+    $content = str_replace("<", "&lt;", $content);
+    $content = str_replace(">", "&gt;", $content);
     echo "<item>";
     echo "<title>" . $blogEntry['title'] . "</title>";
     echo "<link>$baseUrl?nav=Blog&amp;entry=" . $entry . "</link>";
-    echo "<description>" . $blogEntry['subheading'] . "</description>";
+    echo "<description>";
+    echo $blogEntry['subheading'];
+    echo "&lt;br&gt;";
+    echo $content;
+    echo "</description>";
     echo "<pubDate>" . date(DATE_RSS, strtotime($blogEntry['date'])) . "</pubDate>";
     echo "</item>";
 }
