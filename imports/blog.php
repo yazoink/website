@@ -15,9 +15,9 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             }
             echo "<h2>" . $blogEntry['title'] . "</h2>
               <h3>" . $blogEntry['subheading'] . "</h3>
-              <p><i>" . $blogEntry['date'] . "</i></p><br>
+              <p><i>" . $blogEntry['date'] . "</i></p><hr><br>
               $content<br>
-              <p><b>Categories</b>: ";
+              <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
                 echo "<a href='/?nav=blog&cat=$category'>$category</a> ";
             }

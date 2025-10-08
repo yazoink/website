@@ -30,7 +30,7 @@ function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
     if ($printRss == true) {
         echo " | <a href='rss.php'><img src='images/graphics/gruvbox/rss2.webp'> <b>RSS</b></a>";
     }
-    echo "</p><hr><br>";
+    echo "</p><br>";
 }
 
 function xNotFound($x)
