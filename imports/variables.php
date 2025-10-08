@@ -34,6 +34,7 @@ $statusUpdates = array(
 
 $changelog = array(
   "8/10/2025" => [
+    "Add \"Been Down So Long It Looks Like Up to Me\" to favourite books",
     "Visual improvements",
     "Reformat blog code"
   ],
@@ -46,7 +47,7 @@ $changelog = array(
     "Fix RSS and add feeds for individual tags, status updates, and site changelog",
     "Improve gallery function",
     "Improve blog function",
-    "Add Performance (1970) to favourite movies",
+    "Add \"Performance (1970)\" to favourite movies",
     "Create changelog"
   ],
 );
