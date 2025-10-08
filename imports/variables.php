@@ -119,6 +119,7 @@ $bookmarks = array(
 );
 
 $books = array(
+  "Been Down So Long It Looks Like Up to Me - Richard Farina" => "https://www.goodreads.com/book/show/418.Been_Down_So_Long_It_Looks_Like_Up_to_Me",
   "Junky - William S. Burroughs" => "https://www.goodreads.com/book/show/23940.Junky",
   "Naked Lunch - William S. Burroughs" => "https://www.goodreads.com/book/show/7437.Naked_Lunch",
   "On the Road - Jack Kerouac" => "https://www.goodreads.com/book/show/70401.On_the_Road",
