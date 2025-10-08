@@ -35,6 +35,7 @@ $statusUpdates = array(
 $changelog = array(
   "8/10/2025" => [
     "Visual improvements",
+    "Reformat blog code"
   ],
   "7/10/2025" => [
     "Misc formatting and optimisations",
