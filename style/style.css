@@ -150,7 +150,8 @@ ul {
 
 pre code ul,
 .status-updates ul,
-.changelog ul {
+.changelog ul,
+.services ul {
   list-style-type: "- ";
 }
 
