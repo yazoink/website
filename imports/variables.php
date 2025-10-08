@@ -24,15 +24,18 @@ $blogData = json_decode($jsonStr, true);
 $statusUpdates = array(
   [
     "status" => "I will write another blog post eventually. Potential upcoming posts: an in-depth list of my favourite songs, my favourite book passages/quotes, hacking my Kindle, recipes(?)",
-    "date" => "7 October 2025"
+    "date" => "7/10/2025"
   ],
   [
     "status" => "This is basically twitter",
-    "date" => "7 October 2025"
+    "date" => "7/10/2025"
   ]
 );
 
 $changelog = array(
+  "8/10/2025" => [
+    "Visual improvements",
+  ],
   "7/10/2025" => [
     "Misc formatting and optimisations",
     "Add status updates",

@@ -27,6 +27,7 @@
   --padding-side: 20px;
   --padding-pre: 15px;
   --padding-ul: 30px;
+  --margin-pre: 25px;
   --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);
 }

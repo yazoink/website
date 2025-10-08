@@ -1,3 +1,6 @@
+<img src="images/random-images/gruvbox/mushroom.webp">
+<hr>
+<br>
 <h1>Welcome...</h1>
 <p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.</p>
 <?php printStatusUpdates($statusUpdates); ?>

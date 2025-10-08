@@ -35,6 +35,8 @@
             }
             // printRandomImage();
             ?>
+          <p class='center'>
+            <img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"></p>
           <br>
         </div>
       </main>
@@ -50,7 +52,7 @@
         <img class="sidebar-img" src="images/graphics/gruvbox/sketches2.webp">
       </aside>
       <footer class="footer">
-        <p>yazoink 2022-2025 | <a href='mailto:<?php echo "$email"; ?>'><?php echo "$email"; ?></a></p>
+<p><a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a> | 2022-2025</p>
       </footer>
     </div>
   </body>

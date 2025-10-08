@@ -30,9 +30,13 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         xNotFound("Post");
     }
 } else { // post not specified
+    echo "<h1>Blog...</h1>
+      <p>This is a complete mixed bag of topics, please enjoy lol</p><br>";
     $categories = getCategories($blogData);
-    if (array_key_exists('cat', $_GET)) { // if category specified
-        printCategories($categories, true);
+    $getCatUrlQuestionMark = "";
+    $getCatUrlAmpersand = "";
+    $allPosts = "";
+    if (array_key_exists("cat", $_GET)) { // category specified
         $found = false;
         foreach ($blogData as $blogEntry) {
             if (in_array($_GET["cat"], $blogEntry["categories"])) {
@@ -40,54 +44,57 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 break;
             }
         }
-        if ($found == true) { // if category found
-            echo "<h2>" . $_GET['cat'] . "</h2> 
-              <p>
-                  <a href='/?nav=blog'>
-                      <img src='images/graphics/gruvbox/back.webp'> 
-                      <b>Back to all posts</b></a> |
-                  <a href='/rss.php?cat=" . $_GET["cat"] . "'>
-                      <img src='images/graphics/gruvbox/rss2.webp'>
-                      <b>RSS feed for <i>" . $_GET["cat"] . "</i></b></a>
-              </p><br><ul>";
+        if ($found == true) { // category exists
+            $category = $_GET["cat"];
+            $getCatUrlQuestionMark = "?cat=$category";
+            $getCatUrlAmpersand = "&cat=$category";
+            $showCategories = true;
+            $arrow = "up";
+            $entriesToPrint = [];
+            $allPosts = "<a href='/?nav=blog'>
+                <img src='images/graphics/gruvbox/back.webp'> 
+                <b>Back to all posts</b>
+            </a> | ";
             foreach ($blogData as $blogEntry) {
-                if (in_array($_GET['cat'], $blogEntry['categories'])) {
-                    $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-                    $title = $blogEntry["title"];
-                    $date = $blogEntry["date"];
-                    $found = true;
-                    echo "<li>
-                          <a href='/?nav=blog&entry=$entry&cat=" . $_GET["cat"] . "'>
-                              <b>$title</b> - $date
-                          </a>
-                      </li>";
+                if (in_array($category, $blogEntry["categories"])) {
+                    $entriesToPrint[] = $blogEntry;
                 }
             }
-            echo "</ul><br>";
-        } else { // category not found
+        } else { // category doesn't exist
             xNotFound("Category <i>" . $_GET["cat"] . "</i>");
         }
-    } else { // category not specified (all posts)
-        printCategories($categories, false);
-        echo "<h2>All Posts</h2> 
-            <p>
-                <a href='/rss.php'><img src='images/graphics/gruvbox/rss2.webp'>
-                    <b>RSS feed</b>
-                </a>
-            </p><br><ul>";
-        foreach ($blogData as $blogEntry) {
-            $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-            $title = $blogEntry["title"];
-            $date = $blogEntry["date"];
-            echo "<li>
-              <a href='/?nav=blog&entry=$entry'>
-                <b>$title</b> - $date
-              </a>
-            </li>";
-        } 
-        echo "</ul><br>";
+    } else {      
+        $category = "All Posts";
+        $showCategories = false;
+        $arrow = "down";
+        $entriesToPrint = $blogData;
     }
-    echo "<script src='js/categories.js' defer></script>";
-    // echo "<img src='images/graphics/gruvbox/face2.webp'>";
+    // print blog index page
+    echo "<h2>$category</h2> 
+    <p>
+        $allPosts
+        <a href='/rss.php$getCatUrlQuestionMark'>
+            <img src='images/graphics/gruvbox/rss2.webp'>
+            <b>RSS feed for <i>$category</i></b>
+        </a> | 
+        <a href='javascript:;' id='categories-button'>
+          <b>Categories</b> <img src='images/graphics/gruvbox/$arrow.webp'>
+        </a>
+    </p>";
+    printCategories($categories, $showCategories);
+    echo "<ul>";
+    foreach ($entriesToPrint as $blogEntry) {
+        $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
+        $title = $blogEntry["title"];
+        $date = $blogEntry["date"];
+        $found = true;
+        echo "<li>
+            <a href='/?nav=blog&entry=$entry$getCatUrlAmpersand'>
+                <b>$title</b> - $date
+            </a>
+        </li>";
+    }
+    echo "</ul><br><script src='js/categories.js' defer></script>";
+    //echo "<img src='images/random-images/gruvbox/shapes.webp'>";
 }
 ?>
