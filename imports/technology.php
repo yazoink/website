@@ -1,26 +1,93 @@
 <h1>Technology...</h1>
+<br>
 <p>What I use/own/host/etc.</p>
+<br>
 <hr />
 <br />
 <h2>This Server</h2>
+<br>
 <p>
   This website is currently being hosted on my home server which consists of two
   machines running NixOS tunneled to a Linode 2 GB VPS.
 </p>
 <br />
 <h3>Server #1</h3>
+<br>
+<div class="left-right-container">
+  <div class="left-right-container-right">
+    <table>
+      <tr>
+        <th>OS</th>
+        <td>NixOS</td>
+      </tr>
+      <tr>
+        <th>CPU</th>
+        <td>Intel Core i5-8400</td>
+      </tr>
+      <tr>
+        <th>GPU</th>
+        <td>Nvidia GTX 750</td>
+      </tr>
+      <tr>
+        <th>RAM</th>
+        <td>8 GB DDR4</td>
+      </tr>
+      <tr>
+        <th>STORAGE</th>
+        <td>There are like 4 drives, will make a list later lol</td>
+      </tr>
+    </table>
+  </div>
+  <div class="left-right-container-left">
+    <img class="tech-img" loading="lazy" src="images/technology/server1.webp">
+  </div>
+</div>
+<br>
 <p>
-  This is the machine I host my Nextcloud server, Jellyfin server, Pi-hole and
-  most of my docker containers on.
+  This is the machine which hosts my Nextcloud, Jellyfin, Pi-hole and
+  most of my Docker containers.
 </p>
-<p><b>CPU:</b> Intel Core i5-8400</p>
-<p><b>RAM:</b> 8 GB DDR4</p>
-<p><b>GPU:</b> Nvidia GTX 750</p>
-<p><b>Drives:</b> There are like 4 of them I'll make a list later</p>
 <br />
 <h3>Server #2</h3>
+<br>
+<div class="left-right-container">
+  <div class="left-right-container-left">
+  </div>
+  <div class="left-right-container-right">
+  </div>
+</div>
+<div class="left-right-container">
+  <div class="left-right-container-left">
+    <img class="tech-img" loading="lazy" src="images/technology/server2.webp">
+  </div>
+  <div class="left-right-container-right">
+    <table>
+      <tr>
+        <th>OS</th>
+        <td>NixOS</td>
+      </tr>
+      <tr>
+        <th>CPU</th>
+        <td>Intel Core i5-8400</td>
+      </tr>
+      <tr>
+        <th>GPU</th>
+        <td>Nvidia GTX 750 ti</td>
+      </tr>
+      <tr>
+        <th>RAM</th>
+        <td>8 GB DDR4</td>
+      </tr>
+      <tr>
+        <th>STORAGE</th>
+        <td>There are like 5 drives, will make a list later lol</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br>
 <p>
-  This is the server hosting this website, as well as two other sites created by
+  Don't mind the cable management. This is the machine hosting this website, as well as two other sites created by
   me (<a href="https://recipes.yazo.ink" target="_blank"
     ><i>Simple Recipe Page</i></a
   >
@@ -29,28 +96,81 @@
     ><i>Base16 Colourscheme Editor</i></a
   >). And a Navidrome server.
 </p>
-<p><b>CPU:</b> Intel Core i5-8400</p>
-<p><b>RAM:</b> 16 GB DDR4</p>
-<p><b>GPU:</b> Nvidia GTX 750 ti</p>
-<p><b>Drives:</b> There's like 5 of them I'll make a list later</p>
 <br />
 <h2>My Daily Drivers</h2>
+<br>
 <h3>Laptop #1</h3>
+<br>
+<div class="left-right-container">
+  <div class="left-right-container-left">
+    <img class="tech-img" loading="lazy" src="images/technology/laptop1.webp">
+  </div>
+  <div class="left-right-container-right">
+    <table>
+      <tr>
+        <th>MODEL</th>
+        <td>Lenovo ThinkPad T430 (Coreboot firmware)</td>
+      </tr>
+      <tr>
+        <th>OS</th>
+        <td>NixOS</td>
+      </tr>
+      <tr>
+        <th>CPU</th>
+        <td>Intel Core i7-3632QM</td>
+      </tr>
+      <tr>
+        <th>RAM</th>
+        <td>16 GB DDR3</td>
+      </tr>
+      <tr>
+        <th>STORAGE</th>
+        <td>1 TB SATA SSD and a 250(?) GB NVME SSD in the ExpressCard slot</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br>
 <p>
-  My primary laptop is a ThinkPad T430 I rescued from a scrap pile. I have the
+  My primary laptop, rescued from a scrap pile. The
   <a href="https://github.com/merge/skulls" target="_blank">Skulls</a> Coreboot
-  image installed on it and I've done a variety of other upgrades.
-</p>
-<p><b>OS:</b> NixOS</p>
-<p><b>CPU:</b> Intel Core i7-3632QM</p>
-<p><b>RAM:</b> 16 GB DDR3</p>
-<p>
-  <b>Drives:</b> 1 TB SATA SSD and a 250(?) GB NVME SSD in the ExpressCard slot
+  image is installed on it and I've done a variety of other upgrades.
 </p>
 <br />
 <h3>Laptop #2</h3>
+<br>
+<div class="left-right-container">
+  <div class="left-right-container-left">
+    <img class="tech-img" loading="lazy" src="images/technology/laptop2.webp">
+  </div>
+  <div class="left-right-container-right">
+    <table>
+      <tr>
+        <th>MODEL</th>
+        <td>Acer TravelMate B113</td>
+      </tr>
+      <tr>
+        <th>OS</th>
+        <td>NixOS</td>
+      </tr>
+      <tr>
+        <th>CPU</th>
+        <td>Intel Celeron 1007U</td>
+      </tr>
+      <tr>
+        <th>RAM</th>
+        <td>8 GB DDR3</td>
+      </tr>
+      <tr>
+        <th>STORAGE</th>
+        <td>500 GB SATA SSD</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br>
 <p>
-  My secondary laptop is an Acer TravelMate B113 I built from scrap parts. I
+  My secondary/portable laptop, built from scrap parts. I
   have a blog article about it
   <a
 href="/?nav=Blog&entry=using-a-2013-netbook-in-2025"
@@ -58,32 +178,91 @@ href="/?nav=Blog&entry=using-a-2013-netbook-in-2025"
     >here</a
   >.
 </p>
-<p><b>OS:</b> NixOS</p>
-<p><b>CPU:</b> Intel Celeron 1007U</p>
-<p><b>RAM:</b> 8 GB DDR3</p>
-<p><b>Drives:</b> 240 GB SATA SSD</p>
 <br />
 <h3>Desktop</h3>
-<p><b>OS:</b> NixOS</p>
-<p><b>CPU:</b> AMD Ryzen 5 5600</p>
-<p><b>GPU:</b> AMD Radeon RX 6600</p>
-<p><b>RAM:</b> 16 GB DDR4</p>
-<p><b>Drives:</b> like a lot</p>
+<br>
+<table>
+  <tr>
+    <th>OS</th>
+    <td>NixOS</td>
+  </tr>
+  <tr>
+    <th>CPU</th>
+    <td>AMD Ryzen 5 5600</td>
+  </tr>
+  <tr>
+    <th>GPU</th>
+    <td>AMD Radeon RX 6600</td>
+  </tr>
+  <tr>
+    <th>RAM</th>
+    <td>16 GB DDR4</td>
+  </tr>
+  <tr>
+    <th>STORAGE</th>
+    <td>Like a lot</td>
+  </tr>
+</table>
+<br>
+<p>Somehow I don't have any photos of my desktop PC</p>
 <br />
 <h3>Phone</h3>
-<p><b>Model:</b> Google Pixel 6</p>
-<p><b>OS:</b> GrapheneOS</p>
-<p><b>Launcher:</b> Kvaesitso</p>
-<br />
+<br>
+<div class="left-right-container">
+  <div class="left-right-container-left">
+    <img class="tech-img" loading="lazy" src="images/technology/phone.webp">
+  </div>
+  <div class="left-right-container-right">
+    <table>
+      <tr>
+        <th>MODEL</th>
+        <td>Google Pixel 6</td>
+      </tr>
+      <tr>
+        <th>OS</th>
+        <td>GrapheneOS</td>
+      </tr>
+      <tr>
+        <th>LAUNCHER</th>
+        <td>Kvaesitso</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br>
+<p>Mic doesn't work lmao<br>Sorry the image is fried, it's the best that I can do for now</p>
+<br>
 <h2>My Favourite Software</h2>
-<p><b>OS:</b> NixOS</p>
-<p><b>WM/DE:</b> Hyprland</p>
-<p><b>Terminal:</b> Alacritty/Kitty</p>
-<p><b>IDE:</b> Neovim</p>
-<p><b>Browser:</b> Hardened Firefox</p>
-<p><b>Shell:</b> Zsh with Starship</p>
+<br>
+<table>
+  <tr>
+    <th>OS</th>
+    <td>NixOS</td>
+  </tr>
+  <tr>
+    <th>WINDOW MANAGER</th>
+    <td>Hyprland</td>
+  </tr>
+  <tr>
+    <th>TERMINAL</th>
+    <td>Alacritty and Kitty</td>
+  </tr>
+  <tr>
+    <th>TEXT EDITOR</th>
+    <td>Neovim</td>
+  </tr>
+  <tr>
+    <th>BROWSER</th>
+    <td>Hardened Firefox</td>
+  </tr>
+  <tr>
+    <th>SHELL</th>
+    <td>Zsh with Starship prompt</td>
+  </tr>
+</table>
 <br />
 <h2>My Rice</h2>
+<br>
 <p>My NixOS/Hyprland rice :)</p>
 <p>See my configs <a href='https://github.com/yazoink/nixos' target='_blank'>here!</a></p>
 <br>

@@ -1,4 +1,5 @@
 <h1>About Me...</h1>
+<br>
 <p>
   Hi, my name is Gene and I like making things. I look like
   <a href="images/me.webp" target="_blank">this</a> and my main interests at the

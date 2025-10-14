@@ -25,9 +25,16 @@
 
   --padding-top: 10px;
   --padding-side: 20px;
-  --padding-pre: 15px;
   --padding-ul: 30px;
-  --margin-pre: 25px;
+  --padding-table: 7px;
+  --table-border-spacing: 3px;
+  --padding-box: 15px;
+  --margin-box-top: 15px;
+  --margin-box-bottom: var(--margin-box-top);
+  --margin-box-left: 15px;
+  --margin-box-right: var(--margin-box-left);
+  --margin-top-categories-list: 20px;
+  --margin-bottom-categories-list: 0px;
   --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);
 }

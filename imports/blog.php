@@ -30,8 +30,8 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         xNotFound("Post");
     }
 } else { // post not specified
-    echo "<h1>Blog...</h1>
-      <p>This is a complete mixed bag of topics, please enjoy lol</p><br>";
+    echo "<h1>Blog...</h1><br>
+      <p>This is going to be a complete mixed bag of topics, please enjoy lol</p><br><hr><br>";
     $categories = getCategories($blogData);
     $getCatUrlQuestionMark = "";
     $getCatUrlAmpersand = "";
@@ -70,7 +70,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         $entriesToPrint = $blogData;
     }
     // print blog index page
-    echo "<h2>$category</h2> 
+    echo "<h2>$category</h2><br> 
     <p>
         $allPosts
         <a href='/rss.php$getCatUrlQuestionMark'>

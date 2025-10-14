@@ -2,7 +2,17 @@
 <hr>
 <br>
 <h1>Welcome...</h1>
-<p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.</p>
+<br>
+<div class="left-right-container">
+  <div class="left-right-container-left">
+    <p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.
+    <br><br>
+    I also write sometimes. Will probably make a page for it eventually. In the meantime, you can read some of my poetry <a href="/?nav=blog&entry=recent-poetry">here</a>.
+  </div>
+  <div class="left-right-container-right">
+    <img src="images/graphics/gruvbox/face3.webp">
+  </div>
+</div>
 <?php printStatusUpdates($statusUpdates); ?>
 <p>I also host some libre alternatives to popular websites, 
   you can read more about that <a href='/?nav=Services'>here</a>.</p>
@@ -10,10 +20,9 @@
 <p>This site was written in PHP using Neovim!</p>
 <br>
 <p><a href="javascript:;" class="song-link">Click here for a random song recommendation.</a></p>
-<?php
-printRecentBlogPosts(4, $blogData);
-?>
+<?php printRecentBlogPosts(4, $blogData); ?>
 <h2>FAQ</h2>
+<br>
 <p><b>Did you know that this website looks old/unoptimized for mobile?</b></p>
 <p>Yes, it's intentional. I like old web design and hate phones.</p>
 <br>

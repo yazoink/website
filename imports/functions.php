@@ -54,7 +54,7 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
 
 function printRecentBlogPosts($num, $blogData)
 {
-    echo "<pre><code><p>RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>]</p><hr>";
+    echo "<br><div class='recent-blog-posts'><p>RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>]</p><hr>";
     echo "<ul>";
     $i = 0;
     foreach ($blogData as $blogEntry) {
@@ -67,7 +67,7 @@ function printRecentBlogPosts($num, $blogData)
     }
     echo "</ul>";
     echo "<br><p>Click <a href='/?nav=blog'>here</a> for more...</p>";
-    echo "</code></pre>";
+    echo "</div><br>";
 }
 
 function getCategories($json)
@@ -107,16 +107,16 @@ function printUrlList($urlList, $openInNewTab)
 
 function printStatusUpdates($statusUpdates)
 {
-    echo "<div class='status-updates'><code><p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>";
+    echo "<br><div class='status-updates'><code><p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>";
     foreach ($statusUpdates as $update) {
         echo "<hr><p>$update[status]</p><p>[$update[date]]</p>";
     }
-    echo "</code></div>";
+    echo "</code></div><br>";
 }
 
 function printChangelog($changelog)
 {
-    echo "<div class='changelog'>
+    echo "<br><div class='changelog'>
       <p>SITE CHANGELOG [<a href='/rss.php?changelog=true'>RSS</a>]</p>";
     foreach ($changelog as $date => $changes) {
         echo "<hr><p>[$date]</p><ul>";
@@ -125,12 +125,12 @@ function printChangelog($changelog)
         }
         echo "</ul>";
     }
-    echo "</div>";
+    echo "</div><br>";
 }
 
 function printServices($services)
 {
-    echo "<div class='services'>";
+    echo "<br><div class='services'>";
     echo "<p>SERVICES</p><hr>";
     echo "<ul>";
     foreach ($services as $description => $url) {
@@ -138,6 +138,6 @@ function printServices($services)
     }
     echo "</ul><br>";
     echo "<p>(don't rely on them being too stable lol)</p>";
-    echo "</div>";
+    echo "</div></br>";
 }
 ?>
