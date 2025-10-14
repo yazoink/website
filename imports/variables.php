@@ -33,6 +33,9 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "14/10/2025" => [
+    "Visual improvements",
+  ],
   "8/10/2025" => [
     "Add \"Been Down So Long It Looks Like Up to Me\" to favourite books",
     "Visual improvements",
