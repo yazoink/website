@@ -34,7 +34,7 @@
       </tr>
       <tr>
         <th>STORAGE</th>
-        <td>There are like 4 drives, will make a list later lol</td>
+        <td>4 drives I think</td>
       </tr>
     </table>
   </div>
@@ -80,7 +80,7 @@
       </tr>
       <tr>
         <th>STORAGE</th>
-        <td>There are like 5 drives, will make a list later lol</td>
+        <td>5 drives I think</td>
       </tr>
     </table>
   </div>
@@ -109,7 +109,7 @@
     <table>
       <tr>
         <th>MODEL</th>
-        <td>Lenovo ThinkPad T430 (Coreboot firmware)</td>
+        <td>Lenovo ThinkPad T430</td>
       </tr>
       <tr>
         <th>OS</th>
@@ -125,16 +125,16 @@
       </tr>
       <tr>
         <th>STORAGE</th>
-        <td>1 TB SATA SSD and a 250(?) GB NVME SSD in the ExpressCard slot</td>
+        <td>1 TB SATA SSD, 250(?) GB NVME SSD</td>
       </tr>
     </table>
   </div>
 </div>
 <br>
 <p>
-  My primary laptop, rescued from a scrap pile. The
-  <a href="https://github.com/merge/skulls" target="_blank">Skulls</a> Coreboot
-  image is installed on it and I've done a variety of other upgrades.
+  My primary laptop, rescued from a scrap pile. It's flashed with the
+  <a href="https://github.com/merge/skulls" target="_blank">Skulls</a> Coreboot image
+  and I've done a variety of other upgrades, including installing an NVME SSD in the ExpressCard slot.
 </p>
 <br />
 <h3>Laptop #2</h3>
