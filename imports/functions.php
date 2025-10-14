@@ -109,7 +109,7 @@ function printStatusUpdates($statusUpdates)
 {
     echo "<br><div class='status-updates'><code><p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>";
     foreach ($statusUpdates as $update) {
-        echo "<hr><p>$update[status]</p><p>[$update[date]]</p>";
+        echo "<hr><p>$update[status]</p><br><p>[$update[date]]</p>";
     }
     echo "</code></div><br>";
 }
