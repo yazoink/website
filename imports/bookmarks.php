@@ -5,8 +5,14 @@
 <?php
 $randBookmarkCategoryIndex = array_rand($bookmarks);
 $randBookmarkCategory = $bookmarks[$randBookmarkCategoryIndex];
+$categoryNum = count($bookmarks);
+$i = 0;
 foreach ($bookmarks as $category => $bookmarksCategory) {
     echo "<h2>" . $category . "</h2><br>";
     printUrlList($bookmarksCategory, true);
+    $i++;
+    if ($i < $categoryNum) {
+        echo "<br>";
+    }
 }
 ?>
