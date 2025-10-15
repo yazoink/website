@@ -238,6 +238,7 @@ pre hr {
   margin-top: var(--margin-top-categories-list);
   margin-bottom: var(--margin-bottom-categories-list);
   overflow: auto;
+  display: block;
 }
 
 .status-changelog-container {
