@@ -1,4 +1,5 @@
 <?php
+
 /* $jsonStr = file_get_contents('blog/blog.json'); */
 /* $json = json_decode($jsonStr, true); */
 if (array_key_exists('entry', $_GET)) { // if blog post specified
@@ -14,7 +15,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 printBackCopyRssButtons("/?nav=blog", true, true);
             }
             echo "<h2>" . $blogEntry['title'] . "</h2>
-              <h3>" . $blogEntry['subheading'] . "</h3>
+              <h4><i>" . $blogEntry['subheading'] . "</i></h4><br>
               <p><i>" . $blogEntry['date'] . "</i></p><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
@@ -63,7 +64,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         } else { // category doesn't exist
             xNotFound("Category <i>" . $_GET["cat"] . "</i>");
         }
-    } else {      
+    } else {
         $category = "All Posts";
         $showCategories = false;
         $arrow = "down";
@@ -97,4 +98,3 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "</ul><br><script src='js/categories.js' defer></script>";
     //echo "<img src='images/random-images/gruvbox/shapes.webp'>";
 }
-?>

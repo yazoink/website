@@ -1,4 +1,5 @@
 <?php
+
 function randomFromArrayLink($array, $text)
 {
     $song = array_rand($array);
@@ -8,7 +9,7 @@ function randomFromArrayLink($array, $text)
 function printCategories($categories, $showByDefault)
 {
     if ($showByDefault == true) {
-        echo "<div id='categories-list' class='categories-list' style='display:block;'>
+        echo "<div id='categories-list' class='box box-content categories-list' style='display:block;'>
         <a href='/?nav=blog'>All Posts</a> ";
     } else {
         echo "<div id='categories-list' class='hidden'>
@@ -39,7 +40,7 @@ function xNotFound($x)
     <p>$x not found :(</p>";
 }
 
-function printImageGallery($imageDir, $imageArray, $isSquare) 
+function printImageGallery($imageDir, $imageArray, $isSquare)
 {
     $imageClass = "square-img";
     if ($isSquare == false) {
@@ -54,7 +55,14 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
 
 function printRecentBlogPosts($num, $blogData)
 {
-    echo "<br><div class='recent-blog-posts'><p>RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>]</p><hr>";
+    echo "<div class='box recent-blog-posts-box' id='recent-blog-posts'>
+      <div class='left-right-container box-heading'>
+          <div class='left-right-container-left'>
+              <p>RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>]</p>
+          </div>
+          <div class='left-right-container-right'><p>X</p></div>
+      </div>
+      <div class='box-content recent-blog-posts'>";
     echo "<ul>";
     $i = 0;
     foreach ($blogData as $blogEntry) {
@@ -67,7 +75,7 @@ function printRecentBlogPosts($num, $blogData)
     }
     echo "</ul>";
     echo "<br><p>Click <a href='/?nav=blog'>here</a> for more...</p>";
-    echo "</div><br>";
+    echo "</div></div>";
 }
 
 function getCategories($json)
@@ -95,7 +103,7 @@ function printRandomImage()
 function printUrlList($urlList, $openInNewTab)
 {
     echo "<ul>";
-    foreach($urlList as $title => $url) {
+    foreach ($urlList as $title => $url) {
         if ($openInNewTab == true) {
             echo "<li><a href='$url' target='_blank'>$title</a></li>";
         } else {
@@ -107,37 +115,71 @@ function printUrlList($urlList, $openInNewTab)
 
 function printStatusUpdates($statusUpdates)
 {
-    echo "<br><div class='status-updates'><code><p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>";
+    echo "<div class='box status-updates-box' id='status-updates'>
+        <div class='left-right-container box-heading'>
+            <div class='left-right-container-left'>
+                <p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>
+            </div>
+            <div class='left-right-container-right'><p>X</p></div>
+        </div>
+        <div class='box-content status-updates'>";
+    $updateNum = count($statusUpdates);
+    $i = 0;
     foreach ($statusUpdates as $update) {
-        echo "<hr><p>$update[status]</p><br><p>[$update[date]]</p>";
+        $i++;
+        if ($i > 1) {
+            echo "<br>";
+        }
+        echo "<p>$update[date]</p>
+        <div class='box-content-indent'><p>$update[status]</p></div>";
+        //if ($i < $updateNum) {
+        //    echo "<hr>";
+        //}
     }
-    echo "</code></div><br>";
+    echo "</div></div>";
 }
 
 function printChangelog($changelog)
 {
-    echo "<br><div class='changelog'>
-      <p>SITE CHANGELOG [<a href='/rss.php?changelog=true'>RSS</a>]</p>";
+    echo "<div class='box changelog-box' id='changelog'>
+        <div class='left-right-container box-heading'>
+            <div class='left-right-container-left'>
+                <p>SITE CHANGELOG [<a href='/rss.php?changelog=true'>RSS</a>]</p>
+            </div>
+            <div class='left-right-container-right'><p>X</p></div>
+        </div>
+        <div class='box-content changelog'>";
+    $dateNum = count($changelog);
+    $i = 0;
     foreach ($changelog as $date => $changes) {
-        echo "<hr><p>[$date]</p><ul>";
+        echo "<p>$date</p><br><ul>";
         foreach ($changes as $change) {
             echo "<li>$change</li>";
         }
-        echo "</ul>";
+        echo "</ul><br>";
+        $i++;
+        if ($i < $dateNum) {
+            echo "<hr><br>";
+        }
     }
-    echo "</div><br>";
+    echo "</div></div>";
 }
 
 function printServices($services)
 {
-    echo "<br><div class='services'>";
-    echo "<p>SERVICES</p><hr>";
-    echo "<ul>";
+    echo "<div class='box'>
+        <div class='left-right-container box-heading'>
+            <div class='left-right-container-left'>
+                <p>SERVICES</p>
+            </div>
+            <div class='left-right-container-right'><p>X</p></div>
+        </div>
+        <div class='box-content services'>
+        <ul>";
     foreach ($services as $description => $url) {
         echo "<li><a href='$url' target='_blank'>$description</a></li>";
     }
     echo "</ul><br>";
     echo "<p>(don't rely on them being too stable lol)</p>";
-    echo "</div></br>";
+    echo "</div></div>";
 }
-?>

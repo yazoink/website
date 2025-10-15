@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
+  date_default_timezone_set("Australia/Melbourne");
   require "imports/variables.php";
   require "imports/functions.php";
   require "imports/header.php";
@@ -34,6 +35,7 @@
                 include "imports/home.php";
             }
             // printRandomImage();
+            echo "<br>";
             ?>
           <p class='center'>
             <img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"></p>
@@ -42,17 +44,21 @@
       </main>
       <nav class="sidebar-left">
         <img class="sidebar-img" src="images/graphics/gruvbox/face.webp">
-        <h2>Navigation</h2>
-        <?php printUrlList($navbarLinks, false); ?>
+        <h4>Index</h4>
+        <div class="nav-list-1">
+          <?php printUrlList($navbarLinks, false); ?>
+        </div>
         <br>
-        <h2>Find Me</h2>
-        <?php printUrlList($socialLinks, true); ?>
+        <h4>Links</h4>
+        <div class="nav-list-2">
+          <?php printUrlList($socialLinks, true); ?>
+        </div>
       </nav>
       <aside class="sidebar-right">
         <img class="sidebar-img" src="images/graphics/gruvbox/sketches2.webp">
       </aside>
       <footer class="footer">
-<p><a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a> | 2022-2025</p>
+        <p>Created by <a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a></p>
       </footer>
     </div>
   </body>

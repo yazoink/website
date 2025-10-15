@@ -18,17 +18,20 @@
 </ul>
 <br />
 <h2>My Favourite Movies</h2>
+<br>
 <p>I don't watch movies often and I'm very picky, but I try lol</p>
 <p>(click the posters for IMDB pages)</p>
 <br />
 <?php printImageGallery("images/movies", $movies, false); ?>
 <br />
 <h2>My Favourite Shows</h2>
+<br>
 <p>(click the posters for IMDB pages)</p>
 <br />
 <?php printImageGallery("images/shows", $shows, false); ?>
 <br />
 <h2>My Favourite Books</h2>
+<br>
 <p>
   Been really trying to read more recently. I'm big into beat literature
   and my favourite author is William S. Burroughs.
@@ -38,6 +41,7 @@
 <?php printImageGallery("images/books", $books, false); ?>
 <br />
 <h2>My Favourite Visual Artists</h2>
+<br>
 <p>Definitely forgetting a few...</p>
 <br />
 <ul>
@@ -49,6 +53,7 @@
 </ul>
 <br />
 <h2>My Favourite Albums</h2>
+<br>
 <p>
   Oh man I could go on for days about music and I'm definitely forgetting a few
   here, but definitely consider checking out some of the albums on this list if you
@@ -59,6 +64,7 @@
 <?php printImageGallery("images/albums", $albums, true); ?>
 <br />
 <h2>My Favourite Bands/Musicians</h2>
+<br>
 <p>Again, definitely forgetting a few...</p>
 <br />
 <ul>

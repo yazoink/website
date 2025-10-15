@@ -1,27 +1,36 @@
 <?php
+
 $email = "yazoink@firemail.cc";
 
 $navbarLinks = array(
-  "Home" => "/",
-  "About Me" => "/?nav=about-me",
-  "Bookmarks" => "/?nav=bookmarks",
-  "Technology" => "/?nav=technology",
-  "Services" => "/?nav=services",
-  "Blog" => "/?nav=blog",
-  "Art Gallery" => "/?nav=gallery"
+  "&ensp;Home" => "/",
+  "&ensp;About Me" => "/?nav=about-me",
+  "&ensp;Bookmarks" => "/?nav=bookmarks",
+  "&ensp;Technology" => "/?nav=technology",
+  "&ensp;Services" => "/?nav=services",
+  "&ensp;Blog" => "/?nav=blog",
+  "&ensp;Art Gallery" => "/?nav=gallery"
 );
 
 $socialLinks = array(
-  "Twitter" => "https://twitter.com/yazoink",
-  "Github" => "https://github.com/yazoink",
-  "Scratch" => "https://scratch.mit.edu/users/yazoink",
-  "Odysee" => "https://odysee.com/@yazoink:c"
+  "&ensp;Twitter" => "https://twitter.com/yazoink",
+  "&ensp;Github" => "https://github.com/yazoink",
+  "&ensp;Scratch" => "https://scratch.mit.edu/users/yazoink",
+  "&ensp;Odysee" => "https://odysee.com/@yazoink:c"
 );
 
 $jsonStr = file_get_contents('blog/blog.json');
 $blogData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
+  [
+    "status" => "How do you style a website consistently",
+    "date" => "15/10/2025"
+  ],
+  [
+    "status" => "Finished reading Less than Zero by Bret Easton Ellis yesterday and god damn",
+    "date" => "15/10/2025"
+  ],
   [
     "status" => "I will write another blog post eventually. Potential upcoming posts: an in-depth list of my favourite songs, my favourite book passages/quotes, hacking my Kindle, recipes(?)",
     "date" => "7/10/2025"
@@ -33,6 +42,14 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "15/10/2025" => [
+    "Change navbar link appearance",
+    "Change the CSS of textboxes to look like windows",
+    "Improve formatting of status updates and changelog and make a cool interactive layout",
+    "Make FAQ look better",
+    "Fix ugly styling in \"Technology\"",
+    "Miscellaneous visual tweaks"
+  ],
   "14/10/2025" => [
     "Visual improvements",
     "Update \"Technology\" page"
@@ -111,7 +128,7 @@ $bookmarks = array(
   "Games" => [
     // games
     "Klondike Solitaire" => "https://freesolitaire.win/",
-  ], 
+  ],
   "Cool Novelty Sites" => [
     "Roam around maps from various 3D games in your browser" => "https://noclip.website/",
   ],
@@ -212,4 +229,3 @@ $movies = array(
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",
   "Yellow Submarine (1968)" => "https://www.imdb.com/title/tt0063823/",
 );
-?>

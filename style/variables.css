@@ -1,7 +1,7 @@
 :root {
   --sidebar-left-width: 140px;
   --sidebar-right-width: 240px;
-  --content-width: 560px;
+  --content-width: 575px;
   --sidebar-padding: 5px;
   --site-width: calc(
     var(--sidebar-left-width) + var(--sidebar-right-width) +
@@ -9,7 +9,7 @@
   );
 
   --title-height: 90px;
-  --content-height: 480px;
+  --content-height: 510px;
   --footer-height: 50px;
   --column-gap: 10px;
   --site-height: calc(
@@ -20,14 +20,16 @@
   --square-img-width: var(--square-img-height);
 
   --portrait-img-height: 230px;
-  --status-height: 100px;
-  --changelog-height: 150px;
+
+  --small-box-height: 150px;
+  --small-box-width: 250px;
 
   --padding-top: 10px;
   --padding-side: 20px;
+  --padding-nav-ul: 10px;
   --padding-ul: 30px;
   --padding-table: 7px;
-  --table-border-spacing: 3px;
+  --table-border-spacing: 0px;
   --padding-box: 15px;
   --margin-box-top: 15px;
   --margin-box-bottom: var(--margin-box-top);
