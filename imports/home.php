@@ -1,5 +1,5 @@
 <div class="greeter-img">
-  <img src="images/random-images/gruvbox/mushroom.webp">
+  <img src="images/mushroom-transparent.webp">
 </div>
 <hr>
 <br>

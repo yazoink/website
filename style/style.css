@@ -46,9 +46,12 @@
 }
 
 .greeter-img {
-  padding-top: 20px;
+  padding-top: 90px;
   display: flex;
   justify-content: center;
+  background-image: url("../images/graphics/gruvbox/bg.webp");
+  background-position: top calc(var(--content-height) / 2) left 0;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -234,13 +237,14 @@ pre hr {
 .categories-list {
   margin-top: var(--margin-top-categories-list);
   margin-bottom: var(--margin-bottom-categories-list);
+  overflow: auto;
 }
 
 .status-changelog-container {
   background-image: url("../images/graphics/gruvbox/bg.webp");
   position: relative;
-  padding-top: var(--padding-box);
-  padding-bottom: var(--padding-box);
+  padding-top: calc(var(--padding-box) * 2);
+  padding-bottom: calc(var(--padding-box) * 2);
   margin-left: auto;
   /* border-top: 1px solid var(--fg); */
   /* border-bottom: 1px solid var(--fg); */
@@ -276,7 +280,7 @@ a {
 ul {
   list-style-type: square;
   padding-left: var(--padding-ul);
-  line-height: 20px;
+  line-height: 25px;
 }
 
 pre ul,
@@ -305,17 +309,10 @@ hr {
   margin-left: auto;
 }
 
-.nav-list-1 {
-  padding-left: var(--padding-nav-ul);
-  background-image: url("../images/graphics/gruvbox/navbar-list-1.webp");
-  background-position: bottom 10px left var(--padding-nav-ul);
-  background-repeat: no-repeat;
-  border-top: 1px solid var(--fg);
-}
-
+.nav-list-1,
 .nav-list-2 {
   padding-left: var(--padding-nav-ul);
-  background-image: url("../images/graphics/gruvbox/navbar-list-2.webp");
+  background-image: url("../images/graphics/gruvbox/navbar-list-1.webp");
   background-position: bottom 10px left var(--padding-nav-ul);
   background-repeat: no-repeat;
   border-top: 1px solid var(--fg);
@@ -336,7 +333,7 @@ hr {
   text-indent: 18px;
   background-image: url("../images/graphics/gruvbox/navbar-list-bullet.webp");
   background-repeat: no-repeat;
-  background-position: 0 10px;
+  background-position: 0 14px;
   padding-left: 0;
   /* font-weight: bold; */
 }
@@ -350,15 +347,6 @@ hr {
   margin-left: auto;
   margin-bottom: 0;
   padding-bottom: 0;
-}
-
-.nav-list-top {
-  padding: 0;
-  margin: 0;
-  padding-left: var(--padding-nav-ul);
-  background-image: url("../images/graphics/gruvbox/navbar-list-top.webp");
-  background-repeat: no-repeat;
-  background-position: 0 9px;
 }
 
 table {
@@ -444,4 +432,26 @@ video {
       calc(calc(var(--padding-side) * 2) + calc(var(--margin-box-left) * 2))
   );
   margin-right: 0;
+}
+
+.title {
+  display: flex;
+  align-items: bottom;
+}
+
+.sidebar-left-img {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-top);
+}
+
+.sidebar-right .sidebar-right-img {
+  position: absolute;
+  bottom: 0;
+}
+
+.sidebar-right {
+  background-image: url("../images/graphics/gruvbox/bg.webp");
+  background-position: bottom 50px left 50px;
 }

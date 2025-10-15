@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <header class='title'>
-      <a href='/'><img src='images/graphics/gruvbox/logo.webp' /></a>
+      <a href='/'><img class="title-img" src='images/graphics/gruvbox/logo2.webp' /></a>
       </header>
       <main class="content">
         <div class="content-inside">
@@ -35,7 +35,7 @@
                 include "imports/home.php";
             }
             // printRandomImage();
-            echo "<br>";
+            echo "<br><br>";
             ?>
           <p class='center'>
             <img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"></p>
@@ -43,7 +43,9 @@
         </div>
       </main>
       <nav class="sidebar-left">
-        <img class="sidebar-img" src="images/graphics/gruvbox/face.webp">
+        <div class="sidebar-left-img">
+          <img src="images/graphics/gruvbox/face.webp">
+        </div>
         <h4>Index</h4>
         <div class="nav-list-1">
           <?php printUrlList($navbarLinks, false, "nav-list-li"); ?>
@@ -55,7 +57,7 @@
         </div>
       </nav>
       <aside class="sidebar-right">
-        <img class="sidebar-img" src="images/graphics/gruvbox/sketches2.webp">
+        <img class="sidebar-right-img" src="images/graphics/gruvbox/sketches2.webp">
       </aside>
       <footer class="footer">
         <p>Created by <a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a></p>

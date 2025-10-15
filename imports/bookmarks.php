@@ -8,6 +8,5 @@ $randBookmarkCategory = $bookmarks[$randBookmarkCategoryIndex];
 foreach ($bookmarks as $category => $bookmarksCategory) {
     echo "<h2>" . $category . "</h2><br>";
     printUrlList($bookmarksCategory, true);
-    echo "<br>";
 }
 ?>

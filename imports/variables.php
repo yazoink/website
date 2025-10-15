@@ -3,20 +3,20 @@
 $email = "yazoink@firemail.cc";
 
 $navbarLinks = array(
-  "&ensp;Home" => "/",
-  "&ensp;About Me" => "/?nav=about-me",
-  "&ensp;Bookmarks" => "/?nav=bookmarks",
-  "&ensp;Technology" => "/?nav=technology",
-  "&ensp;Services" => "/?nav=services",
-  "&ensp;Blog" => "/?nav=blog",
-  "&ensp;Art Gallery" => "/?nav=gallery"
+  "&ensp;Home&ensp;" => "/",
+  "&ensp;About Me&ensp;" => "/?nav=about-me",
+  "&ensp;Bookmarks&ensp;" => "/?nav=bookmarks",
+  "&ensp;Technology&ensp;" => "/?nav=technology",
+  "&ensp;Services&ensp;" => "/?nav=services",
+  "&ensp;Blog&ensp;" => "/?nav=blog",
+  "&ensp;Art Gallery&ensp;" => "/?nav=gallery"
 );
 
 $socialLinks = array(
-  "&ensp;Twitter" => "https://twitter.com/yazoink",
-  "&ensp;Github" => "https://github.com/yazoink",
-  "&ensp;Scratch" => "https://scratch.mit.edu/users/yazoink",
-  "&ensp;Odysee" => "https://odysee.com/@yazoink:c"
+  "&ensp;Twitter&ensp;" => "https://twitter.com/yazoink",
+  "&ensp;Github&ensp;" => "https://github.com/yazoink",
+  "&ensp;Scratch&ensp;" => "https://scratch.mit.edu/users/yazoink",
+  "&ensp;Odysee&ensp;" => "https://odysee.com/@yazoink:c"
 );
 
 $jsonStr = file_get_contents('blog/blog.json');

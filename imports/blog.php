@@ -23,7 +23,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             foreach ($blogEntry['categories'] as $category) {
                 echo "<a href='/?nav=blog&cat=$category'>$category</a> ";
             }
-            echo "</p><br><script src='js/copy-url.js' defer></script>";
+            echo "</p><script src='js/copy-url.js' defer></script>";
             break;
         }
     }
@@ -96,6 +96,6 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             </a>
         </li>";
     }
-    echo "</ul><br><script src='js/categories.js' defer></script>";
+    echo "</ul><script src='js/categories.js' defer></script>";
     //echo "<img src='images/random-images/gruvbox/shapes.webp'>";
 }

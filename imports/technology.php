@@ -267,6 +267,4 @@ href="/?nav=Blog&entry=using-a-2013-netbook-in-2025"
 <video controls>
   <source src='videos/rice.mp4' type='video/mp4'>
   Your browser does not support the video tag :(
-</video>
-<br>
-<br>
+</video><br>

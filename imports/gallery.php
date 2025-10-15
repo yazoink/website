@@ -117,5 +117,3 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     }
     echo "</p></div>";
 }
-?>
-<br>

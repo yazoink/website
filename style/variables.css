@@ -1,5 +1,5 @@
 :root {
-  --sidebar-left-width: 140px;
+  --sidebar-left-width: 170px;
   --sidebar-right-width: 240px;
   --content-width: 590px;
   --sidebar-padding: 5px;
@@ -8,8 +8,8 @@
       var(--content-width) + calc(var(--column-gap) * 2)
   );
 
-  --title-height: 90px;
-  --content-height: 500px;
+  --title-height: auto;
+  --content-height: 580px;
   --footer-height: 50px;
   --column-gap: 10px;
   --site-height: calc(
@@ -24,8 +24,8 @@
   --small-box-height: 150px;
   --small-box-width: 250px;
 
-  --padding-top: 10px;
   --padding-side: 20px;
+  --padding-top: var(--padding-side);
   --padding-nav-ul: 10px;
   --padding-ul: 30px;
   --padding-table: 7px;

@@ -123,4 +123,3 @@
   <li>Cowboy Junkies</li>
   <li>The Modern Lovers</li>
 </ul>
-<br />
