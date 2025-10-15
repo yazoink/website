@@ -1,4 +1,5 @@
 <?php
+
 $fullImageDir = 'gallery/art/full';
 $thumbnailDir = 'gallery/art/thumbnails';
 $jsonStr = file_get_contents('gallery/gallery.json');

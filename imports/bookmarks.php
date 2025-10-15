@@ -2,8 +2,6 @@
 <br>
 <p>A (very badly managed) collection of sites I like. For when I get bored, mainly.</p>
 <br>
-<hr>
-<br>
 <?php
 $randBookmarkCategoryIndex = array_rand($bookmarks);
 $randBookmarkCategory = $bookmarks[$randBookmarkCategoryIndex];

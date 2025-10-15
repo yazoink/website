@@ -1,4 +1,6 @@
-<img class="greeter-img" src="images/random-images/gruvbox/mushroom.webp">
+<div class="greeter-img">
+  <img src="images/random-images/gruvbox/mushroom.webp">
+</div>
 <hr>
 <br>
 <h1>Welcome...</h1>
@@ -40,19 +42,20 @@
 <br>
 <h2>FAQ</h2>
 <br>
-<ul class='question'><li>&emsp;Did you know that this site looks outdated and mobile unfriendly?</li></ul>
+<ul class='question'><li id="question-text">&emsp;Did you know that this site looks outdated and mobile unfriendly?</li></ul>
 <p class="answer">Yes, it's intentional. I like old web design and hate phones.</p>
 <br>
-<ul class='question'><li>&emsp;How does it load so fast?</li></ul>
+<ul class='question'><li id="question-text">&emsp;How does it load so fast?</li></ul>
 <p class="answer">All the images on this site are WebPs and larger images are thumbnailed. I also avoid Javascript as much as possible.</p>
 <br>
-<ul class="question"><li>&emsp;How do I make my own site like this?</li></ul>
+<ul class="question"><li id="question-text">&emsp;How do I make my own site like this?</li></ul>
 <p class="answer">Go on <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> and learn some HTML/CSS/PHP. You can also go through the source code for my site <a href="https://github.com/yazoink/website" target="_blank">here</a>.</p>
 <br>
-<ul class='question'><li>&emsp;How do you make the images on this site look like that?</li></ul>
+<ul class='question'><li id="question-text">&emsp;How do you make the images on this site look like that?</li></ul>
 <p class="answer">I use <a href="https://www.gimp.org/downloads/" target="_blank">GIMP</a> to dither them. You can watch a tutorial on how to do it <a href="https://odysee.com/@yazoink:c/dither:9" target="_blank">here</a>. All of the images I dither are my artwork/photos.</p>
 <br>
-<ul class="question"><li>&emsp;What distro/software do you use?</li></ul>
+<ul class="question"><li id="question-text">&emsp;What distro/software do you use?</li></ul>
 <p class="answer">I use NixOS (btw). You can read a full overview <a href="/?nav=Technology">here</a>.</p>
 <script defer src='js/songs.js'></script>
 <script defer src='js/window-hover.js'></script>
+<script defer src='js/chrome-fix.js'></script>

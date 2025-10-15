@@ -2,8 +2,6 @@
 <br>
 <p>What I use/own/host/etc.</p>
 <br>
-<hr />
-<br />
 <h2>This Server</h2>
 <br>
 <p>

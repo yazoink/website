@@ -46,7 +46,9 @@
 }
 
 .greeter-img {
-  padding-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 header {
@@ -110,7 +112,6 @@ table,
 
 h1,
 h2,
-h3,
 h3,
 h4,
 h5,
@@ -329,7 +330,7 @@ hr {
   padding: 0;
   margin: 0;
   padding-left: 4px;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .question {
@@ -352,7 +353,7 @@ hr {
   text-indent: 18px;
   background-image: url("../images/graphics/gruvbox/navbar-list-bullet.webp");
   background-repeat: no-repeat;
-  background-position: 0 9px;
+  background-position: 0 10px;
   padding-left: 0;
   text-decoration: underline;
   font-weight: bold;
@@ -414,6 +415,7 @@ table tr td:nth-child(2) {
 }
 
 .gallery-div {
+  padding-top: 5px;
   text-align: center;
 }
 

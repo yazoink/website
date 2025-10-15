@@ -32,7 +32,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     }
 } else { // post not specified
     echo "<h1>Blog...</h1><br>
-      <p>This is going to be a complete mixed bag of topics, please enjoy lol</p><br><hr><br>";
+      <p>This is going to be a complete mixed bag of topics, please enjoy lol</p><br>";
     $categories = getCategories($blogData);
     $getCatUrlQuestionMark = "";
     $getCatUrlAmpersand = "";
