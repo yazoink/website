@@ -6,4 +6,5 @@ function replaceCss(item) {
 if (!!window.chrome == true) {
   console.log("chrome detected");
   document.querySelectorAll("li#question-text").forEach(replaceCss);
+  document.querySelectorAll("li.nav-list-li").forEach(replaceCss);
 }

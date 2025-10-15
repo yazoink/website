@@ -279,11 +279,8 @@ ul {
   line-height: 20px;
 }
 
-pre code ul,
-.status-updates ul,
-.changelog ul,
-.services ul,
-.recent-blog-posts ul {
+pre ul,
+.box ul {
   list-style-type: "- ";
 }
 
@@ -331,6 +328,7 @@ hr {
   margin: 0;
   padding-left: 4px;
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .question {
@@ -344,7 +342,7 @@ hr {
   text-indent: 18px;
   background-image: url("../images/graphics/gruvbox/navbar-list-bullet.webp");
   background-repeat: no-repeat;
-  background-position: 0 9px;
+  background-position: 0 10px;
   padding-left: 0;
   /* font-weight: bold; */
 }

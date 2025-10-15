@@ -100,14 +100,14 @@ function printRandomImage()
     echo "<p><img loading='lazy' class='center' src='" . $imageDir . "/" . $images[array_rand($images)] . "'></p>";
 }
 
-function printUrlList($urlList, $openInNewTab)
+function printUrlList($urlList, $openInNewTab, $class = "")
 {
     echo "<ul>";
     foreach ($urlList as $title => $url) {
         if ($openInNewTab == true) {
-            echo "<li><a href='$url' target='_blank'>$title</a></li>";
+            echo "<li class='$class'><a href='$url' target='_blank'>$title</a></li>";
         } else {
-            echo "<li><a href='$url'>$title</a></li>";
+            echo "<li class='$class'><a href='$url'>$title</a></li>";
         }
     }
     echo "</ul>";

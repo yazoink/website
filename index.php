@@ -46,12 +46,12 @@
         <img class="sidebar-img" src="images/graphics/gruvbox/face.webp">
         <h4>Index</h4>
         <div class="nav-list-1">
-          <?php printUrlList($navbarLinks, false); ?>
+          <?php printUrlList($navbarLinks, false, "nav-list-li"); ?>
         </div>
         <br>
         <h4>Links</h4>
         <div class="nav-list-2">
-          <?php printUrlList($socialLinks, true); ?>
+          <?php printUrlList($socialLinks, true, "nav-list-li"); ?>
         </div>
       </nav>
       <aside class="sidebar-right">
@@ -61,5 +61,6 @@
         <p>Created by <a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a></p>
       </footer>
     </div>
+    <script defer src='js/chrome-fix.js'></script>
   </body>
 </html>
