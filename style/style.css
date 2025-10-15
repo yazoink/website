@@ -331,12 +331,6 @@ hr {
   font-weight: bold;
 }
 
-.question {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
 .nav-list-1 ul li,
 .nav-list-2 ul li {
   text-indent: 18px;
@@ -345,20 +339,6 @@ hr {
   background-position: 0 10px;
   padding-left: 0;
   /* font-weight: bold; */
-}
-
-.question li {
-  text-indent: 18px;
-  background-image: url("../images/graphics/gruvbox/navbar-list-bullet.webp");
-  background-repeat: no-repeat;
-  background-position: 0 10px;
-  padding-left: 0;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.answer {
-  padding-left: 28px;
 }
 
 .sidebar-left hr {
