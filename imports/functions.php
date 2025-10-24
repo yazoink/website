@@ -6,6 +6,14 @@ function randomFromArrayLink($array, $text)
     echo "<a href='{$array[$song]}' target='_blank'><span>$text</span></a>";
 }
 
+function printQandA($qAndA)
+{
+    foreach ($qAndA as $q) {
+        echo "<p><b>{$q["question"]}</b></p>
+    <p class='content-indent'><i>{$q["answer"]}</i></p><br>";
+    }
+}
+
 function printCategories($categories, $showByDefault)
 {
     if ($showByDefault == true) {
@@ -31,7 +39,7 @@ function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
     if ($printRss == true) {
         echo " | <a href='rss.php'><img src='images/graphics/gruvbox/rss2.webp'> <b>RSS</b></a>";
     }
-    echo "</p><hr><br>";
+    echo "</p>";
 }
 
 function xNotFound($x)

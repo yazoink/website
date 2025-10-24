@@ -42,19 +42,6 @@
 <br>
 <h2>FAQ</h2>
 <br>
-<p><b>Q</b>: Did you know that this site looks outdated and unoptimised for mobile?</p>
-<p><b>A</b>: Yes, it's intentional. I like old web design and hate phones.</p>
-<br>
-<p><b>Q</b>: How does it load so fast?</p>
-<p><b>A</b>: All the images on this site are WebPs and larger images are thumbnailed. I also avoid Javascript as much as possible.</p>
-<br>
-<p><b>Q</b>: How do I make my own site like this?</p>
-<p><b>A</b>: Go on <a href="https://www.w3schools.com/" target="_blank">W3Schools</a> and learn some HTML/CSS/PHP. You can also go through the source code for my site <a href="https://github.com/yazoink/website" target="_blank">here</a>.</p>
-<br>
-<p><b>Q</b>: How do you make the images on this site look like that?</p>
-<p><b>A</b>: I use <a href="https://www.gimp.org/downloads/" target="_blank">GIMP</a> to dither them. You can watch a tutorial on how to do it <a href="https://odysee.com/@yazoink:c/dither:9" target="_blank">here</a>. All of the images I dither are my artwork/photos.</p>
-<br>
-<p><b>Q</b>: What distro/software do you use?</p>
-<p><b>A</b>: I use NixOS (btw). You can read a full overview <a href="/?nav=Technology">here</a>.</p>
+<?php printQandA($qAndA);?>
 <script defer src='js/songs.js'></script>
 <script defer src='js/window-hover.js'></script>

@@ -206,7 +206,8 @@ pre {
   scrollbar-width: thin;
 }
 
-.box-content-indent {
+.box-content-indent,
+.content-indent {
   border-left: 1px dotted var(--fg);
   padding-left: var(--padding-box);
   margin-left: calc(var(--padding-box) / 2);
@@ -298,6 +299,16 @@ p {
   padding-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content hr,
+.greeter-img {
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 hr {
