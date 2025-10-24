@@ -26,12 +26,12 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  column-gap: 10px;
+  column-gap: calc(var(--padding-side) * 0.6);
 }
 
 .left-right-container-left {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: left;
   grid-column: 1;
   grid-row: 1;
@@ -39,10 +39,22 @@
 
 .left-right-container-right {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: right;
   grid-column: 2;
   grid-row: 1;
+}
+
+.left-right-container p,
+.left-right-container ul,
+.left-right-container ol {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.left-right-container .x-button {
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .greeter-img {
@@ -247,6 +259,8 @@ pre hr {
   position: relative;
   padding-top: calc(var(--padding-box) * 2);
   padding-bottom: calc(var(--padding-box) * 2);
+  padding-left: var(--padding-side);
+  padding-right: var(--padding-side);
   margin-left: auto;
   /* border-top: 1px solid var(--fg); */
   /* border-bottom: 1px solid var(--fg); */
@@ -307,7 +321,9 @@ p {
 .content h3,
 .content h4,
 .content hr,
-.greeter-img {
+.greeter-img,
+.status-changelog-container,
+.back-copy-rss-buttons {
   margin-left: -10px;
   margin-right: -10px;
 }

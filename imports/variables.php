@@ -28,6 +28,10 @@ $statusUpdates = array(
     "date" => "24/10/2025"
   ],
   [
+    "status" => "There is nothing I find more confusing than my own CSS",
+    "date" => "24/10/2025"
+  ],
+  [
     "status" => "How do you style a website consistently",
     "date" => "15/10/2025"
   ],
@@ -47,7 +51,9 @@ $statusUpdates = array(
 
 $changelog = array(
   "24/10/2025" => [
-    "Minor stylistic tweaks"
+    "Stylistic tweaks",
+    "Remake favourite bands/musicians list",
+    "Redo Technology page"
   ],
   "15/10/2025" => [
     "Change navbar link appearance",
@@ -258,4 +264,57 @@ $movies = array(
   "Twin Peaks Fire Walk with Me (1992)" => "https://www.imdb.com/title/tt0105665/",
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",
   "Yellow Submarine (1968)" => "https://www.imdb.com/title/tt0063823/",
+);
+
+$musicians = array(
+  "Georgie Fame",
+  "Tom Waits",
+  "Leonard Cohen",
+  "Beck",
+  "The Pretty Things",
+  "The Loved Ones",
+  "Bryan Ferry / Roxy Music",
+  "The Kinks",
+  "David Bowie",
+  "Crosby, Stills, Nash and Young",
+  "The Byrds",
+  "Buffalo Springfield",
+  "Neil Young",
+  "Ween",
+  "Gjallarhornit",
+  "freyaangel",
+  "garden graves",
+  "Greens on Toast",
+  "Steakfry",
+  "The Beatles",
+  "The Brian Jonestown Massacre",
+  "The Doors",
+  "The Animals",
+  "Dave Graney",
+  "Skyhooks",
+  "The Cruel Sea",
+  "Australian Crawl",
+  "The Velvet Underground",
+  "Violent Femmes",
+  "Models",
+  "Lemon Demon",
+  "Daniel Johnston",
+  "Pink Floyd / Syd Barrett",
+  "The Garden",
+  "Rodriguez",
+  "Mott the Hoople",
+  "Tonetta",
+  "T. Rex",
+  "Radiohead",
+  "Panchiko",
+  "Interpol",
+  "Frank Sinatra",
+  "Amy Winehouse",
+  "Les Rallizes Denudes",
+  "Captain Beefheart",
+  "Frank Zappa",
+  "Jimmy Campbell",
+  "Cowboy Junkies",
+  "The Modern Lovers",
+  "Jefferson Airplane",
 );

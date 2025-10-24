@@ -4,22 +4,42 @@
 <br>
 <h2>This Server</h2>
 <br>
-<p>
-  This website is currently being hosted on my home server which consists of two
-  machines running NixOS tunneled to a Linode 2 GB VPS.
-</p>
+<div class='left-right-container'>
+  <div class='left-right-container-left'>
+    <img src='images/technology/server2.webp' class='tech-img' title='One of my servers'>
+  </div>
+  <div class='left-right-container-right'>
+    <p>
+      This website is currently being hosted on my home server which consists of two
+      machines running NixOS tunneled to a Linode 2 GB VPS. You can read more about
+      how I tunnel my services in 
+      <a href='/?nav=blog&entry=tunneling-my-homelab' target='_blank'>this blog post</a>.
+      <br><br>
+      Both machines are pretty similar builds, each with i5-8400 processors, 8 GB DDR4 RAM,
+      a large variety of random drives, and the same motherboards
+      (forgot the model). One server has a GTX 750 and the other has a GTX 750 ti.
+    </p>
+  </div>
+</div>
 <br />
 <h2>My Daily Drivers</h2>
 <br>
 <h3>Laptops</h3>
 <br>
-<p>My primary laptop is a ThinkPad T430 which I flashed with the 
-  <a href='https://github.com/merge/skulls' target='_blank'>Skulls</a> 
-  Coreboot image. I also upgraded the processor to an i7-3632QM (the best compatible
-  35W chip), installed a 2 TB SSD in the SATA bay and a 250(?) GB NVME with an 
-  ExpressCard adaptor, maxed out the RAM to 16 GB, and replaced the CPU cooler with 
-  the iGPU model.</p>
-<p>I got it for free from a scrap pile which was pretty neat.</p>
+<div class='left-right-container'>
+  <div class='left-right-container-left'>
+    <p>My primary laptop is a ThinkPad T430 which I flashed with the 
+      <a href='https://github.com/merge/skulls' target='_blank'>Skulls</a> 
+      Coreboot image. I also upgraded the processor to an i7-3632QM (the best compatible
+      35W chip), installed a 2 TB SSD in the SATA bay and a 250(?) GB NVME with an 
+      ExpressCard adaptor, maxed out the RAM to 16 GB, and replaced the CPU cooler with 
+      the iGPU model.<br><br>
+      I got it for free from a scrap pile which was pretty neat.</p>
+  </div>
+  <div class='left-right-container-right'>
+    <img src='images/technology/laptop1.webp' class='tech-img' title='My ThinkPad'>
+  </div>
+</div>
 <br>
 <p>
   My secondary/portable laptop is an Acer TravelMate B113 built from scrap parts. I

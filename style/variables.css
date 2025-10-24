@@ -25,7 +25,7 @@
   --small-box-width: 250px;
 
   --padding-side: 30px;
-  --padding-top: calc(var(--padding-side) - 15px);
+  --padding-top: calc(var(--padding-side) - 10px);
   --padding-nav-ul: 10px;
   --padding-ul: 30px;
   --padding-table: 7px;

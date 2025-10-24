@@ -12,7 +12,7 @@
     I also write sometimes. Will probably make a page for it eventually. In the meantime, you can read some of my poetry <a href="/?nav=blog&entry=recent-poetry">here</a>.
   </div>
   <div class="left-right-container-right">
-    <img src="images/graphics/gruvbox/face3.webp">
+    <p><img src="images/graphics/gruvbox/face3.webp"></p>
   </div>
 </div>
 <br>
