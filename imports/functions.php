@@ -17,7 +17,7 @@ function printQandA($qAndA)
 function printCategories($categories, $showByDefault)
 {
     if ($showByDefault == true) {
-        echo "<div id='categories-list' class='box box-content categories-list' style='display:block;'>
+        echo "<div id='categories-list' class='box box-content categories-list'>
         <a href='/?nav=blog'>All Posts</a> ";
     } else {
         echo "<div id='categories-list' class='hidden'>
