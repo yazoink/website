@@ -299,6 +299,11 @@ ul {
   line-height: 25px;
 }
 
+ol {
+  padding-left: var(--padding-ul);
+  line-height: 25px;
+}
+
 pre ul,
 .box ul {
   list-style-type: "- ";
@@ -309,6 +314,7 @@ h2,
 h3,
 h4,
 ul,
+ol,
 p {
   margin-top: 0;
   padding-top: 0;

@@ -1,0 +1,144 @@
+<p>
+  I bought a secondhand 7th gen Kindle recently and decided to jailbreak it
+  because I hate Amazon and feel that it is my duty to do the equivalent of
+  installing Linux on every device I can get my hands on. My jailbreak involved
+  installing
+  <a
+    href="https://www.mobileread.com/forums/showthread.php?t=203326"
+    target="_blank"
+    >KUAL</a
+  >
+  and <a href="https://koreader.rocks/" target="_blank">KOReader</a> with the
+  help of
+  <a href="https://github.com/KindleModding/WinterBreak" target="_blank"
+    >WinterBreak</a
+  >. You may be wondering what reasons there are for doing this outside the
+  standard freetard spiel--I was pretty unsure, going into it, but this is what
+  I found:
+</p>
+<br />
+<ul>
+  <li>Calibre integration</li>
+  <li>SSH capability</li>
+  <li>Better ability to sideload books (via USB transfer, SFTP, or Calibre)</li>
+  <li>Compatibility with way more file types (MOBI, CBZ, etc.)</li>
+  <li>
+    A million more customisation options in KOReader as opposed to the default
+    Kindle reader
+  </li>
+  <li>KOReader plugins and patches</li>
+  <li>Custom screensavers</li>
+  <li>In-depth reading statistics</li>
+</ul>
+<br />
+<p>
+  I'm working with a 7th gen Kindle Paperwhite. You can use this article as a
+  tutorial is you have a the same or a similar model, but it won't the cover
+  anything outside the scope of what I did. Check
+  <a href="https://kindlemodding.org/kindle-models" target="_blank">here</a> to
+  see which methods are compatible with which model. If you own a 7th gen
+  Paperwhite and are considering doing this, make sure you are not on firmware
+  5.18.1 or beyond.
+</p>
+<br />
+<p>
+  My starting place and primary source was the
+  <a href="https://kindlemodding.org" target="_blank">Kindle Modding Wiki</a>.
+  Some of the resources are outdated, but it generally serves as a great guide,
+  along with
+  <a href="https://www.youtube.com/watch?v=IRW_EYDcW1o" target="_blank"
+    >this video</a
+  >.
+</p>
+<br />
+<ol>
+  <li>
+    To start, I downloaded WinterBreak to my laptop (<a
+      href="https://github.com/KindleModding/WinterBreak/releases/latest/download/WinterBreak.tar.gz"
+      target="_blank"
+      >here</a
+    >) and extracted it. Then I put my Kindle into airplane mode and rebooted.
+  </li>
+  <li>
+    Once booted, I plugged it into my laptop and copied the extracted files
+    (there is a hidden file: <code>.active_content_sandbox</code>. make sure not
+    to miss it). Once this was complete I ejected the Kindle from the computer.
+  </li>
+  <li>
+    On the Kindle, I opened the store and disabled airplane mode. It opened into
+    <a href="https://kindlemodding.org/mesquito/" target="_blank">Mesquito</a>
+    and from there I launched WinterBreak (at this stage, delete
+    <code>update.bin.partial</code> from the Kindle if present to prevent an
+    automatic update). Wait until it says something along the lines of "Now you
+    are ready to install the hotfix".
+  </li>
+  <li>
+    The hotfix ensures that the jailbreak will persist after updating. It can be
+    downloaded
+    <a
+      href="https://github.com/KindleModding/Hotfix/releases/latest/download/Update_hotfix_universal.bin"
+      target="_blank"
+      >here</a
+    >. I plugged the Kindle into the laptop again and copied
+    <code>Update_hotfix_universal.bin</code> to it, then ejected it. Clicked on
+    the three dots in the corner if the screen and selected
+    <i>Update Your Kindle</i>. Once the hotfix had finished installing I ran the
+    <i>Run Hotfix</i> booklet to install it.
+  </li>
+  <li>
+    Once this was done I plugged the Kindle back in to install the MPRI package
+    manager and KUAL launcher. (<a
+      href="https://www.mobileread.com/forums/showthread.php?t=225030"
+      target="_blank"
+      >here</a
+    >
+    under <i>KUAL & KUAL extensions</i>; <i>MR Package Installer</i> for MRPI
+    and <i>KUAL (coplate)</i> for KUAL). Extracted the MRPI archive and copied
+    <code>extensions/</code> and <i>mrpackages/</i> to Kindle. Extracted KUAL
+    archive and copied <code>Update_KUALBooklet_*_install.bin</code> to Kindle.
+    Updated kindle via three-dot menu again. Once finished and rebooted, KUAL is
+    installed as a booklet.
+  </li>
+  <li>
+    To prevent OTA updates (which break the jailbreak) I downloaded the
+    <a
+      href="https://www.mobileread.com/forums/showpost.php?p=4076733&postcount=25"
+      target="_blank"
+      >RenameOTA</a
+    >
+    KUAL extension and copied the extracted ZIP to the
+    <code>extensions/</code> directory on the Kindle. (this process is different
+    on firmware &lt;=5.10.x, see Kindle Modding Wiki). Opened KUAL and selected
+    <i>Rename OTA Binaries</i> and <i>Rename</i>.
+  </li>
+  <li>
+    Once the Kindle had rebooted I downloaded the <i>kindlehf</i> KOReader
+    package to my laptop from
+    <a
+      href="https://build.koreader.rocks/download/nightly/v2025.08-133-gb86f21ac0_2025-10-26/?C=M&O=D"
+      target="_blank"
+      >here</a
+    >. Extracted package and copied files to Kindle.
+  </li>
+</ol>
+<br />
+<p>
+  With KOReader installed, it can be launched from KUAL. I end up installing
+  various plugins and patches to KOReader, my favourite being
+  <a href="https://github.com/joshuacant/ProjectTitle" target="_blank"
+    >ProjectTitle</a
+  >
+  (a complete UI overhaul). You can find more on Github and
+  <a
+    href="https://www.mobileread.com/forums/forumdisplay.php?f=276"
+    target="_blank"
+    >MobileRead</a
+  >.
+</p>
+<br />
+<p>
+  I don't know what else to say, really, but jailbreaking is absolutely worth it
+  and I would highly recommend it. Here's a picture of my Kindle:
+</p>
+<br />
+<img src="blog/files/kindle.webp" class="blog-img" />

@@ -50,6 +50,10 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "28/10/2025" => [
+    "Add \"And the Hippos Were Boiled in Their Tanks\" and \"Fear and Loathing in Las Vegas\" to favourite books",
+    "Add \"Crumb (1994)\" and \"Fear and Loathing in Las Vegas (1998)\" to favourite movies",
+  ],
   "24/10/2025" => [
     "Stylistic tweaks",
     "Remake favourite bands/musicians list",
@@ -177,7 +181,9 @@ $bookmarks = array(
 );
 
 $books = array(
+  "And the Hippos Were Boiled in Their Tanks - William S. Burroughs & Jack Kerouac" => "https://www.goodreads.com/book/show/3297175-and-the-hippos-were-boiled-in-their-tanks",
   "Been Down So Long It Looks Like Up to Me - Richard Farina" => "https://www.goodreads.com/book/show/418.Been_Down_So_Long_It_Looks_Like_Up_to_Me",
+  "Fear and Loathing in Las Vegas - Hunter S. Thompson" => "https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas",
   "Junky - William S. Burroughs" => "https://www.goodreads.com/book/show/23940.Junky",
   "Naked Lunch - William S. Burroughs" => "https://www.goodreads.com/book/show/7437.Naked_Lunch",
   "On the Road - Jack Kerouac" => "https://www.goodreads.com/book/show/70401.On_the_Road",
@@ -256,6 +262,8 @@ $shows = array(
 
 $movies = array(
   "Blue Velvet (1986)" => "https://www.imdb.com/title/tt0090756/",
+  "Crumb (1994)" => "https://www.imdb.com/title/tt0109508/",
+  "Fear and Loathing in Las Vegas (1998)" => "https://www.imdb.com/title/tt0120669/",
   "Head (1968)" => "https://www.imdb.com/title/tt0063049/",
   "Naked Lunch (1991)" => "https://www.imdb.com/title/tt0102511/",
   "Perfect Blue (1997)" => "https://www.imdb.com/title/tt0156887/",
