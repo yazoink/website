@@ -24,6 +24,14 @@ $blogData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
   [
+    "status" => "They really need to get been down so long it looks like up to me back in print",
+    "date" => "24/10/2025"
+  ],
+  [
+    "status" => "There is nothing I find more confusing than my own CSS",
+    "date" => "24/10/2025"
+  ],
+  [
     "status" => "How do you style a website consistently",
     "date" => "15/10/2025"
   ],
@@ -42,6 +50,15 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "28/10/2025" => [
+    "Add \"And the Hippos Were Boiled in Their Tanks\" and \"Fear and Loathing in Las Vegas\" to favourite books",
+    "Add \"Crumb (1994)\" and \"Fear and Loathing in Las Vegas (1998)\" to favourite movies",
+  ],
+  "24/10/2025" => [
+    "Stylistic tweaks",
+    "Remake favourite bands/musicians list",
+    "Redo Technology page"
+  ],
   "15/10/2025" => [
     "Change navbar link appearance",
     "Change the CSS of textboxes to look like windows",
@@ -85,6 +102,29 @@ $services = array(
 $featuredBlogPosts = array(
   "Idiot Installs Etterna on NixOS",
   "Tunneling My Homelab"
+);
+
+$qAndA = array(
+  [
+    "question" => "Did you know that this site looks outdated and unoptimised for mobile?",
+    "answer" => "Yes, it's intentional. I like old web design and hate phones."
+  ],
+  [
+    "question" => "How does it load so fast?",
+    "answer" => "All the images on this site are WebPs and larger images are thumbnailed. I also avoid Javascript as much as possible."
+  ],
+  [
+    "question" => "How do I make my own site like this?",
+    "answer" => "Go on <a href='https://www.w3schools.com/' target='_blank'>W3Schools</a> and learn some HTML/CSS/PHP. You can also go through the source code for my site <a href='https://github.com/yazoink/website' target='_blank'>here</a>."
+  ],
+  [
+    "question" => "How do you make the images on this site look like that?",
+    "answer" => "I use <a href='https://www.gimp.org/downloads/' target='_blank'>GIMP</a> to dither them. You can watch a tutorial on how to do it <a href='https://odysee.com/@yazoink:c/dither:9' target='_blank'>here</a>. All of the images I dither are my artwork/photos."
+  ],
+  [
+    "question" => "What distro/software do you use?",
+    "answer" => "I use NixOS (btw). You can read a full overview <a href='http://localhost:8000/?nav=Technology' target='_blank'>here</a>."
+  ],
 );
 
 $bookmarks = array(
@@ -141,7 +181,9 @@ $bookmarks = array(
 );
 
 $books = array(
+  "And the Hippos Were Boiled in Their Tanks - William S. Burroughs & Jack Kerouac" => "https://www.goodreads.com/book/show/3297175-and-the-hippos-were-boiled-in-their-tanks",
   "Been Down So Long It Looks Like Up to Me - Richard Farina" => "https://www.goodreads.com/book/show/418.Been_Down_So_Long_It_Looks_Like_Up_to_Me",
+  "Fear and Loathing in Las Vegas - Hunter S. Thompson" => "https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas",
   "Junky - William S. Burroughs" => "https://www.goodreads.com/book/show/23940.Junky",
   "Naked Lunch - William S. Burroughs" => "https://www.goodreads.com/book/show/7437.Naked_Lunch",
   "On the Road - Jack Kerouac" => "https://www.goodreads.com/book/show/70401.On_the_Road",
@@ -220,6 +262,8 @@ $shows = array(
 
 $movies = array(
   "Blue Velvet (1986)" => "https://www.imdb.com/title/tt0090756/",
+  "Crumb (1994)" => "https://www.imdb.com/title/tt0109508/",
+  "Fear and Loathing in Las Vegas (1998)" => "https://www.imdb.com/title/tt0120669/",
   "Head (1968)" => "https://www.imdb.com/title/tt0063049/",
   "Naked Lunch (1991)" => "https://www.imdb.com/title/tt0102511/",
   "Perfect Blue (1997)" => "https://www.imdb.com/title/tt0156887/",
@@ -228,4 +272,57 @@ $movies = array(
   "Twin Peaks Fire Walk with Me (1992)" => "https://www.imdb.com/title/tt0105665/",
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",
   "Yellow Submarine (1968)" => "https://www.imdb.com/title/tt0063823/",
+);
+
+$musicians = array(
+  "Georgie Fame",
+  "Tom Waits",
+  "Leonard Cohen",
+  "Beck",
+  "The Pretty Things",
+  "The Loved Ones",
+  "Bryan Ferry / Roxy Music",
+  "The Kinks",
+  "David Bowie",
+  "Crosby, Stills, Nash and Young",
+  "The Byrds",
+  "Buffalo Springfield",
+  "Neil Young",
+  "Ween",
+  "Gjallarhornit",
+  "freyaangel",
+  "garden graves",
+  "Greens on Toast",
+  "Steakfry",
+  "The Beatles",
+  "The Brian Jonestown Massacre",
+  "The Doors",
+  "The Animals",
+  "Dave Graney",
+  "Skyhooks",
+  "The Cruel Sea",
+  "Australian Crawl",
+  "The Velvet Underground",
+  "Violent Femmes",
+  "Models",
+  "Lemon Demon",
+  "Daniel Johnston",
+  "Pink Floyd / Syd Barrett",
+  "The Garden",
+  "Rodriguez",
+  "Mott the Hoople",
+  "Tonetta",
+  "T. Rex",
+  "Radiohead",
+  "Panchiko",
+  "Interpol",
+  "Frank Sinatra",
+  "Amy Winehouse",
+  "Les Rallizes Denudes",
+  "Captain Beefheart",
+  "Frank Zappa",
+  "Jimmy Campbell",
+  "Cowboy Junkies",
+  "The Modern Lovers",
+  "Jefferson Airplane",
 );

@@ -15,9 +15,9 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 printBackCopyRssButtons("/?nav=blog", true, true);
             }
             echo "
-              <p><i>" . $blogEntry['date'] . "</i></p>
+              <br><p><i>" . $blogEntry['date'] . "</i></p>
               <h2>" . $blogEntry['title'] . "</h2>
-              <h4><i>" . $blogEntry['subheading'] . "</i></h4><br>
+              <h4>" . $blogEntry['subheading'] . "</h4><hr><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {

@@ -19,10 +19,12 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     }
     if ($artworkNum == -1) { // artwork doesn't exist
         printBackCopyRssButtons("/?nav=gallery", false, false);
+        echo "<hr><br>";
         xNotFound("Artwork");
     } else { // if artwork exists
         $page = ceil(($artworkNum + 1) / $maxImagesPerPage);
         printBackCopyRssButtons("/?nav=gallery&page=$page", true, false);
+        echo "<hr><br>";
         $title = $galleryData[$artworkNum]["title"];
         $year = $galleryData[$artworkNum]["year"];
         $medium = $galleryData[$artworkNum]["medium"];

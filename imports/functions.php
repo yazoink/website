@@ -6,10 +6,18 @@ function randomFromArrayLink($array, $text)
     echo "<a href='{$array[$song]}' target='_blank'><span>$text</span></a>";
 }
 
+function printQandA($qAndA)
+{
+    foreach ($qAndA as $q) {
+        echo "<p><b>{$q["question"]}</b></p>
+    <p class='content-indent'><i>{$q["answer"]}</i></p><br>";
+    }
+}
+
 function printCategories($categories, $showByDefault)
 {
     if ($showByDefault == true) {
-        echo "<div id='categories-list' class='box box-content categories-list'>
+        echo "<div id='categories-list' class='box box-content categories-list' style='display:block;'>
         <a href='/?nav=blog'>All Posts</a> ";
     } else {
         echo "<div id='categories-list' class='hidden'>
@@ -21,9 +29,34 @@ function printCategories($categories, $showByDefault)
     echo "</div><br>";
 }
 
+function printDoubleList($list)
+{
+    $itemNum = count($list);
+    $column1Len = 0;
+    $column2Len = 0;
+    if ($itemNum % 2 == 0) {
+        $column1Len = $itemNum / 2;
+        $column2Len = $column1Len;
+    } else {
+        $column1Len = ceil($itemNum / 2);
+        $column2Len = floor($itemNum / 2);
+    }
+    echo "<div class='left-right-container'>
+    <div class='left-right-container-left'><ul>";
+    for ($i = 0; $i < $column1Len; $i++) {
+        echo "<li>{$list[$i]}</li>";
+    }
+    echo "</ul></div>";
+    echo "<div class='left-right-container-right'><ul>";
+    for ($i = $column1Len; $i < $itemNum; $i++) {
+        echo "<li>{$list[$i]}</li>";
+    }
+    echo "</ul></div></div>";
+}
+
 function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
 {
-    echo "<p>
+    echo "<p class='back-copy-rss-buttons'>
   <a href='$backUrl'><img src='images/graphics/gruvbox/back.webp'> <b>Back</b></a>";
     if ($printCopyUrl == true) {
         echo " | <a href='javascript:;' id='copy-url'><img src='images/graphics/gruvbox/copy.webp'> <b>Copy URL</b></a>";
@@ -31,7 +64,7 @@ function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
     if ($printRss == true) {
         echo " | <a href='rss.php'><img src='images/graphics/gruvbox/rss2.webp'> <b>RSS</b></a>";
     }
-    echo "</p><hr><br>";
+    echo "</p>";
 }
 
 function xNotFound($x)
@@ -60,7 +93,7 @@ function printRecentBlogPosts($num, $blogData)
           <div class='left-right-container-left'>
               <p>RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>]</p>
           </div>
-          <div class='left-right-container-right'><p>X</p></div>
+          <div class='left-right-container-right x-button'><p>X</p></div>
       </div>
       <div class='box-content recent-blog-posts'>";
     echo "<ul>";
@@ -120,7 +153,7 @@ function printStatusUpdates($statusUpdates)
             <div class='left-right-container-left'>
                 <p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>
             </div>
-            <div class='left-right-container-right'><p>X</p></div>
+            <div class='left-right-container-right x-button'><p>X</p></div>
         </div>
         <div class='box-content status-updates'>";
     $updateNum = count($statusUpdates);
@@ -146,7 +179,7 @@ function printChangelog($changelog)
             <div class='left-right-container-left'>
                 <p>SITE CHANGELOG [<a href='/rss.php?changelog=true'>RSS</a>]</p>
             </div>
-            <div class='left-right-container-right'><p>X</p></div>
+            <div class='left-right-container-right x-button'><p>X</p></div>
         </div>
         <div class='box-content changelog'>";
     $dateNum = count($changelog);
@@ -172,7 +205,7 @@ function printServices($services)
             <div class='left-right-container-left'>
                 <p>SERVICES</p>
             </div>
-            <div class='left-right-container-right'><p>X</p></div>
+            <div class='left-right-container-right x-button'><p>X</p></div>
         </div>
         <div class='box-content services'>
         <ul>";
