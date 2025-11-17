@@ -7,7 +7,7 @@
 <br>
 <div class="left-right-container">
   <div class="left-right-container-left">
-    <p>I'm a 19 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.
+    <p>I'm a 20 year old artist, compsci enthusiast and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.
     <br><br>
     I also write sometimes. Will probably make a page for it eventually. In the meantime, you can read some of my poetry <a href="/?nav=blog&entry=recent-poetry">here</a>.
   </div>
