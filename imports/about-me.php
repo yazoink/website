@@ -45,6 +45,8 @@
   <li>Daniel Johnston</li>
   <li>Malcom Liepke</li>
   <li>Toulouse-Lautrec</li>
+  <li>Francis Bacon</li>
+  <li>Gustave Dore</li>
 </ul>
 <br />
 <h2>My Favourite Albums</h2>

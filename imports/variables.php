@@ -1,4 +1,5 @@
 <?php
+
 $email = "yazoink@firemail.cc";
 
 $navbarLinks = array(
@@ -33,6 +34,10 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "23/11/2025" => [
+    "Add Nausea by Jean-Paul Sartre to favourite books",
+    "Add Francis Bacon and Gustave Dore to favourite artists"
+  ],
   "8/10/2025" => [
     "Add \"Been Down So Long It Looks Like Up to Me\" to favourite books",
     "Visual improvements",
@@ -107,7 +112,7 @@ $bookmarks = array(
   "Games" => [
     // games
     "Klondike Solitaire" => "https://freesolitaire.win/",
-  ], 
+  ],
   "Cool Novelty Sites" => [
     "Roam around maps from various 3D games in your browser" => "https://noclip.website/",
   ],
@@ -127,6 +132,7 @@ $books = array(
   "The Doors of Perception and Heaven and Hell - Aldous Huxley" => "https://www.goodreads.com/book/show/5128.The_Doors_of_Perception_Heaven_and_Hell",
   "The Catcher in the Rye - J.D. Salinger" => "https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye",
   "High Fidelity - Nick Hornby" => "https://www.goodreads.com/book/show/285092.High_Fidelity",
+  "Nausea - Jean-Paul Sartre" => "https://www.goodreads.com/book/show/298275.Nausea",
   "The Hitch Hiker's Guide to the Galaxy - Douglas Adams" => "https://www.goodreads.com/book/show/11.The_Hitchhiker_s_Guide_to_the_Galaxy",
   "The R. Crumb Handbook - R. Crumb & Peter Poplaski" => "https://www.goodreads.com/book/show/61344.The_R_Crumb_Handbook"
 );
@@ -208,4 +214,3 @@ $movies = array(
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",
   "Yellow Submarine (1968)" => "https://www.imdb.com/title/tt0063823/",
 );
-?>
