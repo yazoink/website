@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <?php
+  date_default_timezone_set("Australia/Melbourne");
   require "imports/variables.php";
   require "imports/functions.php";
   require "imports/header.php";
@@ -8,7 +9,7 @@
   <body>
     <div class="container">
       <header class='title'>
-      <a href='/'><img src='images/graphics/gruvbox/logo.webp' /></a>
+      <a href='/'><img class="title-img" src='images/graphics/gruvbox/logo2.webp' /></a>
       </header>
       <main class="content">
         <div class="content-inside">
@@ -34,6 +35,7 @@
                 include "imports/home.php";
             }
             // printRandomImage();
+            echo "<br><br>";
             ?>
           <p class='center'>
             <img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"></p>
@@ -41,19 +43,26 @@
         </div>
       </main>
       <nav class="sidebar-left">
-        <img class="sidebar-img" src="images/graphics/gruvbox/face.webp">
-        <h2>Navigation</h2>
-        <?php printUrlList($navbarLinks, false); ?>
+        <div class="sidebar-left-img">
+          <img src="images/graphics/gruvbox/face.webp">
+        </div>
+        <h4>Index</h4>
+        <div class="nav-list-1">
+          <?php printUrlList($navbarLinks, false, "nav-list-li"); ?>
+        </div>
         <br>
-        <h2>Find Me</h2>
-        <?php printUrlList($socialLinks, true); ?>
+        <h4>Links</h4>
+        <div class="nav-list-2">
+          <?php printUrlList($socialLinks, true, "nav-list-li"); ?>
+        </div>
       </nav>
       <aside class="sidebar-right">
-        <img class="sidebar-img" src="images/graphics/gruvbox/sketches2.webp">
+        <img class="sidebar-right-img" src="images/graphics/gruvbox/sketches2.webp">
       </aside>
       <footer class="footer">
-<p><a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a> | 2022-2025</p>
+        <p>Created by <a href='mailto:<?php echo "$email"; ?>'><?php echo $email; ?></a></p>
       </footer>
     </div>
+    <script defer src='js/chrome-fix.js'></script>
   </body>
 </html>

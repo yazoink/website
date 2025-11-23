@@ -1,4 +1,5 @@
 <?php
+
 /* $jsonStr = file_get_contents('blog/blog.json'); */
 /* $json = json_decode($jsonStr, true); */
 if (array_key_exists('entry', $_GET)) { // if blog post specified
@@ -13,15 +14,16 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             } else {
                 printBackCopyRssButtons("/?nav=blog", true, true);
             }
-            echo "<h2>" . $blogEntry['title'] . "</h2>
-              <h3>" . $blogEntry['subheading'] . "</h3>
-              <p><i>" . $blogEntry['date'] . "</i></p><hr><br>
+            echo "
+              <br><p><i>" . $blogEntry['date'] . "</i></p>
+              <h2>" . $blogEntry['title'] . "</h2>
+              <h4>" . $blogEntry['subheading'] . "</h4><hr><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
                 echo "<a href='/?nav=blog&cat=$category'>$category</a> ";
             }
-            echo "</p><br><script src='js/copy-url.js' defer></script>";
+            echo "</p><script src='js/copy-url.js' defer></script>";
             break;
         }
     }
@@ -30,8 +32,8 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         xNotFound("Post");
     }
 } else { // post not specified
-    echo "<h1>Blog...</h1>
-      <p>This is a complete mixed bag of topics, please enjoy lol</p><br>";
+    echo "<h1>Blog...</h1><br>
+      <p>This is going to be a complete mixed bag of topics, please enjoy lol</p><br>";
     $categories = getCategories($blogData);
     $getCatUrlQuestionMark = "";
     $getCatUrlAmpersand = "";
@@ -63,14 +65,14 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         } else { // category doesn't exist
             xNotFound("Category <i>" . $_GET["cat"] . "</i>");
         }
-    } else {      
+    } else {
         $category = "All Posts";
         $showCategories = false;
         $arrow = "down";
         $entriesToPrint = $blogData;
     }
     // print blog index page
-    echo "<h2>$category</h2> 
+    echo "<h2>$category</h2><br> 
     <p>
         $allPosts
         <a href='/rss.php$getCatUrlQuestionMark'>
@@ -94,7 +96,6 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             </a>
         </li>";
     }
-    echo "</ul><br><script src='js/categories.js' defer></script>";
+    echo "</ul><script src='js/categories.js' defer></script>";
     //echo "<img src='images/random-images/gruvbox/shapes.webp'>";
 }
-?>

@@ -1,4 +1,5 @@
 <?php
+
 $fullImageDir = 'gallery/art/full';
 $thumbnailDir = 'gallery/art/thumbnails';
 $jsonStr = file_get_contents('gallery/gallery.json');
@@ -18,10 +19,12 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     }
     if ($artworkNum == -1) { // artwork doesn't exist
         printBackCopyRssButtons("/?nav=gallery", false, false);
+        echo "<hr><br>";
         xNotFound("Artwork");
     } else { // if artwork exists
         $page = ceil(($artworkNum + 1) / $maxImagesPerPage);
         printBackCopyRssButtons("/?nav=gallery&page=$page", true, false);
+        echo "<hr><br>";
         $title = $galleryData[$artworkNum]["title"];
         $year = $galleryData[$artworkNum]["year"];
         $medium = $galleryData[$artworkNum]["medium"];
@@ -40,9 +43,9 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
         echo "<script src='js/copy-url.js' defer></script>";
     }
 } else { // if artwork not specified
-    echo "<h1>Art Gallery...</h1>
+    echo "<h1>Art Gallery...</h1><br>
       <p>Please don't repost anything from here for commercial purposes or without proper credit.</p><br>
-      <p>Click images for full view and more info.</p><hr>";
+      <p>Click images for full view and more info.</p><br><hr>";
     /* $images = scandir($fullImageDir);
     array_splice($images, 0, 2); # remove . and ..
     rsort($images); */
@@ -116,5 +119,3 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     }
     echo "</p></div>";
 }
-?>
-<br>

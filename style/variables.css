@@ -1,15 +1,15 @@
 :root {
-  --sidebar-left-width: 140px;
+  --sidebar-left-width: 170px;
   --sidebar-right-width: 240px;
-  --content-width: 560px;
+  --content-width: 590px;
   --sidebar-padding: 5px;
   --site-width: calc(
     var(--sidebar-left-width) + var(--sidebar-right-width) +
       var(--content-width) + calc(var(--column-gap) * 2)
   );
 
-  --title-height: 90px;
-  --content-height: 480px;
+  --title-height: auto;
+  --content-height: 580px;
   --footer-height: 50px;
   --column-gap: 10px;
   --site-height: calc(
@@ -20,14 +20,23 @@
   --square-img-width: var(--square-img-height);
 
   --portrait-img-height: 230px;
-  --status-height: 100px;
-  --changelog-height: 150px;
 
-  --padding-top: 10px;
-  --padding-side: 20px;
-  --padding-pre: 15px;
+  --small-box-height: 150px;
+  --small-box-width: 250px;
+
+  --padding-side: 30px;
+  --padding-top: calc(var(--padding-side) - 10px);
+  --padding-nav-ul: 10px;
   --padding-ul: 30px;
-  --margin-pre: 25px;
+  --padding-table: 7px;
+  --table-border-spacing: 0px;
+  --padding-box: 15px;
+  --margin-box-top: 15px;
+  --margin-box-bottom: var(--margin-box-top);
+  --margin-box-left: 15px;
+  --margin-box-right: var(--margin-box-left);
+  --margin-top-categories-list: 20px;
+  --margin-bottom-categories-list: 0px;
   --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);
 }
