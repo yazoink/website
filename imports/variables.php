@@ -74,7 +74,6 @@ $changelog = array(
   "14/10/2025" => [
     "Visual improvements",
     "Update \"Technology\" page"
-  >> >> >> > 62442d6610190a9ee5bf436f08d43fbe60c16d84
   ],
   "8/10/2025" => [
     "Add \"Been Down So Long It Looks Like Up to Me\" to favourite books",
@@ -279,8 +278,6 @@ $movies = array(
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",
   "Yellow Submarine (1968)" => "https://www.imdb.com/title/tt0063823/",
 );
-<<  << <<< HEAD
-=======
 
 $musicians = array(
   "Georgie Fame",
@@ -334,4 +331,3 @@ $musicians = array(
   "The Modern Lovers",
   "Jefferson Airplane",
 );
->>>>>>> 62442d6610190a9ee5bf436f08d43fbe60c16d84
