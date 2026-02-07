@@ -26,6 +26,8 @@
                     include "imports/blog.php";
                 } elseif ($nav == 'services') {
                     include "imports/services.php";
+                } elseif ($nav == 'writing') {
+                    include "imports/writing.php";
                 } elseif ($nav == 'gallery') {
                     include "imports/gallery.php";
                 } else {

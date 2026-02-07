@@ -1,0 +1,52 @@
+[
+  {
+    "title": "The Simulation Machine",
+    "date": "6 February 2026",
+    "category": "Essays",
+    "note": "A \"philisophical\" ramble about artificial life, semantics, objectivity, and the absurd.",
+    "featured": true
+  },
+  {
+    "title": "The City",
+    "date": "9 July 2025",
+    "category": "Poetry",
+    "featured": true
+  },
+  {
+    "title": "That Odd State of the Soul",
+    "date": "14 December 2025",
+    "category": "Cut-ups",
+    "note": "Read about the cut-up technique <a href='/?nav=blog&entry=burroughsian-cut-ups' target='_blank'>here</a>.",
+    "featured": false
+  },
+  {
+    "title": "The Threshold",
+    "date": "29 July 2025",
+    "category": "Poetry",
+    "featured": false
+  },
+  {
+    "title": "Summer's Morning",
+    "date": "28 December 2025",
+    "category": "Poetry",
+    "featured": false
+  },
+  {
+    "title": "The Static",
+    "date": "9 November 2025",
+    "category": "Poetry",
+    "featured": false
+  },
+  {
+    "title": "January",
+    "date": "4 January 2026",
+    "category": "Poetry",
+    "featured": true
+  },
+  {
+    "title": "The End",
+    "date": "6 July 2025",
+    "category": "Poetry",
+    "featured": false
+  }
+]

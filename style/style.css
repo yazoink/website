@@ -58,7 +58,7 @@
 }
 
 .greeter-img {
-  padding-top: 90px;
+  padding-top: 110px;
   display: flex;
   justify-content: center;
   background-image: url("../images/graphics/gruvbox/bg.webp");
@@ -367,7 +367,7 @@ hr {
   text-indent: 18px;
   background-image: url("../images/graphics/gruvbox/navbar-list-bullet.webp");
   background-repeat: no-repeat;
-  background-position: 0 14px;
+  background-position: 0 12px;
   padding-left: 0;
   /* font-weight: bold; */
 }

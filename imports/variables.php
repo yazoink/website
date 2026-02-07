@@ -9,6 +9,7 @@ $navbarLinks = array(
   "&ensp;Technology&ensp;" => "/?nav=technology",
   "&ensp;Services&ensp;" => "/?nav=services",
   "&ensp;Blog&ensp;" => "/?nav=blog",
+  "&ensp;Writing&ensp;" => "/?nav=writing",
   "&ensp;Art Gallery&ensp;" => "/?nav=gallery"
 );
 
@@ -21,6 +22,9 @@ $socialLinks = array(
 
 $jsonStr = file_get_contents('blog/blog.json');
 $blogData = json_decode($jsonStr, true);
+
+$jsonStr = file_get_contents('writing/writing.json');
+$writingData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
   [
@@ -50,6 +54,10 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "7/2/2026" => [
+    "Create dedicated page for writing",
+    "Update info on tech page and add rice screenshots"
+  ],
   "23/11/2025" => [
     "Add Nausea by Jean-Paul Sartre to favourite books",
     "Add Francis Bacon and Gustave Dore to favourite artists"

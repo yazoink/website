@@ -9,6 +9,7 @@
 <ul>
   <li>Pretty much anything related to Linux (I use NixOS btw)</li>
   <li>Homelabbing / home server administration</li>
+  <li>Writing</li>
   <li>Art (especially oil paintings and late 20th century comix)</li>
   <li>Listening to a lot of music and playing guitar</li>
   <li>Beat literature</li>
