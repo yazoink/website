@@ -19,6 +19,7 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   if ($found == false) {
     xNotFound("Post");
   }
+  echo "</ul><script src='js/copy-url.js' defer></script>";
 } else { // piece not specified
   echo("<h1>Writing...</h1>");
   echo("<br><p>I like to write as a hobby -- please do not expect this to be good. Publishers please hmu</p>");
