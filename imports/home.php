@@ -127,18 +127,56 @@ function printQandA($qAndA)
 <h2>My Other Sites</h2>
 <br>
 <h3>Simple Recipe Page</h3>
-<br>
-<p><a href='https://recipes.yazo.ink' target="_blank"><img class='website-screenshot' src='images/misc/recipes.webp' loading='lazy'></a></p>
-<p><b><a href='https://recipes.yazo.ink' target="_blank">recipes.yazo.ink</a></b></p>
-<br>
-<p>An anti-bloat recipe site inspired by <a href='https://based.cooking' target="_blank">based.cooking</a>.</p>
+<div class="box website-screenshot-box">
+  <div class="left-right-container box-heading">
+    <div class="left-right-container-left">
+      <p>Simple Recipe Page</p>
+    </div>
+    <div class='left-right-container-right x-button'><p>X</p></div>
+  </div>
+  <div class="browser-ui">
+    <div class="browser-buttons">
+      <p>
+        <img src="images/graphics/gruvbox/web-back.webp">
+        &ensp;
+        <img src="images/graphics/gruvbox/web-forward.webp">
+      </p>
+    </div>
+    <div class='search-bar'>
+      <p><img src="images/graphics/gruvbox/secure.webp">&ensp;https://recipes.yazo.ink</p>
+    </div>
+  </div>
+  <div class="website-screenshot-image">
+    <p><a href='https://recipes.yazo.ink' target="_blank"><img class='website-screenshot' src='images/misc/recipes.webp' loading='lazy'></a></p>
+  </div>
+</div>
+  <p>An anti-bloat recipe site inspired by <a href='https://based.cooking' target="_blank">based.cooking</a>.</p>
 <br>
 <h3>Base16 Colorscheme Editor</h3>
-<br>
-<p><a href='https://base16.yazo.ink' target="_blank"><img class='website-screenshot' src='images/misc/base16.webp' loading='lazy'></a></p>
-<p><b><a href='https://base16.yazo.ink' target='_blank'>base16.yazo.ink</a></b></p>
-<br>
-<p>A tool for making <a href='https://github.com/chriskempson/base16' target='_blank'>base16</a> themes.</p>
+<div class="box website-screenshot-box">
+  <div class="left-right-container box-heading">
+    <div class="left-right-container-left">
+      <p>Base16 Colorscheme Editor</p>
+    </div>
+    <div class='left-right-container-right x-button'><p>X</p></div>
+  </div>
+  <div class="browser-ui">
+    <div class="browser-buttons">
+      <p>
+        <img src="images/graphics/gruvbox/web-back.webp">
+        &ensp;
+        <img src="images/graphics/gruvbox/web-forward.webp">
+      </p>
+    </div>
+    <div class='search-bar'>
+      <p><img src="images/graphics/gruvbox/secure.webp">&ensp;https://base16.yazo.ink</p>
+    </div>
+  </div>
+  <div class="website-screenshot-image">
+    <p><a href='https://base16.yazo.ink' target="_blank"><img class='website-screenshot' src='images/misc/base16.webp' loading='lazy'></a></p>
+  </div>
+</div>
+<p>A tool for making <a href='https://github.com/chriskempson/base16' target='_blank'>Base16</a> themes.</p>
 <br>
 <h2>FAQ</h2>
 <br>
