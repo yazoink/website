@@ -67,27 +67,18 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   $i = 0;
   $j = 0;
   $categoryNum = sizeof($categories);
+  $col1 = round($categoryNum / 2);
+
+  echo("<div class='left-right-container'><div>");
   foreach ($categories as $category) {
-    if ($i == 0) { // if left side
-      $i = 1;
-      if ($j == $categoryNum - 1 && $categoryNum % 2 != 0) { // if at end and odd number (no l-r container)
-        printWritingCategory($category, $writingData);
-      } else { // left side
-        echo("<div class='left-right-container'>
-          <div>");
-        printWritingCategory($category, $writingData);
-        echo("</div>");
-      }
-    } else { // if right side
-      $i = 0;
-      echo("<div>");
-      printWritingCategory($category, $writingData);
-      echo("</div></div>");
-      if ($j % 2 != 0) {
-        echo("<br>");
-      }
+    printWritingCategory($category, $writingData);
+    if ($i == $col1 - 1) {
+      echo("</div><div>");
+    } else {
+      echo("<br>");
     }
-    $j += 1;
+    $i += 1;
   }
+  echo("</div></div>");
 }
 ?>
