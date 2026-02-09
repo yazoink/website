@@ -154,10 +154,6 @@ $bookmarks = array(
     "Active vintage websites" => "https://www.404pagefound.com/",
     "/g/'s based sites" => "https://basedsites.neocities.org/",
   ],
-  "File Directories" => [
-    // file directories
-    "Text Files" => "http://www.textfiles.com/",
-  ],
   "Resources" => [
     // resources
     "Unicode Symbols" => "https://symbl.cc/en/",
@@ -217,7 +213,7 @@ $bookmarks = array(
     "Roam around maps from various 3D games in your browser" => "https://noclip.website/",
     "Akiyoshi's illusion pages" => "https://www.ritsumei.ac.jp/~akitaoka/index-e.html",
     "The cursed computer iceberg" => "https://suricrasia.online/iceberg/",
-    "Wifi for fundamental gaps in human knowledge" => "https://wikenigma.org.uk/",
+    "Wiki for fundamental gaps in human knowledge" => "https://wikenigma.org.uk/",
     "RFC 1855 netiquette guidelines (1995)" => "https://datatracker.ietf.org/doc/html/rfc1855",
     "The gateway experience" => "https://www.reddit.com/r/gatewaytapes/wiki/start/",
     "Postscript on Societies of Control by Gilles Deleuze" => "https://theanarchistlibrary.org/library/gilles-deleuze-postscript-on-the-societies-of-control",
