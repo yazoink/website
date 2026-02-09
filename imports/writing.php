@@ -65,7 +65,6 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   }
   echo("</ul></div></div><br>");
   $i = 0;
-  $j = 0;
   $categoryNum = sizeof($categories);
   $col1 = round($categoryNum / 2);
 
