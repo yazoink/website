@@ -125,8 +125,6 @@ function printQandA($qAndA)
 <hr> -->
 <br>
 <h2>My Other Sites</h2>
-<br>
-<h3>Simple Recipe Page</h3>
 <div class="box website-screenshot-box">
   <div class="left-right-container box-heading">
     <div class="left-right-container-left">
@@ -152,7 +150,6 @@ function printQandA($qAndA)
 </div>
   <p>An anti-bloat recipe site inspired by <a href='https://based.cooking' target="_blank">based.cooking</a>.</p>
 <br>
-<h3>Base16 Colorscheme Editor</h3>
 <div class="box website-screenshot-box">
   <div class="left-right-container box-heading">
     <div class="left-right-container-left">
