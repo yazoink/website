@@ -54,6 +54,11 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "9/2/2026" => [
+    "Add links to my other sites to homepage",
+    "Add more links to bookmarks page",
+    "Redo writing page layout"
+  ],
   "7/2/2026" => [
     "Create dedicated page for writing",
     "Update info on tech page and add rice screenshots"
@@ -146,6 +151,7 @@ $bookmarks = array(
     "sizeof(cat)'s links" => "https://sizeof.cat/links/",
     "SpaceHey Reclaiming the Internet Links" => "https://forum.spacehey.com/topic?id=3221",
     "Active vintage websites" => "https://www.404pagefound.com/",
+    "/g/'s based sites" => "https://basedsites.neocities.org/",
   ],
   "File Directories" => [
     // file directories
@@ -168,6 +174,23 @@ $bookmarks = array(
     "Terminal colourscheme generator/editor" => "https://terminal.sexy/",
     "Useful sed commands" => "https://www.pement.org/sed/sed1line.txt",
     "Free old PC fonts" => "https://int10h.org/oldschool-pc-fonts/",
+    "Bionic reading converter" => "https://10015.io/tools/bionic-reading-converter",
+    "Tool for formatting PDFs for bookbinding" => "https://momijizukamori.github.io/bookbinder-js/",
+    "RegEX cheatsheet" => "https://quickref.me/regex.html",
+    "Test drive programming fonts" => "https://www.programmingfonts.org/",
+    "Ncmpcpp cheatsheet" => "https://pkgbuild.com/~jelle/ncmpcpp/",
+    "Minecraft performance guide" => "https://github.com/wanderingbonzi/minecraft-performance-guide",
+    "Base16 colourscheme maker made by me" => "https://base16.yazo.ink",
+    "Cool fonts" => "https://fonts.xero.style/",
+  ],
+  "Reading" => [
+    "eBook/eReader wiki" => "https://wiki.mobileread.com/wiki/Main_Page",
+    "Public domain eBooks" => "https://standardebooks.org/ebooks",
+    "More public domain ebooks" => "https://www.gutenberg.org/",
+    "Kindle resources" => "https://kindlehome.wordpress.com/",
+    "How to Mark a Book by Mortimer J. Adler" => "https://catholicliberaleducation.org/wp-content/uploads/2021/01/How-to-Mark-a-Book-by-Mortimer-Adler-.pdf",
+    "The Anarchist Library" => "https://theanarchistlibrary.org/special/index",
+    "Shadow library uptime monitor" => "https://open-slum.org/",
   ],
   "Graphics" => [
     // graphics
@@ -180,15 +203,24 @@ $bookmarks = array(
   "Games" => [
     // games
     "Klondike Solitaire" => "https://freesolitaire.win/",
-  ],
-  "Cool Novelty Sites" => [
-    "Roam around maps from various 3D games in your browser" => "https://noclip.website/",
+    "Shitty but fun Balatro clone" => "https://www.balatro.co/",
   ],
   "Misc Tech Related" => [
     // misc tech related
     "Bliss OS" => "https://blissos.org/",
     "Web Design Museum" => "https://www.webdesignmuseum.org/",
     "Base16 colour palette gallery" => "https://tinted-theming.github.io/base16-gallery/",
+  ],
+  "Misc Interesting Things" => [
+    "Beautiful Public Data" => "https://www.beautifulpublicdata.com/",
+    "Roam around maps from various 3D games in your browser" => "https://noclip.website/",
+    "Akiyoshi's illusion pages" => "https://www.ritsumei.ac.jp/~akitaoka/index-e.html",
+    "The cursed computer iceberg" => "https://suricrasia.online/iceberg/",
+    "Wifi for fundamental gaps in human knowledge" => "https://wikenigma.org.uk/",
+    "RFC 1855 netiquette guidelines (1995)" => "https://datatracker.ietf.org/doc/html/rfc1855",
+    "The gateway experience" => "https://www.reddit.com/r/gatewaytapes/wiki/start/",
+    "Postscript on Societies of Control by Gilles Deleuze" => "https://theanarchistlibrary.org/library/gilles-deleuze-postscript-on-the-societies-of-control",
+    "William S. Burroughs / 60s underground press archive" => "https://realitystudio.org/",
   ],
 );
 

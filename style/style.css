@@ -31,7 +31,7 @@
 
 .left-right-container-left {
   display: flex;
-  align-items: top;
+  align-items: start;
   justify-content: left;
   grid-column: 1;
   grid-row: 1;
@@ -39,7 +39,7 @@
 
 .left-right-container-right {
   display: flex;
-  align-items: top;
+  align-items: start;
   justify-content: right;
   grid-column: 2;
   grid-row: 1;
@@ -434,14 +434,20 @@ table tr td:nth-child(2) {
   height: var(--portrait-img-height);
 }
 
+.website-screenshot {
+  transition: transform 0.2s;
+}
+
 .square-img:hover,
-.portrait-img:hover {
+.portrait-img:hover,
+.website-screenshot:hover {
   transform: scale(1.025);
 }
 
 .blog-img,
 .full-artwork,
 .tech-img,
+.website-screenshot,
 video {
   border: 1px solid var(--fg);
   max-height: calc(

@@ -1,4 +1,33 @@
 <?php
+function getCategories($json)
+{
+    $categories = array();
+    foreach ($json as $blogEntry) {
+        foreach ($blogEntry['categories'] as $category) {
+            if (!in_array($category, $categories)) {
+                $categories[$category] = "/?nav=blog&cat=$category";
+            }
+        }
+    }
+    ksort($categories);
+    return $categories;
+}
+
+function printCategories($categories, $showByDefault)
+{
+    if ($showByDefault == true) {
+        echo "<div id='categories-list' class='box box-content categories-list' style='display:block;'>
+        <a href='/?nav=blog'>All Posts</a> ";
+    } else {
+        echo "<div id='categories-list' class='hidden'>
+        <a href='/?nav=blog'>All Posts</a> ";
+    }
+    foreach ($categories as $category => $url) {
+        echo "<a href='$url'>$category</a> ";
+    }
+    echo "</div><br>";
+}
+
 
 /* $jsonStr = file_get_contents('blog/blog.json'); */
 /* $json = json_decode($jsonStr, true); */
@@ -17,7 +46,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             echo "
               <br><p><i>" . $blogEntry['date'] . "</i></p>
               <h2>" . $blogEntry['title'] . "</h2>
-              <h4>" . $blogEntry['subheading'] . "</h4><hr><br>
+              <p><i>" . $blogEntry['subheading'] . "</i></p><hr><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
