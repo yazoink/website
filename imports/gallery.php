@@ -101,21 +101,21 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
             loading='lazy'></a>   ";
     }
 
-    echo "<br><hr><p>";
+    echo "<br><hr><p><b>";
     if ($currentPage > 1) {
-        echo "<a href='/?nav=gallery&page={$previousPage}'>&#8810; Previous</a> ";
+        echo "<a href='/?nav=gallery&page={$previousPage}' style='text-decoration:none'></b>&#8810;<b></a>&ensp;";
     }
 
     for ($i = 1; $i <= $maxPages; $i++) {
         if ($i == $currentPage) {
-            echo "{$i} ";
+            echo "{$i}&ensp;";
         } else {
-            echo "<a href='/?nav=gallery&page={$i}'>{$i}</a> ";
+            echo "<a href='/?nav=gallery&page={$i}'>{$i}</a>&ensp;";
         }
     }
 
     if ($currentPage < $maxPages) {
-        echo "<a href='/?nav=gallery&page={$nextPage}'>Next &#8811;</a> ";
+        echo "<a href='/?nav=gallery&page={$nextPage}' style='text-decoration:none'></b>&#8811;<b></a> ";
     }
-    echo "</p></div>";
+    echo "</p></b></div>";
 }
