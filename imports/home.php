@@ -4,7 +4,7 @@ function printStatusUpdates($statusUpdates)
     echo "<div class='box status-updates-box' id='status-updates'>
         <div class='left-right-container box-heading'>
             <div class='left-right-container-left'>
-                <p>STATUS UPDATES [<a href='/rss.php?status=true'>RSS</a>]</p>
+                <p>STATUS UPDATES</p>
             </div>
             <div class='left-right-container-right x-button'><p>X</p></div>
         </div>
@@ -30,7 +30,7 @@ function printRecentBlogPosts($num, $blogData)
     echo "<div class='box recent-blog-posts-box' id='recent-blog-posts'>
       <div class='left-right-container box-heading'>
           <div class='left-right-container-left'>
-              <p>RECENT BLOG POSTS [<a href='/rss.php'>RSS</a>]</p>
+              <p>RECENT BLOG POSTS</p>
           </div>
           <div class='left-right-container-right x-button'><p>X</p></div>
       </div>
@@ -55,7 +55,7 @@ function printChangelog($changelog)
     echo "<div class='box changelog-box' id='changelog'>
         <div class='left-right-container box-heading'>
             <div class='left-right-container-left'>
-                <p>SITE CHANGELOG [<a href='/rss.php?changelog=true'>RSS</a>]</p>
+                <p>SITE CHANGELOG</p>
             </div>
             <div class='left-right-container-right x-button'><p>X</p></div>
         </div>

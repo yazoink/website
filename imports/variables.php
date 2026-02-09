@@ -57,7 +57,8 @@ $changelog = array(
   "9/2/2026" => [
     "Add links to my other sites to homepage",
     "Add more links to bookmarks page",
-    "Redo writing page layout"
+    "Redo writing page layout",
+    "Remove broken RSS feeds"
   ],
   "7/2/2026" => [
     "Create dedicated page for writing",

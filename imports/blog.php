@@ -104,9 +104,9 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "<h2>$category</h2><br> 
     <p>
         $allPosts
-        <a href='/rss.php$getCatUrlQuestionMark'>
+        <a href='/rss.php'>
             <img src='images/graphics/gruvbox/rss2.webp'>
-            <b>RSS feed for <i>$category</i></b>
+            <b>RSS</b>
         </a> | 
         <a href='javascript:;' id='categories-button'>
           <b>Categories</b> <img src='images/graphics/gruvbox/$arrow.webp'>
