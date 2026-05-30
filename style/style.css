@@ -2,6 +2,15 @@
 @import url("variables.css");
 @import url("fonts.css");
 
+/*
+* not needed with .content-indent
+.blockquote {
+  margin-left: var(--padding-ul);
+  margin-right: var(--padding-ul);
+  border-left: 1px dotted var(--fg);
+  padding-left: 10px;
+}*/
+
 .left {
   text-align: start;
 }
@@ -225,6 +234,11 @@ pre {
   margin-left: calc(var(--padding-box) / 2);
   padding-bottom: calc(var(--padding-box) / 2);
   padding-top: calc(var(--padding-box) / 2);
+}
+
+.content-indent {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .box hr,

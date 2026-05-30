@@ -1,10 +1,17 @@
 [
   {
+    "title": "CUT SCRAMBLE REDIRECT",
+    "date": "29 May 2026",
+    "category": "Essays",
+    "note": "On the mechanics of mind control.",
+    "featured": true
+  },
+  {
     "title": "The Simulation Machine",
     "date": "6 February 2026",
     "category": "Essays",
     "note": "A \"philosophical\" ramble about artificial life, semantics, objectivity, and the absurd.",
-    "featured": true
+    "featured": false
   },
   {
     "title": "The City",

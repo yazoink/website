@@ -28,6 +28,10 @@ $writingData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
   [
+    "status" => "Just a heads up that I'm going to be migrating my servers soon, so this site is going to be down for a bit",
+    "date" => "30/5/2026"
+  ],
+  [
     "status" => "They really need to get been down so long it looks like up to me back in print",
     "date" => "24/10/2025"
   ],
@@ -225,7 +229,9 @@ $bookmarks = array(
 $books = array(
   "And the Hippos Were Boiled in Their Tanks - William S. Burroughs & Jack Kerouac" => "https://www.goodreads.com/book/show/3297175-and-the-hippos-were-boiled-in-their-tanks",
   "Been Down So Long It Looks Like Up to Me - Richard Farina" => "https://www.goodreads.com/book/show/418.Been_Down_So_Long_It_Looks_Like_Up_to_Me",
+  "Demian - Hermann Hesse" => "https://www.goodreads.com/book/show/43609577-demian",
   "Fear and Loathing in Las Vegas - Hunter S. Thompson" => "https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas",
+  "Journeys Out of the Body - Robert A. Monroe" => "https://www.goodreads.com/book/show/347918.Journeys_Out_of_the_Body",
   "Junky - William S. Burroughs" => "https://www.goodreads.com/book/show/23940.Junky",
   "Naked Lunch - William S. Burroughs" => "https://www.goodreads.com/book/show/7437.Naked_Lunch",
   "On the Road - Jack Kerouac" => "https://www.goodreads.com/book/show/70401.On_the_Road",
@@ -314,6 +320,7 @@ $movies = array(
   "The Deer Hunter (1978)" => "https://www.imdb.com/title/tt0077416/",
   "Twin Peaks Fire Walk with Me (1992)" => "https://www.imdb.com/title/tt0105665/",
   "Waking Life (2001)" => "https://www.imdb.com/title/tt0243017/",
+  "Withnail and I (1987)" => "https://www.imdb.com/title/tt0094336/",
   "Yellow Submarine (1968)" => "https://www.imdb.com/title/tt0063823/",
 );
 
@@ -327,6 +334,7 @@ $musicians = array(
   "Bryan Ferry / Roxy Music",
   "The Kinks",
   "David Bowie",
+  "Steely Dan",
   "Crosby, Stills, Nash and Young",
   "The Byrds",
   "Buffalo Springfield",
