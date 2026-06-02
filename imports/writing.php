@@ -29,9 +29,9 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
       echo("<br><p class='date'><i>{$piece["date"]}</i></p>");
       echo("<h2>{$piece["title"]}</h2>");
       if (array_key_exists("note", $piece)) {
-        echo("<br><p class='subheading'>{$piece["note"]}</p>");
+        echo("<br><p class='subheading'>{$piece["note"]}</p><br><hr>");
       }
-      echo("<br><hr><br>");
+      echo("<br>");
       include $file;
     }
   }
