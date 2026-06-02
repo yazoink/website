@@ -115,7 +115,7 @@ body {
   word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
-  font-size: var(--font-size-regular);
+  font-size: var(--font-size-paragraph);
 }
 
 table,

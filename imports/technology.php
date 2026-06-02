@@ -30,7 +30,6 @@
   My primary laptop is a ThinkPad X220, which I found on the side of the road and flashed with Libreboot. It has 8 GB or RAM, an i5-2520M processor and a 500 GB SSD.
 </p>
 <br />
-<br />
 <div class='left-right-container'>
   <div class='left-right-container-left'>
     <p>My secondary (as of recently) laptop is a ThinkPad T430 (salvaged from a scrap pile) which I flashed with the 
