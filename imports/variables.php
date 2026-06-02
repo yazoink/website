@@ -61,7 +61,6 @@ $changelog = array(
   "2/6/2026" => [
     "Tweak \"Writing\" page",
     "Tweak \"Blog\" page",
-    "Justify text",
   ],
   "1/6/2026" => [
     "Add \"Withnail and I\" to favourite movies",
