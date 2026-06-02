@@ -10,7 +10,7 @@
 <p>
   The Absurd is not a subject of which the medium of words can really do
   justice. You are better off looking at a painting, or a sunset. Once you've
-  been there, you can recognise it anywhere; it is a matter of attunement – it
+  been there, you can recognise it anywhere; it is a matter of attunement -- it
   does not speak the language of logic. Nonetheless, I will attempt to paint a
   picture...
 </p>
@@ -18,7 +18,7 @@
 <p>
   It is "that odd state of soul in which the void becomes eloquent"; your gaze
   illuminated in shapes and motion. The systemising-categorising apparatus has
-  piped down and your mind is now operating in colour – an infinite naked
+  piped down and your mind is now operating in colour -- an infinite naked
   paradise gleaming through every orifice. You realise suddenly that the
   dew-drop on a leaf can stretch out to fill an entire world.
 </p>
@@ -26,8 +26,8 @@
 <p>There are many points of entry into the Absurd.</p>
 <br />
 <p>
-  You may see the stage-set collapse around you. The days fall out of rhythm – a
-  crack has formed in your daily rise-work-fall cycle – suddenly you sit down
+  You may see the stage-set collapse around you. The days fall out of rhythm --
+  a crack has formed in your daily rise-work-fall cycle -- suddenly you sit down
   and ask "Why?"... You then realise that, sometime in your life, you have
   assumed the role of a machine...
 </p>
@@ -35,7 +35,7 @@
 <p>
   The procrastinator has been living in the future but suddenly he feels the
   Weight. He notices the wrinkles forming above his brow and sees himself laid
-  out in relation to time. He is riding the eternal steamroller – there is no
+  out in relation to time. He is riding the eternal steamroller -- there is no
   way out until the end. "Time is the enemy!" he screams, pulling out a tube of
   tretinoin cream, wondering why has he spent all this time living on a string
   of tomorrows and laters?
@@ -49,11 +49,11 @@
   force small pieces of paper, presumably flyers, into people's hands. The scene
   appears as an incomprehensible dumb-show and you wonder what he is really
   doing here, or why he is even alive. You glimpse man's own inhumanity; you
-  look at your reflection in a shop window and see the face of a monkey – or
+  look at your reflection in a shop window and see the face of a monkey -- or
   maybe even a lobster...
 </p>
 <br />
-<div class="content-indent">
+<div class="content-indent" id="quote-1">
   <p>
     I lean my hand on the seat, but I pull it away hurriedly: the thing exists.
     This thing on which I’m sitting, on which I leaned my hand just now, is
@@ -65,7 +65,7 @@
     it. I murmur: ‘It’s a seat,’ rather like an exorcism. But the word remains
     on my lips, it refuses to settle on the thing. It stays what it is, with its
     red plush, thousands of little red paws in the air, all stiff, little dead
-    paws. This huge belly turns upwards, bleeding, puffed up – bloated with all
+    paws. This huge belly turns upwards, bleeding, puffed up -- bloated with all
     its dead paws, this belly floating in this box, in this grey sky, is not a
     seat. It could just as well be a dead donkey, for example, swollen by the
     water and drifting along, belly up on a great grey river, a flood river; and
@@ -75,7 +75,9 @@
     say anything at all about them: I am in the midst of Things, which cannot be
     given names. Alone, wordless, defenceless, they surround me, under me,
     behind me, above me. They demand nothing, they don’t impose themselves, they
-    are there.<sup><a href="#footnote-1">1</a></sup>
+    are there.<sup>
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=1#footnote-1">1</a>
+      </sup>
   </p>
 </div>
 <br />
@@ -85,7 +87,7 @@
   be completely arbitrary.
 </p>
 <br />
-<div class="content-indent">
+<div class="content-indent" id="quote-2">
   <p>
     A step lower and strangeness creeps in: perceiving that the world is
     “dense,” sensing to what a degree a stone is foreign and irreducible to us,
@@ -103,13 +105,14 @@
     her we had loved months or years ago, perhaps we shall come even to desire
     what suddenly leaves us so alone. But the time has not yet come. Just one
     thing: that denseness and that strangeness of the world is the Absurd.<sup
-      ><a href="#footnote-2">2</a></sup
-    >
+      >
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=2#footnote-2">2</a>
+    </sup>
   </p>
 </div>
 <br />
 <p>
-  Everything appears naked – no connotations or hidden messages. You may say
+  Everything appears naked -- no connotations or hidden messages. You may say
   that it has a certain quality of <i>suchness</i>... But nothing you see or
   think makes any sense anymore. You think that you may be going crazy.
 </p>
@@ -120,12 +123,12 @@
 </p>
 <br />
 <p>
-  You keep on asking <i>why</i> until you reach the eternal question mark – the
+  You keep on asking <i>why</i> until you reach the eternal question mark -- the
   limits of human perception. You realise that it's impossible to really
   <i>know</i>
   anything beyond the reaches of your brain and sensory system. You can't prove
-  anything except for what is immediately in front of you – everything else is a
-  patchwork of approximation. Camus dubs these limits the "Absurd Walls".
+  anything except for what is immediately in front of you -- everything else is
+  a patchwork of approximation. Camus dubs these limits the "Absurd Walls".
 </p>
 <br />
 <p>
@@ -144,7 +147,7 @@
   more.
 </p>
 <br />
-<p>Everything ends in a paradox – this is the Absurd.</p>
+<p>Everything ends in a paradox -- this is the Absurd.</p>
 <br />
 <p>
   You realise that you truly have no way of knowing what happens after you die.
@@ -191,7 +194,7 @@
 </p>
 <br />
 <p>
-  Imagine perceiving <i>everything –</i> what would you do? Probably not much.
+  Imagine perceiving <i>everything</i> -- what would you do? Probably not much.
   It would be quite overwhelming, to say the least.
 </p>
 <br />
@@ -203,7 +206,7 @@
   some sort of <i>barrier</i> sheltering us from this superfluous data.
 </p>
 <br />
-<div class="content-indent">
+<div class="content-indent" id="quote-3">
   <p>
     For certain animals it is biologically very important to be able to
     distinguish certain hues. But beyond the limits of their utilitarian
@@ -212,7 +215,9 @@
     as Von Frisch has shown, they can recognize only a very few colors. Man’s
     highly developed color sense is a biological luxury—inestimably precious to
     him as an intellectual and spiritual being, but unnecessary to his survival
-    as an animal.<sup><a href="#footnote-3">2</a></sup>
+    as an animal.<sup>
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=3#footnote-3">3</a>
+    </sup>
   </p>
 </div>
 <br />
@@ -221,7 +226,7 @@
   exactly what they’re saying… You catch the odd word, but not enough to make
   any sense of the conversation. If you had the ears of, say, a cat, would you
   be able to hear enough to decipher what they’re saying? There’s a good chance
-  that you would. The knowledge is out there – it’s just beyond the range of
+  that you would. The knowledge is out there -- it’s just beyond the range of
   your body.
 </p>
 <br />
@@ -234,21 +239,23 @@
   The states achieved under these conditions all bear remarkable similarity.
 </p>
 <br />
-<div class="content-indent">
+<div class="content-indent" id="quote-4">
   <p>
     The brain is provided with a number of enzyme systems which serve to
     co-ordinate its workings. Some of these enzymes regulate the supply of
     glucose to the brain cells. Mescalin inhibits the production of these
     enzymes and thus lowers the amount of glucose available to an organ that is
     in constant need of sugar. When mescalin reduces the brain’s normal ration
-    of sugar what happens?<sup><a href="#footnote-3">2</a></sup>
+    of sugar what happens?<sup>
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=4#footnote-3">3</a>
+    </sup>
   </p>
 </div>
 <br />
 <p>
   The efficacy of the reducing valve is equivalent to the wellbeing of the
   physical body. You come down with a fever and your dreams start to play
-  bizarre, delerious mind games – migrane closing in with floating shapes,
+  bizarre, delerious mind games -- migrane closing in with floating shapes,
   zig-zagging lines… flashing lights…
 </p>
 <br />
@@ -263,7 +270,7 @@
   that antihistamines can be used to treat some symptoms of schizophrenia.
 </p>
 <br />
-<div class="content-indent">
+<div class="content-indent" id="quote-5">
   <p>
     Fasting was not the only form of physical mortification resorted to by the
     earlier aspirants to spirituality. Most of them regularly used upon
@@ -280,16 +287,18 @@
     known to induce symptoms resembling those of schizophrenia. As for toxins
     from wounds—these upset the enzyme systems regulating the brain, and lower
     its efficiency as an instrument for getting on in a world where the
-    biologically fittest survive.<sup><a href="#footnote-3">2</a></sup>
+    biologically fittest survive.<sup>
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=5#footnote-3">3</a>
+    </sup>
   </p>
 </div>
 <br />
 <p>
-  It is well known that psychedelics induce “neuroplasticity” – the loosening of
-  the brain’s established structure, and the elevated potential for
+  It is well known that psychedelics induce “neuroplasticity” -- the loosening
+  of the brain’s established structure, and the elevated potential for
   reconfiguration. They serve to open the mind to possibilities that were
   otherwise out of scope. The brain on psychedelics lights up like a Christmas
-  tree – <i>buzzing</i> with electricity. The activity in the Default Mode
+  tree -- <i>buzzing</i> with electricity. The activity in the Default Mode
   Network is dulled, opening the door for more, and more flow across different
   networks.
 </p>
@@ -299,7 +308,7 @@
   otherwise, never could've fathomed. You will see the world with a remarkable
   intricacy that would appear impossible to the regular human perception. They
   are unlike other drugs in that they do not impair the intellect, instead
-  serving to <i>amplify</i> it – often to a degree to which the senses are so
+  serving to <i>amplify</i> it -- often to a degree to which the senses are so
   overwhelmed that reality ceases to make sense as a solid linear structure.
 </p>
 <br />
@@ -317,15 +326,15 @@
 <p>
   Large doses of psychedelics entail catatonia and complete dissolution of the
   ego. Perception eventually expands to a point at which the physical body no
-  longer seems “relevant”. Catatonia and ego dissolution go hand-in-hand – what
+  longer seems “relevant”. Catatonia and ego dissolution go hand-in-hand -- what
   is the ego without the body? The body has no purpose other than to serve the
-  physical individual – the “individual” is entirely physical.
+  physical individual -- the “individual” is entirely physical.
 </p>
 <br />
 
 <p>
   You know the back of your hand like the back of your hand. You look at it and
-  see every single detail – every crease… every protruding vein and bone, scar,
+  see every single detail -- every crease… every protruding vein and bone, scar,
   mole... the lengths and widths of the nails... You see the skin’s texture in
   all its intricacy, like a neverending maze. You see all the individual
   creases, and between each crease is a degree of detail is tantamount to the
@@ -334,7 +343,7 @@
 </p>
 <br />
 <p>
-  Your whole being is focused on the back of your hand – this hand that belongs
+  Your whole being is focused on the back of your hand -- this hand that belongs
   to “you”. You know that it is your hand because you can feel it and move it,
   yet it feels somewhat distant. Your body gets sick sometimes, but you never
   asked it to do that. You may sometimes wish that you were a different height,
@@ -350,9 +359,9 @@
   tired? That random tune you find yourself tapping on the table? Do they come
   from within? In <i>The Myth of Sisyphus</i>, Camus established the idea of an
   "unknowable infinity" within man, which allows for original thought and
-  creativity – we could assume that this is where all these “out-there” products
-  of the mind originate. But are we operating within separate closed-off
-  infinities?
+  creativity -- we could assume that this is where all these “out-there”
+  products of the mind originate. But are we operating within separate
+  closed-off infinities?
 </p>
 <br />
 <p>
@@ -362,13 +371,13 @@
   Although, it may very well be true that I am not in fact writing this, and I
   am a brain in a vat, hooked up to some kind of stimulation gadget, but if you
   are truly reading this, then it can be assumed that we have some common
-  understanding. We have some understanding of “out there” – beyond the “self”.
+  understanding. We have some understanding of “out there” -- beyond the “self”.
 </p>
 <br />
 <p>
   When you focus your attention, you can attune to more and more detail within
   your surroundings. Under the influence of psychedelics, you see more and more
-  detail – more than you ever could’ve dreamed... You get ear surgery and can
+  detail -- more than you ever could’ve dreamed... You get ear surgery and can
   now hear a cacophony sounds that would’ve previously evaded you; you get eye
   surgery and suddenly the world is clear.
 </p>
@@ -404,10 +413,10 @@
   </li>
   <li>
     <p>
-      Semantics and implied meaning fall away - the world appears “naked”,
+      Semantics and implied meaning fall away -- the world appears “naked”,
       without pretension or concrete definition.
     </p>
-    <div class="content-indent">
+    <div class="content-indent" id="quote-6">
       <p>
         To formulate and express the contents of this reduced awareness, man has
         invented and endlessly elaborated those symbol-systems and implicit
@@ -418,7 +427,9 @@
         as it confirms him in the belief that reduced awareness is the only
         awareness and as it bedevils his sense of reality, so that he is all too
         apt to take his concepts for data, his words for actual things.<sup
-          ><a href="#footnote-3">2</a></sup
+        >
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=6#footnote-3">3</a>
+        </sup
         >
       </p>
     </div>
@@ -441,9 +452,9 @@
   interpretation, formulated within the realm of ordinary human perception, of
   the phenomena beyond the “walls”. Nonetheless, it is clear that Huxley is
   describing a state that fits Camus’ description of Absurdity. From a purely
-  Absurdist perspective, the <i>meaning</i>, or <i>explaination</i> that Huxley
+  Absurdist perspective, the <i>meaning</i>, or <i>explanation</i> that Huxley
   attributes to this state would serve as a “negation” because it is a “leap of
-  faith” – it cannot be <i>proven</i>. Religious and spiritual belief is a
+  faith” -- it cannot be <i>proven</i>. Religious and spiritual belief is a
   direct product of the desire for higher meaning, and belief in any higher
   power or reason negates the Absurd.
 </p>
@@ -461,7 +472,7 @@
   higher perception; we can realise that there is an infinite world beyond our
   senses, but we cannot venture further than our limited scope of perception
   will allow us. The unique factor that Huxley introduces is the suggestion that
-  this barrier is malleable, and we have the means to manipulate it – although,
+  this barrier is malleable, and we have the means to manipulate it -- although,
   it must be said that the discoveries apparent in these experiences are only
   accessible within an active “visionary” state (otherwise they are only
   memories and approximations). But it is possible to breach the walls of
@@ -480,7 +491,7 @@
   mescalin intoxication in his case, as an experience equivalent to Heaven;
   equating it to the Buddhist idea of the Dharma-Body. He seemed to be under the
   impression that he had encountered some kind of all-encompassing Godly force
-  when the reduction valve was loosened – this is where the “negation” truly
+  when the reduction valve was loosened -- this is where the “negation” truly
   comes into play. But I would like to ask: who's to say that Huxley didn't
   truly glimpse Heaven? You can’t <i>prove</i> that he didn’t.
 </p>
@@ -500,7 +511,7 @@
   forth that as one ventures into the Other World and the self dissipates, the
   universe <i>makes itself apparent</i>. Full assimilation with the eternal
   within the confines of a human body would likely be impossible. The whole of
-  the universe could likely only make itself apparent through death – full
+  the universe could likely only make itself apparent through death -- full
   departure from the physical body.
 </p>
 <br />
@@ -522,13 +533,20 @@
 <h3>Footnotes</h3>
 <br />
 <ol>
-  <li>
-    <p id="footnote-1">Jean-Paul Sartre, <i>Nausea</i></p>
-  </li>
-  <li>
-    <p id="footnote-2">Albert Camus, <i>The Myth of Sisyphus</i></p>
-  </li>
-  <li>
-    <p id="footnote-3">Aldous Huxley, <i>The Doors of Perception</i></p>
-  </li>
+  <?php
+  $footnotes = array(
+    "Jean-Paul Sartre, <i>Nausea</i>.",
+    "Albert Camus, <i>The Myth of Sisyphus</i>.",
+    "Aldous Huxley, <i>The Doors of Perception</i>."
+  );
+  for ($i = 1; $i <= count($footnotes); $i++) {
+    if (array_key_exists("q", $_GET)) {
+      if ($_GET["q"] == $i) {
+        echo("<li><p id='footnote-{$i}'><a href='#quote-{$_GET["q"]}'>{$footnotes[$i - 1]}</a></p></li>");
+        continue;
+      }
+    }
+    echo("<li><p id='footnote-{$i}'>{$footnotes[$i - 1]}</p></li>");
+  }
+  ?>
 </ol>

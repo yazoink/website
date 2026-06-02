@@ -81,7 +81,7 @@ function printQandA($qAndA)
 {
     foreach ($qAndA as $q) {
         echo "<p><b>{$q["question"]}</b></p>
-    <p class='content-indent'><i>{$q["answer"]}</i></p><br>";
+    <p class='content-indent'>{$q["answer"]}</p><br>";
     }
 }
 ?>

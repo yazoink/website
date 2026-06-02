@@ -39,4 +39,7 @@
   --margin-bottom-categories-list: 0px;
   --button-padding-top: 3px;
   --button-padding-side: calc(var(--button-padding-top) * 2);
+
+  --font-size-paragraph: 15px;
+  --font-size-small: 14px;
 }

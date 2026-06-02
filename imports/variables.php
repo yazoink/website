@@ -58,6 +58,15 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "2/6/2026" => [
+    "Tweak \"Writing\" page",
+    "Tweak \"Blog\" page",
+    "Justify text",
+  ],
+  "1/6/2026" => [
+    "Add \"Withnail and I\" to favourite movies",
+    "Add \"Demian\", and \"Journeys Out of the Body\" to favourite books",
+  ],
   "9/2/2026" => [
     "Add links to my other sites to homepage",
     "Add more links to bookmarks page",

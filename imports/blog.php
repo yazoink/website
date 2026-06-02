@@ -16,16 +16,16 @@ function getCategories($json)
 function printCategories($categories, $showByDefault)
 {
     if ($showByDefault == true) {
-        echo "<div id='categories-list' class='box box-content categories-list' style='display:block;'>
-        <a href='/?nav=blog'>All Posts</a> ";
+        echo "<div id='categories-list' class='categories-list' style='display:block;'>";
     } else {
-        echo "<div id='categories-list' class='hidden'>
-        <a href='/?nav=blog'>All Posts</a> ";
+        echo "<div id='categories-list' class='hidden'>";
     }
+  /* echo("<div class='content-indent'><p><a href='/?nav=blog'><b>All Posts</b></a> "); */
+  echo("<div class='content-indent'><p>");
     foreach ($categories as $category => $url) {
-        echo "<a href='$url'>$category</a> ";
+        echo "<a href='$url'><b>$category</b></a> ";
     }
-    echo "</div><br>";
+    echo "</p></div><br></div>";
 }
 
 
@@ -44,13 +44,13 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 printBackCopyRssButtons("/?nav=blog", true, true);
             }
             echo "
-              <br><p><i>" . $blogEntry['date'] . "</i></p>
-              <h2>" . $blogEntry['title'] . "</h2>
-              <p><i>" . $blogEntry['subheading'] . "</i></p><hr><br>
+              <br><p class='date'><i>" . $blogEntry['date'] . "</i></p>
+              <h2>" . $blogEntry['title'] . "</h2><br>
+              <p class='subheading'>" . $blogEntry['subheading'] . "</p><hr><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
-                echo "<a href='/?nav=blog&cat=$category'>$category</a> ";
+                echo "<a href='/?nav=blog&cat=$category'><b>$category</b></a> ";
             }
             echo "</p><script src='js/copy-url.js' defer></script>";
             break;
@@ -101,8 +101,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         $entriesToPrint = $blogData;
     }
     // print blog index page
-    echo "<h2>$category</h2><br> 
-    <p>
+    echo "<p>
         $allPosts
         <a href='/rss.php'>
             <img src='images/graphics/gruvbox/rss2.webp'>
@@ -113,6 +112,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         </a>
     </p>";
     printCategories($categories, $showCategories);
+    echo("<hr><br><h2>$category</h2><br>");
     echo "<ul>";
     foreach ($entriesToPrint as $blogEntry) {
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));

@@ -11,6 +11,28 @@
   padding-left: 10px;
 }*/
 
+p,
+box-content {
+  text-align: justify;
+}
+
+footer p {
+  text-align: center;
+}
+
+.small {
+  font-size: var(--font-size-small);
+}
+
+/*.subheading,
+.date {
+  font-size: var(--font-size-small);
+}*/
+
+.writing-category {
+  border: 1px solid var(--fg);
+}
+
 .left {
   text-align: start;
 }
@@ -93,7 +115,7 @@ body {
   word-wrap: break-word;
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
+  font-size: var(--font-size-regular);
 }
 
 table,
@@ -229,8 +251,9 @@ pre {
 
 .box-content-indent,
 .content-indent {
-  border-left: 1px dotted var(--fg);
+  border-left: 1px solid var(--fg);
   padding-left: var(--padding-box);
+  padding-right: var(--padding-box);
   margin-left: calc(var(--padding-box) / 2);
   padding-bottom: calc(var(--padding-box) / 2);
   padding-top: calc(var(--padding-box) / 2);
@@ -243,7 +266,7 @@ pre {
 
 .box hr,
 pre hr {
-  border-top: 1px dotted var(--fg);
+  border-top: 1px solid var(--fg);
   border-bottom: transparent;
   border-left: transparent;
   border-right: transparent;
@@ -266,6 +289,8 @@ pre hr {
   margin-bottom: var(--margin-bottom-categories-list);
   overflow: auto;
   display: block;
+  border-radius: 1px;
+  /* font-size: var(--font-size-small); */
 }
 
 .status-changelog-container {
