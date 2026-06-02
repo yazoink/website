@@ -31,7 +31,7 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
       if (array_key_exists("note", $piece)) {
         echo("<br><p class='subheading'>{$piece["note"]}</p>");
       }
-      echo("<hr><br>");
+      echo("<br><hr><br>");
       include $file;
     }
   }

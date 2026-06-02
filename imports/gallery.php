@@ -24,7 +24,7 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     } else { // if artwork exists
         $page = ceil(($artworkNum + 1) / $maxImagesPerPage);
         printBackCopyRssButtons("/?nav=gallery&page=$page", true, false);
-        echo "<hr><br>";
+        echo "<br>";
         $title = $galleryData[$artworkNum]["title"];
         $year = $galleryData[$artworkNum]["year"];
         $medium = $galleryData[$artworkNum]["medium"];

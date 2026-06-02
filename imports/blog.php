@@ -25,7 +25,7 @@ function printCategories($categories, $showByDefault)
     foreach ($categories as $category => $url) {
         echo "<a href='$url'><b>$category</b></a> ";
     }
-    echo "</p></div><br></div>";
+    echo "</p></div></div>";
 }
 
 
@@ -46,7 +46,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             echo "
               <br><p class='date'><i>" . $blogEntry['date'] . "</i></p>
               <h2>" . $blogEntry['title'] . "</h2><br>
-              <p class='subheading'>" . $blogEntry['subheading'] . "</p><hr><br>
+              <p class='subheading'>" . $blogEntry['subheading'] . "</p><br><hr><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
@@ -112,7 +112,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         </a>
     </p>";
     printCategories($categories, $showCategories);
-    echo("<hr><br><h2>$category</h2><br>");
+    echo("<br><hr><br><h2>$category</h2><br>");
     echo "<ul>";
     foreach ($entriesToPrint as $blogEntry) {
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
