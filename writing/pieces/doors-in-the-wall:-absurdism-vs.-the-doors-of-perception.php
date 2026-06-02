@@ -247,7 +247,7 @@
     enzymes and thus lowers the amount of glucose available to an organ that is
     in constant need of sugar. When mescalin reduces the brain’s normal ration
     of sugar what happens?<sup>
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=4#&f=3footnote-3">3</a>
+      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=4&f=3#footnote-3">3</a>
     </sup>
   </p>
 </div>
