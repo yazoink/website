@@ -14,6 +14,7 @@ function printWritingCategory($category, $writingData) {
 
 if (array_key_exists('piece', $_GET)) { // if piece specified
   printBackCopyRssButtons("/?nav=writing", true, false);
+  echo "<hr><br>";
   $found = false;
   foreach ($writingData as $piece) {
     $entry = str_replace(" ", "-", strtolower($piece["title"]));
@@ -26,11 +27,38 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
       } else {
         $file = "writing/pieces/{$entry}.php";
       }
-      echo("<br><br><p class='date'><i>{$piece["date"]}</i></p>");
+      echo("<h6 class='date'><i>{$piece["date"]}</i></h6>");
       echo("<h2 class='title'>{$piece["title"]}</h2>");
+
+      $subheading = false;
+      $description = false;
+      $hr = true; # draw <hr>?
+
       if (array_key_exists("subheading", $piece)) {
         echo("<h5 class='subheading'>{$piece["subheading"]}</h5>");
+        $subheading = true;
       }
+      if (array_key_exists("description", $piece)) {
+        echo("<br><p>{$piece["description"]}</p>");
+        $description = true;
+      }
+
+      # if no <hr> specified
+      if (array_key_exists("hr", $piece)) {
+        if ($piece["hr"] == false) {
+          $hr = false;
+        }
+      }
+
+      # no <hr> if no subheading or description
+      if ($subheading == false && $description == false) {
+        $hr = false;
+      }
+
+      if ($hr == true) {
+        echo "<hr>";
+      }
+
       echo("<br>");
       include $file;
     }
@@ -43,6 +71,7 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   echo("<h1>Writing...</h1>");
   echo("<br><p>I like to write as a hobby -- please do not expect this to be good. Publishers please hmu</p><br>");
   echo("<p>Feedback and inquiries: <a href='mailto:yazoink@firemail.cc'>yazoink@firemail.cc</a></p>");
+  echo("<br><div class='box-container'>");
 
   // separate box for featured
   /*echo("<br>
@@ -104,6 +133,6 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
     }
     $i += 1;
   }
-  echo("</div></div></div></div>");
+  echo("</div></div></div></div></div>");
 }
 ?>

@@ -3,13 +3,18 @@
     "title": "The Human Machine",
     "date": "2 June 2026",
     "category": "Essays",
-    "featured": true
+    "description": "A ramble about the fundamental distinction between the human brain and the Turing machine; discussing subjects such as semantics, quantum theory, and the CIA's declassified \"Gateway\" report. This is essentially a weird cousin to my previous essay, <a href='?nav=writing&piece=the-simulation-machine'><i>The Simulation Machine</i></a>.",
+    "featured": true,
+    "hr": false
   },
   {
-    "title": "Doors in the Wall: Absurdism Vs. The Doors of Perception",
+    "title": "Doors in the Wall",
+    "subheading": "Absurdism Vs. The Doors of Perception",
+    "description": "A comparative analysis of the philosophies of <i>The Myth of Sisyphus</i> by Albert Camus, and <i>The Doors of Perception</i> by Aldous Huxley, in some sort of essay-adjacent format.",
     "date": "1 June 2026",
     "category": "Essays",
-    "featured": true
+    "featured": true,
+    "hr": false
   },
   {
     "title": "CUT SCRAMBLE REDIRECT",
@@ -23,7 +28,8 @@
     "date": "6 February 2026",
     "category": "Essays",
     "subheading": "A \"philosophical\" ramble about artificial life, semantics, objectivity, and the absurd.",
-    "featured": false
+    "featured": false,
+    "hr": false
   },
   {
     "title": "The City",

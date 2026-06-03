@@ -13,19 +13,21 @@ function getCategories($json)
     return $categories;
 }
 
-function printCategories($categories, $showByDefault)
+function getCategoriesHtml($categories, $showByDefault)
 {
+    $html = "";
     if ($showByDefault == true) {
-        echo "<div id='categories-list' class='categories-list' style='display:block;'>";
+        $html .= "<div id='categories-list' class='categories-list' style='display:block;'>";
     } else {
-        echo "<div id='categories-list' class='hidden'>";
+        $html .= "<div id='categories-list' class='hidden'>";
     }
   /* echo("<div class='content-indent'><p><a href='/?nav=blog'><b>All Posts</b></a> "); */
-  echo("<div class='content-indent'><p>");
+  $html .= "<div><p>";
     foreach ($categories as $category => $url) {
-        echo "<a href='$url'><b>$category</b></a> ";
+        $html .= "<a href='{$url}'>{$category}</a> ";
     }
-    echo "</p></div></div>";
+    $html .= "</p></div></div>";
+  return $html;
 }
 
 
@@ -44,9 +46,9 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 printBackCopyRssButtons("/?nav=blog", true, true);
             }
             echo "
-              <br><br><p class='date'><i>" . $blogEntry['date'] . "</i></p>
+              <hr><br><h6 class='date'><i>" . $blogEntry['date'] . "</i></h6>
               <h2>" . $blogEntry['title'] . "</h2>
-              <h5 class='subheading'>" . $blogEntry['subheading'] . "</h5><br>
+              <h5 class='subheading'>" . $blogEntry['subheading'] . "</h5><hr><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
@@ -61,7 +63,10 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         xNotFound("Post");
     }
 } else { // post not specified
-    echo "<h1>Blog...</h1><br>";
+    echo "
+    <h1>Blog...</h1><br>
+    <p>This is going to be a complete mixed bag of topics so bear with me lol</p>
+    ";
     $categories = getCategories($blogData);
     $getCatUrlQuestionMark = "";
     $getCatUrlAmpersand = "";
@@ -81,10 +86,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
             $showCategories = true;
             $arrow = "up";
             $entriesToPrint = [];
-            $allPosts = "<a href='/?nav=blog'>
-                <img src='images/graphics/gruvbox/back.webp'> 
-                <b>Back to all posts</b>
-            </a> | ";
+            $allPosts = "<a href='/?nav=blog'><img src='images/graphics/gruvbox/back.webp'>Back to all posts</a> | ";
             foreach ($blogData as $blogEntry) {
                 if (in_array($category, $blogEntry["categories"])) {
                     $entriesToPrint[] = $blogEntry;
@@ -95,35 +97,44 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         }
     } else {
         $category = "All Posts";
-        $showCategories = true;
+        $showCategories = false;
         $arrow = "down";
         $entriesToPrint = $blogData;
     }
     // print blog index page
-    echo "<p>
+    
+    echo "
+    <br>
+    <div class='box-container'>
+      <div class='textbox'>
+      <code><p>
         $allPosts
-        <a href='/rss.php'>
-            <img src='images/graphics/gruvbox/rss2.webp'>
-            <b>RSS</b>
-        </a> | 
-        <a href='javascript:;' id='categories-button'>
-          <b>Categories</b> <img src='images/graphics/gruvbox/$arrow.webp'>
-        </a>
+        <a href='/rss.php'><img src='images/graphics/gruvbox/rss2.webp'>RSS</a> | 
+        <a href='javascript:;' id='categories-button'>Categories<img src='images/graphics/gruvbox/$arrow.webp'></a>
     </p>";
-    printCategories($categories, $showCategories);
-    echo("<br><h2>$category</h2><br>");
-    echo "<ul>";
+    echo getCategoriesHtml($categories, $showCategories);
+    echo "</code></div>";
+
+    $boxContent = "";
+    $boxContent .= "<ul>";
     foreach ($entriesToPrint as $blogEntry) {
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
         $title = $blogEntry["title"];
         $date = $blogEntry["date"];
         $found = true;
-        echo "<li>
+        $boxContent .= "<li>
             <a href='/?nav=blog&entry=$entry$getCatUrlAmpersand'>
-                <b>$title</b> - $date
+                $title - $date
             </a>
         </li>";
     }
+
+    $boxTitle = strtoupper($category);
+    echo makeBox(
+      $boxTitle,
+      $boxContent
+    );
+    echo("</div>");
     echo "</ul><script src='js/categories.js' defer></script>";
     //echo "<img src='images/random-images/gruvbox/shapes.webp'>";
 }

@@ -1,12 +1,10 @@
 <?php
 require "writing/functions.php";
 
-$url = "?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception";
+$url = "?nav=writing&piece=doors-in-the-wall";
 $quoteNum = 1;
 $sections = array();
 ?>
-<p>A comparative analysis of the philosophies of The Myth of Sisyphus by Albert Camus, and The Doors of Perception by Aldous Huxley, in some sort of essay-adjacent format.</p>
-<br>
 <div class="box-container">
   <?php
   $contentsBoxContent = "

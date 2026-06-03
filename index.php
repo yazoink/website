@@ -37,7 +37,7 @@
                 include "imports/home.php";
             }
             // printRandomImage();
-            echo "<br><br>";
+            echo "<br>";
             ?>
           <p class='center'>
             <img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"><img src="images/graphics/gruvbox/diamond.webp"></p>

@@ -18,19 +18,6 @@
   <li>Bookbinding</li>
 </ul>
 <br />
-<h2>My Favourite Movies</h2>
-<br>
-<p>I don't watch movies often and I'm very picky, but I try lol</p>
-<p>(click the posters for IMDB pages)</p>
-<br />
-<?php printImageGallery("images/movies", $movies, false); ?>
-<br />
-<h2>My Favourite Shows</h2>
-<br>
-<p>(click the posters for IMDB pages)</p>
-<br />
-<?php printImageGallery("images/shows", $shows, false); ?>
-<br />
 <h2>My Favourite Books</h2>
 <br>
 <p>
@@ -40,6 +27,19 @@
 <p>(click covers for Goodreads pages)</p>
 <br />
 <?php printImageGallery("images/books", $books, false); ?>
+<br />
+<h2>My Favourite Shows</h2>
+<br>
+<p>(click the posters for IMDB pages)</p>
+<br />
+<?php printImageGallery("images/shows", $shows, false); ?>
+<br />
+<h2>My Favourite Movies</h2>
+<br>
+<p>I don't watch movies often and I'm very picky, but I try lol</p>
+<p>(click the posters for IMDB pages)</p>
+<br />
+<?php printImageGallery("images/movies", $movies, false); ?>
 <br />
 <h2>My Favourite Visual Artists</h2>
 <br>

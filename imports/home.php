@@ -1,88 +1,125 @@
 <?php
-function printStatusUpdates($statusUpdates)
+function makeStatusUpdatesBox($statusUpdates)
 {
-    echo "<div class='box status-updates-box' id='status-updates'>
-        <div class='left-right-container box-heading'>
-            <div class='left-right-container-left'>
-                <p>STATUS UPDATES</p>
-            </div>
-            <div class='left-right-container-right x-button'><p>X</p></div>
-        </div>
-        <div class='box-content status-updates'>";
+    $boxContent = "";
+    $boxContent .= "<div class='status-updates'>";
     $updateNum = count($statusUpdates);
     $i = 0;
     foreach ($statusUpdates as $update) {
         $i++;
         if ($i > 1) {
-            echo "<br>";
+            $boxContent .= "<br>";
         }
-        echo "<p>$update[date]</p>
+        $boxContent .= "<p>$update[date]</p>
         <div class='box-content-indent'><p>$update[status]</p></div>";
-        //if ($i < $updateNum) {
-        //    echo "<hr>";
-        //}
     }
-    echo "</div></div>";
+    $boxContent .= "</div>";
+    $box = makeBox(
+      "STATUS UPDATES", 
+      $boxContent, 
+      "status-updates-box", 
+      "status-updates"
+    );
+    return $box;
 }
 
-function printRecentBlogPosts($num, $blogData)
+function makeRecentBlogPostsBox($num, $blogData)
 {
-    echo "<div class='box recent-blog-posts-box' id='recent-blog-posts'>
-      <div class='left-right-container box-heading'>
-          <div class='left-right-container-left'>
-              <p>RECENT BLOG POSTS</p>
-          </div>
-          <div class='left-right-container-right x-button'><p>X</p></div>
-      </div>
-      <div class='box-content recent-blog-posts'>";
-    echo "<ul>";
+    $boxContent = "";
+    $boxContent .= "
+    <div class='recent-blog-posts'>
+      <ul>
+    ";
     $i = 0;
     foreach ($blogData as $blogEntry) {
         if ($i == $num) {
             break;
         }
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));
-        echo "<li><a href='/?nav=blog&entry=$entry'>" . $blogEntry['title'] . " [" . $blogEntry["date"] . "]</a></li>";
+        $boxContent .= "<li><a href='/?nav=blog&entry=$entry'>" . $blogEntry['title'] . " [" . $blogEntry["date"] . "]</a></li>";
         $i++;
     }
-    echo "</ul>";
-    echo "<br><p>Click <a href='/?nav=blog'>here</a> for more...</p>";
-    echo "</div></div>";
+    $boxContent .= "
+        </ul>
+        <br>
+        <p>Click <a href='/?nav=blog'>here</a> for more...</p>
+      </div>
+      ";
+    $box = makeBox(
+      "RECENT BLOG POSTS", 
+      $boxContent, 
+      "recent-blog-posts-box", 
+      "recent-blog-posts"
+    );
+    return $box;
 }
 
-function printChangelog($changelog)
+function makeChangelogBox($changelog)
 {
-    echo "<div class='box changelog-box' id='changelog'>
-        <div class='left-right-container box-heading'>
-            <div class='left-right-container-left'>
-                <p>SITE CHANGELOG</p>
-            </div>
-            <div class='left-right-container-right x-button'><p>X</p></div>
-        </div>
-        <div class='box-content changelog'>";
+    $boxContent = "";
+    $boxContent .= "<div class='changelog'>";
     $dateNum = count($changelog);
     $i = 0;
     foreach ($changelog as $date => $changes) {
-        echo "<p>$date</p><br><ul>";
+        $boxContent .= "<p>$date</p><br><ul>";
         foreach ($changes as $change) {
-            echo "<li>$change</li>";
+            $boxContent .= "<li>$change</li>";
         }
-        echo "</ul><br>";
+        $boxContent .= "</ul><br>";
         $i++;
         if ($i < $dateNum) {
-            echo "<hr><br>";
+            $boxContent .= "<hr><br>";
         }
     }
-    echo "</div></div>";
+    $boxContent .= "</div>";
+    $box = makeBox(
+      "CHANGELOG",
+      $boxContent,
+      "changelog-box",
+      "changelog"
+    );
+    return $box;
+}
+
+function makeWebsiteBox($title, $url, $image) {
+  $boxContent = "
+    <div class='browser-ui'>
+      <div class='browser-buttons'>
+        <p>
+          <img src='images/graphics/gruvbox/web-back.webp'>
+          &ensp;
+          <img src='images/graphics/gruvbox/web-forward.webp'>
+        </p>
+      </div>
+      <div class='search-bar'>
+        <p><img src='images/graphics/gruvbox/secure.webp'>&ensp;{$url}</p>
+      </div>
+    </div>
+    <div class='website-screenshot-image'>
+      <p><a href='{$url}' target='_blank'><img class='website-screenshot' src='{$image}' loading='lazy'></a></p>
+    </div>
+  ";
+  $box = makeBox($title, $boxContent, "website-screenshot-box");
+  return $box;
 }
 
 
-function printQandA($qAndA)
+function makeQandA($qAndA)
 {
+    $r = "";
+    $i = 1;
+    $qNum = count($qAndA);
     foreach ($qAndA as $q) {
-        echo "<p><b>{$q["question"]}</b></p>
-    <p class='content-indent'>{$q["answer"]}</p><br>";
+      $r .= "
+      <p><b>{$q["question"]}</b></p>
+      <p class='content-indent'>{$q["answer"]}</p>
+      ";
+      if ($i != $qNum) {
+        $r .= "<br>";
+      }
+      $i += 1;
     }
+    return $r;
 }
 ?>
 <div class="greeter-img">
@@ -109,9 +146,11 @@ function printQandA($qAndA)
 <br>
 <hr>
 <div class="status-changelog-container">
-  <?php printStatusUpdates($statusUpdates); ?>
-  <?php printChangelog($changelog); ?>
-  <?php printRecentBlogPosts(4, $blogData); ?>
+  <?php 
+  echo makeStatusUpdatesBox($statusUpdates); 
+  echo makeChangelogBox($changelog); 
+  echo makeRecentBlogPostsBox(4, $blogData); 
+  ?>
 </div>
 <hr>
 <!-- <div class="left-right-container">
@@ -125,58 +164,28 @@ function printQandA($qAndA)
 <hr> -->
 <br>
 <h2>My Other Sites</h2>
-<div class="box website-screenshot-box">
-  <div class="left-right-container box-heading">
-    <div class="left-right-container-left">
-      <p>Simple Recipe Page</p>
-    </div>
-    <div class='left-right-container-right x-button'><p>X</p></div>
-  </div>
-  <div class="browser-ui">
-    <div class="browser-buttons">
-      <p>
-        <img src="images/graphics/gruvbox/web-back.webp">
-        &ensp;
-        <img src="images/graphics/gruvbox/web-forward.webp">
-      </p>
-    </div>
-    <div class='search-bar'>
-      <p><img src="images/graphics/gruvbox/secure.webp">&ensp;https://recipes.yazo.ink</p>
-    </div>
-  </div>
-  <div class="website-screenshot-image">
-    <p><a href='https://recipes.yazo.ink' target="_blank"><img class='website-screenshot' src='images/misc/recipes.webp' loading='lazy'></a></p>
-  </div>
-</div>
-  <p>An anti-bloat recipe site inspired by <a href='https://based.cooking' target="_blank">based.cooking</a>.</p>
 <br>
-<div class="box website-screenshot-box">
-  <div class="left-right-container box-heading">
-    <div class="left-right-container-left">
-      <p>Base16 Colorscheme Editor</p>
-    </div>
-    <div class='left-right-container-right x-button'><p>X</p></div>
-  </div>
-  <div class="browser-ui">
-    <div class="browser-buttons">
-      <p>
-        <img src="images/graphics/gruvbox/web-back.webp">
-        &ensp;
-        <img src="images/graphics/gruvbox/web-forward.webp">
-      </p>
-    </div>
-    <div class='search-bar'>
-      <p><img src="images/graphics/gruvbox/secure.webp">&ensp;https://base16.yazo.ink</p>
-    </div>
-  </div>
-  <div class="website-screenshot-image">
-    <p><a href='https://base16.yazo.ink' target="_blank"><img class='website-screenshot' src='images/misc/base16.webp' loading='lazy'></a></p>
-  </div>
+<p>I like to make websites for fun, and I also host two others on my server, which can be found below.</p>
+<br>
+<div class="box-container">
+<?php
+echo makeWebsiteBox(
+  "SIMPLE RECIPE PAGE", 
+  "https://recipes.yazo.ink", 
+  "images/misc/recipes.webp"
+);
+echo makeWebsiteBox(
+  "BASE16 COLORSCHEME EDITOR", 
+  "https://base16.yazo.ink", 
+  "images/misc/base16.webp"
+);
+?>
 </div>
-<p>A tool for making <a href='https://github.com/chriskempson/base16' target='_blank'>Base16</a> themes.</p>
 <br>
 <h2>FAQ</h2>
 <br>
-<?php printQandA($qAndA);?>
+<?php
+echo makeQandA($qAndA);
+?>
 <script defer src='js/songs.js'></script>
 <script defer src='js/window-hover.js'></script>

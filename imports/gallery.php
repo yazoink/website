@@ -24,7 +24,7 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     } else { // if artwork exists
         $page = ceil(($artworkNum + 1) / $maxImagesPerPage);
         printBackCopyRssButtons("/?nav=gallery&page=$page", true, false);
-        echo "<br>";
+        echo "<hr><br>";
         $title = $galleryData[$artworkNum]["title"];
         $year = $galleryData[$artworkNum]["year"];
         $medium = $galleryData[$artworkNum]["medium"];
@@ -44,8 +44,7 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     }
 } else { // if artwork not specified
     echo "<h1>Art Gallery...</h1><br>
-      <p>Please don't repost anything from here for commercial purposes or without proper credit.</p><br>
-      <p>Click images for full view and more info.</p><br><hr>";
+      <p>Please don't repost anything from here for commercial purposes or without proper credit.</p><br>";
     /* $images = scandir($fullImageDir);
     array_splice($images, 0, 2); # remove . and ..
     rsort($images); */
@@ -86,24 +85,30 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     // echo "<p>image num: {$imageNum}</p>";
     // echo "<p>max pages: {$maxPages}</p>";
 
-    echo "<div class='gallery-div'>";
+    echo "
+    <div class='box-container gallery-div'>
+      <div class='gallery-text-div'>
+        <p><code>Click images for full view and more info.</code></p>
+      </div>
+      <div class='gallery-image-container'>
+    ";
     for ($i = $startIndex; $i < $endIndex; $i++) {
         $file = $galleryData[$i]["file"];
         $title = $galleryData[$i]["title"];
         $medium = $galleryData[$i]["medium"];
         $year = $galleryData[$i]["year"];
         $artworkGetVar = preg_replace("/.webp$/i", "", $file);
-        echo "<a href='/?nav=gallery&artwork=$artworkGetVar'>
+        echo "<div class='gallery-image'><a href='/?nav=gallery&artwork=$artworkGetVar'>
           <img 
             class='square-img' src='$thumbnailDir/$file' 
             style='cursor:pointer'
             title=\"$title ($medium, $year)\"
-            loading='lazy'></a>   ";
+            loading='lazy'></a></div>";
     }
 
-    echo "<br><hr><p><b>";
+    echo "</div><div class='gallery-text-div'><p><code>";
     if ($currentPage > 1) {
-        echo "<a href='/?nav=gallery&page={$previousPage}' style='text-decoration:none'></b>&#8810;<b></a>&ensp;";
+        echo "<a href='/?nav=gallery&page={$previousPage}' style='text-decoration:none'>&lt;</a>&ensp;";
     }
 
     for ($i = 1; $i <= $maxPages; $i++) {
@@ -115,7 +120,7 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     }
 
     if ($currentPage < $maxPages) {
-        echo "<a href='/?nav=gallery&page={$nextPage}' style='text-decoration:none'></b>&#8811;<b></a> ";
+        echo "<a href='/?nav=gallery&page={$nextPage}' style='text-decoration:none'>&gt;</a> ";
     }
-    echo "</p></b></div>";
+    echo "</code></p></div></div>";
 }

@@ -5,7 +5,6 @@ $url = "?nav=writing&piece=the-human-machine";
 $quoteNum = 1;
 $sections = array();
 ?>
-<p>A ramble about the fundamental distinction between the human brain and the Turing machine; discussing subjects such as semantics, quantum theory, and the CIA's declassified "Gateway" report. This is essentially a weird cousin to my previous essay, <a href='?nav=writing&piece=the-simulation-machine'><i>The Simulation Machine</i></a>.</p><br>
 <div class="box-container">
   <div class="box">
     <div class="left-right-container box-heading">

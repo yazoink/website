@@ -4,6 +4,7 @@
 <br>
 <p>These are all hosted on my home server, which you can find out more about <a href='<?php echo $baseUrl; ?>?nav=Technology'>here</a>.</p>
 <br>
+<div class="box-container">
 <?php 
 echo "<div class='box'>
     <div class='left-right-container box-heading'>
@@ -21,3 +22,4 @@ echo "</ul><br>";
 echo "<p>(don't rely on them being too stable lol)</p>";
 echo "</div></div>";
 ?>
+</div>

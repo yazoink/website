@@ -1,7 +1,13 @@
 <?php
-function makeBox($title, $content) {
+function makeBox($title, $content, $class = "", $id = "") {
+  if ($class != "") {
+    $class = " {$class}";
+  }
+  if ($id != "") {
+    $id = " id='{$id}'";
+  }
   $box = "
-  <div class='box'>
+  <div class='box{$class}'{$id}>
     <div class='left-right-container box-heading'>
       <div class='left-right-container-left'>
         <p>{$title}</p>
