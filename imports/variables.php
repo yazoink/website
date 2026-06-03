@@ -58,6 +58,10 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "3/6/2026" => [
+    "Tweak \"Writing\" page",
+    "Tweak \"Blog\" page",
+  ],
   "2/6/2026" => [
     "Tweak \"Writing\" page",
     "Tweak \"Blog\" page",
