@@ -30,7 +30,7 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
         $medium = $galleryData[$artworkNum]["medium"];
         $file = $galleryData[$artworkNum]["file"];
         echo "<h2>$title</h2>
-          <p><i>$year</i>, $medium</p><br>
+          <h6><i>$year</i>, $medium</h6><br>
           <p><img src='$fullImageDir/$file' class='full-artwork'></p>
           <a href='$fullImageDir/$file' target='_blank'><b>Open in new tab</b></a> |
           <a href='download.php?url=$fullImageDir/$file'><b>Download</b></a><br><br>";
