@@ -1,5 +1,5 @@
 <p>
-  The Human is a machine that operates on a binary "no/go go" basis. It recieves
+  The Human is a machine that operates on a binary "go/no go" basis. It receives
   a stream of raw three-dimensional perceptive data. In order to make sense of
   this data, it must sort it into two-dimensional semantic concepts and
   categories, like "good" or "chair", which are analysed mathematically. The
@@ -9,8 +9,8 @@
 <h3>1. Ones and Zeroes</h3>
 <br />
 <p>
-  The TV that is recieving a completely uniform signal shows a screen that is
-  illuminated, but blank. It begins to recieve a signal and it starts playing a
+  The TV that is receiving a completely uniform signal shows a screen that is
+  illuminated, but blank. It begins to receive a signal and it starts playing a
   video. The signal is comprised of ones and zeroes, usually in clumps of
   various sizes. The camera broadcasting the video is reading an aspect of the
   three-dimensional world and translating it into binary.
@@ -23,7 +23,7 @@
 </p>
 <br />
 <p>
-  I have held the belief that the Human operates in binary for a while. This
+  I have held the belief that the Human consciousness operates in binary for a while. This
   belief was reinforced upon reading the declassified CIA report: "Analysis and
   Assessment of Gateway Process", which had this to say on the subject:
 </p>
@@ -204,7 +204,7 @@
   previous interactions with the concept of a table. If you have never
   encountered a table, the word will take on the meaning of the absence of its
   meaning. Each time a "table" is encountered, a new personal association, or
-  connotation is annexed. Denotation is an illusion -- the definition of a word
+  connotation is annexed. Denotation is an illusion - the definition of a word
   entirely circumstantial, shaped by interaction. Alone, it is <i>empty</i>.
 </p>
 <br />
@@ -213,7 +213,7 @@
   letters. We know that A comes before B, and Y comes before Z, and T is two
   places before V, and so on. Take away the letters and what does it mean? The
   "alphabet" has no independent meaning beyond the configuration of its
-  constituent elements; there is no "meta-letter". It an empty universe.
+  constituent elements; there is no "meta-letter". It's an empty universe.
 </p>
 <br />
 <p>
@@ -729,7 +729,7 @@
 <p>
   The mechanism is much like that of a radio tuning into different stations. The
   configuration of the mind, characterised variances in frequency and amplitude,
-  determines the configuration, thus the character, of the reciever – or the
+  determines the configuration, thus the character, of the receiver – or the
   station you’re tuned into. The default station the human brain is tuned into
   tuned to is that of the three-dimensional.
 </p>
@@ -816,7 +816,7 @@
     Absolute." Between the Absolute and the "material" universe in which we
     experience our physical existence are various intervening dimensions to
     which human consciousness in altered states of being may gain access.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=5&f=10#footnote-1">1</a>
+      <a href="?nav=writing&piece=the-human-machine&q=10&f=1#footnote-1">1</a>
     </sup>
 
   </p>
@@ -931,7 +931,25 @@
   >.
 </p>
 <br />
-<h3>6. The Quantum Man-Machine</h3>
+<h3>6. Self-Awareness</h3>
+<br />
+<div class="content-indent" id="quote-11">
+  <p>
+    Humans not only know, but they know that they know. They are able to monitor the process of their own thinking and maintain an awareness of it. Moreover, they can conduct a comparitive assessment, evaluating the functioning of their thought processes against various "objective" standards they have adopted. Human consciousness can do this because it has the capacity to duplicate aspects of its own hologram, project them out, "perceive" that projection, put it through comparison with the memory aspect(where its evaluation standards of measure are stored) of its own hologram, and measure or "sense" the differences using three dimensional geometry and then binary "go/no go" pulse to yield verbal cognition about the self.<sup>
+      <a href="?nav=writing&piece=the-human-machine&q=11&f=1#footnote-1">1</a>
+    </sup>
+  </p>
+</div>
+<br />
+<p>How does one become many?</p>
+<br />
+<p>You have one Absolute self-aware Thing. In order to have a concept of <i>self</i>, there must be a <i>not-self</i> to juxtapose it with. This juxtaposition creates two Things: Self, and Not-Self.</p>
+<br />
+<p>You have one Thing, and you divide it in two. You juxtapose Thing, 1 and Thing 2, and that juxtaposition forms a third Thing. You juxtapose thing 1, 2, and 3, and you get a forth. You juxtapose 1, and 3; 4, 6, and 8; 2, 9, and 36... The juxtapositions can be formed in any number of ways until you have infinite juxtapositions - infinite nodes in a universal network.</p>
+<br />
+<p>When focus is directed to particular areas of the network, more nodes are concentrated in that particular area, and this forms a cluster. Say that when the Absolute is divided, its self-awareness is divided with it. When a cluster forms, the cluster as a whole forms an individual sense of self that is the juxtaposition of Cluster and Not-Cluster.</p>
+<br />
+<h3>7. The Quantum Man-Machine</h3>
 <br />
 <p>
   The Turing Machine was created in order to determine whether our world can be
@@ -969,7 +987,7 @@
 </p>
 <br />
 <p>
-  To simulate the atoms in the glass bottle, you would need 1023 qubits. No
+  To simulate the atoms in the glass bottle, you would need 10<sup>23</sup> qubits. No
   more, no less. The quantum computer that can simulate the universe
   <i>is</i> the universe.
 </p>
@@ -994,7 +1012,7 @@
   $footnotes = array(
     "Wayne M. McDonnell, <i>Analysis and Assessment of Gateway Process</i>.",
     "William S. Burroughs, \"On Coincidence\", <i>The Adding Machine</i>.",
-  "I elaborate on the \"lines of association\" concept in my essay, <i>CUT SCRAMBLE REARRANGE</i>.",
+  "I elaborate on the \"lines of association\" concept in my essay, <i>CUT SCRAMBLE REDIRECT</i>.",
   "It can be noted that this serves as the basis of String Theory.",
   );
   for ($i = 1; $i <= count($footnotes); $i++) {
