@@ -1,3 +1,36 @@
+<?php
+require "writing/functions.php";
+
+$url = "?nav=writing&piece=the-human-machine";
+$quoteNum = 1;
+$sections = array();
+?>
+<p>A ramble about the fundamental distinction between the human brain and the Turing machine; discussing subjects such as semantics, quantum theory, and the CIA's declassified "Gateway" report. This is essentially a weird cousin to my previous essay, <a href='?nav=writing&piece=the-simulation-machine'><i>The Simulation Machine</i></a>.</p><br>
+<div class="box-container">
+  <div class="box">
+    <div class="left-right-container box-heading">
+      <div class='left-right-container-left'>
+        <p>CONTENTS</p>
+      </div>
+      <div class='left-right-container-right x-button'><p>X</p></div>
+    </div>
+    <div class='box-content'>
+      <p><a href="<?php echo $url; ?>">The Human Machine</a></p><br>
+      <ol>
+        <li><a href='#section-1'>Ones and Zeroes</a></li>
+        <li><a href='#section-2'>The Meaning of Meaning</a></li>
+        <li><a href='#section-3'>The Wave Pool</a></li>
+        <li><a href='#section-4'>The Gateway Revisited</a></li>
+        <li><a href='#section-5'>Infinity and Interference</a></li>
+        <li><a href='#section-6'>Self-Awareness</a></li>
+        <li><a href='#section-7'>The Quantum Man-Machine</a></li>
+      </ol>
+      <br>
+      <p><a href='#footnotes'>Footnotes</a></p>
+    </div>
+  </div>
+</div>
+<br>
 <p>
   The Human is a machine that operates on a binary "go/no go" basis. It receives
   a stream of raw three-dimensional perceptive data. In order to make sense of
@@ -5,9 +38,9 @@
   categories, like "good" or "chair", which are analysed mathematically. The
   Machine ultimately makes a decision: yes, or no; do, or don’t; one or zero.
 </p>
-<br />
-<h3>1. Ones and Zeroes</h3>
-<br />
+<?php
+$sections = makeSection("Ones and Zeroes", $sections);
+?>
 <p>
   The TV that is receiving a completely uniform signal shows a screen that is
   illuminated, but blank. It begins to receive a signal and it starts playing a
@@ -28,7 +61,7 @@
   Assessment of Gateway Process", which had this to say on the subject:
 </p>
 <br />
-<div class="content-indent" id="quote-1">
+<div class="content-indent">
   <p>
     The consciousness process is most easily envisaged if we picture the
     [perceptive] input with a three dimensional grid system superimposed over it
@@ -45,15 +78,17 @@
     same way, perceiving by comparison only. Bentov states the proposition this
     way: "Our whole reality is constructed by constantly making such
     comparisons....Whenever we perceive something, we always perceive
-    differences only." In states of expanded consciousness, the right hemisphere
-    of the human brain in its holistic, nonlinear and nonverbal mode of
-    functioning acts as the primary matrix or receptor for this [perceptive]
-    input while, by operating in phase or coherence with the right brain, the
-    left hemisphere provides the secondary matrix through its binary,
-    computer-like method of functioning to screen further the data by comparison
-    and reduce it to a discreet, two dimensional form.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=1&f=1#footnote-1">1</a>
-    </sup>
+    differences only."
+    <?php
+      $quote = " In states of expanded consciousness, the right hemisphere
+      of the human brain in its holistic, nonlinear and nonverbal mode of
+      functioning acts as the primary matrix or receptor for this [perceptive]
+      input while, by operating in phase or coherence with the right brain, the
+      left hemisphere provides the secondary matrix through its binary,
+      computer-like method of functioning to screen further the data by comparison
+      and reduce it to a discreet, two dimensional form.";
+      $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -159,10 +194,10 @@
   adequate binary instructions; it thinks from the bottom, up. "operating
   system", "image", and "video" are all constructions.
 </p>
-<br />
-<h3>2. The Meaning of Meaning</h3>
-<br />
-<div class="content-indent" id="quote-2">
+<?php
+$sections = makeSection("The Meaning of Meaning", $sections);
+?>
+<div class="content-indent">
   <p>
     Korzybski, who developed the concept of General Semantics, the ‘meaning of
     meaning’, points out that Western thought has been crippled by the
@@ -174,11 +209,11 @@
     object is what we are referring to.’ Take an abstract word like ‘truth’. You
     can’t see it, you can’t touch it. Everyone who uses the word has a different
     definition. Some are referring to religious truth, others to scientific
-    truth, magical truth, pragmatic truth, some to a private lunacy. Everyone is
-    talking at cross purposes.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=2&f=2#footnote-2">2</a>
-    </sup>
-
+    truth, magical truth, pragmatic truth, some to a private lunacy.
+    <?php
+    $quote = " Everyone is talking at cross purposes.";
+    $quoteNum = makeFootnote(2, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -190,11 +225,12 @@
   serving as an abstraction – syntactic sugar, if you will.
 </p>
 <br />
-<p id="quote-3">
-  The parameters of the concept take shape through interaction with other
-  concepts, and the consequent lines of association<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=3&f=3#footnote-3">3</a>
-    </sup>
+<p>
+  <?php
+  $quote = "The parameters of the concept take shape through interaction with other
+  concepts, and the consequent lines of association";
+  $quoteNum = makeFootnote(3, $quoteNum, $quote, $url);
+  ?>
   that are established. You see the letters <i>t-a-b-l-e</i> and they conjure
   the image of an elevated surface on which objects can be placed. The
   appearance of the table is dependent on your preconceived notion of a table,
@@ -330,9 +366,9 @@
   spoken word. Or you can play God and act as a telepathic signal by copying it
   line-for-line yourself.
 </p>
-<br />
-<h3>3. The Wave Pool</h3>
-<br />
+<?php
+$sections = makeSection("The Wave Pool", $sections);
+?>
 <p>
   You light a match and the coolest part of the flame at the top is red, and at
   the center, the flame is yellow. If the conditions are right, the warmest part
@@ -529,10 +565,10 @@
   those who "know" wave back. The Word is shaped by the people it interferes
   with and the people are shaped by the Word they interfere with.
 </p>
-<br />
-<h3>4. The Gateway Revisited</h3>
-<br />
-<div class="content-indent" id="quote-4">
+<?php
+$sections = makeSection("The Gateway Revisited", $sections);
+?>
+<div class="content-indent">
   <p>
     "[The] "holographic model" marries brain research to theoretical physics; it
     accounts for normal perception and simultaneously takes the paranormal and
@@ -541,12 +577,12 @@
   </p>
   <br />
   <p>
-    Like certain strange discoveries of quantum physics, the radical
-    reorientation of this theory suddenly makes sense of paradoxical sayings of
-    mystics throughout the ages."<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=4&f=1#footnote-1">1</a>
-    </sup>
-
+    <?php
+    $quote = "Like certain strange discoveries of quantum physics, the radical
+      reorientation of this theory suddenly makes sense of paradoxical sayings of
+      mystics throughout the ages.\"";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -584,28 +620,27 @@
 <br />
 <p>So, let us begin.</p>
 <br />
-<div class="content-indent" id="quote-5">
+<div class="content-indent">
   <p>
-    The first point which needs to be made is that the two terms, matter and
+    <?php
+    $quote = "The first point which needs to be made is that the two terms, matter and
     energy tend to be misleading if taken to indicate two distinctly different
-    states of existence in the physical world that we know it.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=5&f=1#footnote-1">1</a>
-    </sup>
-
+    states of existence in the physical world that we know it.";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
-<p id="quote-6">
-  The universe is comprised of atoms, and atomic structure is comprised of
+<p>
+  <?php
+  $quote = "The universe is comprised of atoms, and atomic structure is comprised of
   oscillating energy grids, surrounded by other oscillating energy grids, which
   orbit at extraordinarily high speeds. All solid matter, at the base level, is
   simply energy – every particle we percieve as physical matter can be traced to
-  a distinct frequency and amplitude;<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=6&f=4#footnote-4">4</a>
-    </sup>
- the nucleus of an atom vibrates at 10<sup
-    >22</sup
-  >
+  a distinct frequency and amplitude; ";
+  $quoteNum = makeFootnote(4, $quoteNum, $quote, $url);
+  ?>
+  the nucleus of an atom vibrates at 10<sup>22</sup>
   Hertz, a molecule vibrates at 10<sup>9</sup>, a live human cell vibrates at
   10<sup>3</sup>…
   <i>Solid matter, in the traditional sense, does not actually exist</i>.
@@ -616,14 +651,14 @@
   we see TV and radio waves?
 </p>
 <br />
-<div class="content-indent" id="quote-7">
+<div class="content-indent">
   <p>
-    Energy creates, stores and retrieves meaning in the universe by projecting
+    <?php
+    $quote = "Energy creates, stores and retrieves meaning in the universe by projecting
     or expanding at certain frequencies in a three dimensional mode that creates
-    a living pattern called a hologram.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=7&f=1#footnote-7">1</a>
-    </sup>
-
+    a living pattern called a hologram.";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -703,18 +738,19 @@
   deduce meaning and achieve a state of "consciousness".
 </p>
 <br />
-<div class="content-indent" id="quote-8">
+<div class="content-indent">
   <p>
     The universe is composed of interacting energy fields, some at rest and some
     in motion. It is, in and of itself, one gigantic hologram of unbelievable
-    complexity. According to the theories of Karl Pribram, a neuroscientist at
+    complexity. 
+    <?php
+    $quote = " According to the theories of Karl Pribram, a neuroscientist at
     Stanford University and David Bohm, a physicist at the University of London,
     the human mind is also a hologram which attunes itself to the universal
     hologram by the medium of energy exchange thereby deducing meaning and
-    achieving the state which we call consciousness.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=8&f=1#footnote-1">1</a>
-    </sup>
-
+    achieving the state which we call consciousness.";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -734,7 +770,7 @@
   tuned to is that of the three-dimensional.
 </p>
 <br />
-<div class="content-indent" id="quote-9">
+<div class="content-indent">
   <p>
     Changes in the frequency and amplitude of the electrostatic field which
     comprises the human mind determines the configuration and hence the
@@ -742,11 +778,11 @@
     intercept meaning directly from the holographic transmissions of the
     universe. Then, to make sense of what the holographic image is "saying" to
     it, the mind proceeds to compare the image just received with itself.
-    Specifically, it does this by comparing the image received with that part of
-    its own hologram which constitutes memory.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=9&f=1#footnote-1">1</a>
-    </sup>
-
+    <?php
+    $quote = " Specifically, it does this by comparing the image received 
+    with that part of its own hologram which constitutes memory.";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -783,9 +819,9 @@
   serves to sort input from the right hemisphere into symbols and concepts,
   creating the "definition" and "sense" that we all know and love.
 </p>
-<br />
-<h3>5. Infinity and Interference</h3>
-<br />
+<?php
+$sections = makeSection("Infinity and Interference", $sections);
+?>
 <p>
   Physicists define time as a measurement of change – energy or force in motion.
   In order for energy to be in motion, it must be confined to a specific
@@ -801,7 +837,7 @@
   placing it outside the dimension of time.
 </p>
 <br />
-<div class="content-indent" id="quote-10">
+<div class="content-indent">
   <p>
     Energy in infinity means energy uniformly extended without limit. It has no
     beginning, no end, no location. It is conscious force, the fundamental,
@@ -813,12 +849,13 @@
     make up the created universe but it cannot be perceived by consciousness
     operating in the active universe. Energy in this state of inactive infinity
     is termed by physicists as energy in its absolute state, or simply "the
-    Absolute." Between the Absolute and the "material" universe in which we
+    Absolute."
+    <?php
+    $quote = " Between the Absolute and the \"material\" universe in which we
     experience our physical existence are various intervening dimensions to
-    which human consciousness in altered states of being may gain access.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=10&f=1#footnote-1">1</a>
-    </sup>
-
+    which human consciousness in altered states of being may gain access.";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -930,14 +967,16 @@
     >e are not setting out to explore preexisting data</i
   >.
 </p>
-<br />
-<h3>6. Self-Awareness</h3>
-<br />
-<div class="content-indent" id="quote-11">
+<?php
+$sections = makeSection("Self-Awareness", $sections);
+?>
+<div class="content-indent">
   <p>
-    Humans not only know, but they know that they know. They are able to monitor the process of their own thinking and maintain an awareness of it. Moreover, they can conduct a comparitive assessment, evaluating the functioning of their thought processes against various "objective" standards they have adopted. Human consciousness can do this because it has the capacity to duplicate aspects of its own hologram, project them out, "perceive" that projection, put it through comparison with the memory aspect(where its evaluation standards of measure are stored) of its own hologram, and measure or "sense" the differences using three dimensional geometry and then binary "go/no go" pulse to yield verbal cognition about the self.<sup>
-      <a href="?nav=writing&piece=the-human-machine&q=11&f=1#footnote-1">1</a>
-    </sup>
+  Humans not only know, but they know that they know. They are able to monitor the process of their own thinking and maintain an awareness of it.
+<?php
+  $quote = " Moreover, they can conduct a comparitive assessment, evaluating the functioning of their thought processes against various \"objective\" standards they have adopted. Human consciousness can do this because it has the capacity to duplicate aspects of its own hologram, project them out, \"perceive\" that projection, put it through comparison with the memory aspect(where its evaluation standards of measure are stored) of its own hologram, and measure or \"sense\" the differences using three dimensional geometry and then binary \"go/no go\" pulse to yield verbal cognition about the self.";
+    $quoteNum = makeFootnote(1, $quoteNum, $quote, $url);
+    ?>
   </p>
 </div>
 <br />
@@ -948,9 +987,9 @@
 <p>You have one Thing, and you divide it in two. You juxtapose Thing, 1 and Thing 2, and that juxtaposition forms a third Thing. You juxtapose thing 1, 2, and 3, and you get a forth. You juxtapose 1, and 3; 4, 6, and 8; 2, 9, and 36... The juxtapositions can be formed in any number of ways until you have infinite juxtapositions - infinite nodes in a universal network.</p>
 <br />
 <p>When focus is directed to particular areas of the network, more nodes are concentrated in that particular area, and this forms a cluster. Say that when the Absolute is divided, its self-awareness is divided with it. When a cluster forms, the cluster as a whole forms an individual sense of self that is the juxtaposition of Cluster and Not-Cluster.</p>
-<br />
-<h3>7. The Quantum Man-Machine</h3>
-<br />
+<?php
+$sections = makeSection("The Quantum Man-Machine", $sections);
+?>
 <p>
   The Turing Machine was created in order to determine whether our world can be
   encapsulated by mathematics. If this is the case, then it should, in theory,
@@ -1004,25 +1043,12 @@
   get something to eat – one or zero? Did John buy a new TV – who the hell is
   John?
 </p>
-<br />
-<h3>Footnotes</h3>
-<br />
-<ol>
-  <?php
-  $footnotes = array(
-    "Wayne M. McDonnell, <i>Analysis and Assessment of Gateway Process</i>.",
-    "William S. Burroughs, \"On Coincidence\", <i>The Adding Machine</i>.",
-  "I elaborate on the \"lines of association\" concept in my essay, <i>CUT SCRAMBLE REDIRECT</i>.",
-  "It can be noted that this serves as the basis of String Theory.",
-  );
-  for ($i = 1; $i <= count($footnotes); $i++) {
-    if (array_key_exists("q", $_GET) && array_key_exists("f", $_GET)) {
-      if ($_GET["f"] == $i) {
-        echo("<li><p id='footnote-{$i}'><a href='#quote-{$_GET["q"]}'>{$footnotes[$i - 1]}</a></p></li>");
-        continue;
-      }
-    }
-    echo("<li><p id='footnote-{$i}'>{$footnotes[$i - 1]}</p></li>");
-  }
-  ?>
-</ol>
+<?php
+$footnotes = array(
+  "Wayne M. McDonnell, <i>Analysis and Assessment of Gateway Process</i>.",
+  "William S. Burroughs, \"On Coincidence\", <i>The Adding Machine</i>.",
+"I elaborate on the \"lines of association\" concept in my essay, <i>CUT SCRAMBLE REDIRECT</i>.",
+"It can be noted that this serves as the basis of String Theory.",
+);
+makeFootnotes($footnotes, $url);
+?>

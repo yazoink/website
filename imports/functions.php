@@ -1,4 +1,22 @@
 <?php
+function makeBox($title, $content) {
+  $box = "
+  <div class='box'>
+    <div class='left-right-container box-heading'>
+      <div class='left-right-container-left'>
+        <p>{$title}</p>
+      </div>
+      <div class='left-right-container-right x-button'><p>X</p></div>
+    </div>
+    <div class='box-content'>
+      {$content}
+    </div>
+  </div>
+  ";
+  return $box;
+}
+
+
 function randomFromArrayLink($array, $text)
 {
     $song = array_rand($array);

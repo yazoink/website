@@ -44,9 +44,9 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
                 printBackCopyRssButtons("/?nav=blog", true, true);
             }
             echo "
-              <br><p class='date'><i>" . $blogEntry['date'] . "</i></p>
-              <h2>" . $blogEntry['title'] . "</h2><br>
-              <p class='subheading'>" . $blogEntry['subheading'] . "</p><br><hr><br>
+              <br><br><p class='date'><i>" . $blogEntry['date'] . "</i></p>
+              <h2>" . $blogEntry['title'] . "</h2>
+              <h5 class='subheading'>" . $blogEntry['subheading'] . "</h5><br>
               $content<br>
               <hr><p><b>Categories</b>: ";
             foreach ($blogEntry['categories'] as $category) {
@@ -61,8 +61,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         xNotFound("Post");
     }
 } else { // post not specified
-    echo "<h1>Blog...</h1><br>
-      <p>This is going to be a complete mixed bag of topics, please enjoy lol</p><br>";
+    echo "<h1>Blog...</h1><br>";
     $categories = getCategories($blogData);
     $getCatUrlQuestionMark = "";
     $getCatUrlAmpersand = "";
@@ -96,7 +95,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         }
     } else {
         $category = "All Posts";
-        $showCategories = false;
+        $showCategories = true;
         $arrow = "down";
         $entriesToPrint = $blogData;
     }
@@ -112,7 +111,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
         </a>
     </p>";
     printCategories($categories, $showCategories);
-    echo("<br><hr><br><h2>$category</h2><br>");
+    echo("<br><h2>$category</h2><br>");
     echo "<ul>";
     foreach ($entriesToPrint as $blogEntry) {
         $entry = str_replace(" ", "-", strtolower($blogEntry['title']));

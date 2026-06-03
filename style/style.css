@@ -16,6 +16,14 @@
 /*   text-align: justify; */
 /* } */
 
+.box-container {
+  background-image: url("../images/graphics/gruvbox/bg.webp");
+  padding-top: calc(var(--padding-box) * 2);
+  padding-bottom: calc(var(--padding-box) * 2);
+  border-top: 1px solid var(--fg);
+  border-bottom: 1px solid var(--fg);
+}
+
 footer p {
   text-align: center;
 }
@@ -24,10 +32,11 @@ footer p {
   font-size: var(--font-size-small);
 }
 
-/*.subheading,
+.subheading,
 .date {
-  font-size: var(--font-size-small);
-}*/
+  /* font-size: var(--font-size-small); */
+  font-style: italic;
+}
 
 .writing-category {
   border: 1px solid var(--fg);
@@ -352,6 +361,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 ul,
 ol,
 p {
@@ -365,6 +376,8 @@ p {
 .content h2,
 .content h3,
 .content h4,
+.content h5,
+.content h6,
 .content hr,
 .greeter-img,
 .status-changelog-container,

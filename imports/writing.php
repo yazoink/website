@@ -26,10 +26,10 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
       } else {
         $file = "writing/pieces/{$entry}.php";
       }
-      echo("<br><p class='date'><i>{$piece["date"]}</i></p>");
-      echo("<h2>{$piece["title"]}</h2>");
-      if (array_key_exists("note", $piece)) {
-        echo("<br><p class='subheading'>{$piece["note"]}</p><br><hr>");
+      echo("<br><br><p class='date'><i>{$piece["date"]}</i></p>");
+      echo("<h2 class='title'>{$piece["title"]}</h2>");
+      if (array_key_exists("subheading", $piece)) {
+        echo("<h5 class='subheading'>{$piece["subheading"]}</h5>");
       }
       echo("<br>");
       include $file;
@@ -42,6 +42,7 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
 } else { // piece not specified
   echo("<h1>Writing...</h1>");
   echo("<br><p>I like to write as a hobby -- please do not expect this to be good. Publishers please hmu</p><br>");
+  echo("<p>Feedback and inquiries: <a href='mailto:yazoink@firemail.cc'>yazoink@firemail.cc</a></p>");
 
   // separate box for featured
   /*echo("<br>

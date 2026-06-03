@@ -1,5 +1,30 @@
-<h3>1. The Absurd</h3>
-<br />
+<?php
+require "writing/functions.php";
+
+$url = "?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception";
+$quoteNum = 1;
+$sections = array();
+?>
+<p>A comparative analysis of the philosophies of The Myth of Sisyphus by Albert Camus, and The Doors of Perception by Aldous Huxley, in some sort of essay-adjacent format.</p>
+<br>
+<div class="box-container">
+  <?php
+  $contentsBoxContent = "
+  <b><p><a href='{$url}'>Doors in the Wall: Absurdism Vs. The Doors of Perception</a></p><br>
+  <ol>
+    <li><a href='#section-1'>The Absurd</a></li>
+    <li><a href='#section-2'>The Mind at Large</a></li>
+    <li><a href='#section-3'>Walls Vs. Doors</a></li>
+  </ol>
+  <br><p><a href='#footnotes'>Footnotes</a></p></b>
+  ";
+  $contentsBox = makeBox("CONTENTS", $contentsBoxContent);
+  echo($contentsBox);
+  ?>
+</div>
+<?php
+$sections = makeSection("The Absurd", $sections);
+?>
 <p>
   Albert Camus lays out the groundwork for the Absurdist philosophy in his 1942
   Essay, <i>The Myth of Sisyphus</i>, and this will be my starting point.
@@ -160,9 +185,9 @@
   longer the Absurd once you begin to make assumptions. To stay in the Absurd,
   you must sit with it.
 </p>
-<br />
-<h3>2. The Mind at Large</h3>
-<br />
+<?php
+$sections = makeSection("The Mind at Large", $sections);
+?>
 <p>
   If you traveled to the end of every individual instance of consciousness,
   would you always, ultimately, end up in the same place?
@@ -395,9 +420,9 @@
   changes with the mind. It could be said that the body is the machine, and the
   infinite is the spark. Plug in the body, and You are born.
 </p>
-<br />
-<h3>3. Walls Vs. Doors</h3>
-<br />
+<?php
+$sections = makeSection("Walls Vs. Doors", $sections);
+?>
 <p>
   When you superimpose the heightened “Visionary” state described by Huxley upon
   the Absurd, you can observe many points of overlap. In fact, they share the
@@ -530,7 +555,7 @@
   Doors…
 </p>
 <br />
-<h3>Footnotes</h3>
+<h3 id='footnotes'>Footnotes</h3>
 <br />
 <ol>
   <?php

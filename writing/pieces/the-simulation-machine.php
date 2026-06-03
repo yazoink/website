@@ -1,5 +1,31 @@
-<h3>1. The Foundations</h3>
-<br />
+<?php
+require "writing/functions.php";
+
+$url = "?nav=writing&piece=the-simulation-machine";
+$quoteNum = 1;
+$sections = array();
+?>
+<div class="box-container">
+  <div class="box">
+    <div class="left-right-container box-heading">
+      <div class='left-right-container-left'>
+        <p>CONTENTS</p>
+      </div>
+      <div class='left-right-container-right x-button'><p>X</p></div>
+    </div>
+    <div class='box-content'>
+      <b><p><a href="<?php echo $url; ?>">The Simulation Machine</a></p><br>
+      <ol>
+        <li><a href='#section-1'>The Foundations</a></li>
+        <li><a href='#section-2'>The Truth</a></li>
+        <li><a href='#section-3'>The Machine, Real and in the Flesh</a></li>
+      </ol></b>
+    </div>
+  </div>
+</div>
+<?php
+$sections = makeSection("The Foundations", $sections);
+?>
 <p>How accurately can you artificially simulate life?</p>
 <br />
 <p>
@@ -111,9 +137,9 @@
   number can be divided, just as there is no limit to the number of times it can
   be multiplied.
 </p>
-<br />
-<h3>2. The Truth</h3>
-<br />
+<?php
+$sections = makeSection("The Truth", $sections);
+?>
 <p>
   In a world of infinity, nothing can be solidly defined; including "truth." You
   can't touch "truth." Everyone who uses the word is referring to something
@@ -204,9 +230,9 @@
 </p>
 <br />
 <p>The conscious condition is to match patterns in a realm of infinity.</p>
-<br />
-<h3>3. The Machine, Real and in the Flesh</h3>
-<br />
+<?php
+$sections = makeSection("The Machine, Real and in the Flesh", $sections);
+?>
 <p>
   The prediction machine I mentioned earlier bears a lot of similarities to
   Artificial Intelligence. It may even serve as a logical conclusion to it.
