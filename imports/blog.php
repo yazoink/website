@@ -109,8 +109,8 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
       <div class='text-box'>
       <p>
         $allPosts
-        <a href='/rss.php'><img src='images/graphics/gruvbox/rss2.webp'>RSS</a> | 
-        <a href='javascript:;' id='categories-button'>Categories<img src='images/graphics/gruvbox/$arrow.webp'></a>
+        <a href='/rss.php'><img src='images/graphics/gruvbox/rss2.webp'> RSS</a> | 
+        <a href='javascript:;' id='categories-button'>Categories <img src='images/graphics/gruvbox/$arrow.webp'></a>
     </p>";
     echo getCategoriesHtml($categories, $showCategories);
     echo "</div>";
