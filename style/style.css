@@ -343,7 +343,14 @@ hr {
 .image-gallery {
   padding-left: var(--padding-box);
   padding-right: var(--padding-box);
+  /* padding-top: calc(var(--padding-box) / 2); */
+  /* padding-bottom: calc(var(--padding-box) / 2); */
   text-align: center;
+}
+
+.image-gallery-padding {
+  padding-top: calc(var(--padding-box) / 2);
+  padding-bottom: calc(var(--padding-box) / 2);
 }
 
 .image-gallery a {

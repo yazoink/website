@@ -81,7 +81,7 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
     }
     echo "
     <div class='box-container'>
-      <div class='image-gallery'>
+      <div class='image-gallery image-gallery-padding'>
     ";
     foreach ($imageArray as $name => $url) {
         echo "<a href='$url' target='_blank'><img class='$imageClass' src=\"$imageDir/$name.webp\" style='cursor:pointer' title=\"$name\" loading=lazy></a>";

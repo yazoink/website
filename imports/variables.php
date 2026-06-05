@@ -28,6 +28,10 @@ $writingData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
   [
+    "status" => "Man I hate CSS",
+    "date" => "5/6/2026"
+  ],
+  [
     "status" => "Just a heads up that I'm going to be migrating my servers soon, so this site is going to be down for a bit",
     "date" => "30/5/2026"
   ],
