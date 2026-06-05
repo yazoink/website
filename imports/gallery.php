@@ -31,7 +31,7 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
         $file = $galleryData[$artworkNum]["file"];
         echo "<h2>$title</h2>
           <h6><i>$year</i>, $medium</h6><br>
-          <p><img src='$fullImageDir/$file' class='full-artwork'></p>
+          <p><img src='$fullImageDir/$file' class='content-img full-img'></p>
           <a href='$fullImageDir/$file' target='_blank'><b>Open in new tab</b></a> |
           <a href='download.php?url=$fullImageDir/$file'><b>Download</b></a><br><br>";
         $descriptionFile = "gallery/descriptions/" . str_replace(".webp", ".html", $galleryData[$artworkNum]["file"]);
@@ -86,11 +86,11 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
     // echo "<p>max pages: {$maxPages}</p>";
 
     echo "
-    <div class='box-container gallery-div'>
-      <div class='gallery-text-div'>
+    <div class='box-container center'>
+      <div class='text-box'>
         <p><code>Click images for full view and more info.</code></p>
       </div>
-      <div class='gallery-image-container'>
+      <div class='image-gallery'>
     ";
     for ($i = $startIndex; $i < $endIndex; $i++) {
         $file = $galleryData[$i]["file"];
@@ -98,15 +98,14 @@ if (array_key_exists("artwork", $_GET)) { // if artwork specified
         $medium = $galleryData[$i]["medium"];
         $year = $galleryData[$i]["year"];
         $artworkGetVar = preg_replace("/.webp$/i", "", $file);
-        echo "<div class='gallery-image'><a href='/?nav=gallery&artwork=$artworkGetVar'>
-          <img 
-            class='square-img' src='$thumbnailDir/$file' 
+        echo "<a href='/?nav=gallery&artwork=$artworkGetVar'><img 
+            class='square-img clickable' src='$thumbnailDir/$file' 
             style='cursor:pointer'
             title=\"$title ($medium, $year)\"
-            loading='lazy'></a></div>";
+            loading='lazy'></a>";
     }
 
-    echo "</div><div class='gallery-text-div'><p><code>";
+    echo "</div><div class='text-box'><p><code>";
     if ($currentPage > 1) {
         echo "<a href='/?nav=gallery&page={$previousPage}' style='text-decoration:none'>&lt;</a>&ensp;";
     }

@@ -8,11 +8,11 @@ function makeBox($title, $content, $class = "", $id = "") {
   }
   $box = "
   <div class='box{$class}'{$id}>
-    <div class='left-right-container box-heading'>
-      <div class='left-right-container-left'>
+    <div class='two-column-grid-container box-heading'>
+      <div class='two-column-grid-container-left'>
         <p>{$title}</p>
       </div>
-      <div class='left-right-container-right x-button'><p>X</p></div>
+      <div class='two-column-grid-container-right x-button'><p>X</p></div>
     </div>
     <div class='box-content'>
       {$content}
@@ -41,13 +41,13 @@ function printDoubleList($list)
         $column1Len = ceil($itemNum / 2);
         $column2Len = floor($itemNum / 2);
     }
-    echo "<div class='left-right-container'>
-    <div class='left-right-container-left'><ul>";
+    echo "<div class='two-column-grid-container'>
+    <div class='two-column-grid-container-left'><ul>";
     for ($i = 0; $i < $column1Len; $i++) {
         echo "<li>{$list[$i]}</li>";
     }
     echo "</ul></div>";
-    echo "<div class='left-right-container-right'><ul>";
+    echo "<div class='two-column-grid-container-right'><ul>";
     for ($i = $column1Len; $i < $itemNum; $i++) {
         echo "<li>{$list[$i]}</li>";
     }
@@ -79,11 +79,14 @@ function printImageGallery($imageDir, $imageArray, $isSquare)
     if ($isSquare == false) {
         $imageClass = "portrait-img";
     }
-    echo "<div class='box-container gallery-div'><p>";
+    echo "
+    <div class='box-container'>
+      <div class='image-gallery'>
+    ";
     foreach ($imageArray as $name => $url) {
         echo "<a href='$url' target='_blank'><img class='$imageClass' src=\"$imageDir/$name.webp\" style='cursor:pointer' title=\"$name\" loading=lazy></a>";
     }
-    echo "</p></div>";
+    echo "</div></div>";
 }
 
 function printRandomImage()

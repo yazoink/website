@@ -127,7 +127,7 @@ function makeStatusChangelog($statusUpdates, $changelog, $blogData) {
   $recentBlogPostsBox = makeRecentBlogPostsBox(4, $blogData); 
 
   $statusChangelog = "
-  <div class='status-changelog-container'>
+  <div class='box-container status-changelog-container'>
     $statusUpdatesBox
     $changeLogBox
     $recentBlogPostsBox
@@ -150,7 +150,7 @@ function makeOtherSites() {
 
   $otherSites = "
   <div class='box-container'>
-    <div class='textbox'><code><p>MY OTHER SITES</p></code></div>
+    <div class='text-box'><code><p>MY OTHER SITES</p></code></div>
     $recipeSite
     $base16Site
   </div>

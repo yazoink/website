@@ -5,9 +5,8 @@
 <h2>This Server</h2>
 <br>
 <div>
-  <img src='images/technology/server2.webp' class='tech-img image-left' title='One of my servers'>
+  <img src='images/technology/server2.webp' class='content-img image-left' title='One of my servers'>
   </div>
-  <div class='left-right-container-right'>
     <p>
       This website is currently being hosted on my home server which consists of two
       machines running NixOS tunneled to a Linode 2 GB VPS. You can read more about
@@ -18,14 +17,13 @@
       a large variety of random drives, and the same motherboards
       (forgot the model). One server has a GTX 750 and the other has a GTX 750 ti.
     </p>
-</div>
 <br />
 <h2>My Daily Drivers</h2>
 <br>
 <h3>Laptops</h3>
 <br>
 <div>
-    <img src='images/technology/laptop1.webp' class='tech-img image-right' title='My ThinkPad'>
+    <img src='images/technology/laptop1.webp' class='content-img image-right' title='My ThinkPad'>
 <p>
   My primary laptop is a ThinkPad X220, which I found on the side of the road and flashed with Libreboot. It has 8 GB or RAM, an i5-2520M processor and a 500 GB SSD.
 </p>
@@ -62,10 +60,10 @@ use a Kindle Paperwhite 7 as an e-reader, jailbroken and running KOReader.</p>
   <a href='https://github.com/yazoink/nixos' target='_blank'>here</a>. See below for pictures (click for full view).
 </p>
 <br>
-<p><a href='images/technology/rice1.png' target='_blank'><img class='blog-img' src='images/technology/rice1.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice1.png' target='_blank'><img class='content-img full-img' src='images/technology/rice1.png' loading='lazy'></a></p>
 <br>
-<p><a href='images/technology/rice2.png' target='_blank'><img class='blog-img' src='images/technology/rice2.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice2.png' target='_blank'><img class='content-img full-img' src='images/technology/rice2.png' loading='lazy'></a></p>
 <br>
-<p><a href='images/technology/rice4.png' target='_blank'><img class='blog-img' src='images/technology/rice4.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice4.png' target='_blank'><img class='content-img full-img' src='images/technology/rice4.png' loading='lazy'></a></p>
 <br>
-<p><a href='images/technology/rice3.png' target='_blank'><img class='blog-img' src='images/technology/rice3.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice3.png' target='_blank'><img class='content-img full-img' src='images/technology/rice3.png' loading='lazy'></a></p>

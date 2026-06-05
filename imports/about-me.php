@@ -24,6 +24,7 @@
   Been really trying to read more recently. I'm big into beat literature
   and my favourite author is William S. Burroughs.
 </p>
+<br />
 <p>(click covers for Goodreads pages)</p>
 <br />
 <?php printImageGallery("images/books", $books, false); ?>
@@ -37,6 +38,7 @@
 <h2>My Favourite Movies</h2>
 <br>
 <p>I don't watch movies often and I'm very picky, but I try lol</p>
+<br />
 <p>(click the posters for IMDB pages)</p>
 <br />
 <?php printImageGallery("images/movies", $movies, false); ?>
@@ -62,6 +64,7 @@
   here, but definitely consider checking out some of the albums on this list if you
   haven't heard of them.
 </p>
+<br />
 <p>(click covers for YouTube links)</p>
 <br />
 <?php printImageGallery("images/albums", $albums, true); ?>

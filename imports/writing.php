@@ -73,24 +73,6 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   echo("<p>Feedback and inquiries: <a href='mailto:yazoink@firemail.cc'>yazoink@firemail.cc</a></p>");
   echo("<br><div class='box-container'>");
 
-  // separate box for featured
-  /*echo("<br>
-    <div class='box'>
-      <div class='box-heading left-right-container'>
-        <div class='left-right-container-left'>
-          <p>FEATURED</p>
-        </div>
-        <div class='left-right-container-right x-button'><p>X</p></div>
-      </div>
-      <div class='box-content'>
-        <ul>");
-  foreach ($featured as $piece) {
-    $entry = str_replace(" ", "-", strtolower($piece["title"]));
-    $entry = str_replace("'", "", $entry);
-    echo("<li><a href='/?nav=writing&piece={$entry}'>{$piece["title"]}</a></li>");
-  }
-  echo("</ul></div></div><br>");*/
-
   // get categories
   $categories = array();
   $featured = array();
@@ -108,14 +90,14 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   $col1 = round($categoryNum / 2);
 
   echo("<div class='box'>");
-  echo("<div class='box-heading left-right-container'>");
-  echo("<div class='left-right-container-left'>");
+  echo("<div class='box-heading two-column-grid-container'>");
+  echo("<div class='two-column-grid-container-left'>");
   echo("PIECES");
   echo("</div>");
-  echo("<div class='left-right-container-right x-button'><p>X</p></div>");
+  echo("<div class='two-column-grid-container-right x-button'><p>X</p></div>");
   echo("</div>");
   echo("<div class='box-content'>");
-  echo("<div class='left-right-container'><div>");
+  echo("<div class='two-column-grid-container-left'><div>");
   echo("<p>Featured</p><br><ul>");
   foreach ($featured as $piece) {
     $entry = str_replace(" ", "-", strtolower($piece["title"]));

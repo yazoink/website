@@ -41,5 +41,5 @@
   --button-padding-side: calc(var(--button-padding-top) * 2);
 
   --font-size-paragraph: 16px;
-  --font-size-small: 14px;
+  /* --font-size-small: 14px; */
 }

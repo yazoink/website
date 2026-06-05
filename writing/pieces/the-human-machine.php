@@ -6,16 +6,10 @@ $quoteNum = 1;
 $sections = array();
 ?>
 <div class="box-container">
-  <div class="box">
-    <div class="left-right-container box-heading">
-      <div class='left-right-container-left'>
-        <p>CONTENTS</p>
-      </div>
-      <div class='left-right-container-right x-button'><p>X</p></div>
-    </div>
-    <div class='box-content'>
-      <p><a href="<?php echo $url; ?>">The Human Machine</a></p><br>
-      <ol>
+  <?php
+  $contentsBoxContent = "
+  <b><p><a href='{$url}'>The Human Machine</a></p><br>
+  <ol>
         <li><a href='#section-1'>Ones and Zeroes</a></li>
         <li><a href='#section-2'>The Meaning of Meaning</a></li>
         <li><a href='#section-3'>The Wave Pool</a></li>
@@ -23,11 +17,12 @@ $sections = array();
         <li><a href='#section-5'>Infinity and Interference</a></li>
         <li><a href='#section-6'>Self-Awareness</a></li>
         <li><a href='#section-7'>The Quantum Man-Machine</a></li>
-      </ol>
-      <br>
-      <p><a href='#footnotes'>Footnotes</a></p>
-    </div>
-  </div>
+  </ol>
+  <br><p><a href='#footnotes'>Footnotes</a></p></b>
+  ";
+  $contentsBox = makeBox("CONTENTS", $contentsBoxContent);
+  echo($contentsBox);
+  ?>
 </div>
 <br>
 <p>

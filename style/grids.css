@@ -1,0 +1,47 @@
+/* --- GRIDS --- */
+
+/* -- two columns -- */
+
+.two-column-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: calc(var(--padding-side) * 0.6);
+}
+
+.two-column-grid-container-left {
+  display: flex;
+  align-items: start;
+  justify-content: left;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.two-column-grid-container-right {
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.two-column-grid-container p,
+.two-column-grid-container ul,
+.two-column-grid-container ol {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.two-column-grid-container .x-button {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* -- three columns -- */
+
+.three-column-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: calc(var(--padding-box) / 2);
+}

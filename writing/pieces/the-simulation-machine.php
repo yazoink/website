@@ -7,11 +7,11 @@ $sections = array();
 ?>
 <div class="box-container">
   <div class="box">
-    <div class="left-right-container box-heading">
-      <div class='left-right-container-left'>
+    <div class="two-column-grid-container box-heading">
+      <div class='two-column-grid-container-left'>
         <p>CONTENTS</p>
       </div>
-      <div class='left-right-container-right x-button'><p>X</p></div>
+      <div class='two-column-grid-container-right x-button'><p>X</p></div>
     </div>
     <div class='box-content'>
       <b><p><a href="<?php echo $url; ?>">The Simulation Machine</a></p><br>

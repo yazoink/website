@@ -106,7 +106,7 @@ if (array_key_exists('entry', $_GET)) { // if blog post specified
     echo "
     <br>
     <div class='box-container'>
-      <div class='textbox'>
+      <div class='text-box'>
       <code><p>
         $allPosts
         <a href='/rss.php'><img src='images/graphics/gruvbox/rss2.webp'>RSS</a> | 

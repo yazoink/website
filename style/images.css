@@ -1,0 +1,69 @@
+/* --- IMAGES ---*/
+
+/* -- general images -- */
+
+.image-left {
+  float: left;
+  margin-right: var(--padding-box);
+}
+
+.image-right {
+  float: right;
+  margin-left: var(--padding-box);
+}
+
+.square-img,
+.portrait-img {
+  height: var(--square-img-height);
+  width: var(--square-img-width);
+  object-fit: cover;
+  margin: 5px;
+  border: 1px solid var(--fg);
+  text-align: justify;
+  transition: transform 0.2s;
+}
+
+.portrait-img {
+  height: var(--portrait-img-height);
+}
+
+.clickable:hover,
+.square-img:hover,
+.portrait-img:hover,
+.website-screenshot:hover {
+  transform: scale(1.025);
+}
+
+/* image part of page content */
+.content-img {
+  border: 1px solid var(--fg);
+}
+
+/* full width (with margins) */
+.full-img {
+  max-height: calc(
+    var(--content-height) -
+      calc(calc(var(--margin-box-top) * 2) + calc(var(--padding-side) * 2))
+  );
+  max-width: calc(
+    var(--content-width) -
+      calc(calc(var(--margin-box-left) * 2) + calc(var(--padding-side) * 2))
+  );
+  margin-left: var(--margin-box-left);
+  margin-right: var(--margin-box-right);
+  /* max-width: calc( */
+  /*   calc(calc(var(--content-width) / 4) * 3) - var(--padding-side) * 2 */
+  /* ); */
+}
+
+/* -- specific images -- */
+
+.greeter-img {
+  padding-top: 115px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/graphics/gruvbox/bg.webp");
+  background-position: top calc(var(--content-height) / 2) left 0;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid var(--fg);
+}

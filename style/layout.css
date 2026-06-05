@@ -59,7 +59,11 @@
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row: 3;
-  text-align: center;
   border-top: 1px solid var(--fg);
   padding: var(--padding-top);
+}
+
+.title {
+  display: flex;
+  align-items: bottom;
 }

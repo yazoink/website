@@ -58,6 +58,9 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "5/6/2026" => [
+    "Code re-formatting.",
+  ],
   "3/6/2026" => [
     "Tweak styling and formatting",
   ],
@@ -127,10 +130,8 @@ $changelog = array(
 $services = array(
   "4get (search engine)" => "https://4get.yazo.ink",
   "SafeTwitch (Twitch frontend)" => "https://safetwitch.yazo.ink",
-  "Redlib (Reddit frontend)" => "https://redlib.yazo.ink",
   "AnonymousOverflow (Stack Overflow frontend)" => "https://overflow.yazo.ink",
   "Quetre (Quora frontend)" => "https://quetre.yazo.ink",
-  "Rimgo (Imgur frontend)" => "https://rimgo.yazo.ink",
 );
 
 $featuredBlogPosts = array(
