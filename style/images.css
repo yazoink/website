@@ -27,6 +27,10 @@
   height: var(--portrait-img-height);
 }
 
+.clickable {
+  transition: transform 0.2s;
+}
+
 .clickable:hover,
 .square-img:hover,
 .portrait-img:hover,

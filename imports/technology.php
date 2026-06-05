@@ -60,10 +60,10 @@ use a Kindle Paperwhite 7 as an e-reader, jailbroken and running KOReader.</p>
   <a href='https://github.com/yazoink/nixos' target='_blank'>here</a>. See below for pictures (click for full view).
 </p>
 <br>
-<p><a href='images/technology/rice1.png' target='_blank'><img class='content-img full-img' src='images/technology/rice1.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice1.png' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice1.png' loading='lazy'></a></p>
 <br>
-<p><a href='images/technology/rice2.png' target='_blank'><img class='content-img full-img' src='images/technology/rice2.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice2.png' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice2.png' loading='lazy'></a></p>
 <br>
-<p><a href='images/technology/rice4.png' target='_blank'><img class='content-img full-img' src='images/technology/rice4.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice4.png' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice4.png' loading='lazy'></a></p>
 <br>
-<p><a href='images/technology/rice3.png' target='_blank'><img class='content-img full-img' src='images/technology/rice3.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice3.png' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice3.png' loading='lazy'></a></p>
