@@ -211,8 +211,7 @@ code {
 .greeter-img,
 .status-changelog-container,
 .box-container,
-.gallery-div,
-.gallery-bottom-div,
+.image-gallery,
 .back-copy-rss-buttons,
 .full-width {
   margin-left: -10px;
@@ -342,7 +341,8 @@ hr {
 }
 
 .image-gallery {
-  margin: var(--padding-box);
+  padding-left: var(--padding-box);
+  padding-right: var(--padding-box);
   text-align: center;
 }
 
