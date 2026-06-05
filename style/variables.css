@@ -16,7 +16,7 @@
     var(--title-height) + var(--content-height) + var(--footer-height)
   );
 
-  --square-img-height: 155px;
+  --square-img-height: 153px;
   --square-img-width: var(--square-img-height);
 
   --portrait-img-height: 230px;
