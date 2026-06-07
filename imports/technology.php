@@ -10,7 +10,7 @@
   <p>
       This website is currently being hosted on my home server, which consists of an old PC I got for free, and various salvaged storage drives. It's running NixOS, and all the services hosted on it are tunneled to a Linode 2 GB VPS running Alpine Linux. You can read more about
       how I tunnel my services in 
-      <a href='/?nav=blog&entry=tunneling-my-homelab' target='_blank'>this blog post</a>.
+      <a href='/?nav=blog&entry=tunneling-my-homelab' target='_blank'>this blog post</a>.</p><p>
       <br>
       It has an i5-8400 processor, 8 GB DDR4 RAM, and a Gigabyte B360M H motherboard.
     </p>
