@@ -63,7 +63,7 @@
 /* -- specific images -- */
 
 .greeter-img {
-  padding-top: 115px;
+  padding-top: 95px;
   display: flex;
   justify-content: center;
   background-image: url("../images/graphics/gruvbox/bg.webp");
