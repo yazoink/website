@@ -182,9 +182,9 @@ $greeter = makeGreeter("images/mushroom-transparent.webp");
 $welcome = makeWelcome("
   <div>
     <img class='image-right' src='images/graphics/gruvbox/face3.webp'>
-    <p>I'm a 20 year old artist, writer, compsci enthusiast, and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.
-    <br><br>
-    I also host some libre alternatives to popular websites, you can read more about that <a href='/?nav=Services'>here</a>.
+    <p>I'm a 20 year old artist, writer, compsci enthusiast, and music enjoyer from Australia and I made this website to share my projects and talk about my interests. Click <a href='/?nav=about-me'>here</a> to read more about me.</p>
+    <br>
+    <p>This site is hosted on my home server, running NixOS. You can read more about it <a href='/?nav=technology'>here</a>.</p>
   </div>
   <br>
   <p>If you've visited the site somewhat recently, I'd recommend clearing your cache (Ctrl+F5) because I've probably updated the CSS and it'll probably look weird.</p>
@@ -201,11 +201,9 @@ $greeter
 <br>
 $welcome
 <br>
-<br>
 $statusChangelog
 <br>
 $qAndA
-<br>
 <br>
 $otherSites
 ";

@@ -20,7 +20,7 @@
 .two-column-grid-container-right {
   display: flex;
   align-items: start;
-  justify-content: right;
+  justify-content: left;
   grid-column: 2;
   grid-row: 1;
 }

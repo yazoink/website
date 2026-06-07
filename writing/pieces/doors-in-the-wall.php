@@ -8,7 +8,7 @@ $sections = array();
 <div class="box-container">
   <?php
   $contentsBoxContent = "
-  <b><p><a href='{$url}'>Doors in the Wall: Absurdism Vs. The Doors of Perception</a></p><br>
+  <b><p><a href='{$url}'>Doors in the Wall</a></p><br>
   <ol>
     <li><a href='#section-1'>The Absurd</a></li>
     <li><a href='#section-2'>The Mind at Large</a></li>
@@ -99,7 +99,7 @@ $sections = makeSection("The Absurd", $sections);
     given names. Alone, wordless, defenceless, they surround me, under me,
     behind me, above me. They demand nothing, they don’t impose themselves, they
     are there.<sup>
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=1&f=1#footnote-1">1</a>
+      <a href="?nav=writing&piece=doors-in-the-wall&q=1&f=1#footnote-1">1</a>
       </sup>
   </p>
 </div>
@@ -129,7 +129,7 @@ $sections = makeSection("The Absurd", $sections);
     what suddenly leaves us so alone. But the time has not yet come. Just one
     thing: that denseness and that strangeness of the world is the Absurd.<sup
       >
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=2&f=2#footnote-2">2</a>
+      <a href="?nav=writing&piece=doors-in-the-wall&q=2&f=2#footnote-2">2</a>
     </sup>
   </p>
 </div>
@@ -239,7 +239,7 @@ $sections = makeSection("The Mind at Large", $sections);
     highly developed color sense is a biological luxury—inestimably precious to
     him as an intellectual and spiritual being, but unnecessary to his survival
     as an animal.<sup>
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=3&f=3#footnote-3">3</a>
+      <a href="?nav=writing&piece=doors-in-the-wallq=3&f=3#footnote-3">3</a>
     </sup>
   </p>
 </div>
@@ -270,7 +270,7 @@ $sections = makeSection("The Mind at Large", $sections);
     enzymes and thus lowers the amount of glucose available to an organ that is
     in constant need of sugar. When mescalin reduces the brain’s normal ration
     of sugar what happens?<sup>
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=4&f=3#footnote-3">3</a>
+      <a href="?nav=writing&piece=doors-in-the-wall&q=4&f=3#footnote-3">3</a>
     </sup>
   </p>
 </div>
@@ -311,7 +311,7 @@ $sections = makeSection("The Mind at Large", $sections);
     from wounds—these upset the enzyme systems regulating the brain, and lower
     its efficiency as an instrument for getting on in a world where the
     biologically fittest survive.<sup>
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=5&f=3#footnote-3">3</a>
+      <a href="?nav=writing&piece=doors-in-the-wall&q=5&f=3#footnote-3">3</a>
     </sup>
   </p>
 </div>
@@ -451,7 +451,7 @@ $sections = makeSection("Walls Vs. Doors", $sections);
         awareness and as it bedevils his sense of reality, so that he is all too
         apt to take his concepts for data, his words for actual things.<sup
         >
-      <a href="?nav=writing&piece=doors-in-the-wall:-absurdism-vs.-the-doors-of-perception&q=6&f=3#footnote-3">3</a>
+      <a href="?nav=writing&piece=doors-in-the-wall&q=6&f=3#footnote-3">3</a>
         </sup
         >
       </p>

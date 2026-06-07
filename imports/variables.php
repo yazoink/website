@@ -7,7 +7,7 @@ $navbarLinks = array(
   "&ensp;About Me&ensp;" => "/?nav=about-me",
   "&ensp;Bookmarks&ensp;" => "/?nav=bookmarks",
   "&ensp;Technology&ensp;" => "/?nav=technology",
-  "&ensp;Services&ensp;" => "/?nav=services",
+  /* "&ensp;Services&ensp;" => "/?nav=services", */
   "&ensp;Blog&ensp;" => "/?nav=blog",
   "&ensp;Writing&ensp;" => "/?nav=writing",
   "&ensp;Art Gallery&ensp;" => "/?nav=gallery"
@@ -162,7 +162,7 @@ $qAndA = array(
   ],
   [
     "question" => "What distro/software do you use?",
-    "answer" => "I use NixOS (btw). You can read a full overview <a href='http://localhost:8000/?nav=Technology' target='_blank'>here</a>."
+    "answer" => "I use NixOS (btw). You can read a full overview <a href='?nav=technology' target='_blank'>here</a>."
   ],
 );
 

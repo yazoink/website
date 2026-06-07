@@ -1,22 +1,21 @@
 <h1>Technology...</h1>
 <br>
-<p>What I use and all that.</p>
+<p>What I use, and all that.</p>
 <br>
 <h2>This Server</h2>
 <br>
 <div>
   <img src='images/technology/server2.webp' class='content-img image-left' title='One of my servers'>
   </div>
-    <p>
-      This website is currently being hosted on my home server which consists of two
-      machines running NixOS tunneled to a Linode 2 GB VPS. You can read more about
+  <p>
+      This website is currently being hosted on my home server, which consists of an old PC I got for free, and various salvaged storage drives. It's running NixOS, and all the services hosted on it are tunneled to a Linode 2 GB VPS running Alpine Linux. You can read more about
       how I tunnel my services in 
       <a href='/?nav=blog&entry=tunneling-my-homelab' target='_blank'>this blog post</a>.
-      <br><br>
-      Both machines are pretty similar builds, each with i5-8400 processors, 8 GB DDR4 RAM,
-      a large variety of random drives, and the same motherboards
-      (forgot the model). One server has a GTX 750 and the other has a GTX 750 ti.
+      <br>
+      It has an i5-8400 processor, 8 GB DDR4 RAM, and a Gigabyte B360M H motherboard.
     </p>
+<br />
+<br />
 <br />
 <h2>My Daily Drivers</h2>
 <br>
@@ -33,7 +32,7 @@
       Coreboot image. I also upgraded the processor to an i7-3632QM (the best compatible
       35W chip), installed a 2 TB SSD in the SATA bay and a 250(?) GB NVME with an 
       ExpressCard adaptor, maxed out the RAM to 16 GB, and replaced the CPU cooler with 
-      the iGPU model.<br><br>
+      the iGPU model.<br>
 </div>
 <br>
 <h3>Desktop</h3>
@@ -45,7 +44,6 @@
   found on the side of the road. Also forgot the model and can't be bothered to 
   check.
 </p>
-<br>
 <br>
 <h3>Misc.</h3>
 <br>
