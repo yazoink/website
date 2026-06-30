@@ -92,6 +92,10 @@ p {
   padding-bottom: 0;
 }
 
+a:hover {
+  text-shadow: 0 0 7px var(--fg);
+}
+
 * {
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: none;
@@ -194,8 +198,9 @@ code {
 
 .website-screenshot {
   transition: transform 0.2s;
-  max-width: 100%;
+  width: 450px;
   margin: 0;
+  transform: scale(1.025);
 }
 
 /* --- MISC --- */
@@ -260,11 +265,13 @@ pre {
 ul {
   list-style-type: square;
   padding-left: var(--padding-ul);
+  padding-right: var(--padding-ul);
   line-height: 25px;
 }
 
 ol {
   padding-left: var(--padding-ul);
+  padding-right: var(--padding-ul);
   line-height: 25px;
 }
 
@@ -356,4 +363,50 @@ hr {
 .image-gallery a {
   margin: 0;
   padding: 0;
+}
+
+.tech-specs {
+  /* border: 1px solid var(--fg); */
+  padding: var(--padding-box);
+  margin: auto;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.musicians-box-container .box-content {
+  max-height: 200px;
+}
+
+.image-gallery img {
+  min-width: 158px;
+}
+
+.other-sites {
+  position: relative;
+  height: 643px;
+}
+
+.simple-recipe-page-box {
+  position: relative;
+  z-index: 1;
+  width: 450px;
+  margin-left: auto;
+}
+
+.base16-box {
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  top: 300px;
+  width: 450px;
+}
+
+.base16-box {
+}
+
+.other-sites-text-box {
+  width: 25%;
+  /* margin-right: 30px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }

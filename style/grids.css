@@ -6,21 +6,15 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  column-gap: calc(var(--padding-side) * 0.6);
+  column-gap: calc(var(--padding-side) * 0.5);
 }
 
 .two-column-grid-container-left {
-  display: flex;
-  align-items: start;
-  justify-content: left;
   grid-column: 1;
   grid-row: 1;
 }
 
 .two-column-grid-container-right {
-  display: flex;
-  align-items: start;
-  justify-content: left;
   grid-column: 2;
   grid-row: 1;
 }
@@ -43,5 +37,6 @@
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  gap: calc(var(--padding-box) / 2);
 }
+
+/* specifics */

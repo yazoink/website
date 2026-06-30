@@ -81,7 +81,7 @@ function makeChangelogBox($changelog)
     return $box;
 }
 
-function makeWebsiteBox($title, $url, $image) {
+function makeWebsiteBox($title, $url, $image, $class) {
   $boxContent = "
     <div class='browser-ui'>
       <div class='browser-buttons'>
@@ -99,7 +99,7 @@ function makeWebsiteBox($title, $url, $image) {
       <p><a href='{$url}' target='_blank'><img class='website-screenshot' src='{$image}' loading='lazy'></a></p>
     </div>
   ";
-  $box = makeBox($title, $boxContent, "website-screenshot-box");
+  $box = makeBox($title, $boxContent, "website-screenshot-box {$class}", $class);
   return $box;
 }
 
@@ -140,19 +140,23 @@ function makeOtherSites() {
   $recipeSite = makeWebsiteBox(
     "SIMPLE RECIPE PAGE", 
     "https://recipes.yazo.ink", 
-    "images/misc/recipes.webp"
+    "images/misc/recipes.webp",
+    "simple-recipe-page-box"
   );
   $base16Site = makeWebsiteBox(
     "BASE16 COLORSCHEME EDITOR", 
     "https://base16.yazo.ink", 
-    "images/misc/base16.webp"
+    "images/misc/base16.webp",
+    "base16-box"
   );
 
   $otherSites = "
   <div class='box-container'>
-    <div class='text-box'><code><p>MY OTHER SITES</p></code></div>
-    $recipeSite
-    $base16Site
+    <div class='text-box other-sites-text-box'><code><p>MY OTHER SITES</p></code></div>
+      <div class='other-sites'>
+        $recipeSite
+        $base16Site
+      </div>
   </div>
   ";
   return $otherSites;

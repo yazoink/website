@@ -96,8 +96,8 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   echo("</div>");
   echo("<div class='two-column-grid-container-right x-button'><p>X</p></div>");
   echo("</div>");
-  echo("<div class='box-content'>");
-  echo("<div class='two-column-grid-container-left'><div>");
+  echo("<div class='box-content two-column-grid-container'>");
+  echo("<div class='two-column-grid-container-left'>");
   echo("<p>Featured</p><br><ul>");
   foreach ($featured as $piece) {
     $entry = str_replace(" ", "-", strtolower($piece["title"]));
@@ -109,12 +109,12 @@ if (array_key_exists('piece', $_GET)) { // if piece specified
   foreach ($categories as $category) {
     printWritingCategory($category, $writingData);
     if ($i == $col1 - 1) {
-      echo("</div><div>");
+      echo("</div><div class='two-column-grid-container-right'>");
     } else {
       echo("<br>");
     }
     $i += 1;
   }
-  echo("</div></div></div></div></div>");
+  echo("</div></div></div></div>");
 }
 ?>

@@ -4,12 +4,10 @@
 
 .image-left {
   float: left;
-  margin-right: var(--padding-box);
 }
 
 .image-right {
   float: right;
-  margin-left: var(--padding-box);
 }
 
 .square-img,
@@ -17,10 +15,10 @@
   height: var(--square-img-height);
   width: var(--square-img-width);
   object-fit: cover;
-  margin: 5px;
   border: 1px solid var(--fg);
   text-align: justify;
   transition: transform 0.2s;
+  margin: 10px;
 }
 
 .portrait-img {
@@ -36,6 +34,7 @@
 .portrait-img:hover,
 .website-screenshot:hover {
   transform: scale(1.025);
+  box-shadow: 0 0 10px var(--fg);
 }
 
 /* image part of page content */
@@ -70,4 +69,15 @@
   background-position: top calc(var(--content-height) / 2) left 0;
   background-repeat: no-repeat;
   border-bottom: 1px solid var(--fg);
+}
+
+.tech-img {
+  border: 1px solid var(--fg);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 200px;
+  margin: 5px;
+  margin-right: 0;
 }

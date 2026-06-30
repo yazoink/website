@@ -25,7 +25,8 @@ pre {
 }
 
 pre,
-.box-content {
+.box-content,
+.box-content .two-column-grid-container {
   overflow: scroll;
   scrollbar-color: var(--fg) var(--bg);
   scrollbar-width: thin;
@@ -70,4 +71,14 @@ pre hr {
   border-right: transparent;
   margin-right: auto;
   margin-left: auto;
+}
+
+.box {
+  transition: transform 0.2s;
+}
+
+.box:hover {
+  box-shadow: 0 0 10px var(--fg);
+  transform: scale(1.025);
+  box-shadow: 0 0 10px var(--fg);
 }

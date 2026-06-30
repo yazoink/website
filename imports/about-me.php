@@ -73,4 +73,14 @@
 <br>
 <p>Again, definitely forgetting a few...</p>
 <br>
-<?php printDoubleList($musicians); ?>
+<div class="box-container musicians-box-container">
+<?php
+  $content = "<ul>";
+  foreach ($musicians as $m) {
+    $content .= "<li>{$m}</li>";
+  }
+  $content .= "<ul>";
+  $content = makeDoubleList($musicians);
+  echo makeBox("LONG ASS LIST", $content, "musicians-box");
+?>
+</div>

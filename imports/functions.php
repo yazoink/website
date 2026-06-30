@@ -29,8 +29,9 @@ function randomFromArrayLink($array, $text)
     echo "<a href='{$array[$song]}' target='_blank'><span>$text</span></a>";
 }
 
-function printDoubleList($list)
+function makeDoubleList($list)
 {
+    $r = "";
     $itemNum = count($list);
     $column1Len = 0;
     $column2Len = 0;
@@ -41,17 +42,18 @@ function printDoubleList($list)
         $column1Len = ceil($itemNum / 2);
         $column2Len = floor($itemNum / 2);
     }
-    echo "<div class='two-column-grid-container'>
+    $r .= "<div class='two-column-grid-container'>
     <div class='two-column-grid-container-left'><ul>";
     for ($i = 0; $i < $column1Len; $i++) {
-        echo "<li>{$list[$i]}</li>";
+        $r .= "<li>{$list[$i]}</li>";
     }
-    echo "</ul></div>";
-    echo "<div class='two-column-grid-container-right'><ul>";
+    $r .= "</ul></div>";
+    $r .= "<div class='two-column-grid-container-right'><ul>";
     for ($i = $column1Len; $i < $itemNum; $i++) {
-        echo "<li>{$list[$i]}</li>";
+        $r .= "<li>{$list[$i]}</li>";
     }
-    echo "</ul></div></div>";
+    $r .= "</ul></div></div>";
+    return $r;
 }
 
 function printBackCopyRssButtons($backUrl, $printCopyUrl, $printRss)
