@@ -62,8 +62,13 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "30/6/2026" => [
+    "Add glow and enlarge hover effects",
+    "Redo tech page",
+    "Various formatting tweaks"
+  ],
   "5/6/2026" => [
-    "Code re-formatting.",
+    "Code re-formatting",
   ],
   "3/6/2026" => [
     "Tweak styling and formatting",
