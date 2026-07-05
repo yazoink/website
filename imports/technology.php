@@ -88,7 +88,9 @@ use a Kindle Paperwhite 7 as an e-reader, jailbroken and running KOReader.</p>
   <a href='https://github.com/yazoink/nixos' target='_blank'>here</a>. See below for pictures (click for full view).
 </p>
 <br>
-<p><a href='images/technology/rice1.png' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice1.png' loading='lazy'></a></p>
+<p><video class="tech-video" controls><source src="images/technology/rice.webm" type="video/webm"></video></p>
 <br>
-<p><a href='images/technology/rice2.png' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice2.png' loading='lazy'></a></p>
+<p><a href='images/technology/rice1.webp' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice1.webp' loading='lazy'></a></p>
+<br>
+<p><a href='images/technology/rice2.webp' target='_blank'><img class='content-img full-img clickable' src='images/technology/rice2.webp' loading='lazy'></a></p>
 <br>
