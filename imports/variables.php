@@ -28,6 +28,10 @@ $writingData = json_decode($jsonStr, true);
 
 $statusUpdates = array(
   [
+    "status" => "Sorry the site was down for a bit, forgot to update some info with my VPS service lmao",
+    "date" => "7/11/2026"
+  ],
+  [
     "status" => "Man I hate CSS",
     "date" => "5/6/2026"
   ],
@@ -62,6 +66,9 @@ $statusUpdates = array(
 );
 
 $changelog = array(
+  "7/11/2026" => [
+    "Update info on tech page"
+  ],
   "30/6/2026" => [
     "Add glow and enlarge hover effects",
     "Redo tech page",
